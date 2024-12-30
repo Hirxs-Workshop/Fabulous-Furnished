@@ -21,17 +21,6 @@
 				"test": {
 					"position": [0.5, 21, -11]
 				}
-			},
-			"sound_effects": {
-				"0.0": {
-					"effect": "paint_sound"
-				}
-			},
-			"particle_effects": {
-				"0.0": {
-					"effect": "paint_particle",
-					"locator": "paint_drip"
-				}
 			}
 		},
 		"animation.hammer.third_person_hold2": {

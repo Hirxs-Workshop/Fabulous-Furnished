@@ -318,7 +318,7 @@
 			],
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "lamp_off",
+					"texture": "off_lamp_texture_white",
 					"render_method": "alpha_test",
 					"ambient_occlusion": false
 				}

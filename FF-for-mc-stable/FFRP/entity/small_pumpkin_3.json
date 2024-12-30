@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sd:white_small_pumpkin",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "christmas_tree"
+			},
+			"textures": {
+				"default": "textures/blocks/autumn/pumpkins/small/white_pumpkin_small",
+				"pumpkin_off": "textures/blocks/autumn/pumpkins/small/white_pumpkin_small_face_var_1",
+				"pumpkin_on": "textures/blocks/autumn/pumpkins/small/white_pumpkin_small_face_var_1_glow"
+			},
+			"animations": {
+				"default_pose": "animation.lamp_light_ray.camera",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"geometry": {
+				"default": "geometry.pumpkin_small"
+			},
+			"render_controllers": [
+				"controller.render.white_small_pumpkin"
+			],
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			}
+		}
+	}
+}

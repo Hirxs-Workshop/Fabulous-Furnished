@@ -20,6 +20,10 @@
 		"sound": "wood",
 		"textures": "wooden_big_planks_pale"
 	},
+	"ff:wooden_big_planks_cinder": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_ebony"
+	},
 	"ff:wooden_big_planks_birch": {
 		"sound": "wood",
 		"textures": "wooden_big_planks_birch"
@@ -63,6 +67,10 @@
 	"ff:wooden_double_big_planks_pale": {
 		"sound": "wood",
 		"textures": "wooden_double_big_planks_pale"
+	},
+	"ff:wooden_double_big_planks_cinder": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_ebony"
 	},
 	"ff:wooden_double_big_planks_birch": {
 		"sound": "wood",
@@ -108,6 +116,10 @@
 		"sound": "wood",
 		"textures": "wooden_smooth_planks_pale"
 	},
+	"ff:wooden_smooth_planks_cinder": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_ebony"
+	},
 	"ff:wooden_smooth_planks_birch": {
 		"sound": "wood",
 		"textures": "wooden_smooth_planks_birch"
@@ -148,6 +160,10 @@
 		"sound": "wood",
 		"textures": "wooden_tiled_planks_pale"
 	},
+	"ff:wooden_tiled_planks_cinder": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_ebony"
+	},
 	"ff:wooden_tiled_planks_acacia": {
 		"sound": "wood",
 		"textures": "wooden_tiled_planks_acacia"
@@ -186,10 +202,23 @@
 	"ff:chiseled_marble": {
 		"sound": "deepslate_bricks"
 	},
+	"ff:chiseled_black_marble": {
+		"sound": "deepslate_bricks"
+	},
+	"ff:cinder_planks": {
+		"sound": "deepslate_bricks",
+		"textures": "planks_ebony"
+	},
 	"ff:marble_pillar": {
 		"sound": "deepslate_bricks"
 	},
 	"ff:marble_small_tiles": {
+		"sound": "deepslate_bricks"
+	},
+	"ff:black_marble_pillar": {
+		"sound": "deepslate_bricks"
+	},
+	"ff:black_marble_small_tiles": {
 		"sound": "deepslate_bricks"
 	},
 	"ff:feldspar_ore": {

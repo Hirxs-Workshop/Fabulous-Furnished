@@ -26,5 +26,10 @@ import 'test_rain'
 import 'couch_connect'
 import 'cabinents_cc'
 import 'trampoline_cc'
+import 'door_ff'
+
+// Seasonal Decors
+import 'pumpkin_functions'
+import 'autumn_leaves'
 
 // import 'block_data_view' // by Kaoiga (just for debug)

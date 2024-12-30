@@ -1,0 +1,28 @@
+{
+    "materials": {
+        "version": "1.0.0",
+    	"yes_test:entity_change_color": {
+      		"+states": [ "DisableAlphaWrite", "Blending", "DisableCulling" ],
+      		"+defines": [
+        		"ALPHA_TEST",
+        		"USE_COLOR_MASK",
+			"USE_UV_ANIM",
+      			"COLOR_BASED",
+        		"USE_COLOR_BLEND"
+      		],
+      		"blendSrc": "One",
+      		"blendDst": "One",
+      		"+samplerStates": [
+        		{
+          		"samplerIndex": 1,
+          		"textureWrap": "Repeat"
+        		}
+      		]
+    	},
+        "christmas_tree:entity_emissive_alpha": {
+            "+defines": [
+                "USE_UV_ANIM"
+            ]
+        }
+    }
+}

@@ -1,0 +1,284 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"runtime_identifier": "minecraft:armor_stand",
+			"identifier": "sd:tall_pumpkin",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"sd:pumpkin_var_default": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"sd:pumpkin_var_1_off": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"sd:pumpkin_var_1_on": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"sd:pumpkin_var_2_off": {
+				"minecraft:variant": {
+					"value": 3
+				}
+			},
+			"sd:pumpkin_var_2_on": {
+				"minecraft:variant": {
+					"value": 4
+				}
+			},
+			"sd:pumpkin_var_3_off": {
+				"minecraft:variant": {
+					"value": 5
+				}
+			},
+			"sd:pumpkin_var_3_on": {
+				"minecraft:variant": {
+					"value": 6
+				}
+			},
+			"sd:pumpkin_var_4_off": {
+				"minecraft:variant": {
+					"value": 7
+				}
+			},
+			"sd:pumpkin_var_4_on": {
+				"minecraft:variant": {
+					"value": 8
+				}
+			},
+			"despawn_entity": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:inside_block_notifier": {
+				"block_list": [
+					{
+						"block": "sd:tall_pumpkin",
+						"exited_block_event": {
+							"event": "destroy",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"minecraft:type_family": {
+				"family": [
+					"book",
+					"inanimate"
+				]
+			},
+			"minecraft:collision_box": {
+				"height": 0,
+				"width": 0
+			},
+			"minecraft:health": {
+				"value": 1,
+				"min": 1,
+				"max": 1
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"sd:pumpkin_var_default"
+					]
+				}
+			},
+			"sd:pumpkin_var_default": {
+				"add": {
+					"component_groups": [
+						"sd:pumpkin_var_default"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:pumpkin_var_1_off",
+						"sd:pumpkin_var_1_on",
+						"sd:pumpkin_var_2_off",
+						"sd:pumpkin_var_2_on",
+						"sd:pumpkin_var_3_off",
+						"sd:pumpkin_var_3_on",
+						"sd:pumpkin_var_4_off",
+						"sd:pumpkin_var_4_on"
+					]
+				}
+			},
+			"sd:pumpkin_var_1_off": {
+				"add": {
+					"component_groups": [
+						"sd:pumpkin_var_1_off"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:pumpkin_var_default",
+						"sd:pumpkin_var_1_on",
+						"sd:pumpkin_var_2_off",
+						"sd:pumpkin_var_2_on",
+						"sd:pumpkin_var_3_off",
+						"sd:pumpkin_var_3_on",
+						"sd:pumpkin_var_4_off",
+						"sd:pumpkin_var_4_on"
+					]
+				}
+			},
+			"sd:pumpkin_var_1_on": {
+				"add": {
+					"component_groups": [
+						"sd:pumpkin_var_1_on"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:pumpkin_var_default",
+						"sd:pumpkin_var_1_off",
+						"sd:pumpkin_var_2_off",
+						"sd:pumpkin_var_2_on",
+						"sd:pumpkin_var_3_off",
+						"sd:pumpkin_var_3_on",
+						"sd:pumpkin_var_4_off",
+						"sd:pumpkin_var_4_on"
+					]
+				}
+			},
+			"sd:pumpkin_var_2_off": {
+				"add": {
+					"component_groups": [
+						"sd:pumpkin_var_2_off"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:pumpkin_var_default",
+						"sd:pumpkin_var_1_off",
+						"sd:pumpkin_var_1_on",
+						"sd:pumpkin_var_2_on",
+						"sd:pumpkin_var_3_off",
+						"sd:pumpkin_var_3_on",
+						"sd:pumpkin_var_4_off",
+						"sd:pumpkin_var_4_on"
+					]
+				}
+			},
+			"sd:pumpkin_var_2_on": {
+				"add": {
+					"component_groups": [
+						"sd:pumpkin_var_2_on"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:pumpkin_var_default",
+						"sd:pumpkin_var_1_off",
+						"sd:pumpkin_var_1_on",
+						"sd:pumpkin_var_2_off",
+						"sd:pumpkin_var_3_off",
+						"sd:pumpkin_var_3_on",
+						"sd:pumpkin_var_4_off",
+						"sd:pumpkin_var_4_on"
+					]
+				}
+			},
+			"sd:pumpkin_var_3_off": {
+				"add": {
+					"component_groups": [
+						"sd:pumpkin_var_3_off"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:pumpkin_var_default",
+						"sd:pumpkin_var_1_off",
+						"sd:pumpkin_var_1_on",
+						"sd:pumpkin_var_2_off",
+						"sd:pumpkin_var_2_on",
+						"sd:pumpkin_var_3_on",
+						"sd:pumpkin_var_4_off",
+						"sd:pumpkin_var_4_on"
+					]
+				}
+			},
+			"sd:pumpkin_var_3_on": {
+				"add": {
+					"component_groups": [
+						"sd:pumpkin_var_3_on"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:pumpkin_var_default",
+						"sd:pumpkin_var_1_off",
+						"sd:pumpkin_var_1_on",
+						"sd:pumpkin_var_2_off",
+						"sd:pumpkin_var_2_on",
+						"sd:pumpkin_var_3_off",
+						"sd:pumpkin_var_4_off",
+						"sd:pumpkin_var_4_on"
+					]
+				}
+			},
+			"sd:pumpkin_var_4_off": {
+				"add": {
+					"component_groups": [
+						"sd:pumpkin_var_4_off"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:pumpkin_var_default",
+						"sd:pumpkin_var_1_off",
+						"sd:pumpkin_var_1_on",
+						"sd:pumpkin_var_2_off",
+						"sd:pumpkin_var_2_on",
+						"sd:pumpkin_var_3_off",
+						"sd:pumpkin_var_3_on",
+						"sd:pumpkin_var_4_on"
+					]
+				}
+			},
+			"sd:pumpkin_var_4_on": {
+				"add": {
+					"component_groups": [
+						"sd:pumpkin_var_4_on"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:pumpkin_var_default",
+						"sd:pumpkin_var_1_off",
+						"sd:pumpkin_var_1_on",
+						"sd:pumpkin_var_2_off",
+						"sd:pumpkin_var_2_on",
+						"sd:pumpkin_var_3_off",
+						"sd:pumpkin_var_4_off",
+						"sd:pumpkin_var_3_on"
+					]
+				}
+			},
+			"destroy": {
+				"add": {
+					"component_groups": [
+						"despawn_entity"
+					]
+				}
+			}
+		}
+	}
+}

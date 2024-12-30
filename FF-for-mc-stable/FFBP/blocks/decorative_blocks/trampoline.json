@@ -77,7 +77,7 @@
 				"ff:bounciness",
 				"ff:trampoline_connect"
 			],
-			"minecraft:geometry": "geometry.party_table"
+			"minecraft:geometry": "geometry.trampoline_block"
 		},
 		"permutations": [
 			{

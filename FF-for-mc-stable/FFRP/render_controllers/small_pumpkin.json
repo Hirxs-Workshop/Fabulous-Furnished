@@ -1,0 +1,35 @@
+{
+	"format_version": "1.20.0",
+	"render_controllers": {
+		"controller.render.small_pumpkin": {
+			"geometry": "Geometry.default",
+			"textures": [
+				"array.variants[query.variant]"
+			],
+			"arrays": {
+				"textures": {
+					"Array.variants": [
+						"Texture.default",
+						"Texture.pumpkin_var_1_off",
+						"Texture.pumpkin_var_1_on",
+						"Texture.pumpkin_var_2_off",
+						"Texture.pumpkin_var_2_on",
+						"Texture.pumpkin_var_3_off",
+						"Texture.pumpkin_var_3_on",
+						"Texture.pumpkin_var_4_off",
+						"Texture.pumpkin_var_4_on"
+					]
+				}
+			},
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"uv_anim": {
+				"scale": [1, "1 / 6"],
+				"offset": [0, "Math.mod(Math.floor(query.life_time * 5), 6) / 6"]
+			}
+		}
+	}
+}

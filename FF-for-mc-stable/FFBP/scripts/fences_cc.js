@@ -71,6 +71,18 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
     });
 });
 
+world.beforeEvents.worldInitialize.subscribe(eventData => {
+    eventData.blockComponentRegistry.registerCustomComponent('ff:cinder_on_player_destroy', {
+        onPlayerDestroy(e) {
+            const { block } = e;
+            const aboveBlock = block.above();
+            if (aboveBlock.typeId === 'ff:garden_fence_cinder_inventory') {
+                aboveBlock.setType('minecraft:air')
+            }
+        }
+    });
+});
+
 
 world.beforeEvents.worldInitialize.subscribe(eventData => {
     eventData.blockComponentRegistry.registerCustomComponent('ff:jungle_on_player_destroy', {
@@ -215,6 +227,30 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             if (selectedItem && face === 'Up' && BlockTypes.get(selectedItem.typeId)) {
                 const aboveBlock = block.above();
                 if (aboveBlock.typeId === 'ff:garden_fence_pale_inventory') {
+                    aboveBlock.setType(selectedItem.typeId);
+                    if (player.getGameMode() !== "creative") {
+                        if (selectedItem.amount > 1) {
+                            selectedItem.amount -= 1;
+                            equipment.setEquipment('Mainhand', selectedItem);
+                        } else {
+                            equipment.setEquipment('Mainhand', undefined);
+                        }
+                    }
+                }
+            }
+        }
+    });
+});
+
+world.beforeEvents.worldInitialize.subscribe(eventData => {
+    eventData.blockComponentRegistry.registerCustomComponent('ff:cinder_on_interact', {
+        onPlayerInteract(e) {
+            const { block, player, face } = e;
+            const equipment = player.getComponent('equippable');
+            const selectedItem = equipment.getEquipment('Mainhand');
+            if (selectedItem && face === 'Up' && BlockTypes.get(selectedItem.typeId)) {
+                const aboveBlock = block.above();
+                if (aboveBlock.typeId === 'ff:garden_fence_cinder_inventory') {
                     aboveBlock.setType(selectedItem.typeId);
                     if (player.getGameMode() !== "creative") {
                         if (selectedItem.amount > 1) {
@@ -434,6 +470,19 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             e.block.setType('ff:garden_fence_acacia')
             if (aboveBlock.typeId === 'minecraft:air') {
                 aboveBlock.setPermutation(BlockPermutation.resolve('ff:garden_fence_acacia_inventory', { 'ff:post': 1 }))
+            }
+        }
+    });
+});
+
+world.beforeEvents.worldInitialize.subscribe(eventData => {
+    eventData.blockComponentRegistry.registerCustomComponent('ff:cinder_on_player_placed', {
+        onPlace(e) {
+            const { block } = e;
+            const aboveBlock = block.above();
+            e.block.setType('ff:garden_fence_cinder')
+            if (aboveBlock.typeId === 'minecraft:air') {
+                aboveBlock.setPermutation(BlockPermutation.resolve('ff:garden_fence_cinder_inventory', { 'ff:post': 1 }))
             }
         }
     });

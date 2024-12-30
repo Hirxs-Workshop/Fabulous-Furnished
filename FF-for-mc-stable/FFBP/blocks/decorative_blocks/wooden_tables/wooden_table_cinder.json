@@ -1,0 +1,268 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:wooden_cinder_table",
+			"menu_category": {
+				"category": "items"
+			},
+			"states": {
+				"ff:post": [
+					0,
+					1
+				],
+				"ff:north_block_connection": [
+					0,
+					1
+				],
+				"ff:south_block_connection": [
+					0,
+					1
+				],
+				"ff:east_block_connection": [
+					0,
+					1
+				],
+				"ff:west_block_connection": [
+					0,
+					1
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('ff:north_block_connection') && !q.block_state('ff:south_block_connection') && !q.block_state('ff:west_block_connection') && q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.corner4"
+				}
+			},
+			{
+				"condition": "q.block_state('ff:north_block_connection') && !q.block_state('ff:south_block_connection') && q.block_state('ff:west_block_connection') && !q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						} 
+					},
+					"minecraft:geometry": "geometry.wooden.table.corner3"
+				}
+			},
+			{
+				"condition": "!q.block_state('ff:north_block_connection') && q.block_state('ff:south_block_connection') && !q.block_state('ff:west_block_connection') && q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.corner1"
+				}
+			},
+			{
+				"condition": "!q.block_state('ff:north_block_connection') && q.block_state('ff:south_block_connection') && q.block_state('ff:west_block_connection') && !q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.corner2"
+				}
+			},
+			{
+				"condition": "q.block_state('ff:north_block_connection') && q.block_state('ff:south_block_connection') && q.block_state('ff:west_block_connection') && q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.center"
+				}
+			},
+			{
+				"condition": "!q.block_state('ff:north_block_connection') && !q.block_state('ff:south_block_connection') && !q.block_state('ff:west_block_connection') && !q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table"
+				}
+			},
+			{
+				"condition": "q.block_state('ff:north_block_connection') && q.block_state('ff:south_block_connection') && q.block_state('ff:west_block_connection') && !q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						} 
+					},
+					"minecraft:geometry": "geometry.wooden.table.center_north_east_south"
+				}
+			},
+			{
+				"condition": "q.block_state('ff:north_block_connection') && q.block_state('ff:south_block_connection') && !q.block_state('ff:west_block_connection') && q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.center_north_west_south"
+				}
+			},
+			{
+				"condition": "q.block_state('ff:north_block_connection') && !q.block_state('ff:south_block_connection') && q.block_state('ff:west_block_connection') && q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.center_west_east_south"
+				}
+			},
+			{
+				"condition": "!q.block_state('ff:north_block_connection') && q.block_state('ff:south_block_connection') && q.block_state('ff:west_block_connection') && q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.center_north_east_west"
+				}
+			},
+			{
+				"condition": "q.block_state('ff:north_block_connection') && !q.block_state('ff:south_block_connection') && !q.block_state('ff:west_block_connection') && !q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.end3"
+				}
+			},
+			{
+				"condition": "q.block_state('ff:south_block_connection') && !q.block_state('ff:north_block_connection') && !q.block_state('ff:west_block_connection') && !q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.end1"
+				}
+			},
+			{
+				"condition": "q.block_state('ff:east_block_connection') && !q.block_state('ff:west_block_connection') && !q.block_state('ff:north_block_connection') && !q.block_state('ff:south_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.end4"
+				}
+			},
+			{
+				"condition": "q.block_state('ff:west_block_connection') && !q.block_state('ff:east_block_connection') && !q.block_state('ff:north_block_connection') && !q.block_state('ff:south_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.end2"
+				}
+			},
+			{
+				"condition": "q.block_state('ff:north_block_connection') && q.block_state('ff:south_block_connection') && !q.block_state('ff:west_block_connection') && !q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.vertical"
+				}
+			},
+			{
+				"condition": "!q.block_state('ff:north_block_connection') && !q.block_state('ff:south_block_connection') && q.block_state('ff:west_block_connection') && q.block_state('ff:east_block_connection')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "new_cinder_table2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": "geometry.wooden.table.horizontal"
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.wooden.table"
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 5
+			},
+			"tag:minecraft:is_axe_item_destructible": {},
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 2
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2
+            },
+			"minecraft:light_dampening": 1,
+			"minecraft:tick": {
+				"interval_range": [
+					3,
+					3
+				]
+			},
+			"minecraft:custom_components": [
+				"ff:table_connect"
+			],
+			"tag:fence": {},
+			"minecraft:collision_box": {
+				"origin": [-8, 13, -8],
+				"size": [16, 3, 16]
+			},
+			"minecraft:selection_box": {
+				"origin": [-8, 13, -8],
+				"size": [16, 3, 16]
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "new_cinder_table",
+					"render_method": "alpha_test"
+				}
+			}
+		}
+	}
+}

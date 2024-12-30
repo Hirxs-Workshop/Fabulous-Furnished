@@ -552,7 +552,33 @@ world.beforeEvents.worldInitialize.subscribe(initEvent => {
                 block.dimension.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} ff:wooden_spruce_chair_with_wool["minecraft:cardinal_direction"="north"] replace ff:wooden_spruce_chair["minecraft:cardinal_direction"="north"]`);
                 block.dimension.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} ff:wooden_spruce_chair_with_wool["minecraft:cardinal_direction"="south"] replace ff:wooden_spruce_chair["minecraft:cardinal_direction"="south"]`);
                 block.dimension.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} ff:wooden_spruce_chair_with_wool["minecraft:cardinal_direction"="east"] replace ff:wooden_spruce_chair["minecraft:cardinal_direction"="east"]`);
-                block.dimension.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} ff:wooden_spruce_chair_with_wool["minecraft:cardinal_direction"="west"] replace ff:wooden_acacia_chair["minecraft:cardinal_direction"="west"]`);
+                block.dimension.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} ff:wooden_spruce_chair_with_wool["minecraft:cardinal_direction"="west"] replace ff:wooden_spruce_chair["minecraft:cardinal_direction"="west"]`);
+
+                return;
+            }
+        },
+    });
+});
+
+world.beforeEvents.worldInitialize.subscribe(initEvent => {
+    initEvent.blockComponentRegistry.registerCustomComponent('ff:cinder_add_couch', {
+        onPlayerInteract: e => {
+            const { player, block } = e;
+            const { x, y, z } = block.location;
+            const equipment = player.getComponent('equippable');
+            const selectedItem = equipment.getEquipment('Mainhand');
+            if (!player.isSneaking && selectedItem && (selectedItem.typeId === 'ff:white_cushion')) {
+                player.playSound("random.pop");
+                if (selectedItem.amount > 1) {
+                    selectedItem.amount -= 1;
+                    equipment.setEquipment('Mainhand', selectedItem);
+                } else {
+                    equipment.setEquipment('Mainhand', undefined);
+                }
+                block.dimension.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} ff:wooden_cinder_chair_with_wool["minecraft:cardinal_direction"="north"] replace ff:wooden_cinder_chair["minecraft:cardinal_direction"="north"]`);
+                block.dimension.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} ff:wooden_cinder_chair_with_wool["minecraft:cardinal_direction"="south"] replace ff:wooden_cinder_chair["minecraft:cardinal_direction"="south"]`);
+                block.dimension.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} ff:wooden_cinder_chair_with_wool["minecraft:cardinal_direction"="east"] replace ff:wooden_cinder_chair["minecraft:cardinal_direction"="east"]`);
+                block.dimension.runCommand(`fill ${x} ${y} ${z} ${x} ${y} ${z} ff:wooden_cinder_chair_with_wool["minecraft:cardinal_direction"="west"] replace ff:wooden_cinder_chair["minecraft:cardinal_direction"="west"]`);
 
                 return;
             }
@@ -865,3 +891,112 @@ world.afterEvents.playerBreakBlock.subscribe((data) => {
 world.afterEvents.playerPlaceBlock.subscribe((data) => {
     wooden_support_vertical_Manager.updatewooden_support_verticalsAround(data.block);
 });
+
+
+world.beforeEvents.worldInitialize.subscribe(eventData => {
+    eventData.blockComponentRegistry.registerCustomComponent('ff:cinder_on_player_destroy', {
+        onPlayerDestroy(e) {
+            const { block, player } = e;
+            if (!player || !player.getComponent('equippable')) {
+                return;
+            }
+            const selectedItem = player.getComponent('equippable').getEquipment('Mainhand');
+            const isPickaxe = selectedItem && selectedItem.hasTag('minecraft:is_axe');
+            if (isPickaxe) {
+                const slabItem = new ItemStack('ff:cinder_slab', 1);
+                e.dimension.spawnItem(slabItem, block.location);
+            }
+        }
+    });
+});
+
+
+world.beforeEvents.worldInitialize.subscribe(eventData => {
+    eventData.blockComponentRegistry.registerCustomComponent('ff:cinder_on_interact', {
+        onPlayerInteract(e) {
+            const { block, player, face } = e;
+            console.warn(`Interacted face: ${face}`);
+            const equipment = player.getComponent('equippable');
+            const selectedItem = equipment.getEquipment('Mainhand');
+            if (selectedItem?.typeId === 'ff:cinder_slab' && !block.permutation.getState('ff:double')) {
+                const verticalHalf = block.permutation.getState('minecraft:vertical_half');
+                const isBottomUp = verticalHalf === 'bottom' && face === 'Up';
+                const isTopDown = verticalHalf === 'top' && face === 'Down';
+                if (isBottomUp || isTopDown) {
+                    if (player.getGameMode() !== "creative") {
+                        selectedItem.amount -= 1;
+                        if (selectedItem.amount === 0) {
+                            equipment.setEquipment('Mainhand', undefined);
+                        } else {
+                            equipment.setEquipment('Mainhand', selectedItem);
+                        }
+                    }
+                    block.setPermutation(block.permutation.withState('ff:double', true));
+                    block.setWaterlogged(false);
+                    player.playSound('use.wood');
+                }
+            }
+        }
+    });
+});
+
+world.beforeEvents.worldInitialize.subscribe(eventData => {
+    eventData.blockComponentRegistry.registerCustomComponent('ff:cinder_trapdoor_on_interact', {
+        onPlayerInteract(e) {
+            const { block, player } = e;
+            const currentState = block.permutation.getState('ff:open');
+            const newOpenState = !currentState;
+            const newPermutation = BlockPermutation.resolve(block.typeId, {
+                ...block.permutation.getAllStates(),
+                'ff:open': newOpenState
+            });
+            block.setPermutation(newPermutation);
+            const sound = currentState ? 'open.wooden_trapdoor' : 'close.wooden_trapdoor';
+            player.playSound(sound);
+        }
+    });
+});
+
+function getPreciseRotation(playerYRotation) {
+    if (playerYRotation < 0) playerYRotation += 360;
+    const rotation = Math.round(playerYRotation / 22.5);
+  
+    return rotation !== 16 ? rotation : 0;
+  }
+
+world.beforeEvents.worldInitialize.subscribe(({
+    blockComponentRegistry
+  }) => {
+    blockComponentRegistry.registerCustomComponent("ff:adv_rot", {
+      beforeOnPlayerPlace(event) {
+        const {
+          player
+        } = event;
+        if (!player) return;
+  
+        const blockFace = event.permutationToPlace.getState("minecraft:block_face");
+        if (blockFace !== "up") return;
+  
+        const playerYRotation = player.getRotation().y;
+        const rotation = getPreciseRotation(playerYRotation);
+  
+        event.permutationToPlace = event.permutationToPlace.withState("ff:block_rotation", rotation);
+      }
+    });
+  });
+
+world.beforeEvents.worldInitialize.subscribe(event => {
+    event.blockComponentRegistry.registerCustomComponent("ff:christmas_stocking_vars", {
+      onPlace: (onPlaceEvent => {
+        onPlaceEvent.block.setPermutation(onPlaceEvent.block.permutation.withState("ff:stocking_vars", Math.round(Math.random() * 3)))
+      })
+    })
+  });
+
+  world.beforeEvents.worldInitialize.subscribe(event => {
+    event.blockComponentRegistry.registerCustomComponent("ff:gravestone_vars", {
+      onPlace: (onPlaceEvent => {
+        onPlaceEvent.block.setPermutation(onPlaceEvent.block.permutation.withState("ff:stocking_vars", Math.round(Math.random() * 3)))
+      })
+    })
+  });

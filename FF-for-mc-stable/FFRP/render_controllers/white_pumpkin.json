@@ -1,0 +1,29 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.white_small_pumpkin": {
+			"geometry": "Geometry.default",
+			"textures": [
+				"array.variants[query.variant]"
+			],
+			"arrays": {
+				"textures": {
+					"Array.variants": [
+						"Texture.default",
+						"Texture.pumpkin_off",
+						"Texture.pumpkin_on"
+					]
+				}
+			},
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"uv_anim": {
+				"scale": [0.6, "1 / 6"],
+				"offset": [0, "Math.mod(Math.floor(query.life_time * 5), 6) / 6"]
+			}
+		}
+	}
+}

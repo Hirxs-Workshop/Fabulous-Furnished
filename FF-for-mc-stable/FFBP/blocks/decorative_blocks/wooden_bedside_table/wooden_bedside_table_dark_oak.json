@@ -115,8 +115,8 @@
 			"minecraft:map_color": "#db904f",
 			"minecraft:tick": {
 				"interval_range": [
-					0,
-					0
+					50,
+					50
 				]
 			}
 		}

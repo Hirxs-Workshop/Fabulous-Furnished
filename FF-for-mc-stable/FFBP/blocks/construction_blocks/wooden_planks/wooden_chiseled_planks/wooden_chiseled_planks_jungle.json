@@ -56,6 +56,7 @@
             "minecraft:destructible_by_explosion": {
                 "explosion_resistance": 2
             },
+			"minecraft:light_dampening": 15,
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 2
             },

@@ -1,0 +1,132 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "sd:christmas_stockings",
+			"menu_category": {
+				"category": "construction"
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
+				}
+			},
+			"states": {
+				"ff:stocking_vars": {
+					"values": {
+						"min": 0,
+						"max": 3
+					}
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"origin": [-6, 4, 6],
+				"size": [12, 12, 2]
+			},
+			"minecraft:selection_box": {
+				"origin": [-6, 4, 6],
+				"size": [12, 12, 2]
+			},
+			"minecraft:geometry": "geometry.christmas_stocking",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "christmas_stocking_1",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:custom_components": [
+				"ff:christmas_stocking_vars"
+			]
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:stocking_vars') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "christmas_stocking_1",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:stocking_vars') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "christmas_stocking_2",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:stocking_vars') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "christmas_stocking_3",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:stocking_vars') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "christmas_stocking_4",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			}
+		]
+	}
+}

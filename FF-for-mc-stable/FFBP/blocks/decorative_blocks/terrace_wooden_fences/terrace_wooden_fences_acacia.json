@@ -67,6 +67,7 @@
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 2
             },
+			
 			"minecraft:light_dampening": 1,
 			"minecraft:flammable": {
 				"catch_chance_modifier": 30,

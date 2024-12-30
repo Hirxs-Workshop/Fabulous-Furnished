@@ -1,0 +1,125 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:black_marble_pillar",
+			"states": {
+				"ff:top_bit": [
+					false,
+					true
+				],
+				"ff:bottom_bit": [
+					false,
+					true
+				]
+			},
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"tag:ff:wooden_support_vertical": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3
+            },
+			"minecraft:light_dampening": 15,
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 4
+            },
+			"minecraft:geometry": {
+				"identifier": "geometry.wooden_support_vertical",
+				"culling": "ff:blocks_culling",
+				"bone_visibility": {
+					"upper": "query.block_state('ff:top_bit') == false",
+					"bottom": "query.block_state('ff:bottom_bit') == false",
+					"middle": "query.block_state('ff:top_bit')",
+					"middle2": "query.block_state('ff:bottom_bit')"
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "wooden_support_oak"
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('ff:bottom_bit') == false && query.block_state('ff:top_bit') == false",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "black_marble_pillar",
+							"render_method": "opaque"
+						},
+						"up": {
+							"texture": "black_marble_pillar_top",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "black_marble_pillar_top",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:bottom_bit') == false && query.block_state('ff:top_bit') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "black_marble_pillar_bottom",
+							"render_method": "opaque"
+						},
+						"up": {
+							"texture": "black_marble_pillar_top",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "black_marble_pillar_top",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:bottom_bit') == true && query.block_state('ff:top_bit') == false",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "black_marble_pillar_upper",
+							"render_method": "opaque"
+						},
+						"up": {
+							"texture": "black_marble_pillar_top",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "black_marble_pillar_top",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:bottom_bit') == true && query.block_state('ff:top_bit') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "black_marble_pillar_middle",
+							"render_method": "opaque"
+						},
+						"up": {
+							"texture": "black_marble_pillar_top",
+							"render_method": "opaque"
+						},
+						"down": {
+							"texture": "black_marble_pillar_top",
+							"render_method": "opaque"
+						}
+					}
+				}
+			}
+		]
+	}
+}

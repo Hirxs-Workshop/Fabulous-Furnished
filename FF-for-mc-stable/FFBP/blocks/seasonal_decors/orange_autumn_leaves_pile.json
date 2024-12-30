@@ -1,0 +1,54 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sd:orange_autumn_leaves_pile",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {}
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "geometry.autumn_leaves_pile"
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 5
+            },
+            "minecraft:flammable": false,
+            "minecraft:map_color": "#222d75",
+            "minecraft:light_dampening": 8,
+            "minecraft:redstone_conductivity": {
+                "allows_wire_to_step_down": false,
+                "redstone_conductor": false
+            },
+            "minecraft:collision_box": false,
+            "minecraft:selection_box":{
+                "size": [
+                    16,
+                    2,
+                    16
+                ],
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "orange_autumn_leaves",
+                    "render_method": "alpha_test_single_sided",
+                    "face_dimming": true,
+                    "ambient_occlusion": true
+                }
+            },
+	    "minecraft:tick": {
+		"interval_range": [
+			120,
+			280
+		]
+	    }
+        }
+    }
+}

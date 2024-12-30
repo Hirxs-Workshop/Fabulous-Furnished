@@ -1,0 +1,45 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sd:yellow_autumn_leaves",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {}
+        },
+        "components": {
+	    "minecraft:custom_components": [
+		"sd:yellow_autumn_leaves_particles",
+        "sd:yellow_autumn_leaves_particles_step"
+	    ],
+            "minecraft:geometry": {
+                "identifier": "minecraft:geometry.full_block"
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 5
+            },
+            "minecraft:flammable": false,
+            "minecraft:map_color": "#222d75",
+            "minecraft:light_dampening": 8,
+            "minecraft:redstone_conductivity": {
+                "allows_wire_to_step_down": false,
+                "redstone_conductor": false
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "yellow_autumn_leaves",
+                    "render_method": "alpha_test_single_sided",
+                    "face_dimming": true,
+                    "ambient_occlusion": true
+                }
+            },
+	    "minecraft:tick": {
+		"interval_range": [
+			220,
+			480
+		]
+	    }
+        }
+    }
+}

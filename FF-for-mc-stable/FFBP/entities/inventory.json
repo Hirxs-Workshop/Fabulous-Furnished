@@ -54,6 +54,10 @@
 					}
 				]
 			},
+			"minecraft:health": {
+				"value": 1,
+				"max": 1
+			},
 			"minecraft:breathable": {
 				"breathes_solids": true
 			},
@@ -62,6 +66,14 @@
 					{
 						"block": {
 							"name": "ff:wooden_cabinet_oak"
+						},
+						"exited_block_event": {
+							"event": "kill"
+						}
+					},
+					{
+						"block": {
+							"name": "ff:wooden_cabinet_cinder"
 						},
 						"exited_block_event": {
 							"event": "kill"
@@ -237,6 +249,14 @@
 					},
 					{
 						"block": {
+							"name": "ff:wooden_marble_cabinet_cinder"
+						},
+						"exited_block_event": {
+							"event": "kill"
+						}
+					},
+					{
+						"block": {
 							"name": "ff:wooden_bedside_table_oak"
 						},
 						"exited_block_event": {
@@ -325,6 +345,14 @@
 					},
 					{
 						"block": {
+							"name": "ff:wooden_bedside_table_cinder"
+						},
+						"exited_block_event": {
+							"event": "kill"
+						}
+					},
+					{
+						"block": {
 							"name": "ff:wooden_wall_cabinet_oak"
 						},
 						"exited_block_event": {
@@ -406,6 +434,14 @@
 					{
 						"block": {
 							"name": "ff:wooden_wall_cabinet_spruce"
+						},
+						"exited_block_event": {
+							"event": "kill"
+						}
+					},
+					{
+						"block": {
+							"name": "ff:wooden_wall_cabinet_cinder"
 						},
 						"exited_block_event": {
 							"event": "kill"

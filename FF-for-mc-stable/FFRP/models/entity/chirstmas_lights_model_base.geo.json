@@ -1,0 +1,56 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.christmas_lights_model_base",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 17,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, 7],
+							"size": [32, 16, 0],
+							"uv": {
+								"north": {"uv": [0, 32], "uv_size": [32, 16]},
+								"east": {"uv": [0, 0], "uv_size": [0, 16]},
+								"west": {"uv": [0, 0], "uv_size": [0, 16]},
+								"up": {"uv": [0, 0], "uv_size": [32, 0]},
+								"down": {"uv": [0, 0], "uv_size": [32, 0]}
+							}
+						},
+						{
+							"origin": [-24, 0, 7],
+							"size": [48, 16, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [48, 16]},
+								"east": {"uv": [0, 0], "uv_size": [0, 16]},
+								"west": {"uv": [0, 0], "uv_size": [0, 16]},
+								"up": {"uv": [0, 0], "uv_size": [48, 0]},
+								"down": {"uv": [0, 0], "uv_size": [48, 0]}
+							}
+						},
+						{
+							"origin": [-8, 0, 7],
+							"size": [16, 16, 0],
+							"uv": {
+								"north": {"uv": [0, 48], "uv_size": [16, 16]},
+								"east": {"uv": [0, 0], "uv_size": [0, 16]},
+								"west": {"uv": [0, 0], "uv_size": [0, 16]},
+								"up": {"uv": [0, 0], "uv_size": [16, 0]},
+								"down": {"uv": [0, 0], "uv_size": [16, 0]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

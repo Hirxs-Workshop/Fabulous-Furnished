@@ -1,0 +1,44 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sd:small_pumpkin",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "christmas_tree"
+			},
+			"textures": {
+				"default": "textures/blocks/autumn/pumpkins/small/pumpkin_small",
+				"pumpkin_var_1_off": "textures/blocks/autumn/pumpkins/small/pumpkin_small_face_var_1",
+				"pumpkin_var_1_on": "textures/blocks/autumn/pumpkins/small/pumpkin_small_face_var_1_glow",
+				"pumpkin_var_2_off": "textures/blocks/autumn/pumpkins/small/pumpkin_small_face_var_2",
+				"pumpkin_var_2_on": "textures/blocks/autumn/pumpkins/small/pumpkin_small_face_var_2_glow",
+				"pumpkin_var_3_off": "textures/blocks/autumn/pumpkins/small/pumpkin_small_face_var_3",
+				"pumpkin_var_3_on": "textures/blocks/autumn/pumpkins/small/pumpkin_small_face_var_3_glow",
+				"pumpkin_var_4_off": "textures/blocks/autumn/pumpkins/small/pumpkin_small_face_var_4",
+				"pumpkin_var_4_on": "textures/blocks/autumn/pumpkins/small/pumpkin_small_face_var_4_glow"
+			},
+			"animations": {
+				"default_pose": "animation.lamp_light_ray.camera",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"geometry": {
+				"default": "geometry.pumpkin_small"
+			},
+			"render_controllers": [
+				"controller.render.small_pumpkin"
+			],
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			}
+		}
+	}
+}

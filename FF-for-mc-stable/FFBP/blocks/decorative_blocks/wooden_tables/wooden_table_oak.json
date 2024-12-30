@@ -249,6 +249,14 @@
 				"ff:table_connect"
 			],
 			"tag:fence": {},
+			"minecraft:collision_box": {
+				"origin": [-8, 13, -8],
+				"size": [16, 3, 16]
+			},
+			"minecraft:selection_box": {
+				"origin": [-8, 13, -8],
+				"size": [16, 3, 16]
+			},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "new_oak_table",

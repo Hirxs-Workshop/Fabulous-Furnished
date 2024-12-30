@@ -191,7 +191,7 @@
 			],
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "lamp_off",
+					"texture": "plasma_tv",
 					"render_method": "alpha_test",
 					"ambient_occlusion": false
 				}

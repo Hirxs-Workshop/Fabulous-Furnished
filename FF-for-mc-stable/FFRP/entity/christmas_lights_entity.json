@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sd:christmas_lights_entity",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton",
+				"lights": "yes_test",
+				"lights_selection": "enderman"
+			},
+			"textures": {
+				"default": "textures/blocks/xmas/lights/christmas_lights_small_white_base",
+				"medium": "textures/blocks/xmas/lights/christmas_lights_medium_white_base",
+				"large": "textures/blocks/xmas/lights/christmas_lights_large_white_base",
+				"lights": "textures/blocks/xmas/lights/christmas_lights_small_white",
+				"lights_pattern_1": "textures/blocks/xmas/lights/christmas_lights_small_white_pattern_1",
+				"lights_selection": "textures/blocks/xmas/lights/christmas_lights_white_selection"
+			},
+			"animations": {
+				"default_pose": "animation.lamp_light_ray.camera",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"geometry": {
+				"default": "geometry.christmas_lights_model_base",
+				"lights": "geometry.christmas_lights_model",
+				"lights2": "geometry.christmas_lights_model2",
+				"lights3": "geometry.christmas_lights_model3",
+				"lights_sec": "geometry.christmas_lights_model_selection",
+				"lights2_sec": "geometry.christmas_lights_model2_selection",
+				"lights3_sec": "geometry.christmas_lights_model3_selection"
+			},
+			"render_controllers": [
+				"controller.render.christmas_lights_base_render", "controller.render.christmas_lights_render", "controller.render.christmas_lights_render_selection"
+			],
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				],
+				"pre_animation": [
+					"v.horizontal_threshold = 15;",
+					"v.vertical_threshold = 50;",
+					"v.vertical_offset = 0;",
+		  
+					"v.camera_rot = -Math.atan2(-q.distance_from_camera * Math.sin(q.rotation_to_camera(0)) + v.vertical_offset, q.distance_from_camera * Math.cos(q.rotation_to_camera(0)));",
+					"v.look_at_entity = Math.abs(Math.abs(q.rotation_to_camera(1) - q.camera_rotation(1)) - 180) < (v.horizontal_threshold / q.distance_from_camera) && Math.abs(v.camera_rot + q.camera_rotation(0)) < (v.vertical_threshold / q.distance_from_camera);"
+				]
+			}
+		}
+	}
+}

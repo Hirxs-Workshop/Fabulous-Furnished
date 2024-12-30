@@ -1,0 +1,1562 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [32, 16],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [32, 32],
+									"uv_size": [16, -16]
+								}
+							}
+						},
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [32, 16],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [32, 32],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 0, 4],
+							"size": [3, 6, 3],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 6]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 6]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 6]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 6]
+								},
+								"up": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						},
+						{
+							"origin": [-7, 0, -7],
+							"size": [3, 6, 3],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 6]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 6]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 6]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 6]
+								},
+								"up": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs2",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [-7, 0, 4],
+							"size": [3, 6, 3],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 6]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 6]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 6]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 6]
+								},
+								"up": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						},
+						{
+							"origin": [-7, 0, -7],
+							"size": [3, 6, 3],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 6]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 6]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 6]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 6]
+								},
+								"up": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.end1",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [16, 12],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [48, 32],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 0, -7],
+							"size": [3, 5, 3],
+							"pivot": [0, 0, 0],
+							"rotation": [0, 90, 0],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						},
+						{
+							"origin": [-7, 0, 4],
+							"size": [3, 5, 3],
+							"pivot": [0, 0, 0],
+							"rotation": [0, 90, 0],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.end2",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [0, 0],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [48, 32],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 0, -7],
+							"size": [3, 5, 3],
+							"pivot": [0, 0, 0],
+							"rotation": [0, 180, 0],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						},
+						{
+							"origin": [-7, 0, 4],
+							"size": [3, 5, 3],
+							"pivot": [0, 0, 0],
+							"rotation": [0, 180, 0],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.end3",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [0, 16],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [48, 32],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 0, -7],
+							"size": [3, 5, 3],
+							"pivot": [0, 0, 0],
+							"rotation": [0, -90, 0],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						},
+						{
+							"origin": [-7, 0, 4],
+							"size": [3, 5, 3],
+							"pivot": [0, 0, 0],
+							"rotation": [0, -90, 0],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.end4",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [0, 32],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [48, 32],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 0, -7],
+							"size": [3, 5, 3],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						},
+						{
+							"origin": [-7, 0, 4],
+							"size": [3, 5, 3],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [25, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.corner1",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [32, 32],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [32, 48],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 0, 4],
+							"size": [3, 5, 3],
+							"uv": {
+								"north": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.corner2",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [48, 32],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [48, 48],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [4, 0, 4],
+							"size": [3, 5, 3],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.corner3",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [48, 48],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [48, 64],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [4, 0, -7],
+							"size": [3, 5, 3],
+							"uv": {
+								"north": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [26, 48],
+									"uv_size": [-3, -3]
+								},
+								"down": {
+									"uv": [26, 44],
+									"uv_size": [-3, -3]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.corner4",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [32, 48],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [32, 64],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 0, -7],
+							"size": [3, 5, 3],
+							"uv": {
+								"north": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"east": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"south": {
+									"uv": [29, 35],
+									"uv_size": [3, 5]
+								},
+								"west": {
+									"uv": [26, 35],
+									"uv_size": [3, 5]
+								},
+								"up": {
+									"uv": [9, 32],
+									"uv_size": [3, 3]
+								},
+								"down": {
+									"uv": [23, 45],
+									"uv_size": [3, 3]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.center",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [48, 16],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [48, 32],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.center_west_east_south",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [48, 0],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [48, 64],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.center_north_west_south",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [32, 0],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [32, 16],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.center_north_east_west",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [16, 48],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [16, 64],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.center_north_east_south",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [0, 48],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [48, 64],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.horizontal",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "root2",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top2",
+					"parent": "root2",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"east": {
+									"uv": [16, 3],
+									"uv_size": [16, 3]
+								},
+								"south": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"west": {
+									"uv": [16, 9],
+									"uv_size": [16, 3]
+								},
+								"up": {
+									"uv": [48, 48],
+									"uv_size": [16, 16]
+								},
+								"down": {
+									"uv": [48, 64],
+									"uv_size": [16, -16]
+								}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs2",
+					"parent": "root2",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "spindles2",
+					"parent": "root2",
+					"pivot": [0, 0, 0]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.wooden.coffee_table.vertical",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "root",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 5, -8],
+							"size": [16, 3, 16],
+							"uv": {
+								"north": {"uv": [16, 3], "uv_size": [16, 3]},
+								"east": {"uv": [16, 3], "uv_size": [16, 3]},
+								"south": {"uv": [16, 9], "uv_size": [16, 3]},
+								"west": {"uv": [16, 9], "uv_size": [16, 3]},
+								"up": {"uv": [32, 48], "uv_size": [16, 16]},
+								"down": {"uv": [48, 64], "uv_size": [16, -16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "spindles",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,135 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "sd:leaves_wall_decor_entity",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"sd:small": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"sd:medium": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			},
+			"sd:large": {
+				"minecraft:variant": {
+					"value": 2
+				}
+			},
+			"despawn_entity": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:inside_block_notifier": {
+				"block_list": [
+					{
+						"block": "sd:leaves_wall_decor",
+						"exited_block_event": {
+							"event": "destroy",
+							"target": "self"
+						}
+					}
+				]
+			},
+			"minecraft:custom_hit_test": {
+	"hitboxes": [
+		{
+			"width": 0.1,
+			"height": 0.1,
+			"pivot": [0, 0.45, 0]
+		}
+	]
+},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:type_family": {
+				"family": [
+					"book",
+					"inanimate"
+				]
+			},
+
+			"minecraft:collision_box": {
+				"height": 0,
+				"width": 0
+			},
+			"minecraft:health": {
+				"value": 1,
+				"min": 1,
+				"max": 1
+			},
+			"minecraft:fire_immune": {},
+			"minecraft:damage_sensor": {
+				"triggers": {
+					"cause": "all",
+					"deals_damage": false
+				}
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"sd:small"
+					]
+				}
+			},
+			"sd:small": {
+				"add": {
+					"component_groups": [
+						"sd:small"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:medium",
+						"sd:large"
+					]
+				}
+			},
+			"sd:medium": {
+				"add": {
+					"component_groups": [
+						"sd:medium"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:small",
+						"sd:large"
+					]
+				}
+			},
+			"sd:large": {
+				"add": {
+					"component_groups": [
+						"sd:large"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"sd:small",
+						"sd:medium"
+					]
+				}
+			},
+			"destroy": {
+				"add": {
+					"component_groups": [
+						"despawn_entity"
+					]
+				}
+			}
+		}
+	}
+}

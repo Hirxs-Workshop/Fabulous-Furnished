@@ -1,0 +1,24 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.gift_box": {
+			"geometry": "Array.geo[q.variant]",
+			"textures": [
+				"texture.default"
+			],
+			"arrays": {
+				"geometries": {
+					"Array.geo": [
+						"Geometry.default",
+						"Geometry.open"
+					]
+				}
+			},
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sd:gift_box_bow",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest_change_color",
+				"open": "entity_alphatest_change_color"
+			},
+			"textures": {
+				"default": "textures/blocks/xmas/gift_box/bow/gift_box_bow_white"
+			},
+			"animations": {
+				"default_pose": "animation.lamp_light_ray.camera",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"geometry": {
+				"default": "geometry.gift_box_closed_e",
+				"open": "geometry.gift_box_open_e"
+			},
+			"render_controllers": [
+				"controller.render.gift_box"
+			],
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			}
+		}
+	}
+}

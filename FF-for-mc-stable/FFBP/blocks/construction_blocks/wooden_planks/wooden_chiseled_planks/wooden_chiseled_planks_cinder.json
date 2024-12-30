@@ -1,0 +1,73 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:wooden_chiseled_planks_cinder",
+			"states": {
+				"p:changer": [
+					0,
+					1,
+					2
+				]
+			},
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wooden_chiseled_planks_1_ebony",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wooden_chiseled_planks_2_ebony",
+							"render_method": "opaque"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wooden_chiseled_planks_3_ebony",
+							"render_method": "opaque"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"tag:minecraft:is_axe_item_destructible": {},
+			"minecraft:flammable": true,
+			"minecraft:map_color": "#C89D53",
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 2
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2
+            },
+			"tag:wood": {},
+			"minecraft:light_dampening": 15,
+			"tag:minecraft:planks": {},
+			"minecraft:geometry": {
+                "culling": "ff:blocks_culling",
+                "identifier": "minecraft:geometry.full_block"
+            },
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true
+		}
+	}
+}

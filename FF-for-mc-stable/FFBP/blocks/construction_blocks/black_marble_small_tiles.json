@@ -1,0 +1,63 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:black_marble_small_tiles",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "black_marble_small_tiles",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:tick": {
+				"interval_range": [
+					10,
+					10
+				],
+				"looping": true
+			},
+			"minecraft:map_color": "#8E693B",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 4
+            },
+			"minecraft:light_dampening": 15,
+			"minecraft:geometry": {
+                "culling": "ff:blocks_culling",
+                "identifier": "minecraft:geometry.full_block"
+            },
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		}
+	}
+}

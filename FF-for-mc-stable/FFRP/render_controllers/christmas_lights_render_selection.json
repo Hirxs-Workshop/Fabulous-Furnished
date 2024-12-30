@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.christmas_lights_render_selection": {
+			"geometry": "Array.geo[q.variant]",
+			"textures": [
+				"texture.lights_selection"
+			],
+			"arrays": {
+				"geometries": {
+					"Array.geo": [
+						"Geometry.lights_sec",
+						"Geometry.lights2_sec",
+						"Geometry.lights3_sec"
+					]
+				}
+			},
+			"materials": [
+				{
+					"*": "material.lights_selection"
+				}
+			],
+			"light_color_multiplier": 1.5,
+			"ignore_lighting": true,
+			"part_visibility": [
+				{
+				  "*": false
+				},
+				{
+				  "selection": "v.look_at_entity"
+				}
+			]
+		}
+	}
+}

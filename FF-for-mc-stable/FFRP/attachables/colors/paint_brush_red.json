@@ -19,15 +19,10 @@
 			},
 			"animations": {
 				"first_person_hold": "animation.hammer.first_person_hold",
-				"third_person_hold": "animation.hammer.third_person_hold",
-				"paint_drip": "animation.paint_drip",
-				"paint_drip_particle": "animation.paint_drip_particle"
+				"third_person_hold": "animation.hammer.third_person_hold"
 			},
 			"particle_effects": {
 				"paint_particle": "ff:single_paint_drip_red"
-			},
-			"sound_effects": {
-				"paint_sound": "drip.water.pointed_dripstone"
 			},
 			"scripts": {
 				"animate": [

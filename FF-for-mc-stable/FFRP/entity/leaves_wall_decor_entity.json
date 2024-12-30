@@ -1,0 +1,38 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sd:leaves_wall_decor_entity",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/blocks/autumn/leaves_wall_decor_small",
+				"medium": "textures/blocks/autumn/leaves_wall_decor_medium",
+				"large": "textures/blocks/autumn/leaves_wall_decor_large"
+			},
+			"animations": {
+				"default_pose": "animation.lamp_light_ray.camera",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"geometry": {
+				"default": "geometry.leaves_wall_decor"
+			},
+			"render_controllers": [
+				"controller.render.leaves_wall_decor"
+			],
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			}
+		}
+	}
+}

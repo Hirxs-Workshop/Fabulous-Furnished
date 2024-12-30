@@ -60,6 +60,7 @@
                 "seconds_to_destroy": 2
             },
 			"tag:wood": {},
+			"minecraft:light_dampening": 15,
 			"tag:minecraft:planks": {},
 			"minecraft:geometry": {
                 "culling": "ff:blocks_culling",

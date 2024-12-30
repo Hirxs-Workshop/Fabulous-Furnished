@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.christmas_lights2_render": {
+			"geometry": "Geometry.lights2",
+			"textures": [ "Texture.lights2" ],
+			"materials": [
+				{
+					"*": "material.lights2"
+				}
+			],
+			"light_color_multiplier": 1.5,
+			"ignore_lighting": true,
+			"part_visibility": [
+				{
+				  "*": true
+				}
+			]
+		}
+	}
+}
