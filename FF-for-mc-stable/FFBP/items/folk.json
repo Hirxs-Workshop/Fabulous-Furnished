@@ -14,7 +14,7 @@
 				}
 			},
 			"minecraft:display_name": {
-				"value": "Folk  \n§9 You probably know what its function is"
+				"value": "item.ff_folk.name"
 			},
 			"minecraft:allow_off_hand": true,
 			"minecraft:hand_equipped": true,

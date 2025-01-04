@@ -24,6 +24,14 @@
 			}
 		},
 		"components": {
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+                "explosion_resistance": 4
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 6
+            },
+			"minecraft:flammable": false,
 			"minecraft:collision_box": {
 				"origin": [-6, 0, -2],
 				"size": [12, 16, 4]

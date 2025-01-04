@@ -2,7 +2,7 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shaped": {
 		"description": {
-			"identifier": "nj:watering_can"
+			"identifier": "ff:watering_can"
 		},
 		"tags": [
 			"ff_carpentry_table"
@@ -24,7 +24,7 @@
 			}
 		},
 		"result": {
-			"item": "nj:watering_can"
+			"item": "ff:watering_can"
 		}
 	}
 }

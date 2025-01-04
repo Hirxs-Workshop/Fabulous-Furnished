@@ -1,0 +1,31 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:wooden_stool_pale"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"WW ",
+			"SS ",
+			"LL "
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:pale_oak_planks"
+			},
+			"L": {
+				"item": "minecraft:stick"
+			},
+			"W": {
+				"item": "minecraft:wool",
+				"data": 0
+			}
+		},
+		"result": {
+			"item": "ff:wooden_stool_pale"
+		}
+	}
+}

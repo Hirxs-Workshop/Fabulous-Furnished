@@ -1,0 +1,13 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "cinder_log_smoker_furnace"
+		},
+		"tags": [
+			"smoker"
+		],
+		"input": "minecraft:log",
+		"output": "ff:cinder_log"
+	}
+}

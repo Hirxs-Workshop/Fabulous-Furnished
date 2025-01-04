@@ -630,6 +630,7 @@
 			},
 			"minecraft:custom_components": [
 				"ff:cinder_on_player_destroy",
+				"ff:cinder_on_interact",
 				"ff:on_tick"
 
 			],

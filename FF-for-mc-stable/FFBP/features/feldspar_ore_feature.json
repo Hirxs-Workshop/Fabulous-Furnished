@@ -1,0 +1,19 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "ff:feldspar_ore_feature"
+		},
+		"count": 8,
+		"replace_rules": [
+			{
+				"places_block": "ff:feldspar_ore",
+				"may_replace": ["minecraft:stone"]
+			},
+			{
+				"places_block": "ff:deepslate_feldspar_ore",
+				"may_replace": ["minecraft:deepslate"]
+			}
+		]
+	}
+}

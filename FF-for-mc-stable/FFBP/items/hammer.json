@@ -14,7 +14,7 @@
 				}
 			},
 			"minecraft:display_name": {
-				"value": "Carpentry Hammer"
+				"value": "item.ff_carpentry_hammer.name"
 			},
 			"minecraft:allow_off_hand": true,
 			"minecraft:hand_equipped": true,

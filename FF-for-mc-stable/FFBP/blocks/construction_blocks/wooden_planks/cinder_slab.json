@@ -68,7 +68,7 @@
                 "condition": "q.block_state('ff:double')",
                 "components": {
                     "minecraft:geometry": "minecraft:geometry.full_block",
-                    "minecraft:custom_components": ["ff:cinder_on_player_destroy"] 
+                    "minecraft:custom_components": ["ff:slab_cinder_on_player_destroy"] 
                 }
             }
         ],
@@ -103,7 +103,7 @@
                     "top_slab": "q.block_state('minecraft:vertical_half') == 'top'"
                 }
             },
-            "minecraft:custom_components": ["ff:cinder_on_interact"],
+            "minecraft:custom_components": ["ff:slab_cinder_on_interact"],
             "minecraft:material_instances": {
                 "*": {
                     "texture": "planks_ebony"

@@ -13,6 +13,9 @@
 					"default": "feldspar"
 				}
 			},
+			"minecraft:display_name": {
+				"value": "item.ff:feldspar.name"
+			},
 			"minecraft:max_stack_size": 64
 		}
 	}

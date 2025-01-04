@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sd:gravestone"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SS",
+			"SS"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:stone"
+			}
+		},
+		"result": {
+			"item": "sd:gravestone"
+		}
+	}
+}

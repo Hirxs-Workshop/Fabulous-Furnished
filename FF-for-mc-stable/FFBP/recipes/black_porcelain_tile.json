@@ -1,0 +1,13 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "ff:black_porcelain_tile"
+		},
+		"tags": [
+			"furnace"
+		],
+		"input": "ff:black_porcelain_clay",
+		"output": "ff:black_porcelain_tile"
+	}
+}

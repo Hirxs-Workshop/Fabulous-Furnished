@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:wooden_cabinet_pale"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SSS",
+			"SCS",
+			"SSS"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:pale_oak_planks"
+			},
+			"C": {
+				"item": "minecraft:chest"
+			}
+		},
+		"result": {
+			"item": "ff:wooden_cabinet_pale"
+		}
+	}
+}

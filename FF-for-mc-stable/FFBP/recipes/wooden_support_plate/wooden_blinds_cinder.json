@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "ff:wooden_support_plate_cinder"
+        },
+        "tags": [
+            "ff_carpentry_table"
+        ],
+        "pattern": [
+            "SS"
+        ],
+        "key": {
+            "S": {
+                "item": "ff:cinder_planks"
+            }
+        },
+        "result": {
+            "item": "ff:wooden_support_plate_cinder",
+            "count": 2
+        }
+    }
+}

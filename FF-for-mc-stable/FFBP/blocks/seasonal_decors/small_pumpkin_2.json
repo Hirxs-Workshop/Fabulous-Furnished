@@ -29,6 +29,14 @@
 			}
 		},
 		"components": {
+			"tag:minecraft:is_axe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+                "explosion_resistance": 1
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
+            },
+			"minecraft:flammable": false,
 			"minecraft:collision_box": {
 				"origin": [-5, 0, -5],
 				"size": [10, 8, 10]

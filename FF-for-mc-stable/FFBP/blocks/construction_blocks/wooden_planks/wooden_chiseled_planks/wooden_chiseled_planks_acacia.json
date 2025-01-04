@@ -21,7 +21,9 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "wooden_chiseled_planks_1_acacia",
-							"render_method": "opaque"
+							"render_method": "opaque",
+							"ambient_occlusion": true,
+							"face_dimming": true
 						}
 					}
 				}

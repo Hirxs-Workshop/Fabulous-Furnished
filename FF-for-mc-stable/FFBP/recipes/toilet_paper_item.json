@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:toilet_paper_item"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SSS",
+			"S S",
+			"SSS"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:paper"
+			}
+		},
+		"result": {
+			"item": "ff:toilet_paper_item"
+		}
+	}
+}

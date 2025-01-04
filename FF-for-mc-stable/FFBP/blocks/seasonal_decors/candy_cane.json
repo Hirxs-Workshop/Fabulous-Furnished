@@ -24,28 +24,12 @@
 		},
 		"components": {
 			"minecraft:collision_box": {
-				"origin": [
-					-4,
-					0,
-					-2
-				],
-				"size": [
-					7,
-					13,
-					6
-				]
+				"origin": [-5, 0, -5],
+				"size": [10, 2, 10]
 			},
 			"minecraft:selection_box": {
-				"origin": [
-					-4,
-					0,
-					-2
-				],
-				"size": [
-					7,
-					13,
-					6
-				]
+				"origin": [-5, 0, -5],
+				"size": [10, 2, 10]
 			},
 			"minecraft:geometry": {
 				"identifier": "geometry.candy_cane",
@@ -118,12 +102,12 @@
 				"condition": "q.block_state('minecraft:block_face') != 'up'",
 				"components": {
 					"minecraft:collision_box": {
-						"origin": [-5, 0, -5],
-						"size": [10, 2, 10]
+                        "origin": [-8, 0, 6],
+                        "size": [16, 16, 2]
 					},
 					"minecraft:selection_box": {
-						"origin": [-5, 0, -5],
-						"size": [10, 2, 10]
+                        "origin": [-8, 0, 6],
+                        "size": [16, 16, 2]
 					}
 				}
 			}

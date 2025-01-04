@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "ff:wooden_support_horizontal_middle_oak"
+        },
+        "tags": [
+            "ff_carpentry_table"
+        ],
+        "pattern": [
+            "S",
+            "S",
+            "S"
+        ],
+        "key": {
+            "S": {
+                "item": "minecraft:planks",
+                "data": 0
+            }
+        },
+        "result": {
+            "item": "ff:wooden_support_horizontal_middle_oak",
+            "count": 2
+        }
+    }
+}

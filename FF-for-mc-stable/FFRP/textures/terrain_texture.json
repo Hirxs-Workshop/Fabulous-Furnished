@@ -53,6 +53,16 @@
                 "textures/blocks/carpentry_table_west"
             ]
         },
+        "cinder_log_side": {
+            "textures": [
+                "textures/blocks/cinder_log_side"
+            ]
+        },
+        "cinder_log_top": {
+            "textures": [
+                "textures/blocks/cinder_log_top"
+            ]
+        },
         "feldspar_ore": {
             "textures": [
                 "textures/blocks/feldspar_ore"
@@ -153,6 +163,16 @@
                 "textures/blocks/red_couch"
             ]
         },
+        "stripped_cinder_log_side": {
+            "textures": [
+                "textures/blocks/stripped_cinder_log_side"
+            ]
+        },
+        "stripped_cinder_log_top": {
+            "textures": [
+                "textures/blocks/stripped_cinder_log_top"
+            ]
+        },
         "toaster": {
             "textures": [
                 "textures/blocks/toaster"
@@ -163,9 +183,9 @@
                 "textures/blocks/toaster_on"
             ]
         },
-        "toilet": {
+        "toilet_ff": {
             "textures": [
-                "textures/blocks/toilet"
+                "textures/blocks/toilet_ff"
             ]
         },
         "toilet_paper_support": {
@@ -601,6 +621,216 @@
         "marble_tiles": {
             "textures": [
                 "textures/blocks/marble/blocks/marble_tiles"
+            ]
+        },
+        "marble_tiles_full_painted_blue": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_blue"
+            ]
+        },
+        "marble_tiles_full_painted_brown": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_brown"
+            ]
+        },
+        "marble_tiles_full_painted_cyan": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_cyan"
+            ]
+        },
+        "marble_tiles_full_painted_green": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_green"
+            ]
+        },
+        "marble_tiles_full_painted_grey": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_grey"
+            ]
+        },
+        "marble_tiles_full_painted_light_blue": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_light_blue"
+            ]
+        },
+        "marble_tiles_full_painted_light_grey": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_light_grey"
+            ]
+        },
+        "marble_tiles_full_painted_lime": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_lime"
+            ]
+        },
+        "marble_tiles_full_painted_magenta": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_magenta"
+            ]
+        },
+        "marble_tiles_full_painted_orange": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_orange"
+            ]
+        },
+        "marble_tiles_full_painted_pink": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_pink"
+            ]
+        },
+        "marble_tiles_full_painted_purple": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_purple"
+            ]
+        },
+        "marble_tiles_full_painted_red": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_red"
+            ]
+        },
+        "marble_tiles_full_painted_yellow": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_full_painted/marble_tiles_full_painted_yellow"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_blue": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_blue"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_brown": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_brown"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_cyan": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_cyan"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_green": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_green"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_grey": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_grey"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_light_blue": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_light_blue"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_light_grey": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_light_grey"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_lime": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_lime"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_magenta": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_magenta"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_orange": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_orange"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_pink": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_pink"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_purple": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_purple"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_red": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_red"
+            ]
+        },
+        "marble_tiles_mixed_white_painted_yellow": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_pained_white/marble_tiles_mixed_white_painted_yellow"
+            ]
+        },
+        "marble_tiles_mixed_painted_blue": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_blue"
+            ]
+        },
+        "marble_tiles_mixed_painted_brown": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_brown"
+            ]
+        },
+        "marble_tiles_mixed_painted_cyan": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_cyan"
+            ]
+        },
+        "marble_tiles_mixed_painted_green": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_green"
+            ]
+        },
+        "marble_tiles_mixed_painted_grey": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_grey"
+            ]
+        },
+        "marble_tiles_mixed_painted_light_blue": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_light_blue"
+            ]
+        },
+        "marble_tiles_mixed_painted_light_grey": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_light_grey"
+            ]
+        },
+        "marble_tiles_mixed_painted_lime": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_lime"
+            ]
+        },
+        "marble_tiles_mixed_painted_magenta": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_magenta"
+            ]
+        },
+        "marble_tiles_mixed_painted_orange": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_orange"
+            ]
+        },
+        "marble_tiles_mixed_painted_pink": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_pink"
+            ]
+        },
+        "marble_tiles_mixed_painted_purple": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_purple"
+            ]
+        },
+        "marble_tiles_mixed_painted_red": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_red"
+            ]
+        },
+        "marble_tiles_mixed_painted_yellow": {
+            "textures": [
+                "textures/blocks/marble/blocks/colors/marble_tiles_mixed_painted/marble_tiles_mixed_painted_yellow"
             ]
         },
         "marble_cabinet_acacia": {

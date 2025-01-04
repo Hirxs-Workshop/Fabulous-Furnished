@@ -13,6 +13,9 @@
 					"default": "porcelain_tile"
 				}
 			},
+			"minecraft:display_name": {
+				"value": "item.ff:porcelain_tile.name"
+			},
 			"minecraft:max_stack_size": 64
 		}
 	}

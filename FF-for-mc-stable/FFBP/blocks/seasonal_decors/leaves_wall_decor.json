@@ -51,7 +51,9 @@
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "leaves_wall_decor_small",
-					"render_method": "alpha_test"
+					"render_method": "alpha_test",
+					"face_dimming": false,
+					"ambient_occlusion": false
 				}
 			},
 			"minecraft:placement_filter": {
@@ -126,7 +128,9 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "leaves_wall_decor_small",
-                            "render_method": "alpha_test"
+                            "render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
                         }
                     }
 				}

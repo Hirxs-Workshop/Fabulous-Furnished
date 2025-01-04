@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:black_marble_small_tiles"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"FF",
+			"FF"
+		],
+		"key": {
+			"F": {
+				"item": "ff:black_porcelain_clay"
+			}
+		},
+		"result": {
+			"item": "ff:black_marble_small_tiles",
+			"count": 4
+		}
+	}
+}

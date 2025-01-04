@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sd:small_pumpkin"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"S"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:pumpkin"
+			}
+		},
+		"result": {
+			"item": "sd:small_pumpkin",
+			"count": 1
+		}
+	}
+}

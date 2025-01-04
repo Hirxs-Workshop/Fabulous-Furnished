@@ -349,8 +349,7 @@
 			"minecraft:custom_components": [
 				"ff:on_tick"
 			],
-						"tag:inventory_fence": {},
-
+			"tag:inventory_fence": {},
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "acacia_fences",

@@ -30,7 +30,7 @@
             },
             "minecraft:flammable": false,
             "minecraft:map_color": "#222d75",
-            "minecraft:light_dampening": 8,
+            "minecraft:light_dampening": 2,
             "minecraft:redstone_conductivity": {
                 "allows_wire_to_step_down": false,
                 "redstone_conductor": false

@@ -7,6 +7,16 @@
                 "textures/items/bacon"
             ]
         },
+        "black_porcelain_clay": {
+            "textures": [
+                "textures/items/black_porcelain_clay"
+            ]
+        },
+        "black_porcelain_tile": {
+            "textures": [
+                "textures/items/black_porcelain_tile"
+            ]
+        },
         "bread_slice": {
             "textures": [
                 "textures/items/bread_slice"

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:toilet"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"F ",
+			"FCF",
+			"FF "
+		],
+		"key": {
+			"F": {
+				"item": "ff:porcelain_clay"
+			},
+			"C": {
+				"item": "minecraft:cauldron"
+			}
+		},
+		"result": {
+			"item": "ff:toilet",
+			"count": 1
+		}
+	}
+}

@@ -126,7 +126,9 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "christmas_lights_small_white_base",
-                            "render_method": "alpha_test"
+                            "render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
                         }
                     }
 				}

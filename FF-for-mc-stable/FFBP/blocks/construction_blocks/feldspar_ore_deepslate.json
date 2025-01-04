@@ -2,10 +2,14 @@
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "ff:feldspar_ore_deepslate"
+			"identifier": "ff:feldspar_ore_deepslate",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.ore"
+			}
 		},
 		"components": {
-			"minecraft:flammable": true,
+			"minecraft:flammable": false,
 			"minecraft:map_color": "#C89D53",
 			"tag:minecraft:is_pickaxe_item_destructible": {},
             "minecraft:destructible_by_explosion": {
@@ -14,7 +18,8 @@
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 8
             },
-			"minecraft:loot": "loot_tables/feldspar_ore.json"
+			"minecraft:loot": "loot_tables/feldspar_ore.json",
+			"minecraft:custom_components": ["ff:feldspar_ore_xp_reward"]
 		}
 	}
 }

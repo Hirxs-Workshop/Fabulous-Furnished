@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "ff:wooden_support_plate_crimson"
+        },
+        "tags": [
+            "ff_carpentry_table"
+        ],
+        "pattern": [
+            "SS"
+        ],
+        "key": {
+            "S": {
+                "item": "minecraft:crimson_planks"
+            }
+        },
+        "result": {
+            "item": "ff:wooden_support_plate_crimson",
+            "count": 2
+        }
+    }
+}

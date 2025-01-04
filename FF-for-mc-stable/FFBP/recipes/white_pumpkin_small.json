@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sd:white_pumpkin_small"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SW"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:pumpkin"
+			},
+			"W": {
+				"item": "minecraft:soul_sand"
+			}
+		},
+		"result": {
+			"item": "sd:white_pumpkin_small",
+			"count": 1
+		}
+	}
+}

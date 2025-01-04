@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:garden_fence_jungle_inventory" // _inventory
+		},
+		"tags": [
+			"ff_carpentry_table" 
+		],
+		"pattern": [
+			"SLS",
+			"SLS"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:planks",
+				"data": 3
+			},
+			"L": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "ff:garden_fence_jungle_inventory"
+		}
+	}
+}

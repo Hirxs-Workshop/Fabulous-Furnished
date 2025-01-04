@@ -13,6 +13,9 @@
 					"default": "porcelain_clay"
 				}
 			},
+			"minecraft:display_name": {
+				"value": "item.ff:porcelain_clay.name"
+			},
 			"minecraft:max_stack_size": 64
 		}
 	}

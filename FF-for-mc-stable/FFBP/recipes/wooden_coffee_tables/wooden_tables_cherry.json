@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:wooden_cherry_coffee_table"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SSS",
+			"L L"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:cherry_planks"
+			},
+			"L": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "ff:wooden_cherry_coffee_table"
+		}
+	}
+}

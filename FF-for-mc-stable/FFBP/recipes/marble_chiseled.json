@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:chiseled_marble"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"FF",
+			"FF"
+		],
+		"key": {
+			"F": {
+				"item": "ff:porcelain_clay"
+			}
+		},
+		"result": {
+			"item": "ff:chiseled_marble",
+			"count": 4
+		}
+	}
+}

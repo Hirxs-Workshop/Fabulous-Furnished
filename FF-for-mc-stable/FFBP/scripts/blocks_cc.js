@@ -894,7 +894,7 @@ world.afterEvents.playerPlaceBlock.subscribe((data) => {
 
 
 world.beforeEvents.worldInitialize.subscribe(eventData => {
-    eventData.blockComponentRegistry.registerCustomComponent('ff:cinder_on_player_destroy', {
+    eventData.blockComponentRegistry.registerCustomComponent('ff:slab_cinder_on_player_destroy', {
         onPlayerDestroy(e) {
             const { block, player } = e;
             if (!player || !player.getComponent('equippable')) {
@@ -912,7 +912,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
 
 world.beforeEvents.worldInitialize.subscribe(eventData => {
-    eventData.blockComponentRegistry.registerCustomComponent('ff:cinder_on_interact', {
+    eventData.blockComponentRegistry.registerCustomComponent('ff:slab_cinder_on_interact', {
         onPlayerInteract(e) {
             const { block, player, face } = e;
             console.warn(`Interacted face: ${face}`);
@@ -1000,3 +1000,53 @@ world.beforeEvents.worldInitialize.subscribe(event => {
       })
     })
   });
+
+/**
+ * @param {number} min
+ * @param {number} max
+ * @returns {number}
+ * */
+const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
+    blockComponentRegistry.registerCustomComponent("ff:feldspar_ore_xp_reward", {
+        onPlayerDestroy({ block, dimension, player }) {
+            const xpAmount = randomInt(0, 3);
+
+            for (let i = 0; i < xpAmount; i++) {
+                dimension.spawnEntity("minecraft:xp_orb", block.location);
+            }
+        },
+    });
+});
+
+world.beforeEvents.worldInitialize.subscribe(eventData => {
+    eventData.blockComponentRegistry.registerCustomComponent('ff:cinder_log_on_interact', {
+        onPlayerInteract(e) {
+            const { block, player } = e;
+            const equipment = player.getComponent('equippable');
+            const selectedItem = equipment.getEquipment('Mainhand');
+            if (!selectedItem?.hasTag('minecraft:is_axe')) return;
+            const blockState = block.permutation.getState("minecraft:block_face");
+            if (blockState) {
+                const strippedWood = BlockPermutation.resolve('ff:stripped_cinder_log', {"minecraft:block_face": blockState});
+                block.setPermutation(strippedWood);
+            }
+            player.playSound('step.wood');
+        }
+    });
+});
+
+world.beforeEvents.worldInitialize.subscribe(eventData => {
+    eventData.blockComponentRegistry.registerCustomComponent('ff:cinder_wood_on_interact', {
+        onPlayerInteract(e) {
+            const { block, player } = e;
+            const equipment = player.getComponent('equippable');
+            const selectedItem = equipment.getEquipment('Mainhand');
+            if (!selectedItem?.hasTag('minecraft:is_axe')) return;
+            const strippedWood = BlockPermutation.resolve('ff:stripped_cinder_wood');
+            block.setPermutation(strippedWood);
+            player.playSound('step.wood');
+        }
+    });
+});

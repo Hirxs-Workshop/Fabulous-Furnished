@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sd:candy_cane"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SC",
+			"C ",
+			"S "
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:sugar"
+			},
+			"C": {
+				"item": "minecraft:red_dye"
+			}
+		},
+		"result": {
+			"item": "sd:candy_cane"
+		}
+	}
+}

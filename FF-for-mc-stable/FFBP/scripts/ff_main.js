@@ -20,13 +20,13 @@ import 'colors_change/large_lamp_colors'
 import 'tables_connect'
 import 'wooden_chair_test'
 import 'test_brush'
-import 'test_rain'
 
 // Unestable Experimental
 import 'couch_connect'
 import 'cabinents_cc'
 import 'trampoline_cc'
 import 'door_ff'
+import 'ff_stairs'
 
 // Seasonal Decors
 import 'pumpkin_functions'

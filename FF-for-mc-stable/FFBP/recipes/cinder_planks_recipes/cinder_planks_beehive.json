@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:cinder_planks_beehive"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"SSS",
+			"BBB",
+			"SSS"
+		],
+		"key": {
+			"S": {
+				"item": "ff:cinder_planks"
+			},
+			"B": {
+				"item": "minecraft:honeycomb"
+			}
+		},
+		"result": {
+			"item": "minecraft:beehive",
+			"count": 1
+		}
+	}
+}
