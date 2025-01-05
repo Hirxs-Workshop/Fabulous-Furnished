@@ -373,16 +373,6 @@
                 "textures/blocks/autumn/pumpkins/tall/pumpkin_tall_face_var_4_glow"
             ]
         },
-        "base": {
-            "textures": [
-                "textures/blocks/curtains/base"
-            ]
-        },
-        "white": {
-            "textures": [
-                "textures/blocks/wooden/couchs/colors/white"
-            ]
-        },
         "lamp_texture_black": {
             "textures": [
                 "textures/blocks/lamps/lamp_texture_black"
@@ -891,116 +881,6 @@
         "marble_cabinet_warped": {
             "textures": [
                 "textures/blocks/marble/cabinets/marble_cabinet_warped"
-            ]
-        },
-        "old_radio": {
-            "textures": [
-                "textures/blocks/old_radio/old_radio"
-            ]
-        },
-        "old_tv": {
-            "textures": [
-                "textures/blocks/old_tv/old_tv"
-            ]
-        },
-        "old_tv_channel1": {
-            "textures": [
-                "textures/blocks/old_tv/old_tv_channel1"
-            ]
-        },
-        "old_tv_channel2": {
-            "textures": [
-                "textures/blocks/old_tv/old_tv_channel2"
-            ]
-        },
-        "old_tv_on": {
-            "textures": [
-                "textures/blocks/old_tv/old_tv_on"
-            ]
-        },
-        "color_black": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_black"
-            ]
-        },
-        "color_blue": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_blue"
-            ]
-        },
-        "color_brown": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_brown"
-            ]
-        },
-        "color_cyan": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_cyan"
-            ]
-        },
-        "color_empty": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_empty"
-            ]
-        },
-        "color_gray": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_gray"
-            ]
-        },
-        "color_green": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_green"
-            ]
-        },
-        "color_light_blue": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_light_blue"
-            ]
-        },
-        "color_light_gray": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_light_gray"
-            ]
-        },
-        "color_lime": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_lime"
-            ]
-        },
-        "color_magenta": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_magenta"
-            ]
-        },
-        "color_orange": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_orange"
-            ]
-        },
-        "color_pink": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_pink"
-            ]
-        },
-        "color_purple": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_purple"
-            ]
-        },
-        "color_red": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_red"
-            ]
-        },
-        "color_white": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_white"
-            ]
-        },
-        "color_yellow": {
-            "textures": [
-                "textures/blocks/paintbrush_colors/color_yellow"
             ]
         },
         "paint_bucket_black": {
@@ -1691,6 +1571,11 @@
         "couch_yellow": {
             "textures": [
                 "textures/blocks/wooden/couchs/colors/couch_yellow"
+            ]
+        },
+        "white": {
+            "textures": [
+                "textures/blocks/wooden/couchs/colors/white"
             ]
         },
         "cinder_door_bottom": {

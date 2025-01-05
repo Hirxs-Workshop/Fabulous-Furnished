@@ -28,7 +28,7 @@
             "minecraft:map_color": "#00ff00",
             "minecraft:material_instances": {
                 "*": {
-                    "texture": "toilet",
+                    "texture": "toilet_ff",
                     "render_method": "alpha_test"
                 }
             },
@@ -84,7 +84,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "toilet",
+                            "texture": "toilet_ff",
                             "render_method": "opaque",
                             "ambient_occlusion": true
                         }
@@ -101,7 +101,7 @@
                             "render_method": "opaque"
                         },
                         "*": {
-                            "texture": "toilet",
+                            "texture": "toilet_ff",
                             "render_method": "alpha_test",
                             "ambient_occlusion": true
                         }
@@ -114,7 +114,7 @@
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
-                            "texture": "toilet",
+                            "texture": "toilet_ff",
                             "render_method": "alpha_test",
                             "ambient_occlusion": true
                         }
