@@ -1,8 +1,8 @@
 ![](https://cdn.discordapp.com/attachments/1192248796650934434/1361584438257123328/ff_icon.png?ex=67ff49d3&is=67fdf853&hm=8bbed40bb708ed23d1d08986db76572f9e5d8f4ecb1fa6a52cf600f2ede6dad8&=)
 [![](https://hirxs-workshop.net/wp-content/uploads/2025/04/ff_discord.png)](https://discord.gg/jCcWuTFxk3)   [![](https://hirxs-workshop.net/wp-content/uploads/2025/04/ff_x.png)](https://legacy.curseforge.com/linkout?remoteUrl=https%253a%252f%252fx.com%252f%2540HyrxsMC)   [![](https://hirxs-workshop.net/wp-content/uploads/2025/04/ff_yt.png)](https://www.youtube.com/@HirxsMC)
-
-* * * * *
-
+  
+--------------
+  
 ### Make your world fabulous with fabulous furniture! More than 30+ blocks with more than 200+ variations available!
 
 📕 Description
