@@ -1,0 +1,364 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"ff:wooden_big_planks_oak": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_oak"
+	},
+	"ff:wooden_big_planks_spruce": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_spruce"
+	},
+	
+	"ff:wooden_big_planks_spicewood": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_spicewood"
+	},
+	"ff:wooden_big_planks_acacia": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_acacia"
+	},
+	"ff:wooden_big_planks_pale": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_pale"
+	},
+	"ff:wooden_big_planks_cinder": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_cinder"
+	},
+	"ff:wooden_big_planks_birch": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_birch"
+	},
+	"ff:wooden_big_planks_dark_oak": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_dark_oak"
+	},
+	"ff:wooden_big_planks_mangrove": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_mangrove"
+	},
+	"ff:wooden_big_planks_cherry": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_cherry"
+	},
+	"ff:wooden_big_planks_warped": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_warped"
+	},
+	"ff:wooden_big_planks_crimson": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_crimson"
+	},
+	"ff:wooden_big_planks_jungle": {
+		"sound": "wood",
+		"textures": "wooden_big_planks_jungle"
+	},
+	"ff:wooden_double_big_planks_oak": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_oak"
+	},
+	"ff:wooden_double_big_planks_spruce": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_spruce"
+	},
+	"ff:wooden_double_big_planks_spicewood": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_spicewood"
+	},
+	"ff:wooden_double_big_planks_acacia": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_acacia"
+	},
+	"ff:wooden_double_big_planks_pale": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_pale"
+	},
+	"ff:wooden_double_big_planks_cinder": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_cinder"
+	},
+	"ff:wooden_double_big_planks_birch": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_birch"
+	},
+	"ff:wooden_double_big_planks_dark_oak": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_dark_oak"
+	},
+	"ff:wooden_double_big_planks_mangrove": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_mangrove"
+	},
+	"ff:wooden_double_big_planks_cherry": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_cherry"
+	},
+	"ff:wooden_double_big_planks_warped": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_warped"
+	},
+	"ff:wooden_double_big_planks_crimson": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_crimson"
+	},
+	"ff:wooden_double_big_planks_jungle": {
+		"sound": "wood",
+		"textures": "wooden_double_big_planks_jungle"
+	},
+	"ff:wooden_smooth_planks_oak": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_oak"
+	},
+	"ff:wooden_smooth_planks_spruce": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_spruce"
+	},
+	"ff:wooden_smooth_planks_spicewood": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_spicewood"
+	},
+	"ff:wooden_smooth_planks_acacia": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_acacia"
+	},
+	"ff:wooden_smooth_planks_pale": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_pale"
+	},
+	"ff:wooden_smooth_planks_cinder": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_cinder"
+	},
+	"ff:wooden_smooth_planks_birch": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_birch"
+	},
+	"ff:wooden_smooth_planks_dark_oak": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_dark_oak"
+	},
+	"ff:wooden_smooth_planks_mangrove": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_mangrove"
+	},
+	"ff:wooden_smooth_planks_cherry": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_cherry"
+	},
+	"ff:wooden_smooth_planks_warped": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_warped"
+	},
+	"ff:wooden_smooth_planks_crimson": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_crimson"
+	},
+	"ff:wooden_smooth_planks_jungle": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_jungle"
+	},
+	
+
+
+	"ff:wooden_smooth_planks_zigzag_oak": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_oak"
+	},
+	"ff:wooden_smooth_planks_zigzag_spruce": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_spruce"
+	},
+	"ff:wooden_smooth_planks_zigzag_spicewood": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_spicewood"
+	},
+	"ff:wooden_smooth_planks_zigzag_acacia": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_acacia"
+	},
+	"ff:wooden_smooth_planks_zigzag_pale": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_pale"
+	},
+	"ff:wooden_smooth_planks_zigzag_cinder": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_cinder"
+	},
+	"ff:wooden_smooth_planks_zigzag_birch": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_birch"
+	},
+	"ff:wooden_smooth_planks_zigzag_dark_oak": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_dark_oak"
+	},
+	"ff:wooden_smooth_planks_zigzag_mangrove": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_mangrove"
+	},
+	"ff:wooden_smooth_planks_zigzag_cherry": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_cherry"
+	},
+	"ff:wooden_smooth_planks_zigzag_warped": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_warped"
+	},
+	"ff:wooden_smooth_planks_zigzag_crimson": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_crimson"
+	},
+	"ff:wooden_smooth_planks_zigzag_jungle": {
+		"sound": "wood",
+		"textures": "wooden_smooth_planks_zigzag_jungle"
+	},
+
+
+
+		"ff:wooden_tiled_planks_oak": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_oak"
+	},
+	"ff:wooden_tiled_planks_spruce": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_spruce"
+	},
+	"ff:wooden_tiled_planks_spicewood": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_spicewood"
+	},
+	"ff:wooden_tiled_planks_pale": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_pale"
+	},
+	"ff:wooden_tiled_planks_cinder": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_cinder"
+	},
+	"ff:wooden_tiled_planks_acacia": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_acacia"
+	},
+	"ff:wooden_tiled_planks_birch": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_birch"
+	},
+	"ff:wooden_tiled_planks_dark_oak": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_dark_oak"
+	},
+	"ff:wooden_tiled_planks_mangrove": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_mangrove"
+	},
+	"ff:wooden_tiled_planks_cherry": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_cherry"
+	},
+	"ff:wooden_tiled_planks_warped": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_warped"
+	},
+	"ff:wooden_tiled_planks_crimson": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_crimson"
+	},
+	"ff:wooden_tiled_planks_jungle": {
+		"sound": "wood",
+		"textures": "wooden_tiled_planks_jungle"
+	},
+	"ff:smooth_wood_oak": {
+		"sound": "wood",
+		"textures": "smooth_wood_oak"
+	},
+	"ff:smooth_wood_spruce": {
+		"sound": "wood",
+		"textures": "smooth_wood_spruce"
+	},
+	"ff:smooth_wood_spicewood": {
+		"sound": "wood",
+		"textures": "smooth_wood_spicewood"
+	},
+	"ff:smooth_wood_pale": {
+		"sound": "wood",
+		"textures": "smooth_wood_pale"
+	},
+	"ff:smooth_wood_cinder": {
+		"sound": "wood",
+		"textures": "smooth_wood_cinder"
+	},
+	"ff:smooth_wood_acacia": {
+		"sound": "wood",
+		"textures": "smooth_wood_acacia"
+	},
+	"ff:smooth_wood_birch": {
+		"sound": "wood",
+		"textures": "smooth_wood_birch"
+	},
+	"ff:smooth_wood_dark_oak": {
+		"sound": "wood",
+		"textures": "smooth_wood_dark_oak"
+	},
+	"ff:smooth_wood_mangrove": {
+		"sound": "wood",
+		"textures": "smooth_wood_mangrove"
+	},
+	"ff:smooth_wood_cherry": {
+		"sound": "wood",
+		"textures": "smooth_wood_cherry"
+	},
+	"ff:smooth_wood_warped": {
+		"sound": "wood",
+		"textures": "smooth_wood_warped"
+	},
+	"ff:smooth_wood_crimson": {
+		"sound": "wood",
+		"textures": "smooth_wood_crimson"
+	},
+	"ff:smooth_wood_jungle": {
+		"sound": "wood",
+		"textures": "smooth_wood_jungle"
+	},
+	"ff:carpentry_table": {
+		"sound": "wood"
+	},
+	"ff:chiseled_marble": {
+		"sound": "deepslate_bricks"
+	},
+	"ff:chiseled_black_marble": {
+		"sound": "deepslate_bricks"
+	},
+	"ff:cinder_planks": {
+		"sound": "deepslate_bricks",
+		"textures": "planks_cinder"
+	},
+
+	"ff:spicewood_planks": {
+		"sound": "deepslate_bricks",
+		"textures": "planks_spicewood"
+	},
+	"ff:marble_pillar": {
+		"sound": "deepslate_bricks"
+	},
+	"ff:marble_small_tiles": {
+		"sound": "deepslate_bricks"
+	},
+	"ff:black_marble_pillar": {
+		"sound": "deepslate_bricks"
+	},
+	"ff:black_marble_small_tiles": {
+		"sound": "deepslate_bricks"
+	},
+	"ff:feldspar_ore": {
+		"sound": "stone",
+		"textures": "feldspar_ore"
+	},
+	"ff:feldspar_ore_deepslate": {
+		"sound": "deepslate",
+		"textures": "feldspar_ore_deepslate"
+	}
+}

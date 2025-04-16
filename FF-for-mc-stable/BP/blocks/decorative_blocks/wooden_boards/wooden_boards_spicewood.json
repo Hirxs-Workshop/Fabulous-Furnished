@@ -1,0 +1,94 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "ff:wooden_boards_spicewood",
+            "menu_category": {
+                "category": "construction"
+            },
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+            "states": {}
+        },
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			}
+		],
+        "components": {
+	    "tag:minecraft:is_axe_item_destructible": {},
+            "minecraft:geometry": {
+                "identifier": "geometry.wooden_boards"
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 5
+            },
+            "minecraft:flammable": false,
+            "minecraft:map_color": "#222d75",
+            "minecraft:light_dampening": 2,
+            "minecraft:redstone_conductivity": {
+                "allows_wire_to_step_down": false,
+                "redstone_conductor": false
+            },
+            "minecraft:collision_box": false,
+            "minecraft:selection_box":{
+                "size": [
+                    16,
+                    2,
+                    16
+                ],
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "wooden_planks_lines_spicewood",
+                    "render_method": "alpha_test",
+                    "face_dimming": true,
+                    "ambient_occlusion": true
+                }
+            }
+        }
+    }
+}

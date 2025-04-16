@@ -1,0 +1,24 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:wooden_big_planks_spicewood",
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"components": {
+			"tag:minecraft:is_axe_item_destructible": {},
+			"minecraft:flammable": true,
+			"minecraft:map_color": "#C89D53",
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 2
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2
+            },
+			"tag:wood": {},
+			"tag:minecraft:planks": {}
+		}
+	}
+}

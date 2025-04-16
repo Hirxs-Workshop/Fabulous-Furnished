@@ -1,0 +1,275 @@
+{
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "bacon": {
+            "textures": [
+                "textures/items/bacon"
+            ]
+        },
+        "black_porcelain_clay": {
+            "textures": [
+                "textures/items/black_porcelain_clay"
+            ]
+        },
+        "black_porcelain_tile": {
+            "textures": [
+                "textures/items/black_porcelain_tile"
+            ]
+        },
+        "bread_slice": {
+            "textures": [
+                "textures/items/bread_slice"
+            ]
+        },
+        "bread_slice_toasted": {
+            "textures": [
+                "textures/items/bread_slice_toasted"
+            ]
+        },
+        "brush_with_paint_black": {
+            "textures": [
+                "textures/items/brush_with_paint_black"
+            ]
+        },
+        "brush_with_paint_blue": {
+            "textures": [
+                "textures/items/brush_with_paint_blue"
+            ]
+        },
+        "brush_with_paint_brown": {
+            "textures": [
+                "textures/items/brush_with_paint_brown"
+            ]
+        },
+        "brush_with_paint_cyan": {
+            "textures": [
+                "textures/items/brush_with_paint_cyan"
+            ]
+        },
+        "brush_with_paint_green": {
+            "textures": [
+                "textures/items/brush_with_paint_green"
+            ]
+        },
+        "brush_with_paint_grey": {
+            "textures": [
+                "textures/items/brush_with_paint_grey"
+            ]
+        },
+        "brush_with_paint_light_blue": {
+            "textures": [
+                "textures/items/brush_with_paint_light_blue"
+            ]
+        },
+        "brush_with_paint_light_grey": {
+            "textures": [
+                "textures/items/brush_with_paint_light_grey"
+            ]
+        },
+        "brush_with_paint_lime": {
+            "textures": [
+                "textures/items/brush_with_paint_lime"
+            ]
+        },
+        "brush_with_paint_magenta": {
+            "textures": [
+                "textures/items/brush_with_paint_magenta"
+            ]
+        },
+        "brush_with_paint_orange": {
+            "textures": [
+                "textures/items/brush_with_paint_orange"
+            ]
+        },
+        "brush_with_paint_pink": {
+            "textures": [
+                "textures/items/brush_with_paint_pink"
+            ]
+        },
+        "brush_with_paint_purple": {
+            "textures": [
+                "textures/items/brush_with_paint_purple"
+            ]
+        },
+        "brush_with_paint_red": {
+            "textures": [
+                "textures/items/brush_with_paint_red"
+            ]
+        },
+        "brush_with_paint_red_untransparent": {
+            "textures": [
+                "textures/items/brush_with_paint_red_untransparent"
+            ]
+        },
+        "brush_with_paint_white": {
+            "textures": [
+                "textures/items/brush_with_paint_white"
+            ]
+        },
+        "brush_with_paint_yellow": {
+            "textures": [
+                "textures/items/brush_with_paint_yellow"
+            ]
+        },
+        "brust_test": {
+            "textures": [
+                "textures/items/brust_test"
+            ]
+        },
+        "brust_with_base_paint": {
+            "textures": [
+                "textures/items/brust_with_base_paint"
+            ]
+        },
+        "brust_with_pink_paint": {
+            "textures": [
+                "textures/items/brust_with_pink_paint"
+            ]
+        },
+        "chair_cushion": {
+            "textures": [
+                "textures/items/chair_cushion"
+            ]
+        },
+        "cinder_door": {
+            "textures": [
+                "textures/items/cinder_door"
+            ]
+        },
+        "empty_brush": {
+            "textures": [
+                "textures/items/empty_brush"
+            ]
+        },
+        "empty_brush_untransparent": {
+            "textures": [
+                "textures/items/empty_brush_untransparent"
+            ]
+        },
+        "feldspar": {
+            "textures": [
+                "textures/items/feldspar"
+            ]
+        },
+        "folk": {
+            "textures": [
+                "textures/items/folk"
+            ]
+        },
+        "hammer": {
+            "textures": [
+                "textures/items/hammer"
+            ]
+        },
+        "hammer_untransparent": {
+            "textures": [
+                "textures/items/hammer_untransparent"
+            ]
+        },
+        "paintbrush": {
+            "textures": [
+                "textures/items/paintbrush"
+            ]
+        },
+        "paintbrush_black": {
+            "textures": [
+                "textures/items/paintbrush_black"
+            ]
+        },
+        "paintbrush_blue": {
+            "textures": [
+                "textures/items/paintbrush_blue"
+            ]
+        },
+        "paintbrush_brown": {
+            "textures": [
+                "textures/items/paintbrush_brown"
+            ]
+        },
+        "paintbrush_cyan": {
+            "textures": [
+                "textures/items/paintbrush_cyan"
+            ]
+        },
+        "paintbrush_gray": {
+            "textures": [
+                "textures/items/paintbrush_gray"
+            ]
+        },
+        "paintbrush_green": {
+            "textures": [
+                "textures/items/paintbrush_green"
+            ]
+        },
+        "paintbrush_light_blue": {
+            "textures": [
+                "textures/items/paintbrush_light_blue"
+            ]
+        },
+        "paintbrush_light_gray": {
+            "textures": [
+                "textures/items/paintbrush_light_gray"
+            ]
+        },
+        "paintbrush_lime": {
+            "textures": [
+                "textures/items/paintbrush_lime"
+            ]
+        },
+        "paintbrush_magenta": {
+            "textures": [
+                "textures/items/paintbrush_magenta"
+            ]
+        },
+        "paintbrush_orange": {
+            "textures": [
+                "textures/items/paintbrush_orange"
+            ]
+        },
+        "paintbrush_pink": {
+            "textures": [
+                "textures/items/paintbrush_pink"
+            ]
+        },
+        "paintbrush_purple": {
+            "textures": [
+                "textures/items/paintbrush_purple"
+            ]
+        },
+        "paintbrush_red": {
+            "textures": [
+                "textures/items/paintbrush_red"
+            ]
+        },
+        "paintbrush_white": {
+            "textures": [
+                "textures/items/paintbrush_white"
+            ]
+        },
+        "paintbrush_yellow": {
+            "textures": [
+                "textures/items/paintbrush_yellow"
+            ]
+        },
+        "porcelain_clay": {
+            "textures": [
+                "textures/items/porcelain_clay"
+            ]
+        },
+        "porcelain_tile": {
+            "textures": [
+                "textures/items/porcelain_tile"
+            ]
+        },
+        "spicewood_door": {
+            "textures": [
+                "textures/items/spicewood_door"
+            ]
+        },
+        "toilet_paper": {
+            "textures": [
+                "textures/items/toilet_paper"
+            ]
+        }
+    }
+}

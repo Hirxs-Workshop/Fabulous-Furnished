@@ -1,0 +1,55 @@
+{
+    "format_version": 2,
+    "metadata": {
+        "authors": [
+            "Hirxs"
+        ],
+        "license": "MIT",
+        "url": "https://hirxs-workshop.net/",
+        "generated_with": {}
+    },
+    "header": {
+        "name": "RP | Fabulous Furnished - v1.1 Official Release",
+        "description": "Make your world fabulous with fabulous furniture! More than 150+ blocks with more than 250+ variations available!",
+        "min_engine_version": [
+            1,
+            21,
+            70
+        ],
+        "uuid": "acaa70ba-6af7-40e2-8597-d94fd299d779",
+        "version": [
+            1,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "behavior",
+            "type": "script",
+            "uuid": "db0c19ac-802c-47e7-c62f-b93efa935087",
+            "version": [
+                1,
+                0,
+                1
+            ],
+            "language": "javascript",
+            "entry": "scripts/ff_main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.0.0-beta"
+        },
+        {
+            "uuid": "4f19dc66-53f0-421b-fd6e-64d3555dab01",
+            "version": [
+                1,
+                0,
+                1
+            ]
+        }
+    ],
+    "subpacks": []
+}

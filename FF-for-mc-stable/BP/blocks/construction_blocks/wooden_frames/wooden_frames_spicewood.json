@@ -1,0 +1,320 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:wooden_frames_spicewood",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"menu_category": {
+				"category": "construction"
+			},
+			"states": {
+				"p:changer": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wooden_frame_spicewood",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					},
+					"minecraft:geometry": "geometry.wall_border",
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							14,
+							6
+						],
+						"size": [
+							16,
+							3,
+							2
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wooden_frame_spicewood",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					},
+					"minecraft:geometry": "geometry.wooden_door_frame_side_left",
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							6
+						],
+						"size": [
+							2,
+							16,
+							2
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wooden_frame_spicewood",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					},
+					"minecraft:geometry": "geometry.wooden_door_frame_side_right",
+					"minecraft:selection_box": {
+						"origin": [
+							6,
+							0,
+							6
+						],
+						"size": [
+							2,
+							16,
+							2
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wooden_frame_spicewood",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					},
+					"minecraft:geometry": "geometry.wooden_door_frame_side_double",
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							6
+						],
+						"size": [
+							16,
+							4,
+							2
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wooden_frame_spicewood",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					},
+					"minecraft:geometry": "geometry.wooden_door_frame_corner_left",
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							12,
+							6
+						],
+						"size": [
+							16,
+							4,
+							2
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wooden_frame_spicewood",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					},
+					"minecraft:geometry": "geometry.wooden_door_frame_corner_right",
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							12,
+							6
+						],
+						"size": [
+							16,
+							4,
+							2
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wooden_frame_spicewood",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					},
+					"minecraft:geometry": "geometry.wooden_door_frame_corner_double",
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							12,
+							6
+						],
+						"size": [
+							16,
+							4,
+							2
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wooden_frame_spicewood",
+							"render_method": "alpha_test",
+							"ambient_occlusion": false
+						}
+					},
+					"minecraft:geometry": "geometry.wooden_door_frame_corner_middle",
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							12,
+							6
+						],
+						"size": [
+							16,
+							4,
+							2
+						]
+					},
+					"minecraft:collision_box": false
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "wooden_frame_spicewood",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#8E693B",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 4
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:geometry": "geometry.wall_border",
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		}
+	}
+}

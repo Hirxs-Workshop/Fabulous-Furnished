@@ -1,0 +1,175 @@
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "ff:spicewood_stairs",
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.stairs"
+            },
+            "states": {
+                "ff:shape": [
+                    "straight",
+                    "inner_right",
+                    "inner_left",
+                    "outer_right",
+                    "outer_left"
+                ],
+                "ff:placed_bit": [
+                    false,
+                    true
+                ]
+            },
+            "traits": {
+                "minecraft:placement_position": {
+                    "enabled_states": [
+                        "minecraft:vertical_half"
+                    ]
+                },
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ]
+                }
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_state('minecraft:vertical_half')== 'bottom'",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -7,
+                            0,
+                            -7
+                        ],
+                        "size": [
+                            14,
+                            8,
+                            14
+                        ]
+                    },
+                    "tag:ff_stairs_up": {}
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:vertical_half')== 'top'",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -7,
+                            8,
+                            -7
+                        ],
+                        "size": [
+                            14,
+                            8,
+                            14
+                        ]
+                    },
+                    "tag:ff_stairs_down": {}
+                }
+            },
+            {
+                "condition": "query.block_state('ff:shape') != 'straight'",
+                "components": {
+                    "tag:ff_stairs_shape": {}
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "tag:ff_stairs_north": {}
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "tag:ff_stairs_south": {}
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "tag:ff_stairs_west": {}
+                }
+            },
+            {
+                "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "tag:ff_stairs_east": {}
+                }
+            }
+        ],
+        "components": {
+            "minecraft:light_dampening": 0,
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+						{
+							   "liquid_type": "water",
+							"can_contain_liquid": true,
+							"stops_liquid_flowing_out_from_direction": [
+								   "up",
+									"down",
+									"north",
+									"south",
+									"east",
+									"west"
+							]
+						}
+				]
+			},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "planks_spicewood",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:map_color": "#591717",
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2
+            },
+            "minecraft:geometry": {
+                "identifier": "geometry.vanilla_stairs_re",
+                "bone_visibility": {
+                    "normaln": "(query.block_state('minecraft:cardinal_direction') == 'north' && (query.block_state('ff:shape') == 'straight' && query.block_state('minecraft:vertical_half')== 'bottom')) || !query.block_state('ff:placed_bit')",
+                    "upsiden": "query.block_state('minecraft:cardinal_direction') == 'north' && (query.block_state('ff:shape') == 'straight' && query.block_state('minecraft:vertical_half')== 'top') && query.block_state('ff:placed_bit')",
+                    "normals": "query.block_state('minecraft:cardinal_direction') == 'south' && (query.block_state('ff:shape') == 'straight' && query.block_state('minecraft:vertical_half')== 'bottom') && query.block_state('ff:placed_bit')",
+                    "upsides": "query.block_state('minecraft:cardinal_direction') == 'south' && (query.block_state('ff:shape') == 'straight' && query.block_state('minecraft:vertical_half')== 'top') && query.block_state('ff:placed_bit')",
+                    "normalw": "query.block_state('minecraft:cardinal_direction') == 'west' && (query.block_state('ff:shape') == 'straight' && query.block_state('minecraft:vertical_half')== 'bottom') && query.block_state('ff:placed_bit')",
+                    "upsidew": "query.block_state('minecraft:cardinal_direction') == 'west' && (query.block_state('ff:shape') == 'straight' && query.block_state('minecraft:vertical_half')== 'top') && query.block_state('ff:placed_bit')",
+                    "normale": "query.block_state('minecraft:cardinal_direction') == 'east' && (query.block_state('ff:shape') == 'straight' && query.block_state('minecraft:vertical_half')== 'bottom') && query.block_state('ff:placed_bit')",
+                    "upsidee": "query.block_state('minecraft:cardinal_direction') == 'east' && (query.block_state('ff:shape') == 'straight' && query.block_state('minecraft:vertical_half')== 'top') && query.block_state('ff:placed_bit')",
+                    "inner_right0": "(query.block_state('minecraft:cardinal_direction') == 'north' && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'inner_right')) || (query.block_state('minecraft:cardinal_direction') == 'east' && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'inner_left')) && query.block_state('ff:placed_bit')",
+                    "inner_left0": "(query.block_state('minecraft:cardinal_direction') == 'north' && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'inner_left')) || (query.block_state('minecraft:cardinal_direction') == 'west' && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'inner_right')) && query.block_state('ff:placed_bit')",
+                    "inner_right1": "(query.block_state('minecraft:cardinal_direction') == 'south' || query.block_state('minecraft:cardinal_direction') == 'east') && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'inner_right') && query.block_state('ff:placed_bit')",
+                    "inner_left1": "(query.block_state('minecraft:cardinal_direction') == 'south' || query.block_state('minecraft:cardinal_direction') == 'west') && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'inner_left') && query.block_state('ff:placed_bit')",
+                    "outer_right0": "(query.block_state('minecraft:cardinal_direction') == 'north' || query.block_state('minecraft:cardinal_direction') == 'west') && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'outer_right') && query.block_state('ff:placed_bit')",
+                    "outer_left0": "(query.block_state('minecraft:cardinal_direction') == 'north' || query.block_state('minecraft:cardinal_direction') == 'east') && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'outer_left') && query.block_state('ff:placed_bit')",
+                    "outer_right1": "(query.block_state('minecraft:cardinal_direction') == 'south' && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'outer_right')) || (query.block_state('minecraft:cardinal_direction') == 'west' && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'outer_left')) && query.block_state('ff:placed_bit')",
+                    "outer_left1": "(query.block_state('minecraft:cardinal_direction') == 'south' && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'outer_left')) || (query.block_state('minecraft:cardinal_direction') == 'east' && (query.block_state('minecraft:vertical_half')== 'bottom' && query.block_state('ff:shape') == 'outer_right')) && query.block_state('ff:placed_bit')",
+                    "inner_right0u": "(query.block_state('minecraft:cardinal_direction') == 'north' && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'inner_right')) || (query.block_state('minecraft:cardinal_direction') == 'east' && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'inner_left')) && query.block_state('ff:placed_bit')",
+                    "inner_left0u": "(query.block_state('minecraft:cardinal_direction') == 'north' && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'inner_left')) || (query.block_state('minecraft:cardinal_direction') == 'west' && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'inner_right')) && query.block_state('ff:placed_bit')",
+                    "inner_right1u": "(query.block_state('minecraft:cardinal_direction') == 'south' || query.block_state('minecraft:cardinal_direction') == 'east') && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'inner_right') && query.block_state('ff:placed_bit')",
+                    "inner_left1u": "(query.block_state('minecraft:cardinal_direction') == 'south' || query.block_state('minecraft:cardinal_direction') == 'west') && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'inner_left') && query.block_state('ff:placed_bit')",
+                    "outer_right0u": "(query.block_state('minecraft:cardinal_direction') == 'north' || query.block_state('minecraft:cardinal_direction') == 'west') && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'outer_right') && query.block_state('ff:placed_bit')",
+                    "outer_left0u": "(query.block_state('minecraft:cardinal_direction') == 'north' || query.block_state('minecraft:cardinal_direction') == 'east') && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'outer_left') && query.block_state('ff:placed_bit')",
+                    "outer_right1u": "(query.block_state('minecraft:cardinal_direction') == 'south' && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'outer_right')) || (query.block_state('minecraft:cardinal_direction') == 'west' && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'outer_left')) && query.block_state('ff:placed_bit')",
+                    "outer_left1u": "(query.block_state('minecraft:cardinal_direction') == 'south' && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'outer_left')) || (query.block_state('minecraft:cardinal_direction') == 'east' && (query.block_state('minecraft:vertical_half')== 'top' && query.block_state('ff:shape') == 'outer_right')) && query.block_state('ff:placed_bit')"
+                }
+            },
+            "minecraft:tick": {
+                "interval_range": [
+                    4,
+                    4
+                ]
+            },
+            "minecraft:custom_components": [
+                "ff:stair_placement"
+            ],
+            "tag:ff_wood": {},
+            "tag:ff_stairs": {},
+            "tag:not_a_full_block": {}
+        }
+    }
+}

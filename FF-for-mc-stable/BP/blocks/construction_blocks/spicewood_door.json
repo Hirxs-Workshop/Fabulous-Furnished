@@ -1,0 +1,431 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:spicewood_door",
+			"menu_category": {
+				"category": "none",
+				"is_hidden_in_commands": false
+			},
+			"states": {
+				"ff:powered": [
+					false,
+					true
+				],
+				"ff:upper_block_bit": [
+					false,
+					true
+				],
+				"ff:open_bit": [
+					false,
+					true
+				],
+				"ff:reversed": [
+					false,
+					true
+				]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.3
+			},
+			"tag:ff:is_this_a_door": {},
+			"minecraft:custom_components": [
+				"ff:door_function"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					5,
+					5
+				]
+			},
+			"minecraft:geometry": {
+				"bone_visibility": {
+					"open_top": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') && !q.block_state('ff:reversed')",
+					"open_bottom": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') == false && !q.block_state('ff:reversed')",
+					"top": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') && !q.block_state('ff:reversed')",
+					"bottom": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') == false && !q.block_state('ff:reversed')",
+					"reversed_open_top": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') && q.block_state('ff:reversed')",
+					"reversed_open_bottom": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') == false && q.block_state('ff:reversed')",
+					"reversed_top": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') && q.block_state('ff:reversed')",
+					"reversed_bottom": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') == false && q.block_state('ff:reversed')"
+				},
+				"identifier": "geometry.ff_door"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('ff:upper_block_bit') == false",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "spicewood_door_bottom",
+							"render_method": "alpha_test_single_sided"
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						],
+                        "translation": [
+                            0,
+                            0.5,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            2,
+                            1
+                        ]
+                    }
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('ff:upper_block_bit') == false",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "spicewood_door_bottom",
+							"render_method": "alpha_test_single_sided"
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						],
+                        "translation": [
+                            0,
+                            0.5,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            2,
+                            1
+                        ]
+                    }
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('ff:upper_block_bit') == false",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "spicewood_door_bottom",
+							"render_method": "alpha_test_single_sided"
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						],
+                        "translation": [
+                            0,
+                            0.5,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            2,
+                            1
+                        ]
+                    }
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('ff:upper_block_bit') == false",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "spicewood_door_bottom",
+							"render_method": "alpha_test_single_sided"
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						],
+                        "translation": [
+                            0,
+                            0.5,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            2,
+                            1
+                        ]
+                    }
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west' && query.block_state('ff:upper_block_bit') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "spidewood_door_upper",
+							"render_method": "alpha_test_single_sided"
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						],
+                        "translation": [
+                            0,
+                            -0.5,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            2,
+                            1
+                        ]
+                    },
+					"minecraft:geometry": {
+						"bone_visibility": {
+							"open_top": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') && !q.block_state('ff:reversed')",
+							"open_bottom": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') == false && !q.block_state('ff:reversed')",
+							"top": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') && !q.block_state('ff:reversed')",
+							"bottom": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') == false && !q.block_state('ff:reversed')",
+							"reversed_open_top": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') && q.block_state('ff:reversed')",
+							"reversed_open_bottom": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') == false && q.block_state('ff:reversed')",
+							"reversed_top": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') && q.block_state('ff:reversed')",
+							"reversed_bottom": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') == false && q.block_state('ff:reversed')"
+						},
+						"identifier": "geometry.ff_door_upper"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north' && query.block_state('ff:upper_block_bit') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "spidewood_door_upper",
+							"render_method": "alpha_test_single_sided"
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						],
+                        "translation": [
+                            0,
+                            -0.5,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            2,
+                            1
+                        ]
+                    },
+					"minecraft:geometry": {
+						"bone_visibility": {
+							"open_top": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') && !q.block_state('ff:reversed')",
+							"open_bottom": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') == false && !q.block_state('ff:reversed')",
+							"top": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') && !q.block_state('ff:reversed')",
+							"bottom": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') == false && !q.block_state('ff:reversed')",
+							"reversed_open_top": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') && q.block_state('ff:reversed')",
+							"reversed_open_bottom": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') == false && q.block_state('ff:reversed')",
+							"reversed_top": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') && q.block_state('ff:reversed')",
+							"reversed_bottom": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') == false && q.block_state('ff:reversed')"
+						},
+						"identifier": "geometry.ff_door_upper"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south' && query.block_state('ff:upper_block_bit') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "spidewood_door_upper",
+							"render_method": "alpha_test_single_sided"
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						],
+                        "translation": [
+                            0,
+                            -0.5,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            2,
+                            1
+                        ]
+                    },
+					"minecraft:geometry": {
+						"bone_visibility": {
+							"open_top": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') && !q.block_state('ff:reversed')",
+							"open_bottom": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') == false && !q.block_state('ff:reversed')",
+							"top": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') && !q.block_state('ff:reversed')",
+							"bottom": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') == false && !q.block_state('ff:reversed')",
+							"reversed_open_top": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') && q.block_state('ff:reversed')",
+							"reversed_open_bottom": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') == false && q.block_state('ff:reversed')",
+							"reversed_top": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') && q.block_state('ff:reversed')",
+							"reversed_bottom": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') == false && q.block_state('ff:reversed')"
+						},
+						"identifier": "geometry.ff_door_upper"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east' && query.block_state('ff:upper_block_bit') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "spidewood_door_upper",
+							"render_method": "alpha_test_single_sided"
+						}
+					},
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						],
+                        "translation": [
+                            0,
+                            -0.5,
+                            0
+                        ],
+                        "scale": [
+                            1,
+                            2,
+                            1
+                        ]
+                    },
+					"minecraft:geometry": {
+						"bone_visibility": {
+							"open_top": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') && !q.block_state('ff:reversed')",
+							"open_bottom": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') == false && !q.block_state('ff:reversed')",
+							"top": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') && !q.block_state('ff:reversed')",
+							"bottom": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') == false && !q.block_state('ff:reversed')",
+							"reversed_open_top": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') && q.block_state('ff:reversed')",
+							"reversed_open_bottom": "query.block_state('ff:open_bit') && query.block_state('ff:upper_block_bit') == false && q.block_state('ff:reversed')",
+							"reversed_top": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') && q.block_state('ff:reversed')",
+							"reversed_bottom": "query.block_state('ff:open_bit') == false && query.block_state('ff:upper_block_bit') == false && q.block_state('ff:reversed')"
+						},
+						"identifier": "geometry.ff_door_upper"
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:open_bit') == false",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							3
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							3
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:open_bit') == true && !q.block_state('ff:reversed')",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:open_bit') == true && q.block_state('ff:reversed')",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							5,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							5,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					}
+				}
+			}
+		]
+	}
+}

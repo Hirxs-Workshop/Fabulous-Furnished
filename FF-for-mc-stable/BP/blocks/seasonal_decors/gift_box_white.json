@@ -1,0 +1,350 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "sd:gift_box_white",
+			"menu_category": {
+				"category": "items"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					],
+					"y_rotation_offset": 180
+				}
+			},
+			"states": {
+				"ff:cabinent_type": [
+					0,
+                    1,
+					2
+				],
+                "ef:colors": {
+                    "values": {
+                        "min": 0,
+                        "max": 15
+                    }
+                }
+			}
+		}, 
+		"permutations": [
+            {
+                "condition": "q.block_state('ef:colors') == 0",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_white",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 1",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_orange",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 2",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_magenta",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 3",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_light_blue",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 4",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_yellow",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 5",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_lime",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 6",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_pink",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 7",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_gray",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 8",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_light_gray",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 9",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_cyan",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 10",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_purple",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 11",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_blue",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 12",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_brown",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 13",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_green",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 14",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_red",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('ef:colors') == 15",
+                "components": {
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_black",
+                            "render_method": "alpha_test"
+                        }
+                    }
+                }
+            },
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:cabinent_type') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.gift_box_closed",
+                    "minecraft:material_instances": {
+
+                        "*": {
+                            "texture": "gift_box_white",
+                            "render_method": "alpha_test"
+                        },
+                        "color": {
+                            "texture": "gift_box_bow_white",
+                            "render_method": "alpha_test"
+                        }
+                    }
+				}
+			},
+			{
+				"condition": "q.block_state('ff:cabinent_type') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.gift_box_closed"
+				}
+			},
+			{
+				"condition": "q.block_state('ff:cabinent_type') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.gift_box_open",
+					"minecraft:collision_box": true,
+					"minecraft:selection_box": false,
+					"minecraft:tick": {
+						"interval_range": [
+							50,
+							50
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": "geometry.gift_box_closed",
+			"minecraft:material_instances": {
+                "*": {
+					"texture": "gift_box_white",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+                "origin": [-6, 0, -6],
+                "size": [12, 11, 12]
+            },
+			"minecraft:selection_box": {
+                "origin": [-6, 0, -6],
+                "size": [12, 11, 12]
+            },
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 5
+			},
+			"tag:minecraft:is_axe_item_destructible": {},
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 2
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2
+            },
+			"minecraft:light_dampening": 1,
+			"minecraft:custom_components": [
+				"sd:gift_container"
+			],
+			"minecraft:map_color": "#db904f",
+			"minecraft:tick": {
+				"interval_range": [
+					50,
+					50
+				]
+			}
+		}
+	}
+}
