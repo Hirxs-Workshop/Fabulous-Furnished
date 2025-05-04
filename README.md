@@ -3,7 +3,7 @@
 ![Fabulous Furnished (Bedrock) Minecraft Texture Pack](https://hirxs-workshop.net/wp-content/uploads/2025/04/ff_icon.png)
 -------------------------------------------------------------------------------------------------------------------------
 
-![](https://hirxs-workshop.net/wp-content/uploads/2025/04/ff_x-2.png)   [![Fabulous Furnished (Bedrock) Minecraft Texture Pack](https://hirxs-workshop.net/wp-content/uploads/2025/04/ff_discord.png)](https://discord.gg/jCcWuTFxk3)   [![Fabulous Furnished (Bedrock) Minecraft Texture Pack](https://hirxs-workshop.net/wp-content/uploads/2025/04/ff_x.png)](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fx.com%252f%2540HyrxsMC)  [![](https://hirxs-workshop.net/wp-content/uploads/2025/04/ff_yt.png)](https://www.youtube.com/@HirxsMC)
+[![Fabulous Furnished (Bedrock) Minecraft Texture Pack](https://hirxs-workshop.net/wp-content/uploads/2025/04/ff_discord.png)](https://discord.gg/jCcWuTFxk3)   [![Fabulous Furnished (Bedrock) Minecraft Texture Pack](https://hirxs-workshop.net/wp-content/uploads/2025/04/ff_x.png)](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fx.com%252f%2540HyrxsMC)  [![](https://hirxs-workshop.net/wp-content/uploads/2025/04/ff_yt.png)](https://www.youtube.com/@HirxsMC)
 
 * * * * *
 
