@@ -12,6 +12,8 @@
 📕 DESCRIPTION
 ==============
 
+## 📌 - The add-on requires no experiments!
+
 Have you ever searched for a furniture add-on which would give you the possibility to decorate your MC survival or creative base in a better way, and even better, for free!, Welcome to Fabulous Furnished, an add-on which allows you to explode your imagination and creativity in a better way
 
 And no, this is not just a furniture add-on, it is an add-on which has the function of giving you extensive customization of your furniture and decorations, with support for the 16 vanilla MC colors, VFX effects on some blocks, connectable blocks and much more
@@ -53,10 +55,3 @@ And no, this is not just a furniture add-on, it is an add-on which has the funct
 -   And last but not least, customization, a key piece in the development of the add-on, making the largest number of items customizable
 
 * * * * *
-
-❓ Important
-===========
-
--   For the add-on to work smoothly it is necessary to activate the following experimental features
-
-![](https://hirxs-workshop.com/wp-content/uploads/2024/12/Screenshot-2024-12-02-234837.png)
