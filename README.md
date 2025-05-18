@@ -31,24 +31,24 @@ And no, this is not just a furniture add-on, it is an add-on which has the funct
 
 * * * * *
 
-🔧 INTERACTIONS ~
+### 🔧 INTERACTIONS ~
 =================
 
 -   Interaction is essential for the use of furniture, making it more useful than just useless blocks
 
-🪑 CRAFT & DECORATE ~
+### 🪑 CRAFT & DECORATE ~
 
 =======================
 
 -   Interactions are not the only purpose of the add-on, it also has the purpose of being able to be used in survival either by adding recipes which you can use to craft the items
 
-📦 STORAGE & COOKING ~
+### 📦 STORAGE & COOKING ~
 
 ========================
 
 -   The add-on is not only limited to being useful but also tries to be dynamic and "aesthetic" at first glance, something you really didn't expect to see in a free add-on
 
-🎨 CUSTOMIZATION ~
+### 🎨 CUSTOMIZATION ~
 
 ====================
 
