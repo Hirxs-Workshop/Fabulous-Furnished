@@ -11,8 +11,7 @@
 
    [![Fabulous Furnished (Bedrock) Minecraft Texture Pack](https://hirxs-workshop.net/wp-content/uploads/2025/06/asdadad.png)](https://discord.gg/jCcWuTFxk3)[![Discord](https://img.shields.io/discord/1307122846769614848?style=for-the-badge&logoColor=EAB676&labelColor=873E23&color=EAB676)](https://www.curseforge.com/linkout?remoteUrl=https%253a%252f%252fdiscord.com%252finvite%252fstarfishstudios)   [![Fabulous Furnished (Bedrock) Minecraft Texture Pack](https://hirxs-workshop.net/wp-content/uploads/2025/06/sdsda.png)](https://x.com/@HyrxsMC)![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/HyrxsMC?style=for-the-badge&logoColor=873E23&labelColor=873E23&color=873E23)   ![](https://hirxs-workshop.net/wp-content/uploads/2025/06/gggf.png)![](https://img.shields.io/youtube/channel/subscribers/UC2RL9y_A_jna5wAOqXwnxiQ?style=for-the-badge&logoColor=EAB676&labelColor=873E23&color=EAB676)
 
-**📕 DESCRIPTION**
-==================
+## 📕 DESCRIPTION
 
 Have you ever searched for a furniture add-on which would give you the possibility to decorate your MC survival or creative base in a better way, and even better, for free!, Welcome to Fabulous Furnished, an add-on which allows you to explode your imagination and creativity in a better way
 
@@ -21,10 +20,8 @@ And no, this is not just a furniture add-on, it is an add-on which has the funct
 ### - 📌 **The add-on no requires experimental features and also has support for MC achievements!**
 
 **![](https://hirxs-workshop.net/wp-content/uploads/2025/06/lineff.png)**
-=========================================================================
 
-**✨ FEATURES **
-===============
+## ✨ FEATURES 
 
 -   Designs "adapted" to the vanilla style
 -   More than 250+ decoration and furniture
@@ -34,39 +31,21 @@ And no, this is not just a furniture add-on, it is an add-on which has the funct
 -   Friendly with MC achievements and vanilla experience
 
 ![](https://hirxs-workshop.net/wp-content/uploads/2025/06/lineff.png)
-=====================================================================
 
-🔧 **INTERACTIONS ~**
-=====================
-
+### 🔧 INTERACTIONS ~
 -   Interaction is essential for the use of furniture, making it more useful than just useless blocks
 
-**🪑 CRAFT & DECORATE ~\
-**
-===========================
-
+### 🪑 CRAFT & DECORATE ~
 -   Interactions are not the only purpose of the add-on, it also has the purpose of being able to be used in survival either by adding recipes which you can use to craft the items
 
-**📦 STORAGE & COOKING ~\
-**
-============================
-
+### 📦 STORAGE & COOKING ~
 -   The add-on is not only limited to being useful but also tries to be dynamic and "aesthetic" at first glance, something you really didn't expect to see in a free add-on
 
-**🎨 CUSTOMIZATION ~\
-**
-========================
-
+### 🎨 CUSTOMIZATION ~
 -   And last but not least, customization, a key piece in the development of the add-on, making the largest number of items customizable
 
 ![](https://hirxs-workshop.net/wp-content/uploads/2025/06/lineff.png)
 
-**💻 FULL SHOWCASE ~\
-**
-========================
-
+### 💻 FULL SHOWCASE ~
 -   View it!
-
-**\
-**
 ======
