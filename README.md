@@ -45,7 +45,3 @@ And no, this is not just a furniture add-on, it is an add-on which has the funct
 -   And last but not least, customization, a key piece in the development of the add-on, making the largest number of items customizable
 
 ![](https://hirxs-workshop.net/wp-content/uploads/2025/06/lineff.png)
-
-### 💻 FULL SHOWCASE ~
--   View it!
-======
