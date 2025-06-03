@@ -203,11 +203,6 @@
         "$screen_background_alpha": 0.4
       },
       {
-        "requires": "($pocket_screen and not $smphirxmenu) and (not ($text = '§t§e§s§t§r'))",
-        "$use_custom_pocket_toast": true,
-        "$screen_content": "pocket_containers.small_chest_panel"
-      },
-      {
         "requires": "($text = '§t§e§s§t§r')",
         "$screen_content": "chest.custom"
       }
