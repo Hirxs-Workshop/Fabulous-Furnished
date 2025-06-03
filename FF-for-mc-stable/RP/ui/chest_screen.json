@@ -202,7 +202,7 @@
       },
       {
         "requires": "($pocket_screen and (not ($text = '§t§e§s§t§r')))",
-        "$use_custom_pocket_toast": true,
+        "$use_custom_pocket_toast": false,
         "$screen_content": "pocket_containers.small_chest_panel"
       },
       {
