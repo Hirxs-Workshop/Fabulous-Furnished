@@ -1,49 +1,100 @@
-import { world, ItemStack, ItemTypes, system } from "@minecraft/server";
+import { system, world, ItemStack, ItemTypes } from "@minecraft/server";
 
-world.afterEvents.worldLoad.subscribe((event) => {
-    const allDimensions = ['overworld', 'nether', 'the_end'];
-    const dimensions = allDimensions.map(dimension => world.getDimension(dimension));
-    system.runInterval(updateSmelterTick(dimensions), 20);
-})
+const ENTITY_TYPE = "ff:fridge_inventory";
+const ENTITY_NAME = "§t§e§s§t§r";
+const OIL_ITEM = "ff:vegetable_oil";
+const GLASS_BOTTLE = "minecraft:glass_bottle";
+const CONCRETE_ITEM = "minecraft:green_concrete";
+const ENERGY_BARS = [
+  "ff:energy_bar_1",
+  "ff:energy_bar_2",
+  "ff:energy_bar_3",
+  "ff:energy_bar_4",
+  "ff:energy_bar_5",
+  "ff:energy_bar_6",
+  "ff:energy_bar_7",
+  "ff:energy_bar_8"
+];
+const ENERGY_SLOT_INDEXES = [1,2,3,4]; // slots 1-4
+const OIL_SLOT = 0;
+const CONCRETE_SLOT = 5;
+const MAX_ENERGY = 3200;
+const ENERGY_PER_BAR = 100;
+const OIL_ENERGY_VALUE = 200;
 
-function updateSmelterTick(dimensions) {
-    const entities = dimensions.flatMap(d => d.getEntities());
-    for (const entity of entities) {
-        const inventory = entity.getComponent("inventory")?.container;
-        if (!inventory) continue;
-        const slot0 = inventory.getItem(0);
-        const slot1 = inventory.getItem(1);
-        const isValidInput = slot0?.typeId === "ff:vegetable_oil" && slot1?.typeId === "minecraft:coal";
-        // Read progress from dynamic property
-        const progress = entity.getDynamicProperty("smelt_progress") ?? 0;
-        const molten = entity.getDynamicProperty("molten_steal") ?? 0;
-        if (!isValidInput) {
-            // Reset progress and UI slots if input is invalid
-            entity.setDynamicProperty("smelt_progress", 0);
-            setProgressBar(inventory, 2, 0);
-            setProgressBar(inventory, 3, molten);
-            continue;
-        }
-        if (progress < 9) {
-            entity.setDynamicProperty("smelt_progress", progress + 1);
-            setProgressBar(inventory, 2, progress + 1);
-        }
-        else {
-            // consume 1 steal_ore and 1 coal
-            slot0.amount--;
-            slot1.amount--;
-            inventory.setItem(0, slot0.amount > 0 ? slot0 : undefined);
-            inventory.setItem(1, slot1.amount > 0 ? slot1 : undefined);
-            // reset progress and increment molten
-            entity.setDynamicProperty("smelt_progress", 0);
-            entity.setDynamicProperty("molten_steal", molten + 1);
-            setProgressBar(inventory, 2, 0);
-            setProgressBar(inventory, 3, molten + 1);
-        }
+const energyState = {};
+
+system.runInterval(() => {
+  const entities = world.getDimension("overworld").getEntities({
+    type: ENTITY_TYPE,
+    name: ENTITY_NAME,
+  });
+
+  for (const entity of entities) {
+    const inv = entity.getComponent("inventory");
+    if (!inv) continue;
+    const container = inv.container;
+    const entityId = entity.id;
+
+    if (!energyState[entityId]) {
+      energyState[entityId] = { energy: 0 };
     }
-}
-function setProgressBar(container, slot, value) {
-    const item = new ItemStack("minecraft:barrier", 1);
-    item.nameTag = value.toString();
-    container.setItem(slot, item);
-}
+
+    let allEmpty = true;
+    for (let i = 0; i < ENERGY_SLOT_INDEXES.length; i++) {
+      const slot = ENERGY_SLOT_INDEXES[i];
+      const item = container.getItem(slot);
+      if (item && item.typeId.startsWith("ff:energy_bar_")) {
+        allEmpty = false;
+        break;
+      }
+    }
+    if (allEmpty) {
+      for (let i = 0; i < ENERGY_SLOT_INDEXES.length; i++) {
+        container.setItem(ENERGY_SLOT_INDEXES[i], new ItemStack(ItemTypes.get(ENERGY_BARS[0]), 1)); // ff:energy_bar_1
+      }
+      energyState[entityId].energy = 0;
+    }
+
+    const oilStack = container.getItem(OIL_SLOT);
+
+    if (oilStack && oilStack.typeId === OIL_ITEM && energyState[entityId].energy === 0) {
+
+      energyState[entityId].energy = MAX_ENERGY;
+
+      if (oilStack.amount === 1) {
+        container.setItem(OIL_SLOT, new ItemStack(ItemTypes.get(GLASS_BOTTLE), 1));
+      } else if (oilStack.amount > 1) {
+        oilStack.amount--;
+        container.setItem(OIL_SLOT, oilStack);
+        for (let j = 0; j < container.size; j++) {
+          if (j === OIL_SLOT) continue;
+          if (!container.getItem(j)) {
+            container.setItem(j, new ItemStack(ItemTypes.get(GLASS_BOTTLE), 1));
+            break;
+          }
+        }
+      }
+      world.sendMessage(`[DEBUG] Aceite consumido, energía total: ${energyState[entityId].energy}`);
+    }
+
+    if (energyState[entityId].energy > 0) {
+      energyState[entityId].energy--;
+    }
+
+    let energyLeft = energyState[entityId].energy;
+    for (let i = ENERGY_SLOT_INDEXES.length - 1; i >= 0; i--) {
+      let barValue = Math.min(8, Math.max(1, Math.ceil(energyLeft / ENERGY_PER_BAR)));
+      container.setItem(ENERGY_SLOT_INDEXES[i], new ItemStack(ItemTypes.get(ENERGY_BARS[barValue - 1]), 1));
+      energyLeft -= ENERGY_PER_BAR * barValue;
+      if (energyLeft < 0) energyLeft = 0;
+    }
+
+    let concrete = container.getItem(CONCRETE_SLOT);
+    if (!concrete || concrete.typeId !== CONCRETE_ITEM) {
+      concrete = new ItemStack(ItemTypes.get(CONCRETE_ITEM), 1);
+    }
+    concrete.setLore([`§aEnergía: ${energyState[entityId].energy} / ${MAX_ENERGY}`]);
+    container.setItem(CONCRETE_SLOT, concrete);
+  }
+}, 1);

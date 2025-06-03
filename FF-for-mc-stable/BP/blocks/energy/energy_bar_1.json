@@ -1,0 +1,24 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "ff:energy_bar_1",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "geometry.energy_item"
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "energy_bar_1",
+                    "render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+                }
+            }
+        }
+    }
+}

@@ -188,7 +188,7 @@
   "barrel_panel@chest.small_chest_panel": {
   },
 
-  "small_chest_screen@common.inventory_screen_common": {
+"small_chest_screen@common.inventory_screen_common": {
     "$close_on_player_hurt|default": true,
     "$use_custom_pocket_toast|default": false,
     "close_on_player_hurt": "$close_on_player_hurt",
@@ -202,7 +202,7 @@
       },
       {
         "requires": "($pocket_screen and (not ($text = '§t§e§s§t§r')))",
-        "$use_custom_pocket_toast": false,
+        "$use_custom_pocket_toast": true,
         "$screen_content": "pocket_containers.small_chest_panel"
       },
       {
@@ -212,7 +212,7 @@
     ]
   },
 
-  "large_chest_screen@common.inventory_screen_common": {
+"large_chest_screen@common.inventory_screen_common": {
     "$atitle": "$container_title",
     "$smphirxmenu": "(('%.2s' * $atitle) = '§')",
     "variables": [
@@ -400,33 +400,13 @@
         }
       },
       {
-        "item1@chest.on_off_item": {
+        "item1@chest.container_item": {
           "collection_index": 1,
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "offset": [
-            18,
+            54,
             36
-          ],
-          "controls": [
-            {
-              "default": {
-                "type": "image",
-                "texture": "textures/ui/on_off/on_off",
-                "layer": 2,
-                "size": [
-                  "100%",
-                  "100%"
-                ]
-              }
-            },
-            {
-              "on_off_active@image_template": {
-                "$texture": "textures/ui/on_off/on_off_active",
-                "$binding_text": 1,
-                "layer": 3
-              }
-            }
           ]
         }
       },
@@ -436,7 +416,7 @@
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "offset": [
-            54,
+            72,
             36
           ]
         }
@@ -447,7 +427,7 @@
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "offset": [
-            72,
+            90,
             36
           ]
         }
@@ -455,17 +435,6 @@
       {
         "item4@chest.container_item": {
           "collection_index": 4,
-          "anchor_from": "top_left",
-          "anchor_to": "top_left",
-          "offset": [
-            90,
-            36
-          ]
-        }
-      },
-      {
-        "item5@chest.container_item": {
-          "collection_index": 5,
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "offset": [
@@ -492,13 +461,107 @@
         }
       },
       {
-        "item6@chest.container_item": {
-          "collection_index": 6,
+        "item5@chest.container_item": {
+          "collection_index": 5,
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           "offset": [
             144,
             18
+          ]
+        }
+      },
+      {
+        "item51@chest.progress_bar": {
+          "collection_index": 51,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            18,
+            36
+          ],
+          "controls": [
+            {
+              "default": {
+                "type": "image",
+                "texture": "textures/ui/progress_bar/progress_bar",
+                "layer": 2,
+                "size": [
+                  "100%",
+                  "100%"
+                ]
+              }
+            },
+            {
+              "progress1@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar0",
+                "$binding_text": 0,
+                "layer": 3
+              }
+            },
+            {
+              "progress2@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar1",
+                "$binding_text": 1,
+                "layer": 3
+              }
+            },
+            {
+              "progress3@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar2",
+                "$binding_text": 2,
+                "layer": 3
+              }
+            },
+            {
+              "progress4@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar3",
+                "$binding_text": 3,
+                "layer": 3
+              }
+            },
+            {
+              "progress5@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar4",
+                "$binding_text": 4,
+                "layer": 3
+              }
+            },
+            {
+              "progress6@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar5",
+                "$binding_text": 5,
+                "layer": 3
+              }
+            },
+            {
+              "progress7@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar6",
+                "$binding_text": 6,
+                "layer": 3
+              }
+            },
+            {
+              "progress8@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar7",
+                "$binding_text": 7,
+                "layer": 3
+              }
+            },
+            {
+              "progress9@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar8",
+                "$binding_text": 8,
+                "layer": 3
+              }
+            },
+            {
+              "progress10@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar9",
+                "$binding_text": 9,
+                "layer": 3
+              }
+            }
           ]
         }
       }
@@ -652,16 +715,16 @@
     ]
   },
 
-  "on_off_item": {
+  "progress_bar": {
     "type": "input_panel",
     "size": [
-      16,
-      14
+      22,
+      15
     ],
     "layer": 1,
     "$cell_image_size|default": [
-      16,
-      14
+      22,
+      15
     ],
     "$cell_overlay_ref|default": "common.cell_overlay",
     "$button_ref|default": "common.container_slot_button_prototype",
@@ -670,12 +733,12 @@
     "$storage_bar_required|default": false,
     "$item_renderer|default": "common.item_renderer",
     "$item_renderer_panel_size|default": [
-      16,
-      14
+      22,
+      15
     ],
     "$item_renderer_size|default": [
-      16,
-      14
+      22,
+      15
     ],
     "$item_renderer_offset|default": [
       0,

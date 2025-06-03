@@ -589,6 +589,46 @@
                 "textures/blocks/bathroom/towels/towel_yellow"
             ]
         },
+        "energy_bar_1": {
+            "textures": [
+                "textures/blocks/energy/energy_bar_1"
+            ]
+        },
+        "energy_bar_2": {
+            "textures": [
+                "textures/blocks/energy/energy_bar_2"
+            ]
+        },
+        "energy_bar_3": {
+            "textures": [
+                "textures/blocks/energy/energy_bar_3"
+            ]
+        },
+        "energy_bar_4": {
+            "textures": [
+                "textures/blocks/energy/energy_bar_4"
+            ]
+        },
+        "energy_bar_5": {
+            "textures": [
+                "textures/blocks/energy/energy_bar_5"
+            ]
+        },
+        "energy_bar_6": {
+            "textures": [
+                "textures/blocks/energy/energy_bar_6"
+            ]
+        },
+        "energy_bar_7": {
+            "textures": [
+                "textures/blocks/energy/energy_bar_7"
+            ]
+        },
+        "energy_bar_8": {
+            "textures": [
+                "textures/blocks/energy/energy_bar_8"
+            ]
+        },
         "kitchen_sink_marble_acacia": {
             "textures": [
                 "textures/blocks/kitchen_sink/kitchen_sink_marble_acacia"
@@ -2182,11 +2222,6 @@
         "couch_yellow": {
             "textures": [
                 "textures/blocks/rustic/couchs/couch_colors/couch_yellow"
-            ]
-        },
-        "white": {
-            "textures": [
-                "textures/blocks/rustic/couchs/couch_colors/white"
             ]
         },
         "cutting_board_acacia": {
