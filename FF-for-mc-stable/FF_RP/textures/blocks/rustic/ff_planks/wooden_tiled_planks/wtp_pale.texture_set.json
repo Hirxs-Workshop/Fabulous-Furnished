@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "wtp_pale",
+        "metalness_emissive_roughness": "wtp_pale_mer",
+        "heightmap": "wtp_pale_normal"
+    }
+}

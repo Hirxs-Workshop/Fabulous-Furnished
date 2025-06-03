@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "leaves_wall_decor_medium",
+        "metalness_emissive_roughness": "leaves_wall_decor_medium_mer",
+        "heightmap": "leaves_wall_decor_medium_normal"
+    }
+}

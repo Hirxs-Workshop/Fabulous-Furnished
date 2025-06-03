@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "gnome",
+        "metalness_emissive_roughness": "gnome_mer",
+        "heightmap": "gnome_normal"
+    }
+}

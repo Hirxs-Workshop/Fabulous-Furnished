@@ -1,0 +1,43 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "ff:spicewood_sapling",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {
+                "ff:with_leaves": [
+					false,
+					true
+				],
+                "ff:with_log": [
+					false,
+					true
+				],
+                "ff:un_natured": [
+					false,
+					true
+				]
+            }
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "minecraft:geometry.cross"
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 5
+            },
+            "minecraft:flammable": false,
+            "minecraft:map_color": "#222d75",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "spicewood_sapling",
+                    "render_method": "alpha_test_single_sided",
+                    "face_dimming": false,
+                    "ambient_occlusion": false
+                }
+            }
+        }
+    }
+}

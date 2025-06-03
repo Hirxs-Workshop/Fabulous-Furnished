@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sd:leaves_wall_decor_entity",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/blocks/autumn/leaves_wall_decor_small",
+				"medium": "textures/blocks/autumn/leaves_wall_decor_medium",
+				"large": "textures/blocks/autumn/leaves_wall_decor_large"
+			},
+			"geometry": {
+				"default": "geometry.leaves_wall_decor"
+			},
+			"render_controllers": [
+				"controller.render.leaves_wall_decor"
+			]
+		}
+	}
+}

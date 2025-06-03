@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "jungle_cabinet",
+        "metalness_emissive_roughness": "jungle_cabinet_mer",
+        "heightmap": "jungle_cabinet_normal"
+    }
+}

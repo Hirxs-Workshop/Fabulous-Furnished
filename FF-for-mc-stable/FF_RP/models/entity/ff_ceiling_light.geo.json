@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ff_ceiling_light",
+				"texture_width": 40,
+				"texture_height": 66,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-4, 6, -14],
+							"size": [7, 7, 7],
+							"pivot": [-5.5, 0, -5],
+							"rotation": [0, -90, 0],
+							"uv": {
+								"north": {"uv": [17, 0], "uv_size": [7, 14]},
+								"east": {"uv": [17, 0], "uv_size": [7, 14]},
+								"south": {"uv": [17, 0], "uv_size": [7, 14]},
+								"west": {"uv": [17, 0], "uv_size": [7, 14]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

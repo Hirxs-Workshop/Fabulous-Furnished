@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:iron_knife"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			" S",
+			"SS",
+			" W"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "ff:iron_knife"
+		}
+	}
+}

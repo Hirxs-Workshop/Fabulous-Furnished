@@ -1,0 +1,124 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:stove",
+			"menu_category": {
+				"category": "items"
+			},
+			"states": {
+				"block:lit": [
+					false,
+					true
+				]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "alpha_test",
+					"texture": "oven_on"
+				}
+			},
+			"minecraft:geometry": "geometry.oven_off_closed",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 6
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 4
+            },
+			"minecraft:light_dampening": 2,
+			"tag:stove": {},
+			"minecraft:custom_components": [
+				"ff:stove"
+			],
+			"minecraft:tick": {
+			  "interval_range": [10, 10],
+			  "looping": true
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('block:lit') == false",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "oven_off"
+						}
+					},
+					"tag:stove_off": {}
+				}
+			},
+			{
+				"condition": "query.block_state('block:lit') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "oven_on"
+						}
+					},
+					"tag:stove_on": {},
+					"minecraft:light_dampening": 13
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}

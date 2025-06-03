@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:wooden_smooth_planks_cherry"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"4"
+		],
+		"key": {
+			"4": {
+				"item": "minecraft:cherry_planks"
+			}
+		},
+		"result": {
+			"item": "ff:wooden_smooth_planks_cherry"
+		}
+	}
+}

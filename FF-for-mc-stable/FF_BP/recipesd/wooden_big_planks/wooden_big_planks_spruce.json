@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:wooden_big_planks_spruce"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"1"
+		],
+		"key": {
+			"1": {
+				"item": "minecraft:spruce_planks"
+			}
+		},
+		"result": {
+			"item": "ff:wooden_big_planks_spruce"
+		}
+	}
+}

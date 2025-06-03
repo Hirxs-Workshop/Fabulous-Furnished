@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:smooth_wood_birch_wood"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"J"
+		],
+		"key": {
+			"J": {
+				"item": "minecraft:stripped_birch_wood"
+			}
+		},
+		"result": {
+			"item": "ff:smooth_wood_birch",
+			"count": 4
+		}
+	}
+}

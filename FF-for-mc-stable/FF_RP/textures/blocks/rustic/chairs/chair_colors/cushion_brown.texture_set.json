@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "cushion_brown",
+        "metalness_emissive_roughness": "cushion_brown_mer",
+        "heightmap": "cushion_brown_normal"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "feldspar_ore_deepslate",
+        "metalness_emissive_roughness": "feldspar_ore_deepslate_mer",
+        "heightmap": "feldspar_ore_deepslate_normal"
+    }
+}

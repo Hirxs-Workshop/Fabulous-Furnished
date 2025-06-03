@@ -1,0 +1,29 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ff:egg_item",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6
+			},
+			"minecraft:display_name": {
+				"value": "item.ff:egg_item.name"
+			},
+			"minecraft:food": {
+				"nutrition": 3,
+				"saturation_modifier": 3
+			},
+			"minecraft:icon": {
+				"textures": {
+					"default": "egg_item"
+				}
+			},
+			"minecraft:use_animation": "eat"
+		}
+	}
+}

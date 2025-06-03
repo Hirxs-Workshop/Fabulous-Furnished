@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ff:ff_light_ray_small",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/vfx/lamp_light_effect"
+			},
+			"animations": {
+				"default_pose": "animation.ff_light_ray.idle",
+				"no_pose": "animation.ff_light_ray.idle",
+				"solemn_pose": "animation.ff_light_ray.idle",
+				"athena_pose": "animation.ff_light_ray.idle",
+				"brandish_pose": "animation.ff_light_ray.idle",
+				"honor_pose": "animation.ff_light_ray.idle",
+				"entertain_pose": "animation.ff_light_ray.idle",
+				"salute_pose": "animation.ff_light_ray.idle",
+				"riposte_pose": "animation.ff_light_ray.idle",
+				"zombie_pose": "animation.ff_light_ray.idle",
+				"cancan_a_pose": "animation.ff_light_ray.idle",
+				"cancan_b_pose": "animation.ff_light_ray.idle",
+				"hero_pose": "animation.ff_light_ray.idle",
+				"wiggle": "animation.ff_light_ray.idle",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"geometry": {
+				"default": "geometry.ff_light_ray_small"
+			},
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			}
+		}
+	}
+}

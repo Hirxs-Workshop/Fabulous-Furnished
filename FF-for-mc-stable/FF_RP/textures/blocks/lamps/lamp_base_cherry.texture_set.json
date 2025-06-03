@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "lamp_base_cherry",
+        "metalness_emissive_roughness": "lamp_base_cherry_mer",
+        "heightmap": "lamp_base_cherry_normal"
+    }
+}

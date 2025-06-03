@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "cinder_trapdoor",
+        "metalness_emissive_roughness": "cinder_trapdoor_mer",
+        "heightmap": "cinder_trapdoor_normal"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "sw_cherry",
+        "metalness_emissive_roughness": "sw_cherry_mer",
+        "heightmap": "sw_cherry_normal"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "wooden_support_horizontal_acacia",
+        "metalness_emissive_roughness": "wooden_support_horizontal_acacia_mer",
+        "heightmap": "wooden_support_horizontal_acacia_normal"
+    }
+}

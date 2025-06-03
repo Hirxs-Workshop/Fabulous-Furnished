@@ -1,0 +1,35 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ff:gold_knife",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"textures": {
+					"default": "gold_knife"
+				}
+			},
+			"minecraft:display_name": {
+				"value": "item.ff:gold_knife.name"
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:hand_equipped": true,
+			"minecraft:stacked_by_data": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 50,
+				"damage_chance": {
+					"min": 1,
+					"max": 2
+				}
+			},
+			"minecraft:damage": {
+				"value": 3
+			}
+		}
+	}
+}

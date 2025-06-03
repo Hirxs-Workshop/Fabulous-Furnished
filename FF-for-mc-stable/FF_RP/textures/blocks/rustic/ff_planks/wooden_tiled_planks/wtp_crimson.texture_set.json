@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "wtp_crimson",
+        "metalness_emissive_roughness": "wtp_crimson_mer",
+        "heightmap": "wtp_crimson_normal"
+    }
+}

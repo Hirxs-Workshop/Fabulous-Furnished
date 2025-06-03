@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:wooden_smooth_planks_zigzag_mangrove"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"S"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:mangrove_planks"
+			}
+		},
+		"result": {
+			"item": "ff:wooden_smooth_planks_zigzag_mangrove"
+		}
+	}
+}
