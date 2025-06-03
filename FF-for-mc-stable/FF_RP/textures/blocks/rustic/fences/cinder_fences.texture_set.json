@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "cinder_fences",
-        "metalness_emissive_roughness": "cinder_fences_mer",
-        "heightmap": "cinder_fences_normal"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "christmas_stocking_4",
-        "metalness_emissive_roughness": "christmas_stocking_4_mer",
-        "heightmap": "christmas_stocking_4_normal"
-    }
-}

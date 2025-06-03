@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "cushion_purple_man",
-        "metalness_emissive_roughness": "cushion_purple_man_mer",
-        "heightmap": "cushion_purple_man_normal"
-    }
-}

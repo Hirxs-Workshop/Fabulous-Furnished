@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "wcp_2_acacia",
-        "metalness_emissive_roughness": "wcp_2_acacia_mer",
-        "heightmap": "wcp_2_acacia_normal"
-    }
-}

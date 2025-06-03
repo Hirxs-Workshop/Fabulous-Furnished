@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "chiseled_marble",
-        "metalness_emissive_roughness": "chiseled_marble_mer",
-        "heightmap": "chiseled_marble_normal"
-    }
-}

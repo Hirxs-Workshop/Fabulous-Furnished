@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "spruce_cabinet",
-        "metalness_emissive_roughness": "spruce_cabinet_mer",
-        "heightmap": "spruce_cabinet_normal"
-    }
-}

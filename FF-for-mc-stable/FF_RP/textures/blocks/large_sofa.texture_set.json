@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "large_sofa",
-        "metalness_emissive_roughness": "large_sofa_mer",
-        "heightmap": "large_sofa_normal"
-    }
-}

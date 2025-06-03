@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "terrace_fente_oak",
-        "metalness_emissive_roughness": "terrace_fente_oak_mer",
-        "heightmap": "terrace_fente_oak_normal"
-    }
-}

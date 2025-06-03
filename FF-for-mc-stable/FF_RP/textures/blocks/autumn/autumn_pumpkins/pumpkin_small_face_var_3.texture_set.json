@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "pumpkin_small_face_var_3",
-        "metalness_emissive_roughness": "pumpkin_small_face_var_3_mer",
-        "heightmap": "pumpkin_small_face_var_3_normal"
-    }
-}

@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "toilet_paper_support",
-        "metalness_emissive_roughness": "toilet_paper_support_mer",
-        "heightmap": "toilet_paper_support_normal"
-    }
-}

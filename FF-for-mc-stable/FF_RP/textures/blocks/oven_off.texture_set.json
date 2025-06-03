@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "oven_off",
-        "metalness_emissive_roughness": "oven_off_mer",
-        "heightmap": "oven_off_normal"
-    }
-}

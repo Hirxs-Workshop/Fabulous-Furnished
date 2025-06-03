@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "kitchen_sink_marble_birch",
-        "metalness_emissive_roughness": "kitchen_sink_marble_birch_mer",
-        "heightmap": "kitchen_sink_marble_birch_normal"
-    }
-}

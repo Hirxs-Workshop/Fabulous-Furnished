@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "candy_cane",
-        "metalness_emissive_roughness": "candy_cane_mer",
-        "heightmap": "candy_cane_normal"
-    }
-}
