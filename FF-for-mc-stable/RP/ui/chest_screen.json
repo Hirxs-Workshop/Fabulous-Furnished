@@ -188,25 +188,31 @@
   "barrel_panel@chest.small_chest_panel": {
   },
 
-"small_chest_screen@common.inventory_screen_common": {
-    "$atitle": "$container_title",
-    "$smphirxmenu": "(('%.2s' * $atitle) = '§')",
+  "small_chest_screen@common.inventory_screen_common": {
+    "$close_on_player_hurt|default": true,
+    "$use_custom_pocket_toast|default": false,
+    "close_on_player_hurt": "$close_on_player_hurt",
+    "$text": "$container_title",
     "variables": [
       {
-        "requires": "($desktop_screen or $smphirxmenu)",
+        "requires": "($desktop_screen and (not ($text = '§t§e§s§t§r')))",
         "$screen_content": "chest.small_chest_panel",
         "$screen_bg_content": "common.screen_background",
         "$screen_background_alpha": 0.4
       },
       {
-        "requires": "($pocket_screen and not $smphirxmenu)",
+        "requires": "($pocket_screen and (not ($text = '§t§e§s§t§r')))",
         "$use_custom_pocket_toast": true,
         "$screen_content": "pocket_containers.small_chest_panel"
+      },
+      {
+        "requires": "($text = '§t§e§s§t§r')",
+        "$screen_content": "chest.custom"
       }
     ]
   },
 
-"large_chest_screen@common.inventory_screen_common": {
+  "large_chest_screen@common.inventory_screen_common": {
     "$atitle": "$container_title",
     "$smphirxmenu": "(('%.2s' * $atitle) = '§')",
     "variables": [
@@ -276,6 +282,339 @@
         "requires": "$pocket_screen",
         "$use_custom_pocket_toast": true,
         "$screen_content": "pocket_containers.barrel_panel"
+      }
+    ]
+  },
+
+  "custom": {
+    "type": "panel",
+    "controls": [
+      {
+        "root_panel@common.root_panel": {
+          "layer": 1,
+          "controls": [
+            {
+              "common_panel@common.common_panel": {}
+            },
+            {
+              "chest_panel": {
+                "type": "panel",
+                "layer": 5,
+                "controls": [
+                  {
+                    "small_chest_custom_panel_top_half@chest.small_chest_custom_panel_top_half": {}
+                  },
+                  {
+                    "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {}
+                  },
+                  {
+                    "hotbar_grid@common.hotbar_grid_template": {}
+                  },
+                  {
+                    "inventory_take_progress_icon_button@common.inventory_take_progress_icon_button": {}
+                  },
+                  {
+                    "flying_item_renderer@common.flying_item_renderer": {
+                      "layer": 15
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "inventory_selected_icon_button@common.inventory_selected_icon_button": {}
+            },
+            {
+              "gamepad_cursor@common.gamepad_cursor_button": {}
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "small_chest_custom_panel_top_half": {
+    "type": "panel",
+    "size": [
+      "100%",
+      "50%"
+    ],
+    "offset": [
+      0,
+      12
+    ],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      {
+        "chest_label@chest.chest_label": {}
+      },
+      {
+        "small_chest_custom_panel@chest.small_chest_custom_panel": {}
+      }
+    ]
+  },
+
+  "small_chest_custom_panel": {
+    "type": "collection_panel",
+    "size": [
+      162,
+      54
+    ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "$item_collection_name": "container_items",
+    "collection_name": "container_items",
+    "$dark_border_toggle_hover_color": [
+      1,
+      1,
+      1
+    ],
+    "controls": [
+      {
+        "item0@chest.container_item": {
+          "collection_index": 0,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            18,
+            18
+          ]
+        }
+      },
+      {
+        "item1@chest.container_item": {
+          "collection_index": 1,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            36,
+            18
+          ]
+        }
+      },
+      {
+        "item2@chest.progress_bar": {
+          "collection_index": 2,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            72,
+            36
+          ],
+          "controls": [
+            {
+              "default": {
+                "type": "image",
+                "texture": "textures/ui/progress_bar/progress_bar",
+                "layer": 2,
+                "size": [
+                  "100%",
+                  "100%"
+                ]
+              }
+            },
+            {
+              "progress1@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar0",
+                "$binding_text": 0,
+                "layer": 3
+              }
+            },
+            {
+              "progress2@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar1",
+                "$binding_text": 1,
+                "layer": 3
+              }
+            },
+            {
+              "progress3@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar2",
+                "$binding_text": 2,
+                "layer": 3
+              }
+            },
+            {
+              "progress4@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar3",
+                "$binding_text": 3,
+                "layer": 3
+              }
+            },
+            {
+              "progress5@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar4",
+                "$binding_text": 4,
+                "layer": 3
+              }
+            },
+            {
+              "progress6@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar5",
+                "$binding_text": 5,
+                "layer": 3
+              }
+            },
+            {
+              "progress7@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar6",
+                "$binding_text": 6,
+                "layer": 3
+              }
+            },
+            {
+              "progress8@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar7",
+                "$binding_text": 7,
+                "layer": 3
+              }
+            },
+            {
+              "progress9@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar8",
+                "$binding_text": 8,
+                "layer": 3
+              }
+            },
+            {
+              "progress10@image_template": {
+                "$texture": "textures/ui/progress_bar/progress_bar9",
+                "$binding_text": 9,
+                "layer": 3
+              }
+            }
+          ]
+        }
+      },
+      {
+        "item3@chest.container_item": {
+          "collection_index": 3,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            18,
+            36
+          ]
+        }
+      },
+      {
+        "item4@chest.container_item": {
+          "collection_index": 4,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            36,
+            36
+          ]
+        }
+      },
+      {
+        "item5@chest.container_type": {
+          "collection_index": 5,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            126,
+            18
+          ],
+          "controls": [
+            {
+              "container_type0@image_template": {
+                "$texture": "textures/ui/container_type/container_type0",
+                "$binding_text": 0,
+                "layer": 8
+              }
+            },
+            {
+              "container_type1@image_template": {
+                "$texture": "textures/ui/container_type/container_type1",
+                "$binding_text": 1,
+                "layer": 8
+              }
+            },
+            {
+              "container_type2@image_template": {
+                "$texture": "textures/ui/container_type/container_type2",
+                "$binding_text": 2,
+                "layer": 8
+              }
+            },
+            {
+              "container_type3@image_template": {
+                "$texture": "textures/ui/container_type/container_type3",
+                "$binding_text": 3,
+                "layer": 8
+              }
+            },
+            {
+              "container_type4@image_template": {
+                "$texture": "textures/ui/container_type/container_type4",
+                "$binding_text": 4,
+                "layer": 8
+              }
+            },
+            {
+              "container_type5@image_template": {
+                "$texture": "textures/ui/container_type/container_type5",
+                "$binding_text": 5,
+                "layer": 8
+              }
+            },
+            {
+              "container_type6@image_template": {
+                "$texture": "textures/ui/container_type/container_type6",
+                "$binding_text": 6,
+                "layer": 8
+              }
+            },
+            {
+              "container_type7@image_template": {
+                "$texture": "textures/ui/container_type/container_type7",
+                "$binding_text": 7,
+                "layer": 8
+              }
+            },
+            {
+              "container_type8@image_template": {
+                "$texture": "textures/ui/container_type/container_type8",
+                "$binding_text": 8,
+                "layer": 8
+              }
+            },
+            {
+              "container_type9@image_template": {
+                "$texture": "textures/ui/container_type/container_type9",
+                "$binding_text": 9,
+                "layer": 8
+              }
+            }
+          ]
+        }
+      },
+      {
+        "item6@chest.container_item_with_picture": {
+          "collection_index": 6,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            90,
+            18
+          ],
+          "$path_to_image": "textures/ui/book_ui"
+        }
+      },
+      {
+        "item7@chest.pot": {
+          "collection_index": 7,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [
+            108,
+            36
+          ],
+          "$texture": "textures/ui/pot/pot"
+        }
       }
     ]
   }
