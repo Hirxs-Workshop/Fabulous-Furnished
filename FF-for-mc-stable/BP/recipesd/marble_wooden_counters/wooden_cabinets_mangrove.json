@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:wooden_marble_counter_mangrove"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SSS",
+			"CCC"
+		],
+		"key": {
+			"C": {
+				"item": "ff:porcelain_clay"
+			},
+			"S": {
+				"item": "minecraft:mangrove_planks"
+			}
+		},
+		"result": {
+			"item": "ff:wooden_marble_counter_mangrove",
+			"count": 1
+		}
+	}
+}

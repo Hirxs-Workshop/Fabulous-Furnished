@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:cinder_planks_chiseled_bookshelf_inverted"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"SSS",
+			"BBB",
+			"SSS"
+		],
+		"key": {
+			"B": {
+				"item": "ff:cinder_slab"
+			},
+			"S": {
+				"item": "minecraft:planks"
+			}
+		},
+		"result": {
+			"item": "minecraft:chiseled_bookshelf",
+			"count": 1
+		}
+	}
+}

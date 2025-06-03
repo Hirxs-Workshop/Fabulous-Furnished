@@ -1,0 +1,28 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:fog_settings": {
+		"description": {
+			"identifier": "ff:redwood_forest_fog"
+		},
+		"distance": {
+			"air": {
+				"fog_start": -12,
+				"fog_end": 296,
+				"fog_color": "#AFB57C",
+				"render_distance_type": "fixed"
+			},
+			"water": {
+				"fog_start": 0,
+				"fog_end": 15,
+				"fog_color": "#246277",
+				"render_distance_type": "fixed"
+			},
+			"weather": {
+				"fog_start": -32,
+				"fog_end": 78,
+				"fog_color": "#AFB57C",
+				"render_distance_type": "fixed"
+			}
+		}
+	}
+}

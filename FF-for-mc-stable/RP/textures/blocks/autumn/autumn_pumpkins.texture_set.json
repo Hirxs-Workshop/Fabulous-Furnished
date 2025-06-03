@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "autumn_pumpkins",
+        "metalness_emissive_roughness": "autumn_pumpkins_mer",
+        "heightmap": "autumn_pumpkins_normal"
+    }
+}

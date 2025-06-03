@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:kitchen_floor"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"FW",
+			"WF"
+		],
+		"key": {
+			"F": {
+				"item": "ff:black_porcelain_tile"
+			},
+			"W": {
+				"item": "ff:porcelain_tile"
+			}
+		},
+		"result": {
+			"item": "ff:kitchen_floor",
+			"count": 4
+		}
+	}
+}

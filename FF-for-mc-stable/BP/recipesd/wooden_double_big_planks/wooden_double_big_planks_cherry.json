@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:wooden_double_big_planks_cherry"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"2"
+		],
+		"key": {
+			"2": {
+				"item": "minecraft:cherry_planks"
+			}
+		},
+		"result": {
+			"item": "ff:wooden_double_big_planks_cherry"
+		}
+	}
+}

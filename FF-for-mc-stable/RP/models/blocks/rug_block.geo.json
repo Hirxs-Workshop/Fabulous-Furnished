@@ -1,0 +1,164 @@
+{
+	"format_version": "1.21.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.rug_block",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 1, 16],
+							"uv": {
+								"north": {"uv": [32, 0], "uv_size": [32, 2]},
+								"east": {"uv": [0, 0], "uv_size": [2, 32], "uv_rotation": 90},
+								"south": {"uv": [32, 4], "uv_size": [32, 2]},
+								"west": {"uv": [30, 0], "uv_size": [2, 32], "uv_rotation": 90},
+								"up": {"uv": [0, 0], "uv_size": [32, 32]},
+								"down": {"uv": [32, 32], "uv_size": [-32, -32]}
+							}
+						},
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 1, 16],
+							"uv": {
+								"north": {"uv": [32, 0], "uv_size": [32, 2], "material_instance": "lines"},
+								"east": {"uv": [0, 0], "uv_size": [2, 32], "uv_rotation": 90, "material_instance": "lines"},
+								"south": {"uv": [32, 4], "uv_size": [32, 2], "material_instance": "lines"},
+								"west": {"uv": [30, 0], "uv_size": [2, 32], "uv_rotation": 90, "material_instance": "lines"},
+								"up": {"uv": [0, 0], "uv_size": [32, 32], "material_instance": "lines"},
+								"down": {"uv": [32, 32], "uv_size": [-32, -32], "material_instance": "lines"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone",
+					"pivot": [0, 1, 0],
+					"cubes": [
+						{
+							"origin": [8, 1, -8],
+							"size": [3, 0, 16],
+							"pivot": [8, 1, 0],
+							"rotation": [0, 0, 12.5],
+							"uv": {
+								"up": {"uv": [0, 32], "uv_size": [6, 32]}
+							}
+						},
+						{
+							"origin": [8, 1, -8],
+							"size": [3, 0, 16],
+							"pivot": [8, 1, 0],
+							"rotation": [0, 0, 12.5],
+							"uv": {
+								"up": {"uv": [0, 32], "uv_size": [6, 32], "material_instance": "lines"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone2",
+					"pivot": [0, 1, 0],
+					"rotation": [0, 90, 0],
+					"cubes": [
+						{
+							"origin": [8, 1, -8],
+							"size": [3, 0, 16],
+							"pivot": [8, 1, 0],
+							"rotation": [0, 0, 12.5],
+							"uv": {
+								"up": {"uv": [0, 64], "uv_size": [6, -32]}
+							}
+						},
+						{
+							"origin": [-7.62074, -2.46303, -8],
+							"size": [3, 0, 16],
+							"pivot": [8, 1, 0],
+							"rotation": [0, 0, 12.5],
+							"uv": {
+								"up": {"uv": [6, 64], "uv_size": [-6, -32]}
+							}
+						},
+						{
+							"origin": [8, 1, -8],
+							"size": [3, 0, 16],
+							"pivot": [8, 1, 0],
+							"rotation": [0, 0, 12.5],
+							"uv": {
+								"up": {"uv": [0, 64], "uv_size": [6, -32], "material_instance": "lines"}
+							}
+						},
+						{
+							"origin": [-7.62074, -2.46303, -8],
+							"size": [3, 0, 16],
+							"pivot": [8, 1, 0],
+							"rotation": [0, 0, 12.5],
+							"uv": {
+								"up": {"uv": [6, 64], "uv_size": [-6, -32], "material_instance": "lines"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone3",
+					"pivot": [0, 1, 0],
+					"rotation": [0, 180, 0],
+					"cubes": [
+						{
+							"origin": [8, 1, -8],
+							"size": [3, 0, 16],
+							"pivot": [8, 1, 0],
+							"rotation": [0, 0, 12.5],
+							"uv": {
+								"up": {"uv": [0, 64], "uv_size": [6, -32]}
+							}
+						},
+						{
+							"origin": [8, 1, -8],
+							"size": [3, 0, 16],
+							"pivot": [8, 1, 0],
+							"rotation": [0, 0, 12.5],
+							"uv": {
+								"up": {"uv": [0, 64], "uv_size": [6, -32], "material_instance": "lines"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone4",
+					"pivot": [0, 1, 0],
+					"rotation": [0, -90, 0],
+					"cubes": [
+						{
+							"origin": [8, 1, -8],
+							"size": [3, 0, 16],
+							"pivot": [8, 1, 0],
+							"rotation": [0, 0, 12.5],
+							"uv": {
+								"up": {"uv": [0, 64], "uv_size": [6, -32]}
+							}
+						},
+						{
+							"origin": [8, 1, -8],
+							"size": [3, 0, 16],
+							"pivot": [8, 1, 0],
+							"rotation": [0, 0, 12.5],
+							"uv": {
+								"up": {"uv": [0, 64], "uv_size": [6, -32], "material_instance": "lines"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

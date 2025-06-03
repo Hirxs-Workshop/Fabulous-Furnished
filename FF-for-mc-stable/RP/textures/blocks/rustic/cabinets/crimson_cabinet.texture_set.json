@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "crimson_cabinet",
+        "metalness_emissive_roughness": "crimson_cabinet_mer",
+        "heightmap": "crimson_cabinet_normal"
+    }
+}

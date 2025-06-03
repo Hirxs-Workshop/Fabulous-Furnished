@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "wooden_planks_lines_birch",
+        "metalness_emissive_roughness": "wooden_planks_lines_birch_mer",
+        "heightmap": "wooden_planks_lines_birch_normal"
+    }
+}

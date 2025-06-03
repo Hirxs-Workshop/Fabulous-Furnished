@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "ff:wooden_support_plate_dark_oak"
+        },
+        "tags": [
+            "ff_carpentry_table"
+        ],
+        "pattern": [
+            "SS"
+        ],
+        "key": {
+            "S": {
+                "item": "minecraft:planks",
+                "data": 5
+            }
+        },
+        "result": {
+            "item": "ff:wooden_support_plate_dark_oak",
+            "count": 2
+        }
+    }
+}

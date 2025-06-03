@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ff:vegetable_oil",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"textures": {
+					"default": "vegetable_oil"
+				}
+			},
+			"minecraft:display_name": {
+				"value": "item.ff:vegetable_oil.name"
+			},
+			"minecraft:max_stack_size": 64
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "autumn_tablecloth",
+        "metalness_emissive_roughness": "autumn_tablecloth_mer",
+        "heightmap": "autumn_tablecloth_normal"
+    }
+}

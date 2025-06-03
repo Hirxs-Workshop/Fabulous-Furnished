@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "tablecloth_squares_brown",
+        "metalness_emissive_roughness": "tablecloth_squares_brown_mer",
+        "heightmap": "tablecloth_squares_brown_normal"
+    }
+}

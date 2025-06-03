@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:crafting_table_cinder_planks"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"S"
+		],
+		"key": {
+			"S": {
+				"item": "ff:cinder_log"
+			}
+		},
+		"result": {
+			"item": "ff:cinder_planks",
+			"count": 4
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "sw_warped",
+        "metalness_emissive_roughness": "sw_warped_mer",
+        "heightmap": "sw_warped_normal"
+    }
+}

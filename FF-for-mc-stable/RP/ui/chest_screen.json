@@ -1,0 +1,284 @@
+/********************************************************
++*   (c) Mojang. All rights reserved                       *
++*   (c) Microsoft. All rights reserved.                   *
++*********************************************************/
+
+// Mod - by Hirxs (Custom UI for FF containers)
+// NO STEAL (pls...) welp nvm, just use it without problems, but I would appreciate it if you left this "watermark" or just this
+
+// Credits to: Hirxs
+
+{
+  "namespace": "chest",
+
+  ////---------------------------------------------------------------------------
+  //// #slot region area
+  ////---------------------------------------------------------------------------
+
+  "chest_label": {
+    "type": "label",
+    "offset": [ 7, -2 ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "text": "$container_title",
+    "size": [ "90%", "default" ],
+    "color": "$title_text_color",
+    "layer": 10
+  },
+
+  "chest_grid_item@common.container_item": {
+    "$item_collection_name": "container_items"
+  },
+
+  "small_chest_grid": {
+    "type": "grid",
+    "size": [ 162, 54 ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [ 9, 3 ],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+
+  "large_chest_grid": {
+    "type": "grid",
+    "size": [ 162, 108 ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "grid_dimensions": [ 9, 6 ],
+    "grid_item_template": "chest.chest_grid_item",
+    "collection_name": "container_items"
+  },
+
+  "smphirxs_chest_panel": {
+    "type": "image",
+    "layer": 10,
+    "size": [198, 222],
+    "offset": [ 0, -4],
+    "$localtitle": "$container_title"
+  },
+
+  "smphirxs_small_chest_panel": {
+    "type": "image",
+    "layer": 10,
+    "size": [198, 221],
+    "offset": [ 0, 23],
+    "$localtitle": "$container_title"
+  },
+
+  "smphirxs_ia_categories@smphirxs_small_chest_panel": {
+    "texture":"textures/ff_ui/fridge_white_ui",
+    "visible":"(not ($localtitle - '§8White_Fridge' = $localtitle))",
+    "layer": 11
+  },
+
+  "smphirxs_ia_crafting@smphirxs_small_chest_panel": {
+    "texture":"textures/ff_ui/fridge_white_ui",
+    "visible":"(not ($localtitle - '§8White fridge' = $localtitle))",
+    "layer": 11
+  },
+
+  "smphirxs_ia_categories_b@smphirxs_small_chest_panel": {
+    "texture":"textures/ff_ui/fridge_black_ui",
+    "visible":"(not ($localtitle - '§fBlack fridge' = $localtitle))",
+    "layer": 11
+  },
+
+  "smphirxs_ia_crafting_b@smphirxs_small_chest_panel": {
+    "texture":"textures/ff_ui/fridge_black_ui",
+    "visible":"(not ($localtitle - '§fBlack fridge' = $localtitle))",
+    "layer": 11
+  },
+
+  //Small chest ui
+    //Daily shop
+
+  "smphirxs_chest_panels": {
+    "type": "panel",
+    "controls": [
+    ]
+  },
+
+  "smphirxs_small_chest_panels": {
+    "type": "panel",
+    "controls": [
+            { "smphirxs_ia_categories@smphirxs_ia_categories": {} },
+      { "smphirxs_ia_crafting@smphirxs_ia_crafting": {} },
+      { "smphirxs_ia_categories_b@smphirxs_ia_categories_b": {} },
+      { "smphirxs_ia_crafting_b@smphirxs_ia_crafting_b": {} }
+    ]
+  },
+
+
+
+  //// #endregion
+
+  ////---------------------------------------------------------------------------
+  //// #region chest area
+  ////---------------------------------------------------------------------------
+
+  "small_chest_panel_top_half": {
+    "type": "panel",
+    "size": [ "100%", "50%" ],
+    "offset": [ 0, 12 ],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      { "chest_label@chest.chest_label": {} },
+      {
+        "small_chest_grid@chest.small_chest_grid": {
+          "offset": [ 7, 9 ]
+        }
+      }
+    ]
+  },
+
+  "large_chest_panel_top_half": {
+    "type": "panel",
+    "size": [ "100%", 132 ],
+    "offset": [ 0, 11 ],
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "controls": [
+      { "chest_label@chest.chest_label": {} },
+      {
+        "large_chest_grid@chest.large_chest_grid": {
+          "offset": [ 7, 10 ]
+        }
+      }
+    ]
+  },
+
+  //// #endregion
+
+  ////---------------------------------------------------------------------------
+  //// #region screen
+  ////---------------------------------------------------------------------------
+
+  "small_chest_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": {
+          "smphirxs_small_chest_panels@smphirxs_small_chest_panels": {}
+        }
+      }
+    ]
+  },
+
+  "large_chest_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": {
+          "smphirxs_chest_panels@smphirxs_chest_panels": {}
+        }
+      }
+    ]
+  },
+
+  "ender_chest_panel@chest.small_chest_panel": {
+  },
+
+  "shulker_box_panel@chest.small_chest_panel": {
+  },
+
+  "barrel_panel@chest.small_chest_panel": {
+  },
+
+"small_chest_screen@common.inventory_screen_common": {
+    "$atitle": "$container_title",
+    "$smphirxmenu": "(('%.2s' * $atitle) = '§')",
+    "variables": [
+      {
+        "requires": "($desktop_screen or $smphirxmenu)",
+        "$screen_content": "chest.small_chest_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "($pocket_screen and not $smphirxmenu)",
+        "$use_custom_pocket_toast": true,
+        "$screen_content": "pocket_containers.small_chest_panel"
+      }
+    ]
+  },
+
+"large_chest_screen@common.inventory_screen_common": {
+    "$atitle": "$container_title",
+    "$smphirxmenu": "(('%.2s' * $atitle) = '§')",
+    "variables": [
+      {
+        "requires": "($desktop_screen or $smphirxmenu)",
+        "$screen_content": "chest.large_chest_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "($pocket_screen and not $smphirxmenu)",
+        "$use_custom_pocket_toast": true,
+        "$screen_content": "pocket_containers.large_chest_panel"
+      }
+    ]
+  },
+
+  "ender_chest_screen@common.inventory_screen_common": {
+    "$close_on_player_hurt|default": true,
+    "$use_custom_pocket_toast|default": false,
+    "close_on_player_hurt": "$close_on_player_hurt",
+    "use_custom_pocket_toast": "$use_custom_pocket_toast",
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "chest.ender_chest_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "$pocket_screen",
+        "$use_custom_pocket_toast": true,
+        "$screen_content": "pocket_containers.ender_chest_panel"
+      }
+    ]
+  },
+
+  "shulker_box_screen@chest.small_chest_screen": {
+    "$close_on_player_hurt": true,
+    "$use_custom_pocket_toast|default": false,
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "chest.shulker_box_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "$pocket_screen",
+        "$use_custom_pocket_toast": true,
+        "$screen_content": "pocket_containers.shulker_box_panel"
+      }
+    ]
+  },
+
+  "barrel_screen@chest.small_chest_screen": {
+    "$close_on_player_hurt": true,
+    "$use_custom_pocket_toast|default": false,
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "chest.barrel_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "$pocket_screen",
+        "$use_custom_pocket_toast": true,
+        "$screen_content": "pocket_containers.barrel_panel"
+      }
+    ]
+  }
+}
+
+// #endregion

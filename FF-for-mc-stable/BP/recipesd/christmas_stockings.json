@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sd:christmas_stockings"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SS",
+			"CC",
+			"SCC"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:string"
+			},
+			"C": {
+				"item": "minecraft:red_dye"
+			}
+		},
+		"result": {
+			"item": "sd:christmas_stockings",
+			"count": 2
+		}
+	}
+}

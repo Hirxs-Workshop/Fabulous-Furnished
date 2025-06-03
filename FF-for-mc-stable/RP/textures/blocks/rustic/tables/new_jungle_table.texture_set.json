@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "new_jungle_table",
+        "metalness_emissive_roughness": "new_jungle_table_mer",
+        "heightmap": "new_jungle_table_normal"
+    }
+}

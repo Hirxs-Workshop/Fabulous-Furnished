@@ -1,0 +1,25 @@
+{
+	"format_version": "1.10.0",
+	"render_controllers": {
+		"controller.render.christmas_lights_base_render": {
+			"geometry": "Geometry.default",
+			"textures": [
+				"array.variants[query.variant]"
+			],
+			"arrays": {
+				"textures": {
+					"Array.variants": [
+						"Texture.default",
+						"Texture.medium",
+						"Texture.large"
+					]
+				}
+			},
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			]
+		}
+	}
+}

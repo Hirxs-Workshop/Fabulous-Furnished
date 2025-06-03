@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "water_still_c",
+        "metalness_emissive_roughness": "water_still_c_mer",
+        "heightmap": "water_still_c_normal"
+    }
+}

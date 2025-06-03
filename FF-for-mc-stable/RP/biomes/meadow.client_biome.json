@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "meadow"
+    },
+    "components": {
+      "minecraft:fog_appearance": {
+        "fog_identifier": "ff:meadow_fog"
+      },
+      "minecraft:water_appearance": {
+        "surface_color": "#FFD484"
+      },
+      "minecraft:foliage_appearance": {
+        "color": "#e99312"
+      },
+      "minecraft:grass_appearance": {
+        "color": "#f3b536"
+      },
+      "minecraft:biome_music": {
+        "music_definition": "cherry_grove"
+      }
+    }
+  }
+}

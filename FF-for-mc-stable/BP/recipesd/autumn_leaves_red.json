@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sd:red_autumn_leaves"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"SW"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:birch_leaves"
+			},
+			"W": {
+				"item": "minecraft:red_dye"
+			}
+		},
+		"result": {
+			"item": "sd:red_autumn_leaves",
+			"count": 1
+		}
+	}
+}
