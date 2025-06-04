@@ -589,6 +589,26 @@
                 "textures/blocks/bathroom/towels/towel_yellow"
             ]
         },
+        "green_curtain": {
+            "textures": [
+                "textures/blocks/curtains/green_curtain"
+            ]
+        },
+        "green_curtain_bottom": {
+            "textures": [
+                "textures/blocks/curtains/green_curtain_bottom"
+            ]
+        },
+        "green_curtain_side": {
+            "textures": [
+                "textures/blocks/curtains/green_curtain_side"
+            ]
+        },
+        "green_curtain_side_bottom": {
+            "textures": [
+                "textures/blocks/curtains/green_curtain_side_bottom"
+            ]
+        },
         "energy_bar_1": {
             "textures": [
                 "textures/blocks/energy/energy_bar_1"
@@ -1884,21 +1904,6 @@
                 "textures/blocks/rustic/cabinets/spruce_cabinet_side"
             ]
         },
-        "stone_andesite_smooth": {
-            "textures": [
-                "textures/blocks/rustic/cabinets/stone_andesite_smooth"
-            ]
-        },
-        "stone_diorite_smooth": {
-            "textures": [
-                "textures/blocks/rustic/cabinets/stone_diorite_smooth"
-            ]
-        },
-        "stone_granite_smooth": {
-            "textures": [
-                "textures/blocks/rustic/cabinets/stone_granite_smooth"
-            ]
-        },
         "warped_cabinet": {
             "textures": [
                 "textures/blocks/rustic/cabinets/warped_cabinet"
@@ -1912,6 +1917,21 @@
         "warped_cabinet_side": {
             "textures": [
                 "textures/blocks/rustic/cabinets/warped_cabinet_side"
+            ]
+        },
+        "stone_andesite_smooth": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/tops/stone_andesite_smooth"
+            ]
+        },
+        "stone_diorite_smooth": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/tops/stone_diorite_smooth"
+            ]
+        },
+        "stone_granite_smooth": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/tops/stone_granite_smooth"
             ]
         },
         "ceiling_fan_off_acacia": {

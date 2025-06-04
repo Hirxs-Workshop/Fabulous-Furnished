@@ -24,7 +24,7 @@
 								"south": {"uv": [0, 4], "uv_size": [16, 12], "material_instance": "side"},
 								"west": {"uv": [0, 4], "uv_size": [16, 12], "material_instance": "side"},
 								"up": {"uv": [16, 16], "uv_size": [-16, -12], "material_instance": "side"},
-								"down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "wood"}
+								"down": {"uv": [16, 16], "uv_size": [-16, -16], "material_instance": "bottom"}
 							}
 						},
 						{
