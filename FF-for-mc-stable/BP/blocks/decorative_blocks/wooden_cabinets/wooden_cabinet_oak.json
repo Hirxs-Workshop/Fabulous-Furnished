@@ -22,6 +22,13 @@
 				"ff:bottom": [
 					false,
 					true
+				],
+				"ff:counter_top": [
+					0,
+					1,
+					2,
+					3,
+					4
 				]
 			}
 		},
@@ -86,8 +93,16 @@
 				"components": {
 					"minecraft:collision_box": true,
 					"minecraft:selection_box": {
-						"origin": [-8, 0, -8],
-						"size": [16, 6, 16]
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							6,
+							16
+						]
 					}
 				}
 			},
@@ -96,8 +111,16 @@
 				"components": {
 					"minecraft:collision_box": true,
 					"minecraft:selection_box": {
-						"origin": [-8, 6, -8],
-						"size": [16, 10, 16]
+						"origin": [
+							-8,
+							6,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
 					}
 				}
 			},
@@ -106,9 +129,109 @@
 				"components": {
 					"minecraft:collision_box": true,
 					"minecraft:selection_box": {
-	"origin": [-8, 13, -8],
-	"size": [16, 3, 16]
-}
+						"origin": [
+							-8,
+							13,
+							-8
+						],
+						"size": [
+							16,
+							3,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "oak_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "oak_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"front": {
+							"texture": "oak_cabinet_drawer_front",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_oak",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "oak_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "oak_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"front": {
+							"texture": "oak_cabinet_drawer_front",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "stone_andesite_smooth",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "oak_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "oak_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"front": {
+							"texture": "oak_cabinet_drawer_front",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "stone_diorite_smooth",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "oak_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "oak_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"front": {
+							"texture": "oak_cabinet_drawer_front",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "stone_granite_smooth",
+							"render_method": "alpha_test"
+						}
+					}
 				}
 			}
 		],
@@ -147,12 +270,12 @@
 				"destroy_chance_modifier": 5
 			},
 			"tag:minecraft:is_axe_item_destructible": {},
-            "minecraft:destructible_by_explosion": {
-                "explosion_resistance": 2
-            },
-            "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 2
-            },
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
 			"minecraft:light_dampening": 1,
 			"minecraft:custom_components": [
 				"ff:container_function"
