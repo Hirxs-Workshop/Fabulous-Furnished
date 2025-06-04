@@ -57,6 +57,14 @@
 				"*": {
 					"texture": "crimson_cabinet",
 					"render_method": "alpha_test"
+				},
+				"side": {
+					"texture": "crimson_cabinet_side",
+					"render_method": "alpha_test"
+				},
+				"wood": {
+					"texture": "wsp_crimson",
+					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:map_color": "#8E693B",

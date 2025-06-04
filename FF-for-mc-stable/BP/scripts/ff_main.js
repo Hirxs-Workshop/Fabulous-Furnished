@@ -33,7 +33,7 @@ import 'electric_system/main_system'
 
 
 import 'electric_system/device_system'
-import 'testy'
+// import 'testy'
 // import 'badges'
 
 //import 'block_data_view' // by Kaoiga (just for debug)

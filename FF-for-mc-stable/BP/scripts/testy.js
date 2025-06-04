@@ -3,7 +3,7 @@ import { system, world, ItemStack, ItemTypes } from "@minecraft/server";
 const ENTITY_TYPE = "ff:fridge_inventory";
 const ENTITY_NAME = "§t§e§s§t§r";
 const OIL_ITEM = "ff:vegetable_oil";
-const GLASS_BOTTLE = "minecraft:glass_bottle";
+const GLASS_BOTTLE = "minecraft:air";
 const CONCRETE_ITEM = "minecraft:green_concrete";
 const ENERGY_BARS = [
   "ff:energy_bar_1",
@@ -94,7 +94,7 @@ system.runInterval(() => {
     if (!concrete || concrete.typeId !== CONCRETE_ITEM) {
       concrete = new ItemStack(ItemTypes.get(CONCRETE_ITEM), 1);
     }
-    concrete.setLore([`§aEnergía: ${energyState[entityId].energy} / ${MAX_ENERGY}`]);
+    concrete.setLore([`§gEnergy: ${energyState[entityId].energy} / ${MAX_ENERGY}`]);
     container.setItem(CONCRETE_SLOT, concrete);
   }
 }, 1);

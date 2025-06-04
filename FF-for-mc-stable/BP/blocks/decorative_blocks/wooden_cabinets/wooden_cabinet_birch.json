@@ -126,6 +126,18 @@
 				"*": {
 					"texture": "birch_cabinet",
 					"render_method": "alpha_test"
+				},
+				"side": {
+					"texture": "birch_cabinet_side",
+					"render_method": "alpha_test"
+				},
+				"front": {
+					"texture": "birch_cabinet_drawer_front",
+					"render_method": "alpha_test"
+				},
+				"wood": {
+					"texture": "wsp_birch",
+					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:collision_box": true,

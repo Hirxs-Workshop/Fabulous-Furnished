@@ -1694,9 +1694,29 @@
                 "textures/blocks/rustic/cabinets/acacia_cabinet"
             ]
         },
+        "acacia_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/acacia_cabinet_drawer_front"
+            ]
+        },
+        "acacia_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/acacia_cabinet_side"
+            ]
+        },
         "birch_cabinet": {
             "textures": [
                 "textures/blocks/rustic/cabinets/birch_cabinet"
+            ]
+        },
+        "birch_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/birch_cabinet_drawer_front"
+            ]
+        },
+        "birch_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/birch_cabinet_side"
             ]
         },
         "cherry_cabinet": {
@@ -1704,9 +1724,29 @@
                 "textures/blocks/rustic/cabinets/cherry_cabinet"
             ]
         },
+        "cherry_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/cherry_cabinet_drawer_front"
+            ]
+        },
+        "cherry_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/cherry_cabinet_side"
+            ]
+        },
         "cinder_cabinet": {
             "textures": [
                 "textures/blocks/rustic/cabinets/cinder_cabinet"
+            ]
+        },
+        "cinder_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/cinder_cabinet_drawer_front"
+            ]
+        },
+        "cinder_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/cinder_cabinet_side"
             ]
         },
         "crimson_cabinet": {
@@ -1714,9 +1754,29 @@
                 "textures/blocks/rustic/cabinets/crimson_cabinet"
             ]
         },
+        "crimson_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/crimson_cabinet_drawer_front"
+            ]
+        },
+        "crimson_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/crimson_cabinet_side"
+            ]
+        },
         "dark_oak_cabinet": {
             "textures": [
                 "textures/blocks/rustic/cabinets/dark_oak_cabinet"
+            ]
+        },
+        "dark_oak_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/dark_oak_cabinet_drawer_front"
+            ]
+        },
+        "dark_oak_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/dark_oak_cabinet_side"
             ]
         },
         "jungle_cabinet": {
@@ -1724,9 +1784,29 @@
                 "textures/blocks/rustic/cabinets/jungle_cabinet"
             ]
         },
+        "jungle_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/jungle_cabinet_drawer_front"
+            ]
+        },
+        "jungle_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/jungle_cabinet_side"
+            ]
+        },
         "mangrove_cabinet": {
             "textures": [
                 "textures/blocks/rustic/cabinets/mangrove_cabinet"
+            ]
+        },
+        "mangrove_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/mangrove_cabinet_drawer_front"
+            ]
+        },
+        "mangrove_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/mangrove_cabinet_side"
             ]
         },
         "maple_cabinet": {
@@ -1734,9 +1814,29 @@
                 "textures/blocks/rustic/cabinets/maple_cabinet"
             ]
         },
+        "maple_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/maple_cabinet_drawer_front"
+            ]
+        },
+        "maple_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/maple_cabinet_side"
+            ]
+        },
         "oak_cabinet": {
             "textures": [
                 "textures/blocks/rustic/cabinets/oak_cabinet"
+            ]
+        },
+        "oak_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/oak_cabinet_drawer_front"
+            ]
+        },
+        "oak_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/oak_cabinet_side"
             ]
         },
         "pale_cabinet": {
@@ -1744,9 +1844,29 @@
                 "textures/blocks/rustic/cabinets/pale_cabinet"
             ]
         },
+        "pale_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/pale_cabinet_drawer_front"
+            ]
+        },
+        "pale_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/pale_cabinet_side"
+            ]
+        },
         "spicewood_cabinet": {
             "textures": [
                 "textures/blocks/rustic/cabinets/spicewood_cabinet"
+            ]
+        },
+        "spicewood_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/spicewood_cabinet_drawer_front"
+            ]
+        },
+        "spicewood_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/spicewood_cabinet_side"
             ]
         },
         "spruce_cabinet": {
@@ -1754,9 +1874,44 @@
                 "textures/blocks/rustic/cabinets/spruce_cabinet"
             ]
         },
+        "spruce_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/spruce_cabinet_drawer_front"
+            ]
+        },
+        "spruce_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/spruce_cabinet_side"
+            ]
+        },
+        "stone_andesite_smooth": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/stone_andesite_smooth"
+            ]
+        },
+        "stone_diorite_smooth": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/stone_diorite_smooth"
+            ]
+        },
+        "stone_granite_smooth": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/stone_granite_smooth"
+            ]
+        },
         "warped_cabinet": {
             "textures": [
                 "textures/blocks/rustic/cabinets/warped_cabinet"
+            ]
+        },
+        "warped_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/warped_cabinet_drawer_front"
+            ]
+        },
+        "warped_cabinet_side": {
+            "textures": [
+                "textures/blocks/rustic/cabinets/warped_cabinet_side"
             ]
         },
         "ceiling_fan_off_acacia": {

@@ -57,6 +57,14 @@
 				"*": {
 					"texture": "spruce_cabinet",
 					"render_method": "alpha_test"
+				},
+				"side": {
+					"texture": "spruce_cabinet_side",
+					"render_method": "alpha_test"
+				},
+				"wood": {
+					"texture": "wsp_spruce",
+					"render_method": "alpha_test"
 				}
 			},
 			"minecraft:map_color": "#8E693B",
