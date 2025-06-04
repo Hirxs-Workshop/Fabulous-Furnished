@@ -265,9 +265,6 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
   );
 });
 
-
-
-
 world.beforeEvents.worldInitialize.subscribe(ffh => {
   const frontZones = new FaceSelectionPlains(
     { origin: [2, 4], size: [12, 5] },
@@ -333,8 +330,6 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
     }
   );
 });
-
-  
 
 world.beforeEvents.worldInitialize.subscribe(ffh => {
   const wall_frontZones = new FaceSelectionPlains(
@@ -419,4 +414,19 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
       }
     }
   );
+});
+
+world.afterEvents.playerInteractWithBlock.subscribe(e => {
+  const block = e.block;
+  const player = e.player;
+  if (!block || !player) return;
+  if (block.typeId !== "ff:wooden_cabinet_oak") return;
+
+  const main = player.getComponent("equippable").getEquipment(EquipmentSlot.Mainhand);
+  if (main && main.typeId === "minecraft:polished_andesite") {
+    const current = block.permutation.getState("ff:counter_top") ?? 0;
+    const next = current === 0 ? 1 : 0;
+    block.setPermutation(block.permutation.withState("ff:counter_top", next));
+    player.playSound("random.click");
+  }
 });
