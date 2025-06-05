@@ -60,7 +60,7 @@ world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
     blockComponentRegistry.registerCustomComponent("ff:single_interactive", {
       onPlayerInteract: e => {
         const { player, block } = e;
-        player.playSound("random.click");
+        player.playSound("");
       }
     });
   });

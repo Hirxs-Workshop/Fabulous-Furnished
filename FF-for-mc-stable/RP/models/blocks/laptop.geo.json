@@ -12,11 +12,22 @@
 			},
 			"bones": [
 				{
-					"name": "bb_main",
+					"name": "bb_main2",
 					"pivot": [0, 0, 0],
 					"cubes": [
 						{
-							"origin": [-6.5, 0, -6],
+							"origin": [-1, 0, -1],
+							"size": [2, 2, 2],
+							"uv": {}
+						}
+					]
+				},
+				{
+					"name": "bb_main",
+					"pivot": [0, -7, 0],
+					"cubes": [
+						{
+							"origin": [-6.5, -7, -6],
 							"size": [13, 1, 10],
 							"uv": {
 								"north": {"uv": [0, 20], "uv_size": [13, 1]},
@@ -28,9 +39,9 @@
 							}
 						},
 						{
-							"origin": [-6.5, 1, -6],
+							"origin": [-6.5, -6, -6],
 							"size": [13, 1, 10],
-							"pivot": [-0.5, 1, 4],
+							"pivot": [-0.5, -6, 4],
 							"rotation": [-100, 0, 0],
 							"uv": {
 								"north": {"uv": [0, 21], "uv_size": [13, 1]},
