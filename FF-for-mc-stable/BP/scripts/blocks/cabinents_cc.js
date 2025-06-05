@@ -491,20 +491,12 @@ const stoneMapReverse = {
   const stageState = 'ff:tops_stages';
 
   if (main && Object.keys(stoneMap).includes(main.typeId) && !isSneaking) {
-    const currentCounter = block.permutation.getState(activeState) ?? 0;
-    const currentStage = block.permutation.getState(stageState) ?? 1;
+    const current = block.permutation.getState(activeState) ?? 0;
+    if (current !== 0) {
+      player.playSound("note.bass");
+      return;
+    }
     const { counter, stage } = stoneMap[main.typeId];
-
-    if (currentCounter === counter && currentStage === stage) {
-      player.playSound("note.bass");
-      return;
-    }
-
-    if (currentCounter !== 0) {
-      player.playSound("note.bass");
-      return;
-    }
-
     block.setPermutation(
       block.permutation
         .withState(activeState, counter)
