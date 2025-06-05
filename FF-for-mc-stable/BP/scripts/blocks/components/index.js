@@ -1,0 +1,66 @@
+// Centralizador de componentes personalizados para Fabulous Furnished
+
+import { registerOnPlayerPlace } from './on_player_place';
+import { registerSwitch } from './switch';
+import { registerSingleInteractive } from './single_interactive';
+import { registerToiletFunction } from './toilet_function';
+import { registerSummoningLight } from './summoning_light';
+import { registerPaperFill } from './paper_fill';
+import { registerAddNewStackedBook } from './add_new_stacked_book';
+import { registerSinkOpenClose } from './sink_open_close';
+import { registerTrashItems } from './trash_items';
+import { registerTvWeatherChannel } from './tv_weather_channel';
+import { registerAddCouch } from './add_couch';
+import { registerRemoveCouch } from './remove_couch';
+import { registerFanElevador } from './fan_elevador';
+import { registerAddBreads } from './add_breads';
+import { registerOutletFunction } from './outlet_function';
+import { registerGiveBreads } from './give_breads';
+import { registerSmokeToaster } from './smoke_toaster';
+import { registerWaterParticle } from './water_particle';
+import { registerSlabCinderOnPlayerDestroy, registerSlabCinderOnInteract } from './slab_cinder';
+import { registerSlabSpicewoodOnPlayerDestroy, registerSlabSpicewoodOnInteract } from './slab_spicewood';
+import { registerCinderTrapdoorOnInteract, registerSpicewoodTrapdoorOnInteract } from './trapdoor';
+import { registerAdvRot } from './adv_rot';
+import { registerChristmasStockingVars } from './christmas_stocking_vars';
+import { registerGravestoneVars } from './gravestone_vars';
+import { registerFeldsparOreXpReward } from './feldspar_ore_xp_reward';
+import { registerWoodenSupportVerticalEvents } from './wooden_support_vertical';
+import { registerLogInteractionEvents } from './log_interaction';
+import { registerFridgeDual } from './fridge_dual';
+import { registerAddItem } from './add_item';
+
+export function registerAllBlockComponents(registry) {
+  registerOnPlayerPlace(registry);
+  registerSwitch(registry);
+  registerSingleInteractive(registry);
+  registerToiletFunction(registry);
+  registerSummoningLight(registry);
+  registerPaperFill(registry);
+  registerAddNewStackedBook(registry);
+  registerSinkOpenClose(registry);
+  registerTrashItems(registry);
+  registerTvWeatherChannel(registry);
+  registerAddCouch(registry);
+  registerRemoveCouch(registry);
+  registerFanElevador(registry);
+  registerAddBreads(registry);
+  registerOutletFunction(registry);
+  registerGiveBreads(registry);
+  registerSmokeToaster(registry);
+  registerWaterParticle(registry);
+  registerSlabCinderOnPlayerDestroy(registry);
+  registerSlabCinderOnInteract(registry);
+  registerSlabSpicewoodOnPlayerDestroy(registry);
+  registerSlabSpicewoodOnInteract(registry);
+  registerCinderTrapdoorOnInteract(registry);
+  registerSpicewoodTrapdoorOnInteract(registry);
+  registerAdvRot(registry);
+  registerChristmasStockingVars(registry);
+  registerGravestoneVars(registry);
+  registerFeldsparOreXpReward(registry);
+  registerWoodenSupportVerticalEvents();
+  registerLogInteractionEvents();
+  registerFridgeDual(registry);
+  registerAddItem(registry);
+} 
