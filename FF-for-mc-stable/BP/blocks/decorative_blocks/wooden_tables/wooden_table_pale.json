@@ -239,12 +239,6 @@
                 "seconds_to_destroy": 2
             },
 			"minecraft:light_dampening": 1,
-			"minecraft:tick": {
-				"interval_range": [
-					3,
-					3
-				]
-			},
 			"minecraft:custom_components": [
 				"ff:table_connect"
 			],
