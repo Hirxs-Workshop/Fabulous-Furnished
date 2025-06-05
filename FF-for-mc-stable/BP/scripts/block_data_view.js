@@ -20,4 +20,5 @@ system.runInterval(
 			};
 		};
 	},
+	10
 );
