@@ -11,7 +11,7 @@ import { registerTvWeatherChannel } from './tv_weather_channel';
 import { registerAddCouch } from './add_couch';
 import { registerRemoveCouch } from './remove_couch';
 import { registerFanElevador } from './fan_elevador';
-import { registerAddBreads } from './add_breads';
+import { registerAddBreads } from './add_breads'; 
 import { registerOutletFunction } from './outlet_function';
 import { registerGiveBreads } from './give_breads';
 import { registerSmokeToaster } from './smoke_toaster';
