@@ -97,4 +97,4 @@ system.runInterval(() => {
     concrete.setLore([`§gEnergy: ${energyState[entityId].energy} / ${MAX_ENERGY}`]);
     container.setItem(CONCRETE_SLOT, concrete);
   }
-}, 1);
+}, 10);
