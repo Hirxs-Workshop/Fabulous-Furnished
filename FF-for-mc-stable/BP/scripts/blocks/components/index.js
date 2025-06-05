@@ -1,4 +1,4 @@
-
+// Centralizador de componentes personalizados para Fabulous Furnished
 
 import { registerOnPlayerPlace } from './on_player_place';
 import { registerSwitch } from './switch';
@@ -13,7 +13,7 @@ import { registerTvWeatherChannel } from './tv_weather_channel';
 import { registerAddCouch } from './add_couch';
 import { registerRemoveCouch } from './remove_couch';
 import { registerFanElevador } from './fan_elevador';
-import { registerAddBreads } from './add_breads'; 
+import { registerAddBreads } from './add_breads';
 import { registerOutletFunction } from './outlet_function';
 import { registerGiveBreads } from './give_breads';
 import { registerSmokeToaster } from './smoke_toaster';
@@ -26,8 +26,6 @@ import { registerChristmasStockingVars } from './christmas_stocking_vars';
 import { registerGravestoneVars } from './gravestone_vars';
 import { registerFeldsparOreXpReward } from './feldspar_ore_xp_reward';
 import { registerWoodenSupportVerticalEvents } from './wooden_support_vertical';
-import { registerLogInteractionEvents } from './log_interaction';
-import { registerFridgeDual } from './fridge_dual';
 import { registerAddItem } from './add_item';
 
 export function registerAllBlockComponents(registry) {
@@ -60,7 +58,5 @@ export function registerAllBlockComponents(registry) {
   registerGravestoneVars(registry);
   registerFeldsparOreXpReward(registry);
   registerWoodenSupportVerticalEvents();
-  registerLogInteractionEvents();
-  registerFridgeDual(registry);
   registerAddItem(registry);
 } 
