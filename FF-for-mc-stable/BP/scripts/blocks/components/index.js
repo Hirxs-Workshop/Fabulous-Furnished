@@ -1,4 +1,3 @@
-// Centralizador de componentes personalizados para Fabulous Furnished
 
 import { registerOnPlayerPlace } from './on_player_place';
 import { registerSwitch } from './switch';
