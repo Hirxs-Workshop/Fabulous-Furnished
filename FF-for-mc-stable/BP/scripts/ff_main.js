@@ -8,6 +8,7 @@ world.beforeEvents.worldInitialize.subscribe((e) => {
 });
 // Stable
 import 'blocks/blocks_init'
+import 'blocks/fridge_dual'
 import 'blocks/trampoline_connect'
 import 'blocks/fences_cc'
 import 'blocks/cooking_cc'
