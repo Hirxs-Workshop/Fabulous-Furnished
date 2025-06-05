@@ -1,0 +1,279 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:white_curtain",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"menu_category": {
+				"category": "items"
+			},
+			"states": {
+				"ff:connection": {
+					"values": {
+						"min": 0,
+						"max": 10
+					}
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:connection') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blinds_oak",
+							"render_method": "alpha_test"
+						},
+						"wool": {
+							"texture": "green_curtain",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.block_curtains",
+						"bone_visibility": {
+							"wood": true,
+							"wool": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:connection') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blinds_oak",
+							"render_method": "alpha_test"
+						},
+						"wool": {
+							"texture": "green_curtain_side",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.block_curtains",
+						"bone_visibility": {
+							"wood": true,
+							"wool": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:connection') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blinds_oak",
+							"render_method": "alpha_test"
+						},
+						"wool": {
+							"texture": "green_curtain_side",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.block_curtains_inverted",
+						"bone_visibility": {
+							"wood": true,
+							"wool": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:connection') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blinds_oak",
+							"render_method": "alpha_test"
+						},
+						"wool": {
+							"texture": "green_curtain_side_bottom",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.block_curtains",
+						"bone_visibility": {
+							"wood": false,
+							"wool": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:connection') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blinds_oak",
+							"render_method": "alpha_test"
+						},
+						"wool": {
+							"texture": "green_curtain_side_bottom",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.block_curtains_inverted",
+						"bone_visibility": {
+							"wood": false,
+							"wool": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:connection') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blinds_oak",
+							"render_method": "alpha_test"
+						},
+						"wool": {
+							"texture": "green_curtain",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.block_curtains",
+						"bone_visibility": {
+							"wood": true,
+							"wool": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:connection') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blinds_oak",
+							"render_method": "alpha_test"
+						},
+						"wool": {
+							"texture": "green_curtain",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.block_curtains",
+						"bone_visibility": {
+							"wood": false,
+							"wool": false
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "blinds_oak",
+					"render_method": "alpha_test"
+				},
+				"wool": {
+					"texture": "green_curtain",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#8E693B",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.block_curtains",
+				"bone_visibility": {
+					"wood": true,
+					"wool": true
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					4
+				],
+				"size": [
+					16,
+					16,
+					4
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					4
+				],
+				"size": [
+					16,
+					16,
+					4
+				]
+			},
+			"minecraft:custom_components": [
+				"ff:curtain_connection"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					5,
+					5
+				],
+				"looping": true
+			}
+		}
+	}
+}

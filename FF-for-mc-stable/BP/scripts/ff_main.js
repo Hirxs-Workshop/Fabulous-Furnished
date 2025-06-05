@@ -36,4 +36,4 @@ import 'electric_system/device_system'
 // import 'testy'
 // import 'badges'
 
-//import 'block_data_view' // by Kaoiga (just for debug)
+import 'block_data_view' // by Kaoiga (just for debug)
