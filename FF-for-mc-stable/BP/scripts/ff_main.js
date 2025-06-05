@@ -7,7 +7,7 @@ world.beforeEvents.worldInitialize.subscribe((e) => {
 	e.blockComponentRegistry.registerCustomComponent("ff:blinds", new fabulousBlindsBlock());
 });
 // Stable
-import 'blocks/components/index'
+import 'blocks/blocks_init'
 import 'blocks/trampoline_connect'
 import 'blocks/fences_cc'
 import 'blocks/cooking_cc'
