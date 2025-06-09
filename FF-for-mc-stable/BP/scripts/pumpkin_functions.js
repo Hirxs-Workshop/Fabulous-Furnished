@@ -1,6 +1,11 @@
 import { world, BlockPermutation, ItemStack, system } from '@minecraft/server';
 
-const ANGLES = [180,200,225,250,270,290,315,335,0,25,45,70,90,115,135,160];
+const ANGLES = {
+  'north': 180,
+  'south': 0,
+  'west': 90,
+  'east': 270
+};
 
 const PUMPKIN_CONFIG = [
   { base: 1, off: 5, on: 6, offEvent: 'sd:pumpkin_var_1_off', onEvent: 'sd:pumpkin_var_1_on' },
@@ -16,7 +21,7 @@ function createPlaceComponent(name, entity) {
         const { block } = e;
         const { x, y, z } = block.location;
         block.setPermutation(block.permutation.withState('sd:types', Math.floor(Math.random() * 4) + 1));
-        const rot = block.permutation.getState('fb:rotation');
+        const rot = block.permutation.getState('minecraft:cardinal_direction');
         const angle = ANGLES[rot] ?? 0;
         block.dimension.runCommand(`summon ${entity} ${x} ${y} ${z} ${angle} 0`);
       }

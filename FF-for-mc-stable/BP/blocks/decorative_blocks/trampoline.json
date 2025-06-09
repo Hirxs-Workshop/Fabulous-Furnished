@@ -36,12 +36,7 @@
 			"tag:ff:bounciness_6": {},
 			"tag:trampoline": {},
 			"tag:ff:bounciness.noFallDamage": {},
-			"minecraft:tick": {
-				"interval_range": [
-					3,
-					3
-				]
-			},
+
 			"tag:minecraft:is_pickaxe_item_destructible": {},
             "minecraft:destructible_by_explosion": {
                 "explosion_resistance": 6

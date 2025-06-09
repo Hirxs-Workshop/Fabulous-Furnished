@@ -2,7 +2,7 @@
     "format_version": 2,
     "metadata": {},
     "header": {
-        "name": "TEST FLIGHT - RP | Fabulous Furnished - v2.0 Official Release",
+        "name": "TEST FLIGHT #4 - RP | Fabulous Furnished - v2.0 Official Release",
         "description": "Make your world fabulous with fabulous furniture! More than 150+ blocks with more than 250+ variations available!",
         "min_engine_version": [
             1,
@@ -11,9 +11,9 @@
         ],
         "uuid": "57bf9e0d-005e-4763-8779-4373f70800a5",
         "version": [
-            4,
+            5,
             0,
-            0
+            5
         ]
     },
     "modules": [
@@ -22,9 +22,9 @@
             "type": "resources",
             "uuid": "fed829f5-55cf-48fc-e274-98b94b9871c9",
             "version": [
-                4,
+                5,
                 0,
-                0
+                5
             ]
         }
     ],
@@ -32,9 +32,9 @@
         {
             "uuid": "b85a36d3-e461-4ffe-d69c-b451c609a6dc",
             "version": [
-                4,
+                5,
                 0,
-                0
+                5
             ]
         }
     ],

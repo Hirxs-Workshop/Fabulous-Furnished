@@ -12,6 +12,17 @@
 			},
 			"bones": [
 				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-1, 14, -1],
+							"size": [2, 2, 2],
+							"uv": {}
+						}
+					]
+				},
+				{
 					"name": "bb_main3",
 					"pivot": [0, -0.1, 0],
 					"rotation": [0, 12.5, 0],

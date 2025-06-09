@@ -7,19 +7,14 @@
 				"category": "construction"
 			},
 			"traits": {
-				"minecraft:placement_position": {
+				"minecraft:placement_direction": {
 					"enabled_states": [
-						"minecraft:block_face"
-					]
+						"minecraft:cardinal_direction"
+					],
+					"y_rotation_offset": 180
 				}
 			},
 			"states": {
-				"fb:rotation": {
-					"values": {
-						"min": 0,
-						"max": 15
-					}
-				},
                 "sd:types": {
                     "values": {
                         "min": 0,
@@ -65,26 +60,13 @@
 				]
 			},
 			"minecraft:custom_components": [
-				"fd:advanced_rotation_v1",
 				"sd:place_entity_3",
                 "sd:change_type_3"
 			]
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('fb:rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [
-							0,
-							-90,
-							0
-						]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('fb:rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -96,7 +78,19 @@
 				}
 			},
 			{
-				"condition": "q.block_state('fb:rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -108,15 +102,14 @@
 				}
 			},
 			{
-				"condition": "q.block_state('minecraft:block_face') != 'up'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
 				"components": {
-					"minecraft:collision_box": {
-						"origin": [-5, 0, -5],
-						"size": [10, 8, 10]
-					},
-					"minecraft:selection_box": {
-						"origin": [-5, 0, -5],
-						"size": [10, 8, 10]
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
 					}
 				}
 			}

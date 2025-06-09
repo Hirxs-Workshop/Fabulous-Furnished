@@ -207,9 +207,16 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
 
         const blockId = block.permutation.type.id;
         const prefix = "ff:wooden_cabinet_";
-        const wood = blockId.startsWith(prefix)
-          ? blockId.substring(prefix.length)
-          : "oak";
+        const marblePrefix = "ff:wooden_marble_cabinet_";
+        let wood;
+        
+        if (blockId.startsWith(prefix)) {
+          wood = blockId.substring(prefix.length);
+        } else if (blockId.startsWith(marblePrefix)) {
+          wood = blockId.substring(marblePrefix.length);
+        } else {
+          wood = "oak";
+        }
 
         const entityName = `${wood}_cabinet`;
         block.dimension.runCommand(
@@ -281,9 +288,16 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
 
         const blockId = block.permutation.type.id;
         const prefix = "ff:wooden_bedside_table_";
-        const wood = blockId.startsWith(prefix)
-          ? blockId.substring(prefix.length)
-          : "oak";
+        const marblePrefix = "ff:wooden_marble_cabinet_";
+        let wood;
+        
+        if (blockId.startsWith(prefix)) {
+          wood = blockId.substring(prefix.length);
+        } else if (blockId.startsWith(marblePrefix)) {
+          wood = blockId.substring(marblePrefix.length);
+        } else {
+          wood = "oak";
+        }
 
         const entityName = `${wood}_cabinet`;
         block.dimension.runCommand(
@@ -348,10 +362,18 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
         const { x, y, z } = block.location;
 
         const blockId = block.permutation.type.id;
-        const prefix = "ff:wooden_wall_cabinet_";
-        const wood = blockId.startsWith(prefix)
-          ? blockId.substring(prefix.length)
-          : "oak";
+        const prefix = "ff:wooden_cabinet_";
+        const marblePrefix = "ff:wooden_marble_cabinet_";
+        let wood;
+        
+        if (blockId.startsWith(prefix)) {
+          wood = blockId.substring(prefix.length);
+        } else if (blockId.startsWith(marblePrefix)) {
+          wood = blockId.substring(marblePrefix.length);
+        } else {
+          wood = "oak";
+        }
+
         const entityName = `${wood}_cabinet`;
         const dir = (block.permutation.getState("minecraft:cardinal_direction") || "south").toLowerCase();
         if (dir === "north" || dir === "south") {
@@ -436,59 +458,40 @@ world.afterEvents.playerInteractWithBlock.subscribe(e => {
   const isSneaking = player.isSneaking;
 
   const stoneMap = {
-    "minecraft:polished_andesite": { counter: 1, stage: 1 },
-    "minecraft:polished_diorite": { counter: 2, stage: 1 },
-    "minecraft:polished_granite": { counter: 3, stage: 1 },
-    "minecraft:polished_blackstone": { counter: 4, stage: 1 },
-    "minecraft:polished_deepslate": { counter: 5, stage: 1 },
-    "minecraft:polished_tuff": { counter: 6, stage: 1 },
-    "minecraft:quartz_block": { counter: 7, stage: 1 },
-    "minecraft:cobblestone": { counter: 8, stage: 1 },
-
-    "ff:wooden_smooth_planks_acacia": { counter: 1, stage: 2 },
-    "ff:wooden_smooth_planks_birch": { counter: 2, stage: 2 },
-    "ff:wooden_smooth_planks_cherry": { counter: 3, stage: 2 },
-    "ff:wooden_smooth_planks_cinder": { counter: 4, stage: 2 },
-    "ff:wooden_smooth_planks_crimson": { counter: 5, stage: 2 },
-    "ff:wooden_smooth_planks_dark_oak": { counter: 6, stage: 2 },
-    "ff:wooden_smooth_planks_jungle": { counter: 7, stage: 2 },
-    "ff:wooden_smooth_planks_mangrove": { counter: 8, stage: 2 },
-    "ff:wooden_smooth_planks_maple": { counter: 9, stage: 2 },
-    "ff:wooden_smooth_planks_oak": { counter: 10, stage: 2 },
-    "ff:wooden_smooth_planks_pale": { counter: 11, stage: 2 },
-    "ff:wooden_smooth_planks_spicewood": { counter: 12, stage: 2 },
-    "ff:wooden_smooth_planks_spruce": { counter: 13, stage: 2 },
-    "ff:wooden_smooth_planks_warped": { counter: 14, stage: 2 }
+    "ff:wooden_smooth_planks_acacia": { counter: 1},
+    "ff:wooden_smooth_planks_birch": { counter: 2},
+    "ff:wooden_smooth_planks_cherry": { counter: 3},
+    "ff:wooden_smooth_planks_cinder": { counter: 4},
+    "ff:wooden_smooth_planks_crimson": { counter: 5},
+    "ff:wooden_smooth_planks_dark_oak": { counter: 6},
+    "ff:wooden_smooth_planks_jungle": { counter: 7},
+    "ff:wooden_smooth_planks_mangrove": { counter: 8},
+    "ff:wooden_smooth_planks_maple": { counter: 9},
+    "ff:wooden_smooth_planks_oak": { counter: 10},
+    "ff:wooden_smooth_planks_pale": { counter: 11},
+    "ff:wooden_smooth_planks_spicewood": { counter: 12},
+    "ff:wooden_smooth_planks_spruce": { counter: 13},
+    "ff:wooden_smooth_planks_warped": { counter: 14}
   };
 
 const stoneMapReverse = {
-  1: "minecraft:polished_andesite",
-  2: "minecraft:polished_diorite",
-  3: "minecraft:polished_granite",
-  4: "minecraft:polished_blackstone",
-  5: "minecraft:polished_deepslate",
-  6: "minecraft:polished_tuff",
-  7: "minecraft:quartz_block",
-  8: "minecraft:cobblestone",
-
-  "2_1": "ff:wooden_smooth_planks_acacia",
-  "2_2": "ff:wooden_smooth_planks_birch",
-  "2_3": "ff:wooden_smooth_planks_cherry",
-  "2_4": "ff:wooden_smooth_planks_cinder",
-  "2_5": "ff:wooden_smooth_planks_crimson",
-  "2_6": "ff:wooden_smooth_planks_dark_oak",
-  "2_7": "ff:wooden_smooth_planks_jungle",
-  "2_8": "ff:wooden_smooth_planks_mangrove",
-  "2_9": "ff:wooden_smooth_planks_maple",
-  "2_10": "ff:wooden_smooth_planks_oak",
-  "2_11": "ff:wooden_smooth_planks_pale",
-  "2_12": "ff:wooden_smooth_planks_spicewood",
-  "2_13": "ff:wooden_smooth_planks_spruce",
-  "2_14": "ff:wooden_smooth_planks_warped"
+  1: "ff:wooden_smooth_planks_acacia",
+  2: "ff:wooden_smooth_planks_birch",
+  3: "ff:wooden_smooth_planks_cherry",
+  4: "ff:wooden_smooth_planks_cinder",
+  5: "ff:wooden_smooth_planks_crimson",
+  6: "ff:wooden_smooth_planks_dark_oak",
+  7: "ff:wooden_smooth_planks_jungle",
+  8: "ff:wooden_smooth_planks_mangrove",
+  9: "ff:wooden_smooth_planks_maple",
+  10: "ff:wooden_smooth_planks_oak",
+  11: "ff:wooden_smooth_planks_pale",
+  12: "ff:wooden_smooth_planks_spicewood",
+  13: "ff:wooden_smooth_planks_spruce",
+  14: "ff:wooden_smooth_planks_warped"
 };
 
   const activeState = 'ff:counter_top';
-  const stageState = 'ff:tops_stages';
 
   if (main && Object.keys(stoneMap).includes(main.typeId) && !isSneaking) {
     const current = block.permutation.getState(activeState) ?? 0;
@@ -496,11 +499,10 @@ const stoneMapReverse = {
       player.playSound("note.bass");
       return;
     }
-    const { counter, stage } = stoneMap[main.typeId];
+    const { counter } = stoneMap[main.typeId];
     block.setPermutation(
       block.permutation
         .withState(activeState, counter)
-        .withState(stageState, stage)
     );
     player.playSound("use.stone");
     if (main.amount > 1) {
@@ -512,22 +514,18 @@ const stoneMapReverse = {
     return;
   }
 
-  if (isSneaking && (!main || !Object.keys(stoneMap).includes(main.typeId))) {
+  if (isSneaking && (!main || main.typeId === "minecraft:air")) {
     const counter = block.permutation.getState(activeState);
-    const stage = block.permutation.getState(stageState) ?? 1;
     let dropItem = null;
 
-    if (stage === 1 && stoneMapReverse[counter]) {
+    if (stoneMapReverse[counter]) {
       dropItem = stoneMapReverse[counter];
-    } else if (stage === 2 && stoneMapReverse[`2_${counter}`]) {
-      dropItem = stoneMapReverse[`2_${counter}`];
     }
 
     if (dropItem) {
       block.setPermutation(
         block.permutation
           .withState(activeState, 0)
-          .withState(stageState, 1)
       );
       player.playSound("land.stone");
       block.dimension.spawnItem(new ItemStack(dropItem, 1), {

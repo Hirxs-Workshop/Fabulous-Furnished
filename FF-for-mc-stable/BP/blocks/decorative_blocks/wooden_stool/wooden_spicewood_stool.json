@@ -4,18 +4,11 @@
 		"description": {
 			"identifier": "ff:wooden_spicewood_stool",
 			"traits": {
-				"minecraft:placement_position": {
+				"minecraft:placement_direction": {
 					"enabled_states": [
-						"minecraft:block_face"
-					]
-				}
-			},
-			"states": {
-				"ff:block_rotation": {
-					"values": {
-						"min": 0,
-						"max": 15
-					}
+						"minecraft:cardinal_direction"
+					],
+					"y_rotation_offset": 180
 				}
 			},
 			"menu_category": {
@@ -24,14 +17,7 @@
 		},
 		"components": {
 			"minecraft:geometry": {
-				"identifier": "geometry.reworked_stool",
-				"bone_visibility": {
-					"up_0": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('ff:block_rotation'), 4)",
-					"up_22_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('ff:block_rotation') - 1, 4)",
-					"up_45": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('ff:block_rotation') - 2, 4)",
-					"up_67_5": "q.block_state('minecraft:block_face') == 'up' && !math.mod(q.block_state('ff:block_rotation') - 3, 4)",
-					"side": "q.block_state('minecraft:block_face') != 'up'"
-				}
+				"identifier": "geometry.reworked_stool"
 			},
 			"minecraft:map_color": "#00ff00",
 			"minecraft:material_instances": {
@@ -62,25 +48,24 @@
 			"minecraft:light_dampening": 1,
 			"minecraft:custom_components": [
 				"ff:stool_spicewood_add_couch",
-				"ff:rider_couch",
-				"ff:adv_rot"
+				"ff:rider_couch"
 			]
 		},
 		"permutations": [
 			{
-				"condition": "q.block_state('ff:block_rotation') >= 4 || q.block_state('minecraft:block_face') == 'east'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
 							0,
-							-90,
+							0,
 							0
 						]
 					}
 				}
 			},
 			{
-				"condition": "q.block_state('ff:block_rotation') >= 8 || q.block_state('minecraft:block_face') == 'south'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -92,7 +77,7 @@
 				}
 			},
 			{
-				"condition": "q.block_state('ff:block_rotation') >= 12 || q.block_state('minecraft:block_face') == 'west'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
 				"components": {
 					"minecraft:transformation": {
 						"rotation": [
@@ -104,16 +89,15 @@
 				}
 			},
 			{
-				"condition": "q.block_state('minecraft:block_face') != 'up'",
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
 				"components": {
-			"minecraft:collision_box": {
-				"origin": [-6, 0, -6],
-				"size": [12, 7, 12]
-			},
-			"minecraft:selection_box": {
-				"origin": [-6, 0, -6],
-				"size": [12, 7, 12]
-			}
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
 				}
 			}
 		]

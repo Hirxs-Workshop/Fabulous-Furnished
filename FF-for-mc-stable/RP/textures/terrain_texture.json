@@ -589,24 +589,84 @@
                 "textures/blocks/bathroom/towels/towel_yellow"
             ]
         },
-        "green_curtain": {
+        "curtain_black": {
             "textures": [
-                "textures/blocks/curtains/green_curtain"
+                "textures/blocks/curtains/curtain_black"
             ]
         },
-        "green_curtain_bottom": {
+        "curtain_blue": {
             "textures": [
-                "textures/blocks/curtains/green_curtain_bottom"
+                "textures/blocks/curtains/curtain_blue"
             ]
         },
-        "green_curtain_side": {
+        "curtain_brown": {
             "textures": [
-                "textures/blocks/curtains/green_curtain_side"
+                "textures/blocks/curtains/curtain_brown"
             ]
         },
-        "green_curtain_side_bottom": {
+        "curtain_cyan": {
             "textures": [
-                "textures/blocks/curtains/green_curtain_side_bottom"
+                "textures/blocks/curtains/curtain_cyan"
+            ]
+        },
+        "curtain_gray": {
+            "textures": [
+                "textures/blocks/curtains/curtain_gray"
+            ]
+        },
+        "curtain_green": {
+            "textures": [
+                "textures/blocks/curtains/curtain_green"
+            ]
+        },
+        "curtain_light_blue": {
+            "textures": [
+                "textures/blocks/curtains/curtain_light_blue"
+            ]
+        },
+        "curtain_light_gray": {
+            "textures": [
+                "textures/blocks/curtains/curtain_light_gray"
+            ]
+        },
+        "curtain_lime": {
+            "textures": [
+                "textures/blocks/curtains/curtain_lime"
+            ]
+        },
+        "curtain_magenta": {
+            "textures": [
+                "textures/blocks/curtains/curtain_magenta"
+            ]
+        },
+        "curtain_orange": {
+            "textures": [
+                "textures/blocks/curtains/curtain_orange"
+            ]
+        },
+        "curtain_pink": {
+            "textures": [
+                "textures/blocks/curtains/curtain_pink"
+            ]
+        },
+        "curtain_purple": {
+            "textures": [
+                "textures/blocks/curtains/curtain_purple"
+            ]
+        },
+        "curtain_red": {
+            "textures": [
+                "textures/blocks/curtains/curtain_red"
+            ]
+        },
+        "curtain_white": {
+            "textures": [
+                "textures/blocks/curtains/curtain_white"
+            ]
+        },
+        "curtain_yellow": {
+            "textures": [
+                "textures/blocks/curtains/curtain_yellow"
             ]
         },
         "energy_bar_1": {
@@ -1109,6 +1169,11 @@
                 "textures/blocks/porcelain/marble_cabinet_dark_oak"
             ]
         },
+        "marble_cabinet_front": {
+            "textures": [
+                "textures/blocks/porcelain/marble_cabinet_front"
+            ]
+        },
         "marble_cabinet_jungle": {
             "textures": [
                 "textures/blocks/porcelain/marble_cabinet_jungle"
@@ -1132,6 +1197,11 @@
         "marble_cabinet_pale": {
             "textures": [
                 "textures/blocks/porcelain/marble_cabinet_pale"
+            ]
+        },
+        "marble_cabinet_side": {
+            "textures": [
+                "textures/blocks/porcelain/marble_cabinet_side"
             ]
         },
         "marble_cabinet_spicewood": {

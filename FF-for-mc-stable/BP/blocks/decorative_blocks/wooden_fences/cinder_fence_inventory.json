@@ -340,15 +340,8 @@
 		],
 		"components": {
 			"minecraft:geometry": "geometry.cinder_garden_fence_inventory",
-			"minecraft:tick": {
-				"interval_range": [
-					20,
-					20
-				]
-			},
-			"minecraft:custom_components": [
-				"ff:on_tick"
-			],
+
+
 			"tag:inventory_fence": {},
 			"minecraft:material_instances": {
 				"*": {

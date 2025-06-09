@@ -4,7 +4,7 @@
 	"product_type": "addon"
     },
     "header": {
-        "name": "TEST FLIGHT - BP | Fabulous Furnished - v2.0 Official Release",
+        "name": "TEST FLIGHT #4 - BP | Fabulous Furnished - v2.0 Official Release",
         "description": "Make your world fabulous with fabulous furniture! More than 150+ blocks with more than 250+ variations available!",
         "min_engine_version": [
             1,
@@ -13,9 +13,9 @@
         ],
         "uuid": "b85a36d3-e461-4ffe-d69c-b451c609a6dc",
         "version": [
-            4,
+            5,
             0,
-            0
+            5
         ]
     },
     "modules": [
@@ -24,9 +24,9 @@
             "type": "script",
             "uuid": "714df9a5-3ba6-423a-d8bc-77906bb4f2d2",
             "version": [
-                4,
+                5,
                 0,
-                0
+                5
             ],
             "language": "javascript",
             "entry": "scripts/ff_main.js"
@@ -44,9 +44,9 @@
         {
             "uuid": "57bf9e0d-005e-4763-8779-4373f70800a5",
             "version": [
-                4,
+                5,
                 0,
-                0
+                5
             ]
         }
     ],

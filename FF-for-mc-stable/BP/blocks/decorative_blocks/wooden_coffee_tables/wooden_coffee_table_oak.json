@@ -7,9 +7,9 @@
 				"category": "items"
 			},
 			"states": {
-				"ff:post": [
-					0,
-					1
+				"ff:on_table": [
+					false,
+					true
 				],
 				"ff:north_block_connection": [
 					0,
@@ -248,7 +248,8 @@
             },
 			"minecraft:light_dampening": 1,
 			"minecraft:custom_components": [
-				"ff:table_connect"
+				"ff:table_connect",
+				"ff:laptop_on_table"
 			],
 			"tag:fence": {},
 			"minecraft:material_instances": {

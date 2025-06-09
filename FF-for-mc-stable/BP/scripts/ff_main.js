@@ -7,9 +7,7 @@ world.beforeEvents.worldInitialize.subscribe((e) => {
 	e.blockComponentRegistry.registerCustomComponent("ff:blinds", new fabulousBlindsBlock());
 });
 // Stable
-import 'blocks/blocks_init'
-import 'blocks/fridge_dual'
-import 'blocks/log_interaction_events'
+import 'blocks/blocks_cc'
 import 'blocks/trampoline_connect'
 import 'blocks/fences_cc'
 import 'blocks/cooking_cc'
@@ -33,9 +31,8 @@ import 'autumn_leaves'
 
 import 'electric_system/main_system'
 
-
-import 'electric_system/device_system'
+// import 'electric_system/device_system'
 // import 'testy'
 // import 'badges'
 
-import 'block_data_view' // by Kaoiga (just for debug)
+// import 'block_data_view' // by Kaoiga (just for debug)

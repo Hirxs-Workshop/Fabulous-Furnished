@@ -35,7 +35,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -47,7 +47,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						} 
 					},
@@ -59,7 +59,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -71,7 +71,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -83,7 +83,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -95,7 +95,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -107,7 +107,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						} 
 					},
@@ -119,7 +119,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -131,7 +131,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -143,7 +143,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -155,7 +155,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -167,7 +167,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -179,7 +179,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -191,7 +191,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table",
+							"texture": "new_darkoak_table",
 							"render_method": "alpha_test"
 						}
 					},
@@ -203,7 +203,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table2",
+							"texture": "new_darkoak_table2",
 							"render_method": "alpha_test"
 						}
 					},
@@ -215,7 +215,7 @@
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "new_dark_oak_table2",
+							"texture": "new_darkoak_table2",
 							"render_method": "alpha_test"
 						}
 					},
@@ -248,12 +248,13 @@
             },
 			"minecraft:light_dampening": 1,
 			"minecraft:custom_components": [
-				"ff:table_connect"
+				"ff:table_connect",
+				"ff:laptop_on_table"
 			],
 			"tag:fence": {},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "new_dark_oak_table",
+					"texture": "new_darkoak_table",
 					"render_method": "alpha_test"
 				}
 			}

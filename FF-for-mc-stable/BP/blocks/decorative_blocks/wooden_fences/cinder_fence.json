@@ -622,16 +622,10 @@
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 2
             },
-			"minecraft:tick": {
-				"interval_range": [
-					3,
-					3
-				]
-			},
+
 			"minecraft:custom_components": [
 				"ff:cinder_on_player_destroy",
-				"ff:cinder_on_interact",
-				"ff:on_tick"
+				"ff:cinder_on_interact"
 
 			],
 			"tag:garden_fence_cinder": {},
