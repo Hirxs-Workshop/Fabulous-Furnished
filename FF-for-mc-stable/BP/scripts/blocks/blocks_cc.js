@@ -543,11 +543,11 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
             const { x, y, z } = block.location;
             const equipment = player.getComponent('equippable');
             const selectedItem = equipment.getEquipment('Mainhand');
-            const add_folk = block.permutation.withState("ff:outlet_function", 1);
-            const remove_folk = block.permutation.withState("ff:outlet_function", 0);
-            const givefolk = new ItemStack("ff:folk");
-            if (!player.isSneaking && selectedItem && (selectedItem.typeId === 'ff:folk') && block.permutation.getState("ff:outlet_function") === 0) {
-                block.setPermutation(add_folk);
+            const add_fork = block.permutation.withState("ff:outlet_function", 1);
+            const remove_fork = block.permutation.withState("ff:outlet_function", 0);
+            const givefork = new ItemStack("ff:fork");
+            if (!player.isSneaking && selectedItem && (selectedItem.typeId === 'ff:fork') && block.permutation.getState("ff:outlet_function") === 0) {
+                block.setPermutation(add_fork);
                 player.playSound("random.pop2");
                 if (selectedItem.amount > 1) {
                     selectedItem.amount -= 1;
@@ -558,8 +558,8 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
                 return;
             }
             if (!player.isSneaking && block.permutation.getState("ff:outlet_function") === 1) {
-                block.dimension.spawnItem(givefolk, { x: block.location.x + 0.5, y: block.location.y + 1, z: block.location.z + 0.5 });
-                block.setPermutation(remove_folk);
+                block.dimension.spawnItem(givefork, { x: block.location.x + 0.5, y: block.location.y + 1, z: block.location.z + 0.5 });
+                block.setPermutation(remove_fork);
                 player.playSound("random.pop");
 
                 return;
@@ -572,24 +572,24 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
         onTick: e => {
             const { player, block } = e;
             const { x, y, z } = block.location;
-            const folk_explode = block.permutation.withState("ff:outlet_function", 2);
-            const folk_explode2 = block.permutation.withState("ff:outlet_function", 3);
+            const fork_explode = block.permutation.withState("ff:outlet_function", 2);
+            const fork_explode2 = block.permutation.withState("ff:outlet_function", 3);
             if (block.permutation.getState("ff:outlet_function") === 1) {
-                block.dimension.spawnParticle("ff:smoke_folk", { x: block.location.x + 0.5, y: block.location.y + 0.5, z: block.location.z + 0.5 });
-                block.setPermutation(folk_explode);
+                block.dimension.spawnParticle("ff:smoke_fork", { x: block.location.x + 0.5, y: block.location.y + 0.5, z: block.location.z + 0.5 });
+                block.setPermutation(fork_explode);
                 return;
             }
             if (block.permutation.getState("ff:outlet_function") === 2) {
-                block.dimension.spawnParticle("ff:elec_folk", { x: block.location.x + 0.5, y: block.location.y + 0.5, z: block.location.z + 0.5 });
-                block.dimension.spawnParticle("ff:smoke_folk", { x: block.location.x + 0.5, y: block.location.y + 0.5, z: block.location.z + 0.5 });
-                block.setPermutation(folk_explode2);
+                block.dimension.spawnParticle("ff:elec_fork", { x: block.location.x + 0.5, y: block.location.y + 0.5, z: block.location.z + 0.5 });
+                block.dimension.spawnParticle("ff:smoke_fork", { x: block.location.x + 0.5, y: block.location.y + 0.5, z: block.location.z + 0.5 });
+                block.setPermutation(fork_explode2);
                 return;
             }
             if (block.permutation.getState("ff:outlet_function") === 3) {
                 block.dimension.runCommand(`summon ender_crystal ${x} ${y} ${z} 0 0 minecraft:crystal_explode`);
                 block.dimension.runCommand(`setblock ${x} ${y} ${z} air`)
-                block.dimension.spawnParticle("ff:elec_folk", { x: block.location.x + 0.5, y: block.location.y + 0.5, z: block.location.z + 0.5 });
-                block.dimension.spawnParticle("ff:smoke_folk", { x: block.location.x + 0.5, y: block.location.y + 0.5, z: block.location.z + 0.5 });
+                block.dimension.spawnParticle("ff:elec_fork", { x: block.location.x + 0.5, y: block.location.y + 0.5, z: block.location.z + 0.5 });
+                block.dimension.spawnParticle("ff:smoke_fork", { x: block.location.x + 0.5, y: block.location.y + 0.5, z: block.location.z + 0.5 });
                 return;
             }
         }

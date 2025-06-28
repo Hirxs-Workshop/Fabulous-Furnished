@@ -40,7 +40,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -59,7 +59,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -78,7 +78,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -97,7 +97,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -116,7 +116,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -135,7 +135,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -154,7 +154,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -173,7 +173,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -192,7 +192,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -211,7 +211,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -230,7 +230,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -249,7 +249,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -268,7 +268,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -287,7 +287,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -306,7 +306,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
@@ -325,7 +325,7 @@
 							"ambient_occlusion": true,
 							"face_dimming": true,
 							"texture": "blinds_spruce",
-							"render_method": "alpha_test"
+							"render_method": "alpha_test_single_sided"
 						},
 						"blind": {
 							"ambient_occlusion": true,
