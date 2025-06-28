@@ -88,7 +88,8 @@
 						"*": {
 							"texture": "water_still_c",
 							"render_method": "blend",
-							"ambient_occlusion": false
+							"ambient_occlusion": false,
+							"tint_method": "water"
 						}
 					},
 					"minecraft:geometry": "geometry.bathroom_sink_open"

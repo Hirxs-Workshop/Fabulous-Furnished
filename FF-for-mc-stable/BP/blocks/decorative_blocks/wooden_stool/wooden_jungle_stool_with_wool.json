@@ -20,7 +20,8 @@
 				}
 			},
 			"menu_category": {
-				"category": "items"
+				"category": "none",
+				"is_hidden_in_commands": false
 			}
 		},
 		"components": {

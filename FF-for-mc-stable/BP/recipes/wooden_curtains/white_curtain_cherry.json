@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:white_curtain_cherry"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"WWW",
+			"SSS",
+			"SSS"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:white_wool"
+			},
+			"W": {
+				"item": "minecraft:cherry_planks"
+			}
+		},
+		"result": {
+			"item": "ff:white_curtain_cherry",
+            "count": 3
+		}
+	}
+} 

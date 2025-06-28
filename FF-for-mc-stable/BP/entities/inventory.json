@@ -164,14 +164,6 @@
 							"event": "kill"
 						}
 					},
-										{
-						"block": {
-							"name": "ff:wooden_cabinet_maple"
-						},
-						"exited_block_event": {
-							"event": "kill"
-						}
-					},
 					{
 						"block": {
 							"name": "ff:wooden_marble_cabinet_oak"
@@ -271,14 +263,6 @@
 					{
 						"block": {
 							"name": "ff:wooden_marble_cabinet_spicewood"
-						},
-						"exited_block_event": {
-							"event": "kill"
-						}
-					},
-										{
-						"block": {
-							"name": "ff:wooden_marble_cabinet_maple"
 						},
 						"exited_block_event": {
 							"event": "kill"
@@ -388,14 +372,6 @@
 							"event": "kill"
 						}
 					},
-										{
-						"block": {
-							"name": "ff:wooden_bedside_table_maple"
-						},
-						"exited_block_event": {
-							"event": "kill"
-						}
-					},
 					{
 						"block": {
 							"name": "ff:wooden_wall_cabinet_oak"
@@ -495,14 +471,6 @@
 					{
 						"block": {
 							"name": "ff:wooden_wall_cabinet_spicewood"
-						},
-						"exited_block_event": {
-							"event": "kill"
-						}
-					},
-					{
-						"block": {
-							"name": "ff:wooden_wall_cabinet_maple"
 						},
 						"exited_block_event": {
 							"event": "kill"

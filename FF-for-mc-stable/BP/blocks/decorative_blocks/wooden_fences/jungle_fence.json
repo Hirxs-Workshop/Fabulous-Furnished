@@ -633,7 +633,8 @@
 					"texture": "jungle_fences",
 					"render_method": "alpha_test"
 				}
-			}
+			},
+			"minecraft:loot": "loot_tables/jungle_fence_inventory.json"
 		}
 	}
 }

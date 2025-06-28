@@ -71,10 +71,10 @@
 				"gui": {
 					"rotation": [0, 180, 0],
 					"translation": [0, 0, 0],
-					"scale": [1.1, 1.1, 1.1],
+					"scale": [1, 1, 1],
 					"rotation_pivot": [0, 0, 0],
 					"scale_pivot": [0, 0, 0],
-					"fit_to_frame": false
+					"fit_to_frame": true
 				},
 				"head": {
 					"rotation": [0, 180, 0],

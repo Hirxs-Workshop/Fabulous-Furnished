@@ -69,6 +69,36 @@
                 "textures/blocks/empty_dish"
             ]
         },
+        "energy_generator_back": {
+            "textures": [
+                "textures/blocks/energy_generator_back"
+            ]
+        },
+        "energy_generator_bottom": {
+            "textures": [
+                "textures/blocks/energy_generator_bottom"
+            ]
+        },
+        "energy_generator_front": {
+            "textures": [
+                "textures/blocks/energy_generator_front"
+            ]
+        },
+        "energy_generator_side": {
+            "textures": [
+                "textures/blocks/energy_generator_side"
+            ]
+        },
+        "energy_generator_top": {
+            "textures": [
+                "textures/blocks/energy_generator_top"
+            ]
+        },
+        "energy_icon": {
+            "textures": [
+                "textures/blocks/energy_icon"
+            ]
+        },
         "feldspar_ore": {
             "textures": [
                 "textures/blocks/feldspar_ore"
@@ -122,16 +152,6 @@
         "large_sofa": {
             "textures": [
                 "textures/blocks/large_sofa"
-            ]
-        },
-        "maple_log_side": {
-            "textures": [
-                "textures/blocks/maple_log_side"
-            ]
-        },
-        "maple_log_top": {
-            "textures": [
-                "textures/blocks/maple_log_top"
             ]
         },
         "modern_switch": {
@@ -234,6 +254,16 @@
                 "textures/blocks/red_couch"
             ]
         },
+        "slider_off": {
+            "textures": [
+                "textures/blocks/slider_off"
+            ]
+        },
+        "slider_on": {
+            "textures": [
+                "textures/blocks/slider_on"
+            ]
+        },
         "spicewood_leaves": {
             "textures": [
                 "textures/blocks/spicewood_leaves"
@@ -272,16 +302,6 @@
         "stripped_cinder_log_top": {
             "textures": [
                 "textures/blocks/stripped_cinder_log_top"
-            ]
-        },
-        "stripped_maple_log": {
-            "textures": [
-                "textures/blocks/stripped_maple_log"
-            ]
-        },
-        "stripped_maple_log_top": {
-            "textures": [
-                "textures/blocks/stripped_maple_log_top"
             ]
         },
         "stripped_spicewood_log": {
@@ -669,46 +689,6 @@
                 "textures/blocks/curtains/curtain_yellow"
             ]
         },
-        "energy_bar_1": {
-            "textures": [
-                "textures/blocks/energy/energy_bar_1"
-            ]
-        },
-        "energy_bar_2": {
-            "textures": [
-                "textures/blocks/energy/energy_bar_2"
-            ]
-        },
-        "energy_bar_3": {
-            "textures": [
-                "textures/blocks/energy/energy_bar_3"
-            ]
-        },
-        "energy_bar_4": {
-            "textures": [
-                "textures/blocks/energy/energy_bar_4"
-            ]
-        },
-        "energy_bar_5": {
-            "textures": [
-                "textures/blocks/energy/energy_bar_5"
-            ]
-        },
-        "energy_bar_6": {
-            "textures": [
-                "textures/blocks/energy/energy_bar_6"
-            ]
-        },
-        "energy_bar_7": {
-            "textures": [
-                "textures/blocks/energy/energy_bar_7"
-            ]
-        },
-        "energy_bar_8": {
-            "textures": [
-                "textures/blocks/energy/energy_bar_8"
-            ]
-        },
         "kitchen_sink_marble_acacia": {
             "textures": [
                 "textures/blocks/kitchen_sink/kitchen_sink_marble_acacia"
@@ -747,11 +727,6 @@
         "kitchen_sink_marble_mangrove": {
             "textures": [
                 "textures/blocks/kitchen_sink/kitchen_sink_marble_mangrove"
-            ]
-        },
-        "kitchen_sink_marble_maple": {
-            "textures": [
-                "textures/blocks/kitchen_sink/kitchen_sink_marble_maple"
             ]
         },
         "kitchen_sink_marble_oak": {
@@ -817,11 +792,6 @@
         "lamp_base_mangrove": {
             "textures": [
                 "textures/blocks/lamps/lamp_base_mangrove"
-            ]
-        },
-        "lamp_base_maple": {
-            "textures": [
-                "textures/blocks/lamps/lamp_base_maple"
             ]
         },
         "lamp_base_oak": {
@@ -1182,11 +1152,6 @@
         "marble_cabinet_mangrove": {
             "textures": [
                 "textures/blocks/porcelain/marble_cabinet_mangrove"
-            ]
-        },
-        "marble_cabinet_maple": {
-            "textures": [
-                "textures/blocks/porcelain/marble_cabinet_maple"
             ]
         },
         "marble_cabinet_oak": {
@@ -1669,11 +1634,6 @@
                 "textures/blocks/rustic/blinds/blinds_mangrove"
             ]
         },
-        "blinds_maple": {
-            "textures": [
-                "textures/blocks/rustic/blinds/blinds_maple"
-            ]
-        },
         "blinds_oak": {
             "textures": [
                 "textures/blocks/rustic/blinds/blinds_oak"
@@ -1899,21 +1859,6 @@
                 "textures/blocks/rustic/cabinets/mangrove_cabinet_side"
             ]
         },
-        "maple_cabinet": {
-            "textures": [
-                "textures/blocks/rustic/cabinets/maple_cabinet"
-            ]
-        },
-        "maple_cabinet_drawer_front": {
-            "textures": [
-                "textures/blocks/rustic/cabinets/maple_cabinet_drawer_front"
-            ]
-        },
-        "maple_cabinet_side": {
-            "textures": [
-                "textures/blocks/rustic/cabinets/maple_cabinet_side"
-            ]
-        },
         "oak_cabinet": {
             "textures": [
                 "textures/blocks/rustic/cabinets/oak_cabinet"
@@ -2044,11 +1989,6 @@
                 "textures/blocks/rustic/ceiling_fan/ceiling_fan_off_mangrove"
             ]
         },
-        "ceiling_fan_off_maple": {
-            "textures": [
-                "textures/blocks/rustic/ceiling_fan/ceiling_fan_off_maple"
-            ]
-        },
         "ceiling_fan_off_oak": {
             "textures": [
                 "textures/blocks/rustic/ceiling_fan/ceiling_fan_off_oak"
@@ -2112,11 +2052,6 @@
         "ceiling_fan_on_mangrove": {
             "textures": [
                 "textures/blocks/rustic/ceiling_fan/ceiling_fan_on_mangrove"
-            ]
-        },
-        "ceiling_fan_on_maple": {
-            "textures": [
-                "textures/blocks/rustic/ceiling_fan/ceiling_fan_on_maple"
             ]
         },
         "ceiling_fan_on_oak": {
@@ -2187,11 +2122,6 @@
         "new_mangrove_chair": {
             "textures": [
                 "textures/blocks/rustic/chairs/new_mangrove_chair"
-            ]
-        },
-        "new_maple_chair": {
-            "textures": [
-                "textures/blocks/rustic/chairs/new_maple_chair"
             ]
         },
         "new_oak_chair": {
@@ -2354,11 +2284,6 @@
                 "textures/blocks/rustic/couchs/couch_base_mangrove"
             ]
         },
-        "couch_base_maple": {
-            "textures": [
-                "textures/blocks/rustic/couchs/couch_base_maple"
-            ]
-        },
         "couch_base_oak": {
             "textures": [
                 "textures/blocks/rustic/couchs/couch_base_oak"
@@ -2507,11 +2432,6 @@
         "cutting_board_mangrove": {
             "textures": [
                 "textures/blocks/rustic/cutting_board/cutting_board_mangrove"
-            ]
-        },
-        "cutting_board_maple": {
-            "textures": [
-                "textures/blocks/rustic/cutting_board/cutting_board_maple"
             ]
         },
         "cutting_board_oak": {
@@ -2664,11 +2584,6 @@
                 "textures/blocks/rustic/ff_planks/smooth_wood/sw_mangrove"
             ]
         },
-        "sw_maple": {
-            "textures": [
-                "textures/blocks/rustic/ff_planks/smooth_wood/sw_maple"
-            ]
-        },
         "sw_oak": {
             "textures": [
                 "textures/blocks/rustic/ff_planks/smooth_wood/sw_oak"
@@ -2734,11 +2649,6 @@
                 "textures/blocks/rustic/ff_planks/wooden_big_planks/wbp_mangrove"
             ]
         },
-        "wbp_maple": {
-            "textures": [
-                "textures/blocks/rustic/ff_planks/wooden_big_planks/wbp_maple"
-            ]
-        },
         "wbp_oak": {
             "textures": [
                 "textures/blocks/rustic/ff_planks/wooden_big_planks/wbp_oak"
@@ -2767,11 +2677,6 @@
         "planks_cinder": {
             "textures": [
                 "textures/blocks/rustic/ff_planks/wooden_classic_planks/planks_cinder"
-            ]
-        },
-        "planks_maple": {
-            "textures": [
-                "textures/blocks/rustic/ff_planks/wooden_classic_planks/planks_maple"
             ]
         },
         "planks_spicewood": {
@@ -2817,11 +2722,6 @@
         "wdbp_mangrove": {
             "textures": [
                 "textures/blocks/rustic/ff_planks/wooden_double_big_planks/wdbp_mangrove"
-            ]
-        },
-        "wdbp_maple": {
-            "textures": [
-                "textures/blocks/rustic/ff_planks/wooden_double_big_planks/wdbp_maple"
             ]
         },
         "wdbp_oak": {
@@ -2889,11 +2789,6 @@
                 "textures/blocks/rustic/ff_planks/wooden_planks_chiseled/wcp_1_mangrove"
             ]
         },
-        "wcp_1_maple": {
-            "textures": [
-                "textures/blocks/rustic/ff_planks/wooden_planks_chiseled/wcp_1_maple"
-            ]
-        },
         "wcp_1_oak": {
             "textures": [
                 "textures/blocks/rustic/ff_planks/wooden_planks_chiseled/wcp_1_oak"
@@ -2957,11 +2852,6 @@
         "wcp_2_mangrove": {
             "textures": [
                 "textures/blocks/rustic/ff_planks/wooden_planks_chiseled/wcp_2_mangrove"
-            ]
-        },
-        "wcp_2_maple": {
-            "textures": [
-                "textures/blocks/rustic/ff_planks/wooden_planks_chiseled/wcp_2_maple"
             ]
         },
         "wcp_2_oak": {
@@ -3029,11 +2919,6 @@
                 "textures/blocks/rustic/ff_planks/wooden_planks_chiseled/wcp_3_mangrove"
             ]
         },
-        "wcp_3_maple": {
-            "textures": [
-                "textures/blocks/rustic/ff_planks/wooden_planks_chiseled/wcp_3_maple"
-            ]
-        },
         "wcp_3_oak": {
             "textures": [
                 "textures/blocks/rustic/ff_planks/wooden_planks_chiseled/wcp_3_oak"
@@ -3062,11 +2947,6 @@
         "wpc_beta": {
             "textures": [
                 "textures/blocks/rustic/ff_planks/wooden_planks_connectable/wpc_beta"
-            ]
-        },
-        "wpc_beta_maple": {
-            "textures": [
-                "textures/blocks/rustic/ff_planks/wooden_planks_connectable/wpc_beta_maple"
             ]
         },
         "wsp_acacia": {
@@ -3107,11 +2987,6 @@
         "wsp_mangrove": {
             "textures": [
                 "textures/blocks/rustic/ff_planks/wooden_smooth_planks/wsp_mangrove"
-            ]
-        },
-        "wsp_maple": {
-            "textures": [
-                "textures/blocks/rustic/ff_planks/wooden_smooth_planks/wsp_maple"
             ]
         },
         "wsp_oak": {
@@ -3179,11 +3054,6 @@
                 "textures/blocks/rustic/ff_planks/wooden_smooth_planks_zigzag/wspz_mangrove"
             ]
         },
-        "wspz_maple": {
-            "textures": [
-                "textures/blocks/rustic/ff_planks/wooden_smooth_planks_zigzag/wspz_maple"
-            ]
-        },
         "wspz_oak": {
             "textures": [
                 "textures/blocks/rustic/ff_planks/wooden_smooth_planks_zigzag/wspz_oak"
@@ -3247,11 +3117,6 @@
         "wtp_mangrove": {
             "textures": [
                 "textures/blocks/rustic/ff_planks/wooden_tiled_planks/wtp_mangrove"
-            ]
-        },
-        "wtp_maple": {
-            "textures": [
-                "textures/blocks/rustic/ff_planks/wooden_tiled_planks/wtp_maple"
             ]
         },
         "wtp_oak": {
@@ -3319,11 +3184,6 @@
                 "textures/blocks/rustic/frames/wooden_frame_mangrove"
             ]
         },
-        "wooden_frame_maple": {
-            "textures": [
-                "textures/blocks/rustic/frames/wooden_frame_maple"
-            ]
-        },
         "wooden_frame_oak": {
             "textures": [
                 "textures/blocks/rustic/frames/wooden_frame_oak"
@@ -3389,11 +3249,6 @@
                 "textures/blocks/rustic/old_radio/rustic_radio_mangrove"
             ]
         },
-        "rustic_radio_maple": {
-            "textures": [
-                "textures/blocks/rustic/old_radio/rustic_radio_maple"
-            ]
-        },
         "rustic_radio_oak": {
             "textures": [
                 "textures/blocks/rustic/old_radio/rustic_radio_oak"
@@ -3457,11 +3312,6 @@
         "rustic_tv_mangrove": {
             "textures": [
                 "textures/blocks/rustic/old_tv/rustic_tv_mangrove"
-            ]
-        },
-        "rustic_tv_maple": {
-            "textures": [
-                "textures/blocks/rustic/old_tv/rustic_tv_maple"
             ]
         },
         "rustic_tv_oak": {
@@ -3554,11 +3404,6 @@
                 "textures/blocks/rustic/shelf/shelf_mangrove"
             ]
         },
-        "shelf_maple": {
-            "textures": [
-                "textures/blocks/rustic/shelf/shelf_maple"
-            ]
-        },
         "shelf_oak": {
             "textures": [
                 "textures/blocks/rustic/shelf/shelf_oak"
@@ -3624,11 +3469,6 @@
                 "textures/blocks/rustic/shelves/wooden_shelves_mangrove"
             ]
         },
-        "wooden_shelves_maple": {
-            "textures": [
-                "textures/blocks/rustic/shelves/wooden_shelves_maple"
-            ]
-        },
         "wooden_shelves_oak": {
             "textures": [
                 "textures/blocks/rustic/shelves/wooden_shelves_oak"
@@ -3692,11 +3532,6 @@
         "stool_mangrove": {
             "textures": [
                 "textures/blocks/rustic/stools/stool_mangrove"
-            ]
-        },
-        "stool_maple": {
-            "textures": [
-                "textures/blocks/rustic/stools/stool_maple"
             ]
         },
         "stool_oak": {
@@ -3844,11 +3679,6 @@
                 "textures/blocks/rustic/supports/wooden_support_mangrove"
             ]
         },
-        "wooden_support_maple": {
-            "textures": [
-                "textures/blocks/rustic/supports/wooden_support_maple"
-            ]
-        },
         "wooden_support_oak": {
             "textures": [
                 "textures/blocks/rustic/supports/wooden_support_oak"
@@ -3912,11 +3742,6 @@
         "wooden_support_horizontal_mangrove": {
             "textures": [
                 "textures/blocks/rustic/supports/horizontal/wooden_support_horizontal_mangrove"
-            ]
-        },
-        "wooden_support_horizontal_maple": {
-            "textures": [
-                "textures/blocks/rustic/supports/horizontal/wooden_support_horizontal_maple"
             ]
         },
         "wooden_support_horizontal_oak": {
@@ -4024,16 +3849,6 @@
                 "textures/blocks/rustic/tables/new_mangrove_table2"
             ]
         },
-        "new_maple_table": {
-            "textures": [
-                "textures/blocks/rustic/tables/new_maple_table"
-            ]
-        },
-        "new_maple_table2": {
-            "textures": [
-                "textures/blocks/rustic/tables/new_maple_table2"
-            ]
-        },
         "new_oak_table": {
             "textures": [
                 "textures/blocks/rustic/tables/new_oak_table"
@@ -4129,11 +3944,6 @@
                 "textures/blocks/rustic/terrace_fences/terrace_fente_mangrove"
             ]
         },
-        "terrace_fente_maple": {
-            "textures": [
-                "textures/blocks/rustic/terrace_fences/terrace_fente_maple"
-            ]
-        },
         "terrace_fente_oak": {
             "textures": [
                 "textures/blocks/rustic/terrace_fences/terrace_fente_oak"
@@ -4209,11 +4019,6 @@
                 "textures/blocks/rustic/wooden_mirror/mirror_mangrove"
             ]
         },
-        "mirror_maple": {
-            "textures": [
-                "textures/blocks/rustic/wooden_mirror/mirror_maple"
-            ]
-        },
         "mirror_oak": {
             "textures": [
                 "textures/blocks/rustic/wooden_mirror/mirror_oak"
@@ -4279,11 +4084,6 @@
                 "textures/blocks/rustic/wooden_planks_lines/wooden_planks_lines_mangrove"
             ]
         },
-        "wooden_planks_lines_maple": {
-            "textures": [
-                "textures/blocks/rustic/wooden_planks_lines/wooden_planks_lines_maple"
-            ]
-        },
         "wooden_planks_lines_oak": {
             "textures": [
                 "textures/blocks/rustic/wooden_planks_lines/wooden_planks_lines_oak"
@@ -4347,11 +4147,6 @@
         "wall_cabinet_mangrove": {
             "textures": [
                 "textures/blocks/rustic/wooden_wall_cabinets/wall_cabinet_mangrove"
-            ]
-        },
-        "wall_cabinet_maple": {
-            "textures": [
-                "textures/blocks/rustic/wooden_wall_cabinets/wall_cabinet_maple"
             ]
         },
         "wall_cabinet_oak": {
@@ -4772,6 +4567,11 @@
         "christmas_lights_white_selection": {
             "textures": [
                 "textures/blocks/xmas/lights/christmas_lights_white_selection"
+            ]
+        },
+        "energy_bar_inf_rainbow": {
+            "textures": [
+                "textures/blocks/energy_bar_inf_rainbow"
             ]
         }
     }

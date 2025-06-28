@@ -2,7 +2,7 @@
 	"format_version": "1.21.30",
 	"minecraft:block": {
 		"description": {
-			"identifier": "ff:wooden_dark_oak_coffee_table",
+			"identifier": "ff:wooden_darkoak_coffee_table",
 			"menu_category": {
 				"category": "items"
 			},

@@ -15,7 +15,7 @@
       },
       "states": {
         "ff:channels": [1, 2, 3, 4],
-        "ff:tv_on": [true, false]
+        "ff:tv_on": [false, true]
       }
     },
     "permutations": [

@@ -2,9 +2,9 @@
 	"format_version": "1.21.70",
 	"minecraft:item": {
 		"description": {
-			"identifier": "ff:folk",
+			"identifier": "ff:fork",
 			"menu_category": {
-				"category": "items"
+				"category": "equipment"
 			}
 		},
 		"components": {
@@ -14,7 +14,7 @@
 				}
 			},
 			"minecraft:display_name": {
-				"value": "item.ff:folk.name"
+				"value": "item.ff:fork.name"
 			},
 			"minecraft:allow_off_hand": true,
 			"minecraft:hand_equipped": true,

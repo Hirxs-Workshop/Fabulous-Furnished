@@ -156,6 +156,11 @@
                 "textures/items/empty_brush_untransparent"
             ]
         },
+        "energy_icon": {
+            "textures": [
+                "textures/items/energy_icon"
+            ]
+        },
         "feldspar": {
             "textures": [
                 "textures/items/feldspar"
@@ -349,6 +354,91 @@
         "wrench": {
             "textures": [
                 "textures/items/wrench"
+            ]
+        },
+        "energy_bar_0": {
+            "textures": [
+                "textures/items/energy/energy_bar_0"
+            ]
+        },
+        "energy_bar_1": {
+            "textures": [
+                "textures/items/energy/energy_bar_1"
+            ]
+        },
+        "energy_bar_10": {
+            "textures": [
+                "textures/items/energy/energy_bar_10"
+            ]
+        },
+        "energy_bar_11": {
+            "textures": [
+                "textures/items/energy/energy_bar_11"
+            ]
+        },
+        "energy_bar_12": {
+            "textures": [
+                "textures/items/energy/energy_bar_12"
+            ]
+        },
+        "energy_bar_13": {
+            "textures": [
+                "textures/items/energy/energy_bar_13"
+            ]
+        },
+        "energy_bar_14": {
+            "textures": [
+                "textures/items/energy/energy_bar_14"
+            ]
+        },
+        "energy_bar_15": {
+            "textures": [
+                "textures/items/energy/energy_bar_15"
+            ]
+        },
+        "energy_bar_16": {
+            "textures": [
+                "textures/items/energy/energy_bar_16"
+            ]
+        },
+        "energy_bar_2": {
+            "textures": [
+                "textures/items/energy/energy_bar_2"
+            ]
+        },
+        "energy_bar_3": {
+            "textures": [
+                "textures/items/energy/energy_bar_3"
+            ]
+        },
+        "energy_bar_4": {
+            "textures": [
+                "textures/items/energy/energy_bar_4"
+            ]
+        },
+        "energy_bar_5": {
+            "textures": [
+                "textures/items/energy/energy_bar_5"
+            ]
+        },
+        "energy_bar_6": {
+            "textures": [
+                "textures/items/energy/energy_bar_6"
+            ]
+        },
+        "energy_bar_7": {
+            "textures": [
+                "textures/items/energy/energy_bar_7"
+            ]
+        },
+        "energy_bar_8": {
+            "textures": [
+                "textures/items/energy/energy_bar_8"
+            ]
+        },
+        "energy_bar_9": {
+            "textures": [
+                "textures/items/energy/energy_bar_9"
             ]
         }
     }

@@ -23,13 +23,29 @@
         },
         "components": {
             "minecraft:geometry": {
-                "identifier": "minecraft:geometry.cross"
+                "identifier": "geometry.sapling_ff"
             },
             "minecraft:destructible_by_explosion": {
                 "explosion_resistance": 5
             },
+            "minecraft:custom_components": [
+                "ff:spicewood_sapling"
+            ],
             "minecraft:flammable": false,
             "minecraft:map_color": "#222d75",
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": ["up"],
+                        "block_filter": [
+                            "minecraft:dirt",
+                            "minecraft:coarse_dirt",
+                            "minecraft:podzol",
+                            "minecraft:grass_block"
+                        ]
+                    }
+                ]
+            },
             "minecraft:material_instances": {
                 "*": {
                     "texture": "spicewood_sapling",

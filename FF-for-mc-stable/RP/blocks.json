@@ -466,35 +466,5 @@
 	},
 	"ff:garden_gnome": {
 		"sound": "decorated_pot"
-	},
-	"ff:wooden_big_planks_maple": {
-		"sound": "wood",
-		"textures": "wbp_maple"
-	},
-	"ff:wooden_double_big_planks_maple": {
-		"sound": "wood",
-		"textures": "wdbp_maple"
-	},
-	"ff:wooden_smooth_planks_maple": {
-		"sound": "wood",
-		"textures": "wsp_maple"
-	},
-	"ff:wooden_smooth_planks_zigzag_maple": {
-		"sound": "wood",
-		"textures": "wspz_maple"
-	},
-	"ff:wooden_tiled_planks_maple": {
-		"sound": "wood",
-		"textures": "wtp_maple"
-	},
-	"ff:smooth_wood_maple": {
-		"sound": "wood",
-		"textures": "sw_maple"
-	},
-	"ff:wooden_maple_chair": {
-		"sound": "wood"
-	},
-	"ff:mirror_maple": {
-		"sound": "wood"
 	}
 }

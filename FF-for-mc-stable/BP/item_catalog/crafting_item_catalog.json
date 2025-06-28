@@ -1,5 +1,5 @@
 {
-   "format_version": "1.20.80",
+   "format_version": "1.21.90",
    "minecraft:crafting_items_catalog": {
       "categories": [
          {
@@ -42,6 +42,330 @@
                      "sd:red_autumn_leaves_pile",
                      "sd:orange_autumn_leaves",
                      "sd:orange_autumn_leaves_pile"
+                  ]
+               },
+               {
+                  "group_identifier": {
+                    "icon": "ff:wooden_big_planks_oak",
+                    "name": "ff:itemGroup.name.wooden_big_planks"
+                  },
+                  "items": [
+                    "ff:wooden_big_planks_jungle",
+                    "ff:wooden_big_planks_birch",
+                    "ff:wooden_big_planks_crimson",
+                    "ff:wooden_big_planks_warped",
+                    "ff:wooden_big_planks_cherry",
+                    "ff:wooden_big_planks_mangrove",
+                    "ff:wooden_big_planks_oak",
+                    "ff:wooden_big_planks_dark_oak",
+                    "ff:wooden_big_planks_acacia",
+                    "ff:wooden_big_planks_pale",
+                    "ff:wooden_big_planks_spruce",
+                    "ff:wooden_big_planks_cinder",
+                    "ff:wooden_big_planks_spicewood"
+                  ]
+                },
+                {
+                  "group_identifier": {
+                    "icon": "ff:wooden_chiseled_planks_oak",
+                    "name": "ff:itemGroup.name.wooden_chiseled_planks"
+                  },
+                  "items": [
+                    "ff:wooden_chiseled_planks_jungle",
+                    "ff:wooden_chiseled_planks_birch",
+                    "ff:wooden_chiseled_planks_crimson",
+                    "ff:wooden_chiseled_planks_warped",
+                    "ff:wooden_chiseled_planks_cherry",
+                    "ff:wooden_chiseled_planks_mangrove",
+                    "ff:wooden_chiseled_planks_oak",
+                    "ff:wooden_chiseled_planks_dark_oak",
+                    "ff:wooden_chiseled_planks_acacia",
+                    "ff:wooden_chiseled_planks_pale",
+                    "ff:wooden_chiseled_planks_spruce",
+                    "ff:wooden_chiseled_planks_cinder",
+                    "ff:wooden_chiseled_planks_spicewood"
+                  ]
+                },
+                {
+                  "group_identifier": {
+                    "icon": "ff:wooden_tiled_planks_oak",
+                    "name": "ff:itemGroup.name.wooden_tiled_planks"
+                  },
+                  "items": [
+                    "ff:wooden_tiled_planks_jungle",
+                    "ff:wooden_tiled_planks_birch",
+                    "ff:wooden_tiled_planks_crimson",
+                    "ff:wooden_tiled_planks_warped",
+                    "ff:wooden_tiled_planks_cherry",
+                    "ff:wooden_tiled_planks_mangrove",
+                    "ff:wooden_tiled_planks_oak",
+                    "ff:wooden_tiled_planks_dark_oak",
+                    "ff:wooden_tiled_planks_acacia",
+                    "ff:wooden_tiled_planks_pale",
+                    "ff:wooden_tiled_planks_spruce",
+                    "ff:wooden_tiled_planks_cinder",
+                    "ff:wooden_tiled_planks_spicewood"
+                  ]
+                },
+                {
+                  "group_identifier": {
+                    "icon": "ff:wooden_smooth_planks_oak",
+                    "name": "ff:itemGroup.name.wooden_smooth_planks"
+                  },
+                  "items": [
+                    "ff:wooden_smooth_planks_jungle",
+                    "ff:wooden_smooth_planks_birch",
+                    "ff:wooden_smooth_planks_crimson",
+                    "ff:wooden_smooth_planks_warped",
+                    "ff:wooden_smooth_planks_cherry",
+                    "ff:wooden_smooth_planks_mangrove",
+                    "ff:wooden_smooth_planks_oak",
+                    "ff:wooden_smooth_planks_dark_oak",
+                    "ff:wooden_smooth_planks_acacia",
+                    "ff:wooden_smooth_planks_pale",
+                    "ff:wooden_smooth_planks_spruce",
+                    "ff:wooden_smooth_planks_cinder",
+                    "ff:wooden_smooth_planks_spicewood"
+                  ]
+                },
+                {
+                  "group_identifier": {
+                    "icon": "ff:wooden_smooth_planks_zigzag_oak",
+                    "name": "ff:itemGroup.name.wooden_smooth_planks_zigzag"
+                  },
+                  "items": [
+                    "ff:wooden_smooth_planks_zigzag_jungle",
+                    "ff:wooden_smooth_planks_zigzag_birch",
+                    "ff:wooden_smooth_planks_zigzag_crimson",
+                    "ff:wooden_smooth_planks_zigzag_warped",
+                    "ff:wooden_smooth_planks_zigzag_cherry",
+                    "ff:wooden_smooth_planks_zigzag_mangrove",
+                    "ff:wooden_smooth_planks_zigzag_oak",
+                    "ff:wooden_smooth_planks_zigzag_dark_oak",
+                    "ff:wooden_smooth_planks_zigzag_acacia",
+                    "ff:wooden_smooth_planks_zigzag_pale",
+                    "ff:wooden_smooth_planks_zigzag_spruce",
+                    "ff:wooden_smooth_planks_zigzag_cinder",
+                    "ff:wooden_smooth_planks_zigzag_spicewood"
+                  ]
+                },
+                {
+                  "group_identifier": {
+                    "icon": "ff:wooden_double_big_planks_oak",
+                    "name": "ff:itemGroup.name.wooden_double_big_planks"
+                  },
+                  "items": [
+                    "ff:wooden_double_big_planks_jungle",
+                    "ff:wooden_double_big_planks_birch",
+                    "ff:wooden_double_big_planks_crimson",
+                    "ff:wooden_double_big_planks_warped",
+                    "ff:wooden_double_big_planks_cherry",
+                    "ff:wooden_double_big_planks_mangrove",
+                    "ff:wooden_double_big_planks_oak",
+                    "ff:wooden_double_big_planks_dark_oak",
+                    "ff:wooden_double_big_planks_acacia",
+                    "ff:wooden_double_big_planks_pale",
+                    "ff:wooden_double_big_planks_spruce",
+                    "ff:wooden_double_big_planks_cinder",
+                    "ff:wooden_double_big_planks_spicewood"
+                  ]
+                },
+                {
+                  "group_identifier": {
+                    "icon": "ff:smooth_wood_oak",
+                    "name": "ff:itemGroup.name.smooth_wood"
+                  },
+                  "items": [
+                    "ff:smooth_wood_jungle",
+                    "ff:smooth_wood_birch",
+                    "ff:smooth_wood_crimson",
+                    "ff:smooth_wood_warped",
+                    "ff:smooth_wood_cherry",
+                    "ff:smooth_wood_mangrove",
+                    "ff:smooth_wood_oak",
+                    "ff:smooth_wood_dark_oak",
+                    "ff:smooth_wood_acacia",
+                    "ff:smooth_wood_pale",
+                    "ff:smooth_wood_spruce",
+                    "ff:smooth_wood_cinder",
+                    "ff:smooth_wood_spicewood"
+                  ]
+                },
+                {
+                  "group_identifier": {
+                    "icon": "ff:wooden_frames_oak",
+                    "name": "ff:itemGroup.name.wooden_frames"
+                  },
+                  "items": [
+                    "ff:wooden_frames_jungle",
+                    "ff:wooden_frames_birch",
+                    "ff:wooden_frames_crimson",
+                    "ff:wooden_frames_warped",
+                    "ff:wooden_frames_cherry",
+                    "ff:wooden_frames_mangrove",
+                    "ff:wooden_frames_oak",
+                    "ff:wooden_frames_dark_oak",
+                    "ff:wooden_frames_acacia",
+                    "ff:wooden_frames_pale",
+                    "ff:wooden_frames_spruce",
+                    "ff:wooden_frames_cinder",
+                    "ff:wooden_frames_spicewood"
+                  ]
+                },
+                {
+                  "group_identifier": {
+                    "icon": "ff:wooden_support_horizontal_oak",
+                    "name": "ff:itemGroup.name.wooden_support_horizontal"
+                  },
+                  "items": [
+                    "ff:wooden_support_horizontal_jungle",
+                    "ff:wooden_support_horizontal_birch",
+                    "ff:wooden_support_horizontal_crimson",
+                    "ff:wooden_support_horizontal_warped",
+                    "ff:wooden_support_horizontal_cherry",
+                    "ff:wooden_support_horizontal_mangrove",
+                    "ff:wooden_support_horizontal_oak",
+                    "ff:wooden_support_horizontal_dark_oak",
+                    "ff:wooden_support_horizontal_acacia",
+                    "ff:wooden_support_horizontal_pale",
+                    "ff:wooden_support_horizontal_spruce",
+                    "ff:wooden_support_horizontal_cinder",
+                    "ff:wooden_support_horizontal_spicewood"
+                  ]
+                },
+                {
+                  "group_identifier": {
+                    "icon": "ff:wooden_support_horizontal_middle_oak",
+                    "name": "ff:itemGroup.name.wooden_support_horizontal_middle"
+                  },
+                  "items": [
+                    "ff:wooden_support_horizontal_middle_jungle",
+                    "ff:wooden_support_horizontal_middle_birch",
+                    "ff:wooden_support_horizontal_middle_crimson",
+                    "ff:wooden_support_horizontal_middle_warped",
+                    "ff:wooden_support_horizontal_middle_cherry",
+                    "ff:wooden_support_horizontal_middle_mangrove",
+                    "ff:wooden_support_horizontal_middle_oak",
+                    "ff:wooden_support_horizontal_middle_dark_oak",
+                    "ff:wooden_support_horizontal_middle_acacia",
+                    "ff:wooden_support_horizontal_middle_pale",
+                    "ff:wooden_support_horizontal_middle_spruce",
+                    "ff:wooden_support_horizontal_middle_cinder",
+                    "ff:wooden_support_horizontal_middle_spicewood"
+                  ]
+                },
+                {
+                  "group_identifier": {
+                    "icon": "ff:wooden_support_plate_oak",
+                    "name": "ff:itemGroup.name.wooden_support_plate"
+                  },
+                  "items": [
+                    "ff:wooden_support_plate_jungle",
+                    "ff:wooden_support_plate_birch",
+                    "ff:wooden_support_plate_crimson",
+                    "ff:wooden_support_plate_warped",
+                    "ff:wooden_support_plate_cherry",
+                    "ff:wooden_support_plate_mangrove",
+                    "ff:wooden_support_plate_oak",
+                    "ff:wooden_support_plate_dark_oak",
+                    "ff:wooden_support_plate_acacia",
+                    "ff:wooden_support_plate_pale",
+                    "ff:wooden_support_plate_spruce",
+                    "ff:wooden_support_plate_cinder",
+                    "ff:wooden_support_plate_spicewood"
+                  ]
+                }
+                                                                                                                                                              
+            ]
+         },
+         {
+            "category_name": "nature",
+            "groups": [
+               {
+                  "group_identifier": {
+                    "icon": "ff:frozen_beef_raw",
+                    "name": "ff:itemGroup.name.frozen_meats"
+                  },
+                  "items": [
+                    "ff:frozen_beef_raw",
+                    "ff:frozen_chicken_raw",
+                    "ff:frozen_fish_clownfish_raw",
+                    "ff:frozen_fish_raw",
+                    "ff:frozen_fish_salmon_raw",
+                    "ff:frozen_mutton_raw",
+                    "ff:frozen_porkchop_raw",
+                    "ff:frozen_rabbit_raw"
+                  ]
+                }
+            ]
+         },
+         {
+            "category_name": "equipment",
+            "groups": [
+               {
+                  "items": [
+                     "ff:wrench"
+                  ]
+               },
+               {
+                  "items": [
+                     "ff:spatula"
+                  ]
+               },
+               {
+                  "items": [
+                     "ff:carpentry_hammer"
+                  ]
+               },
+               {
+                  "group_identifier": {
+                     "icon": "ff:iron_knife",
+                     "name": "ff:itemGroup.name.knives"
+                   },
+                   "items": [
+                     "ff:iron_knife",
+                     "ff:diamond_knife",
+                     "ff:netherite_knife",
+                     "ff:gold_knife"
+                   ]
+                 },                
+               {
+                  "items": [
+                     "ef:brush_empty"
+                  ]
+               },
+               {
+                  "group_identifier": {
+                    "icon": "ef:brush_with_paint_white",
+                    "name": "ef:itemGroup.name.brushes_with_paint"
+                  },
+                  "items": [
+                    "ef:brush_with_paint_white",
+                    "ef:brush_with_paint_orange",
+                    "ef:brush_with_paint_magenta",
+                    "ef:brush_with_paint_light_blue",
+                    "ef:brush_with_paint_yellow",
+                    "ef:brush_with_paint_lime",
+                    "ef:brush_with_paint_pink",
+                    "ef:brush_with_paint_gray",
+                    "ef:brush_with_paint_light_gray",
+                    "ef:brush_with_paint_cyan",
+                    "ef:brush_with_paint_purple",
+                    "ef:brush_with_paint_blue",
+                    "ef:brush_with_paint_brown",
+                    "ef:brush_with_paint_green",
+                    "ef:brush_with_paint_red",
+                    "ef:brush_with_paint_black"
+                  ]
+                },
+               {
+                  "items": [
+                     "ff:bread_slice"
+                  ]
+               },
+               {
+                  "items": [
+                     "ff:bread_slice_toasted"
                   ]
                }
             ]
@@ -536,7 +860,50 @@
                      "ff:lamp_off_cinder",
                      "ff:lamp_off_spicewood"
                   ]
+               },
+               {
+                  "group_identifier": {
+                     "icon": "ff:white_curtain_oak",
+                     "name": "ff:itemGroup.name.white_curtain"
+                  },
+                  "items": [
+                     "ff:white_curtain_oak",
+                     "ff:white_curtain_birch",
+                     "ff:white_curtain_spruce",
+                     "ff:white_curtain_dark_oak",
+                     "ff:white_curtain_jungle",
+                     "ff:white_curtain_acacia",
+                     "ff:white_curtain_mangrove",
+                     "ff:white_curtain_crimson",
+                     "ff:white_curtain_warped",
+                     "ff:white_curtain_pale",
+                     "ff:white_curtain_cherry",
+                     "ff:white_curtain_cinder",
+                     "ff:white_curtain_spicewood"
+                  ]
+               },
+               {
+                  "group_identifier": {
+                     "icon": "ff:wooden_rustic_oak_tv",
+                     "name": "ff:itemGroup.name.wooden_rustic_tv"
+                  },
+                  "items": [
+                     "ff:wooden_rustic_oak_tv",
+                     "ff:wooden_rustic_birch_tv",
+                     "ff:wooden_rustic_spruce_tv",
+                     "ff:wooden_rustic_dark_oak_tv",
+                     "ff:wooden_rustic_jungle_tv",
+                     "ff:wooden_rustic_acacia_tv",
+                     "ff:wooden_rustic_mangrove_tv",
+                     "ff:wooden_rustic_crimson_tv",
+                     "ff:wooden_rustic_warped_tv",
+                     "ff:wooden_rustic_pale_tv",
+                     "ff:wooden_rustic_cherry_tv",
+                     "ff:wooden_rustic_cinder_tv",
+                     "ff:wooden_rustic_spicewood_tv"
+                  ]
                }
+                
             ]
          }
       ]

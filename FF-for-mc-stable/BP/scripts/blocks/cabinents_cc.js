@@ -364,12 +364,15 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
         const blockId = block.permutation.type.id;
         const prefix = "ff:wooden_cabinet_";
         const marblePrefix = "ff:wooden_marble_cabinet_";
+        const wallPrefix = "ff:wooden_wall_cabinet_";
         let wood;
         
         if (blockId.startsWith(prefix)) {
           wood = blockId.substring(prefix.length);
         } else if (blockId.startsWith(marblePrefix)) {
           wood = blockId.substring(marblePrefix.length);
+        } else if (blockId.startsWith(wallPrefix)) {
+          wood = blockId.substring(wallPrefix.length);
         } else {
           wood = "oak";
         }
@@ -446,7 +449,7 @@ world.afterEvents.playerInteractWithBlock.subscribe(e => {
   const woods = [
     'jungle','birch','crimson','warped',
     'cherry','mangrove','oak','dark_oak',
-    'acacia','pale','spruce','cinder','spicewood','maple'
+    'acacia','pale','spruce','cinder','spicewood'
   ];
   const validBlocks = woods.flatMap(wood => [
     `ff:wooden_cabinet_${wood}`,
@@ -458,42 +461,63 @@ world.afterEvents.playerInteractWithBlock.subscribe(e => {
   const isSneaking = player.isSneaking;
 
   const stoneMap = {
-    "ff:wooden_smooth_planks_acacia": { counter: 1},
-    "ff:wooden_smooth_planks_birch": { counter: 2},
-    "ff:wooden_smooth_planks_cherry": { counter: 3},
-    "ff:wooden_smooth_planks_cinder": { counter: 4},
-    "ff:wooden_smooth_planks_crimson": { counter: 5},
-    "ff:wooden_smooth_planks_dark_oak": { counter: 6},
-    "ff:wooden_smooth_planks_jungle": { counter: 7},
-    "ff:wooden_smooth_planks_mangrove": { counter: 8},
-    "ff:wooden_smooth_planks_maple": { counter: 9},
-    "ff:wooden_smooth_planks_oak": { counter: 10},
-    "ff:wooden_smooth_planks_pale": { counter: 11},
-    "ff:wooden_smooth_planks_spicewood": { counter: 12},
-    "ff:wooden_smooth_planks_spruce": { counter: 13},
-    "ff:wooden_smooth_planks_warped": { counter: 14}
+    "minecraft:acacia_planks": { counter: 1 },
+    "minecraft:birch_planks": { counter: 2 },
+    "minecraft:cherry_planks": { counter: 3 },
+    "minecraft:cinder_planks": { counter: 4 },
+    "minecraft:crimson_planks": { counter: 5 },
+    "minecraft:dark_oak_planks": { counter: 6 },
+    "minecraft:jungle_planks": { counter: 7 },
+    "minecraft:mangrove_planks": { counter: 8 },
+    "minecraft:maple_planks": { counter: 9 },
+    "minecraft:oak_planks": { counter: 10 },
+    "minecraft:pale_planks": { counter: 11 },
+    "ff:spicewood_planks": { counter: 12 },
+    "minecraft:spruce_planks": { counter: 13 },
+    "minecraft:warped_planks": { counter: 14 }
   };
-
-const stoneMapReverse = {
-  1: "ff:wooden_smooth_planks_acacia",
-  2: "ff:wooden_smooth_planks_birch",
-  3: "ff:wooden_smooth_planks_cherry",
-  4: "ff:wooden_smooth_planks_cinder",
-  5: "ff:wooden_smooth_planks_crimson",
-  6: "ff:wooden_smooth_planks_dark_oak",
-  7: "ff:wooden_smooth_planks_jungle",
-  8: "ff:wooden_smooth_planks_mangrove",
-  9: "ff:wooden_smooth_planks_maple",
-  10: "ff:wooden_smooth_planks_oak",
-  11: "ff:wooden_smooth_planks_pale",
-  12: "ff:wooden_smooth_planks_spicewood",
-  13: "ff:wooden_smooth_planks_spruce",
-  14: "ff:wooden_smooth_planks_warped"
-};
+  
+  
+  const stoneMapReverse = {
+    1: "minecraft:acacia_planks",
+    2: "minecraft:birch_planks",
+    3: "minecraft:cherry_planks",
+    4: "minecraft:cinder_planks",
+    5: "minecraft:crimson_planks",
+    6: "minecraft:dark_oak_planks",
+    7: "minecraft:jungle_planks",
+    8: "minecraft:mangrove_planks",
+    9: "minecraft:maple_planks",
+    10: "minecraft:oak_planks",
+    11: "minecraft:pale_planks",
+    12: "ff:spicewood_planks",
+    13: "minecraft:spruce_planks",
+    14: "minecraft:warped_planks"
+  };
+  
+  
 
   const activeState = 'ff:counter_top';
 
   if (main && Object.keys(stoneMap).includes(main.typeId) && !isSneaking) {
+    let blockWood = null;
+    for (const wood of woods) {
+      if (block.typeId.endsWith("_" + wood)) {
+        blockWood = wood;
+        break;
+      }
+    }
+    let itemWood = null;
+    if (main.typeId === "ff:spicewood_planks") {
+      itemWood = "spicewood";
+    } else {
+      const match = main.typeId.match(/^minecraft:(\w+)_planks$/);
+      if (match) itemWood = match[1];
+    }
+    if (blockWood && itemWood && blockWood === itemWood) {
+      player.playSound("note.bass");
+      return;
+    }
     const current = block.permutation.getState(activeState) ?? 0;
     if (current !== 0) {
       player.playSound("note.bass");

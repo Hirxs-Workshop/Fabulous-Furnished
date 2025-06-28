@@ -633,7 +633,8 @@
 					"texture": "dark_oak_fence",
 					"render_method": "alpha_test"
 				}
-			}
+			},
+			"minecraft:loot": "loot_tables/dark_oak_fence_inventory.json"
 		}
 	}
 }

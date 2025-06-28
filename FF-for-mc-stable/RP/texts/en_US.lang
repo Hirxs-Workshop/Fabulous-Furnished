@@ -64,7 +64,7 @@ item.ff:carpentry_hammer.name=Carpentry Hammer\n
 item.ff:cinder_door_item.name=Cinder Door Item\n
 item.ff:diamond_knife.name=Diamond Knife\n
 item.ff:feldspar.name=Feldspar\n
-item.ff:folk.name=Folk\n
+item.ff:fork.name=Fork\n
 item.ff:vegetable_oil.name=Vegetable oil\n
 item.ff:gold_knife.name=Gold Knife\n
 item.ff:iron_knife.name=Iron Knife\n
@@ -716,8 +716,63 @@ ff:itemGroup.name.ceiling_fan=Wooden Ceiling Fans
 ff:itemGroup.name.wooden_shelves=Wooden Shelves
 ff:itemGroup.name.wooden_cutting_board=Wooden Cutting Boards
 ff:itemGroup.name.lamp_off=Wooden Lamps
+ff:itemGroup.name.frozen_meats=Frozen Meats
+ff:itemGroup.name.wooden_rustic_tv=Rustic Wooden TVs
+ff:itemGroup.name.white_curtain=White Curtains
 
 
+tile.ff:white_curtain_jungle.name=White Curtains Jungle
+tile.ff:wooden_rustic_jungle_tv.name=Wooden Rustic TV Jungle
+
+tile.ff:white_curtain_birch.name=White Curtains Birch
+tile.ff:wooden_rustic_birch_tv.name=Wooden Rustic TV Birch
+
+tile.ff:white_curtain_crimson.name=White Curtains Crimson
+tile.ff:wooden_rustic_crimson_tv.name=Wooden Rustic TV Crimson
+
+tile.ff:white_curtain_warped.name=White Curtains Warped
+tile.ff:wooden_rustic_warped_tv.name=Wooden Rustic TV Warped
+
+tile.ff:white_curtain_cherry.name=White Curtains Cherry
+tile.ff:wooden_rustic_cherry_tv.name=Wooden Rustic TV Cherry
+
+tile.ff:white_curtain_mangrove.name=White Curtains Mangrove
+tile.ff:wooden_rustic_mangrove_tv.name=Wooden Rustic TV Mangrove
+
+tile.ff:white_curtain_oak.name=White Curtains Oak
+tile.ff:wooden_rustic_oak_tv.name=Wooden Rustic TV Oak
+
+tile.ff:white_curtain_dark_oak.name=White Curtains Dark Oak
+tile.ff:wooden_rustic_dark_oak_tv.name=Wooden Rustic TV Dark Oak
+
+tile.ff:white_curtain_acacia.name=White Curtains Acacia
+tile.ff:wooden_rustic_acacia_tv.name=Wooden Rustic TV Acacia
+
+tile.ff:white_curtain_pale.name=White Curtains Pale
+tile.ff:wooden_rustic_pale_tv.name=Wooden Rustic TV Pale
+
+tile.ff:white_curtain_spruce.name=White Curtains Spruce
+tile.ff:wooden_rustic_spruce_tv.name=Wooden Rustic TV Spruce
+
+tile.ff:white_curtain_cinder.name=White Curtains Cinder
+tile.ff:wooden_rustic_cinder_tv.name=Wooden Rustic TV Cinder
+
+tile.ff:white_curtain_spicewood.name=White Curtains Spicewood
+tile.ff:wooden_rustic_spicewood_tv.name=Wooden Rustic TV Spicewood
+tile.ff:spicewood_log.name=Spicewood Log
+tile.ff:spicewood_wood.name=Spicewood Wood
+tile.ff:stripped_spicewood_log.name=Stripped Spicewood Log
+tile.ff:stripped_spicewood_wood.name=Stripped Spicewood Wood
+tile.ff:smooth_wood_mangrove.name=Smooth Wood Mangrove
+tile.ff:wooden_smooth_planks_zigzag_mangrove.name=Wooden Smooth Planks Zigzag Mangrove
+tile.ff:fridge_white.name=White Fridge
+tile.ff:fridge_black.name=Black Fridge
+tile.ff:laptop.name=Laptop
+tile.ff:single_paper_block.name=Stacked Papers
+tile.ff:modern_switch.name=Modern Switch
+tile.ff:spicewood_leaves.name=Spicewood Leaves
+tile.ff:blueprint.name=Blueprint
+tile.ff:generator.name=Energy Generator
 action.hint.exit.ff:sit_couch=Jump to exit!
 action.hint.exit.ff:sit_couch2=Jump to exit!
 action.hint.exit.ef:sit=Jump to exit!
@@ -732,3 +787,19 @@ item.ff:frozen_fish_clownfish_raw.name=Frozen Tropical Fish
 item.ff:frozen_fish_salmon_raw.name=Frozen Salmon
 
 tile.ff:iron_pot.name=Iron Pot
+tile.ff:spicewood_sapling.name=Spicewood Sapling
+tile.ff:empty_dish.name=Empty Dish
+
+ff:itemGroup.name.wooden_big_planks=Wooden Big Planks
+ff:itemGroup.name.wooden_chiseled_planks=Wooden Chiseled Planks
+ff:itemGroup.name.wooden_tiled_planks=Wooden Tiled Planks
+ff:itemGroup.name.wooden_smooth_planks=Wooden Smooth Planks
+ff:itemGroup.name.wooden_smooth_planks_zigzag=Wooden Smooth Planks Zigzag
+ff:itemGroup.name.wooden_double_big_planks=Wooden Double Big Planks
+ff:itemGroup.name.smooth_wood=Smooth Wood
+ff:itemGroup.name.wooden_frames=Wooden Frames
+ff:itemGroup.name.wooden_support_horizontal=Wooden Support Horizontal
+ff:itemGroup.name.wooden_support_horizontal_middle=Wooden Support Horizontal Middle
+ff:itemGroup.name.wooden_support_plate=Wooden Support Plate
+ff:itemGroup.name.knives=Knives
+ef:itemGroup.name.brushes_with_paint=Brushes with Paint

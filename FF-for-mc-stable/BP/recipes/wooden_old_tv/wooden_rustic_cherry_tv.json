@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:wooden_rustic_cherry_tv"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"WPW",
+			"WSW",
+			" W "
+		],
+		"key": {
+			"P": {
+				"item": "minecraft:glass"
+			},
+			"S": {
+				"item": "minecraft:redstone"
+			},
+			"W": {
+				"item": "minecraft:cherry_planks"
+			}
+		},
+		"result": {
+			"item": "ff:wooden_rustic_cherry_tv"
+		}
+	}
+} 

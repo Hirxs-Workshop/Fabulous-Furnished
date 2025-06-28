@@ -633,7 +633,8 @@
 					"texture": "mangrove_fences",
 					"render_method": "alpha_test"
 				}
-			}
+			},
+			"minecraft:loot": "loot_tables/mangrove_fence_inventory.json"
 		}
 	}
 }

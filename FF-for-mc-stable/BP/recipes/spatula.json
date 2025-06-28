@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:spatula"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"  I",
+			" W ",
+			"W  "
+		],
+		"key": {
+			"I": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "ff:spatula"
+		}
+	}
+} 

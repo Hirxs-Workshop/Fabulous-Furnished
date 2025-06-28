@@ -30,7 +30,8 @@
                     "ambient_occlusion": true,
 					"tint_method": "default_foliage"
                 }
-            }
+            },
+            "minecraft:loot": "loot_tables/spicewood_sapling.json"
         }
     }
 }

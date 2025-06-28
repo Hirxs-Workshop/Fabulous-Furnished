@@ -632,7 +632,8 @@
 					"texture": "oak_fences",
 					"render_method": "alpha_test"
 				}
-			}
+			},
+			"minecraft:loot": "loot_tables/oak_fence_inventory.json"
 		}
 	}
 }

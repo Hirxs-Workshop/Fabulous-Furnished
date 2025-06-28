@@ -633,7 +633,8 @@
 					"texture": "birch_fences",
 					"render_method": "alpha_test"
 				}
-			}
+			},
+			"minecraft:loot": "loot_tables/birch_fence_inventory.json"
 		}
 	}
 }

@@ -269,7 +269,7 @@
 							"render_method": "alpha_test"
 						},
 						"wood": {
-							"texture": "wsp_dark_dark_oak",
+							"texture": "wsp_dark_oak",
 							"render_method": "alpha_test"
 						},
 						"bottom": {
@@ -361,11 +361,11 @@
 							"render_method": "alpha_test"
 						},
 						"wood": {
-							"texture": "wsp_dark_oak",
+							"texture": "wsp_oak",
 							"render_method": "alpha_test"
 						},
 						"bottom": {
-							"texture": "wsp_dark_oak",
+							"texture": "wsp_oak",
 							"render_method": "alpha_test"
 						}
 					}

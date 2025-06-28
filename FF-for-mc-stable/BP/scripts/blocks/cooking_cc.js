@@ -79,6 +79,10 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
       
       if (!state["ff:stove_below"]) return;
 
+      if (stage === 1 && (!item || item.typeId !== "ff:vegetable_oil")) {
+        player.sendMessage("You need to add vegetable oil to cook.");
+        return;
+      }
       if (stage === 1 && item && item.typeId === "ff:vegetable_oil") {
         state["ff:stage"] = 2;
         block.setPermutation(server.BlockPermutation.resolve(block.typeId, state));
@@ -111,38 +115,10 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
         globalThis.panCookTicks.set(posKey, 0);
         return;
       }
-      if (stage === 4 && item && item.typeId === "ff:spatula" && panEntity) {
-        state["ff:stage"] = 5;
-        block.setPermutation(server.BlockPermutation.resolve(block.typeId, state));
-
-        block.dimension.runCommand(`execute at @a positioned ${block.location.x} ${block.location.y} ${block.location.z} run playsound random.fizz @a[r=8] ${block.location.x} ${block.location.y} ${block.location.z} 0.9 0.4`);
-        block.dimension.runCommand(`execute at @e[type=ff:pan_bottom_left] positioned ${block.location.x} ${block.location.y} ${block.location.z} run playanimation @e[r=1,type=ff:pan_bottom_left] animation.pan_indicador_and_item.flip`);
-        dim.playSound("mob.irongolem.throw", block.location);
-        
-        let tags = panEntity.getTags();
-        tags = tags.filter(t => !t.startsWith("cookTick:"));
-        for (const tag of panEntity.getTags()) {
-          panEntity.removeTag(tag);
-        }
-        tags.forEach(t => panEntity.addTag(t));
-        const posKey = `${block.location.x},${block.location.y},${block.location.z}`;
-        globalThis.panCookTicks.set(posKey, 0);
-        return;
-      }
       if (stage === 5 && item && item.typeId === "ff:spatula" && panEntity) {
         state["ff:stage"] = 6;
         block.setPermutation(server.BlockPermutation.resolve(block.typeId, state));
         setPanEntityTimerEvent(panEntity, 6);
-
-        block.dimension.runCommand(`execute at @a positioned ${block.location.x} ${block.location.y} ${block.location.z} run playsound random.fizz @a[r=8] ${block.location.x} ${block.location.y} ${block.location.z} 0.9 0.4`);
-        block.dimension.runCommand(`execute at @e[type=ff:pan_bottom_left] positioned ${block.location.x} ${block.location.y} ${block.location.z} run playanimation @e[r=1,type=ff:pan_bottom_left] animation.pan_indicador_and_item.flip`);
-        dim.playSound("mob.irongolem.throw", block.location);
-        return;
-      }
-
-      if (stage === 7 && item && item.typeId === "ff:spatula" && panEntity) {
-        state["ff:stage"] = 8;
-        block.setPermutation(server.BlockPermutation.resolve(block.typeId, state));
 
         block.dimension.runCommand(`execute at @a positioned ${block.location.x} ${block.location.y} ${block.location.z} run playsound random.fizz @a[r=8] ${block.location.x} ${block.location.y} ${block.location.z} 0.9 0.4`);
         block.dimension.runCommand(`execute at @e[type=ff:pan_bottom_left] positioned ${block.location.x} ${block.location.y} ${block.location.z} run playanimation @e[r=1,type=ff:pan_bottom_left] animation.pan_indicador_and_item.flip`);
@@ -433,7 +409,7 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
 
 
   
-
+ 
   result.blockComponentRegistry.registerCustomComponent("ff:pot_cooking", {
     onPlayerInteract: result => {
       const { block, player } = result;
@@ -443,6 +419,10 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
       let item = equippable.getEquipment("Mainhand");
       const dim = block.dimension;
       const center = block.center();
+
+      const below = { x: block.location.x, y: block.location.y - 1, z: block.location.z };
+      const belowBlock = dim.getBlock(below);
+      const stoveLit = belowBlock && belowBlock.typeId === "ff:stove" && belowBlock.permutation.getAllStates()["block:lit"];
 
       if (item && item.typeId === "minecraft:potion" && (state["ff:fully"] || 0) < 3) {
         state["ff:fully"] = (state["ff:fully"] || 0) + 1;
@@ -459,7 +439,11 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
         return;
       }
 
-      if (item && item.typeId === "minecraft:sunflower" && !state["ff:has_sunflower"]) {
+      if (item && item.typeId === "minecraft:sunflower" && !state["ff:has_sunflower"] && (state["ff:fully"] || 0) > 0 && !stoveLit) {
+        player.sendMessage("To add the sunflower, you need to light the stove with a flint and steel.");
+        return;
+      }
+      if (item && item.typeId === "minecraft:sunflower" && !state["ff:has_sunflower"] && (state["ff:fully"] || 0) > 0 && stoveLit) {
         state["ff:has_sunflower"] = true;
         state["ff:cooked"] = 1;
         block.setPermutation(server.BlockPermutation.resolve(block.typeId, state));
@@ -493,7 +477,7 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
           state["ff:cooked"] = 0;
           block.setPermutation(server.BlockPermutation.resolve(block.typeId, state));
           let entity = dim.getEntitiesAtBlockLocation(center).find(e => e.typeId === "ff:pan_bottom_left");
-          if (entity) entity.runCommand(`event entity @s ff:kill`);
+          if (entity) entity.runCommand(`event entity @s kills`);
         }
         return;
       }
@@ -521,8 +505,8 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
         block.setPermutation(server.BlockPermutation.resolve(block.typeId, state));
         let entity = dim.getEntitiesAtBlockLocation(center).find(e => e.typeId === "ff:pan_bottom_left");
         if (entity) {
-          entity.runCommand(`event entity @s ff:kill`);
-          dim.runCommand(`execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:kill`);
+          entity.runCommand(`event entity @s kills`);
+          dim.runCommand(`execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] kills`);
           entity.runCommand(`event entity @s ff:despawn`);
           dim.runCommand(`execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:despawn`);
         }
@@ -534,10 +518,14 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
       const center = block.center();
       let entity = dim.getEntitiesAtBlockLocation(center).find(e => e.typeId === "ff:pan_bottom_left");
       if (entity) {
-        entity.runCommand(`event entity @s ff:kill`);
-        dim.runCommand(`execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:kill`);
+        entity.runCommand(`event entity @s kills`);
+        dim.runCommand(
+          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] kills`
+        );
         entity.runCommand(`event entity @s ff:despawn`);
-        dim.runCommand(`execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:despawn`);
+        dim.runCommand(
+          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:despawn`
+        );
       }
     },
     onPlayerDestroy: result => {
@@ -546,10 +534,14 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
       const center = block.center();
       let entity = dim.getEntitiesAtBlockLocation(center).find(e => e.typeId === "ff:pan_bottom_left");
       if (entity) {
-        entity.runCommand(`event entity @s ff:kill`);
-        dim.runCommand(`execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:kill`);
+        entity.runCommand(`event entity @s kills`);
+        dim.runCommand(
+          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] kills`
+        );
         entity.runCommand(`event entity @s ff:despawn`);
-        dim.runCommand(`execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:despawn`);
+        dim.runCommand(
+          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:despawn`
+        );
       }
     }
   });
@@ -604,9 +596,9 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
             if (fallbackId) inv.addItem(new server.ItemStack(fallbackId, 1));
           }
         }
-        entity.runCommand(`event entity @s ff:kill`);
+        entity.runCommand(`event entity @s kills`);
         dim.runCommand(
-          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:kill`
+          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] kills`
         );
         return;
       }
@@ -700,9 +692,9 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
           player.dimension.playSound("random.break", player.location);
           
         }
-        entity.runCommand(`event entity @s ff:kill`);
+        entity.runCommand(`event entity @s kills`);
         dim.runCommand(
-          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:kill`
+          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] kills`
         );
       }
     },
@@ -742,9 +734,9 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
             });
           }
         }
-        entity.runCommand(`event entity @s ff:kill`);
+        entity.runCommand(`event entity @s kills`);
         dim.runCommand(
-          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:kill`
+          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] kills`
         );
                 entity.runCommand(`event entity @s ff:despawn`);
         dim.runCommand(
@@ -788,9 +780,9 @@ server.world.beforeEvents.worldInitialize.subscribe(result => {
             });
           }
         }
-        entity.runCommand(`event entity @s ff:kill`);
+        entity.runCommand(`event entity @s kills`);
         dim.runCommand(
-          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] ff:kill`
+          `execute positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[r=0.3] kills`
         );
       }
     }

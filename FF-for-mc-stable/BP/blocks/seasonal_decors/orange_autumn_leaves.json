@@ -30,13 +30,7 @@
                     "face_dimming": true,
                     "ambient_occlusion": true
                 }
-            },
-	    "minecraft:tick": {
-		"interval_range": [
-			220,
-			480
-		]
-	    }
+            }
         }
     }
 }

@@ -634,7 +634,8 @@
 					"texture": "cinder_fences",
 					"render_method": "alpha_test"
 				}
-			}
+			},
+			"minecraft:loot": "loot_tables/cinder_fence_inventory.json"
 		}
 	}
 }

@@ -633,7 +633,8 @@
 					"texture": "spicewood_fences",
 					"render_method": "alpha_test"
 				}
-			}
+			},
+			"minecraft:loot": "loot_tables/spicewood_fence_inventory.json"
 		}
 	}
 }

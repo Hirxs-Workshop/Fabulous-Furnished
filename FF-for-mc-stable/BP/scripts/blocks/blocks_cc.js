@@ -1,4 +1,4 @@
-import { world, system, BlockPermutation, ItemStack, GameMode } from '@minecraft/server'
+import { world, system, BlockPermutation, ItemStack, GameMode, EnchantmentType } from '@minecraft/server'
 
 world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
     blockComponentRegistry.registerCustomComponent("ff:switch", {
@@ -15,6 +15,12 @@ world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
             const item = (typeof slot === "number" && slot >= 0 && slot < inventory.size)
                 ? inventory.getItem(slot)
                 : null;
+
+            if (item && item.typeId === "ff:wrench") {
+                player.playSound("random.click");
+                e.cancel = true;
+                return;
+            }
 
             if (item && item.typeId === "minecraft:breeze_rod") {
                 player.playSound("random.pop2");
@@ -39,7 +45,7 @@ world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
     blockComponentRegistry.registerCustomComponent("ff:single_interactive", {
     onPlayerInteract: e => {
         const { player, block } = e;
-        player.playSound("random.click");
+        player.playSound("random.clickss");
         }
     });
 });
@@ -256,7 +262,7 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
     const woodTypes = [
         'jungle','birch','crimson','warped',
         'cherry','mangrove','oak','dark_oak',
-        'acacia','pale','spruce','cinder','spicewood', 'maple'
+        'acacia','pale','spruce','cinder','spicewood'
     ];
     const directions = ['north','south','east','west'];
 
@@ -307,7 +313,7 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
     const woodTypes  = [
         'jungle','birch','crimson','warped',
         'cherry','mangrove','oak','dark_oak',
-        'acacia','pale','spruce','cinder','spicewood', 'maple'
+        'acacia','pale','spruce','cinder','spicewood'
     ];
     const directions = ['north','south','east','west','up'];
 
@@ -363,7 +369,7 @@ world.beforeEvents.worldInitialize.subscribe(ffh => {
     const woodTypes = [
       'jungle','birch','crimson','warped',
       'cherry','mangrove','oak','dark_oak',
-      'acacia','pale','spruce','cinder','spicewood', 'maple'
+      'acacia','pale','spruce','cinder','spicewood'
     ];
   
     function registerRemoveCouch(componentId, getReplaceCommand) {
@@ -919,7 +925,7 @@ world.beforeEvents.playerInteractWithBlock.subscribe((event) => {
     const { block, player } = event;
     const blockType = block.typeId;
     
-    if (!['ff:cinder_log', 'ff:cinder_wood', 'ff:spicewood_log', 'ff:spicewood_wood', 'ff:maple_wood', 'ff:maple_log'].includes(blockType)) return;
+    if (!['ff:cinder_log', 'ff:cinder_wood', 'ff:spicewood_log', 'ff:spicewood_wood'].includes(blockType)) return;
     
     lastInteraction = {
         player,
@@ -962,12 +968,6 @@ system.runInterval(() => {
                     break;
                 case 'ff:spicewood_log':
                     strippedType = 'ff:stripped_spicewood_log';
-                    break;
-                case 'ff:maple_wood':
-                    strippedType = 'ff:stripped_maple_wood';
-                    break;
-                case 'ff:maple_log':
-                    strippedType = 'ff:stripped_maple_log';
                     break;
             }
             
@@ -1067,10 +1067,10 @@ world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
                     `]`
                 );
                 block.dimension.runCommand(
-                    `summon ff:fridge_inventory ${x + 0.5} ${y + 1.5} ${z + 0.5} 0 0 spawn_adult_melee \"${displayName}\"`
+                    `summon ff:fridge_inventory ${x + 0.5} ${y + 1.5} ${z + 0.5} 0 0 spawn_adult_melee "${displayName}"`
                 );
                                 block.dimension.runCommand(
-                    `summon ff:fridge_inventory_freezer ${x + 0.5} ${y + 0.5} ${z + 0.5} 0 0 spawn_adult_melee \"freezer_gui\"`
+                    `summon ff:fridge_inventory_freezer ${x + 0.5} ${y + 0.5} ${z + 0.5} 0 0 spawn_adult_melee "freezer_gui"`
                 );
             }
         },
@@ -1151,85 +1151,12 @@ world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
                         const item = inv.container.getItem(slot);
                         if (item && freezeMap[item.typeId]) {
                             block.dimension.runCommand(
-                                `execute at @e[type=ff:fridge_inventory_freezer] positioned ${x} ${y} ${z} run replaceitem entity @e[type=ff:fridge_inventory_freezer,r=1] slot.inventory ${slot} ${freezeMap[item.typeId]}`
+                                `execute at @e[type=ff:fridge_inventory_freezer] positioned ${x} ${y} ${z} run replaceitem entity @e[type=ff:fridge_inventory_freezer,r=1] slot.inventory ${slot} ${freezeMap[item.typeId]} ${item.amount}`
                             );
                         }
                     }
                 }
             }
-        }
-    });
-});
-
-world.beforeEvents.worldInitialize.subscribe(result => {
-    result.blockComponentRegistry.registerCustomComponent("ff:add_item", {
-        onPlayerInteract: result => {
-            const { block, player, face } = result;
-            if (player.isSneaking || face !== "Up") return;
-
-            const equippable = player.getComponent("minecraft:equippable");
-            let item = equippable.getEquipment("Mainhand");
-            const inv = player.getComponent("minecraft:inventory").container;
-            const dim = block.dimension;
-            const center = block.center();
-
-            let entity = dim.getEntitiesAtBlockLocation(center)
-                            .find(e => e.typeId === "ff:pan_bottom_left");
-
-            if (!entity && item) {
-                system.run(() => {
-                    let checkEntity = dim.getEntitiesAtBlockLocation(center)
-                                         .find(e => e.typeId === "ff:pan_bottom_left");
-                    if (!checkEntity) {
-                        let newEntity = dim.spawnEntity("ff:pan_bottom_left", {
-                            x: center.x, y: center.y - 0.5, z: center.z
-                        });
-                        newEntity.addTag(item.typeId);
-                        newEntity.runCommand(`replaceitem entity @s slot.weapon.mainhand 0 ${item.typeId} 1`);
-                        const slot = player.selectedSlotIndex;
-                        if (item.amount > 1) {
-                            item.amount--;
-                            inv.setItem(slot, item);
-                        } else {
-                            inv.setItem(slot, undefined);
-                        }
-                        player.playSound("random.pop");
-                    }
-                });
-                return;
-            }
-
-            if (entity && !item) {
-                const tags = entity.getTags();
-                if (tags.length > 0) {
-                    const itemId = tags[0];
-                    inv.addItem(new ItemStack(itemId, 1));
-                    entity.runCommand(`replaceitem entity @s slot.weapon.mainhand 0 air`);
-                    entity.removeTag(itemId);
-                    player.playSound("random.pop2");
-                }
-                entity.triggerEvent("ff:despawn");
-                dim.runCommand(
-                  `execute at @e[type=ff:pan_bottom_left] positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[type=ff:pan_bottom_left,r=0.5] ff:despawn`
-                );
-                return;
-            }
-        },
-        onPlayerDestroy: result => {
-            const { block } = result;
-            const dim = block.dimension;
-            const center = block.center();
-            dim.runCommand(
-                `execute at @e[type=ff:pan_bottom_left] positioned ${center.x} ${center.y} ${center.z} run event entity @e[type=ff:pan_bottom_left,r=0.5] ff:despawn`
-            );
-        },
-        onDestroy: result => {
-            const { block } = result;
-            const dim = block.dimension;
-            const center = block.center();
-            dim.runCommand(
-                `execute at @e[type=ff:pan_bottom_left] positioned ${center.x} ${center.y} ${center.z} run event entity @e[type=ff:pan_bottom_left,r=0.5] ff:despawn`
-            );
         }
     });
 });
@@ -1309,7 +1236,7 @@ function isCurtainBlock(block) {
     const woodTypes = [
         'jungle','birch','crimson','warped',
         'cherry','mangrove','oak','dark_oak',
-        'acacia','pale','spruce','cinder','spicewood', 'maple'
+        'acacia','pale','spruce','cinder','spicewood'
     ];
     return block.typeId.startsWith('ff:white_curtain_') && 
            woodTypes.some(type => block.typeId.endsWith(type));
@@ -1374,7 +1301,7 @@ world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
     const woodTypes = [
         'jungle','birch','crimson','warped',
         'cherry','mangrove','oak','dark_oak',
-        'acacia','pale','spruce','cinder','spicewood', 'maple'
+        'acacia','pale','spruce','cinder','spicewood'
     ];
 
     woodTypes.forEach(type => {
@@ -1454,6 +1381,11 @@ function propagateCurtainOpen(block, openValue, visited = new Set()) {
         y: y + 0.5,
         z: z + 0.5
     });
+        block.dimension.spawnParticle("ff:curtain_open_dust", {
+        x: x + 0.5,
+        y: y + 0.5,
+        z: z + 0.5
+    });
 
     const direction = block.permutation.getState('minecraft:cardinal_direction');
     const neighbors = getCurtainNeighbors(block);
@@ -1467,3 +1399,358 @@ function propagateCurtainOpen(block, openValue, visited = new Set()) {
         }
     }
 }
+
+world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
+    blockComponentRegistry.registerCustomComponent("ff:add_item", {
+        onPlayerInteract: result => {
+            const { block, player, face } = result;
+            if (player.isSneaking || face !== "Up") return;
+
+            const equippable = player.getComponent("minecraft:equippable");
+            let item = equippable.getEquipment("Mainhand");
+            const inv = player.getComponent("minecraft:inventory").container;
+            const dim = block.dimension;
+            const center = block.center();
+
+            let entity = dim.getEntitiesAtBlockLocation(center)
+                            .find(e => e.typeId === "ff:pan_bottom_left");
+
+            if (!item && entity) {
+                const itemTag = entity.getTags().find(t => t.startsWith("item:"));
+                if (itemTag) {
+                    try {
+                        const itemData = JSON.parse(itemTag.slice(5));
+                        const restored = new ItemStack(itemData.typeId, itemData.amount);
+                        if (itemData.nameTag) restored.nameTag = itemData.nameTag;
+                        if (itemData.lore) restored.setLore(itemData.lore);
+                        if (itemData.enchantments) {
+                            const enchComp = restored.getComponent("minecraft:enchantable");
+                            if (enchComp) {
+                                for (const ench of itemData.enchantments) {
+                                    enchComp.addEnchantment({ type: new EnchantmentType(ench.id), level: ench.level });
+                                }
+                            }
+                        }
+                        inv.addItem(restored);
+                    } catch (e) {
+                        const fallbackId = entity.getTags().find(t => !t.startsWith("item:"));
+                        if (fallbackId) inv.addItem(new ItemStack(fallbackId, 1));
+                    }
+                } else {
+                    const fallbackId = entity.getTags().find(t => !t.startsWith("item:"));
+                    if (fallbackId) inv.addItem(new ItemStack(fallbackId, 1));
+                }
+                entity.runCommand(`event entity @s ff:kill`);
+                dim.runCommand(
+                  `execute at @e[type=ff:pan_bottom_left] positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[type=ff:pan_bottom_left,r=0.5] ff:kill`
+                );
+                entity.runCommand(`event entity @s ff:despawn`);
+                dim.runCommand(
+                  `execute at @e[type=ff:pan_bottom_left] positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[type=ff:pan_bottom_left,r=0.5] ff:despawn`
+                );
+                return;
+            }
+
+            if (item && !entity) {
+                entity = dim.spawnEntity("ff:pan_bottom_left", {
+                    x: center.x, y: center.y - 0.5, z: center.z
+                });
+                const enchComp = item.getComponent("minecraft:enchantable");
+                const enchantments = enchComp ? enchComp.getEnchantments().map(e => ({ id: e.type.id, level: e.level })) : undefined;
+                const itemData = {
+                    typeId: item.typeId,
+                    amount: 1,
+                    nameTag: item.nameTag,
+                    lore: item.getLore ? item.getLore() : undefined,
+                    enchantments: enchantments && enchantments.length > 0 ? enchantments : undefined
+                };
+                entity.addTag(item.typeId);
+                entity.addTag("item:" + JSON.stringify(itemData));
+                entity.runCommand(`replaceitem entity @s slot.weapon.mainhand 0 ${item.typeId} 1`);
+                const slot = player.selectedSlotIndex;
+                if (item.amount > 1) {
+                    item.amount--;
+                    inv.setItem(slot, item);
+                } else {
+                    inv.setItem(slot, undefined);
+                }
+                return;
+            }
+        },
+        onPlayerDestroy: result => {
+            const { block } = result;
+            const dim = block.dimension;
+            const center = block.center();
+            let entity = dim.getEntitiesAtBlockLocation(center)
+                            .find(e => e.typeId === "ff:pan_bottom_left");
+            if (entity) {
+                const itemTag = entity.getTags().find(t => t.startsWith("item:"));
+                if (itemTag) {
+                    try {
+                        const itemData = JSON.parse(itemTag.slice(5));
+                        const restored = new ItemStack(itemData.typeId, itemData.amount);
+                        if (itemData.nameTag) restored.nameTag = itemData.nameTag;
+                        if (itemData.lore) restored.setLore(itemData.lore);
+                        if (itemData.enchantments) {
+                            const enchComp = restored.getComponent("minecraft:enchantable");
+                            if (enchComp) {
+                                for (const ench of itemData.enchantments) {
+                                    enchComp.addEnchantment({ type: new EnchantmentType(ench.id), level: ench.level });
+                                }
+                            }
+                        }
+                        dim.spawnItem(restored, {
+                            x: block.location.x + 0.5,
+                            y: block.location.y + 1,
+                            z: block.location.z + 0.5
+                        });
+                    } catch (e) {
+                        const fallbackId = entity.getTags().find(t => !t.startsWith("item:"));
+                        if (fallbackId) dim.spawnItem(new ItemStack(fallbackId, 1), {
+                            x: block.location.x + 0.5,
+                            y: block.location.y + 1,
+                            z: block.location.z + 0.5
+                        });
+                    }
+                } else {
+                    const fallbackId = entity.getTags().find(t => !t.startsWith("item:"));
+                    if (fallbackId) dim.spawnItem(new ItemStack(fallbackId, 1), {
+                        x: block.location.x + 0.5,
+                        y: block.location.y + 1,
+                        z: block.location.z + 0.5
+                    });
+                }
+                entity.runCommand(`event entity @s ff:kill`);
+                dim.runCommand(
+                  `execute at @e[type=ff:pan_bottom_left] positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[type=ff:pan_bottom_left,r=0.5] ff:kill`
+                );
+                entity.runCommand(`event entity @s ff:despawn`);
+                dim.runCommand(
+                  `execute at @e[type=ff:pan_bottom_left] positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[type=ff:pan_bottom_left,r=0.5] ff:despawn`
+                );
+            }
+        },
+        onDestroy: result => {
+            const { block } = result;
+            const dim = block.dimension;
+            const center = block.center();
+            let entity = dim.getEntitiesAtBlockLocation(center)
+                            .find(e => e.typeId === "ff:pan_bottom_left");
+            if (entity) {
+                const itemTag = entity.getTags().find(t => t.startsWith("item:"));
+                if (itemTag) {
+                    try {
+                        const itemData = JSON.parse(itemTag.slice(5));
+                        const restored = new ItemStack(itemData.typeId, itemData.amount);
+                        if (itemData.nameTag) restored.nameTag = itemData.nameTag;
+                        if (itemData.lore) restored.setLore(itemData.lore);
+                        if (itemData.enchantments) {
+                            const enchComp = restored.getComponent("minecraft:enchantable");
+                            if (enchComp) {
+                                for (const ench of itemData.enchantments) {
+                                    enchComp.addEnchantment({ type: new EnchantmentType(ench.id), level: ench.level });
+                                }
+                            }
+                        }
+                        dim.spawnItem(restored, {
+                            x: block.location.x + 0.5,
+                            y: block.location.y + 1,
+                            z: block.location.z + 0.5
+                        });
+                    } catch (e) {
+                        const fallbackId = entity.getTags().find(t => !t.startsWith("item:"));
+                        if (fallbackId) dim.spawnItem(new ItemStack(fallbackId, 1), {
+                            x: block.location.x + 0.5,
+                            y: block.location.y + 1,
+                            z: block.location.z + 0.5
+                        });
+                    }
+                } else {
+                    const fallbackId = entity.getTags().find(t => !t.startsWith("item:"));
+                    if (fallbackId) dim.spawnItem(new ItemStack(fallbackId, 1), {
+                        x: block.location.x + 0.5,
+                        y: block.location.y + 1,
+                        z: block.location.z + 0.5
+                    });
+                }
+                entity.runCommand(`event entity @s ff:kill`);
+                dim.runCommand(
+                  `execute at @e[type=ff:pan_bottom_left] positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[type=ff:pan_bottom_left,r=0.5] ff:kill`
+                );
+                entity.runCommand(`event entity @s ff:despawn`);
+                dim.runCommand(
+                  `execute at @e[type=ff:pan_bottom_left] positioned ${block.location.x} ${block.location.y} ${block.location.z} run event entity @e[type=ff:pan_bottom_left,r=0.5] ff:despawn`
+                );
+            }
+        }
+    });
+});
+
+world.beforeEvents.worldInitialize.subscribe(({ blockComponentRegistry }) => {
+    blockComponentRegistry.registerCustomComponent("ff:spicewood_sapling", {
+        onPlayerInteract: e => {
+            const { player, block } = e;
+            const equipment = player.getComponent('equippable');
+            const selectedItem = equipment.getEquipment('Mainhand');
+            
+            if (selectedItem && selectedItem.typeId === 'minecraft:bone_meal') {
+                const { x, y, z } = block.location;
+                
+                const saplingPositions = [
+                    { x: x, y: y, z: z },
+                    { x: x + 1, y: y, z: z },
+                    { x: x, y: y, z: z + 1 },
+                    { x: x + 1, y: y, z: z + 1 }
+                ];
+                
+                let hasAllSaplings = true;
+                let missingSaplings = [];
+                for (const pos of saplingPositions) {
+                    const checkBlock = block.dimension.getBlock(pos);
+                    if (!checkBlock || checkBlock.typeId !== 'ff:spicewood_sapling') {
+                        hasAllSaplings = false;
+                        missingSaplings.push(`${pos.x},${pos.y},${pos.z}: ${checkBlock ? checkBlock.typeId : 'null'}`);
+                    }
+                }
+   
+                if (!hasAllSaplings) {
+                }
+                
+                if (hasAllSaplings && Math.random() < 0.3) {
+                    for (const pos of saplingPositions) {
+                        block.dimension.runCommand(`setblock ${pos.x} ${pos.y} ${pos.z} air`);
+                    }
+                    
+                    block.dimension.runCommand(`structure load spicewood_tree_large ${x - 5} ${y} ${z - 5}`);
+                    
+                    for (let i = 0; i < 3; i++) {
+                        const randomX = x + Math.random();
+                        const randomY = y + 0.5 + Math.random() * 0.8;
+                        const randomZ = z + Math.random();
+                        block.dimension.spawnParticle("minecraft:villager_happy", { x: randomX, y: randomY, z: randomZ });
+                    }
+                    
+                    player.playSound("block.grass.place");
+                    
+                    if (player.getGameMode() !== GameMode.creative) {
+                        if (selectedItem.amount > 1) {
+                            selectedItem.amount -= 1;
+                            equipment.setEquipment('Mainhand', selectedItem);
+                        } else {
+                            equipment.setEquipment('Mainhand', undefined);
+                        }
+                    }
+                } else if (!hasAllSaplings && Math.random() < 0.3) {
+                    const smallTreeType = Math.random() < 0.5 ? 'spicewood_tree_small_2' : 'spicewood_tree_small_3';
+                    
+                    block.dimension.runCommand(`setblock ${x} ${y} ${z} air`);
+                    block.dimension.runCommand(`structure load ${smallTreeType} ${x - 1} ${y} ${z - 1}`);
+                    
+                    for (let i = 0; i < 3; i++) {
+                        const randomX = x + Math.random();
+                        const randomY = y + 0.5 + Math.random() * 0.8;
+                        const randomZ = z + Math.random();
+                        block.dimension.spawnParticle("minecraft:villager_happy", { x: randomX, y: randomY, z: randomZ });
+                    }
+                    
+                    player.playSound("block.grass.place");
+                    
+                    if (player.getGameMode() !== GameMode.creative) {
+                        if (selectedItem.amount > 1) {
+                            selectedItem.amount -= 1;
+                            equipment.setEquipment('Mainhand', selectedItem);
+                        } else {
+                            equipment.setEquipment('Mainhand', undefined);
+                        }
+                    }
+                } else {
+                    
+                    for (let i = 0; i < 3; i++) {
+                        const randomX = x + Math.random();
+                        const randomY = y + 0.5 + Math.random() * 0.8;
+                        const randomZ = z + Math.random();
+                        block.dimension.spawnParticle("minecraft:villager_happy", { x: randomX, y: randomY, z: randomZ });
+                    }
+                    
+                    player.playSound("block.grass.break");
+                    
+                    if (player.getGameMode() !== GameMode.creative) {
+                        if (selectedItem.amount > 1) {
+                            selectedItem.amount -= 1;
+                            equipment.setEquipment('Mainhand', selectedItem);
+                        } else {
+                            equipment.setEquipment('Mainhand', undefined);
+                        }
+                    }
+                }
+            }
+        },
+        
+        onRandomTick: e => {
+            const { block } = e;
+            const { x, y, z } = block.location;
+            
+            const lightBlock = block.dimension.getBlock({ x, y: y + 1, z });
+            const lightLevel = lightBlock ? lightBlock.light : 0;
+            
+            if (lightLevel < 9) {
+                return;
+            }
+            
+            const saplingPositions = [
+                { x: x, y: y, z: z },
+                { x: x + 1, y: y, z: z },
+                { x: x, y: y, z: z + 1 },
+                { x: x + 1, y: y, z: z + 1 }
+            ];
+            
+            let hasAllSaplings = true;
+            let missingSaplings = [];
+            for (const pos of saplingPositions) {
+                const checkBlock = block.dimension.getBlock(pos);
+                if (!checkBlock || checkBlock.typeId !== 'ff:spicewood_sapling') {
+                    hasAllSaplings = false;
+                    missingSaplings.push(`${pos.x},${pos.y},${pos.z}: ${checkBlock ? checkBlock.typeId : 'null'}`);
+                }
+            }
+            
+            if (!hasAllSaplings) {
+                return;
+            }
+            
+            let hasSpace = true;
+            let blockingBlocks = [];
+            for (let dx = -2; dx <= 3 && hasSpace; dx++) {
+                for (let dz = -2; dz <= 3 && hasSpace; dz++) {
+                    for (let dy = 1; dy <= 7 && hasSpace; dy++) {
+                        const checkBlock = block.dimension.getBlock({ 
+                            x: x + dx, 
+                            y: y + dy, 
+                            z: z + dz 
+                        });
+                        if (checkBlock && checkBlock.typeId !== 'minecraft:air') {
+                            hasSpace = false;
+                            blockingBlocks.push(`${x + dx},${y + dy},${z + dz}: ${checkBlock.typeId}`);
+                        }
+                    }
+                }
+            }
+            
+            if (!hasSpace) {
+                
+                return;
+            }
+            
+            const randomChance = Math.random();
+            if (randomChance < 10) {
+                for (const pos of saplingPositions) {
+                    block.dimension.runCommand(`setblock ${pos.x} ${pos.y} ${pos.z} air`);
+                }
+                
+                block.dimension.runCommand(`structure load spicewood_tree_large ${x - 5} ${y} ${z - 5}`);
+                
+                block.dimension.runCommand(`playsound block.grass.place @a ~ ~ ~`);
+            }
+        }
+    });
+});

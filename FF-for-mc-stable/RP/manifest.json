@@ -2,46 +2,46 @@
     "format_version": 2,
     "metadata": {},
     "header": {
-        "name": "TEST FLIGHT #4 - RP | Fabulous Furnished - v2.0 Official Release",
+        "name": "TEST FLIGHT #5 - RP | Fabulous Furnished - v2.0 Official Release",
         "description": "Make your world fabulous with fabulous furniture! More than 150+ blocks with more than 250+ variations available!",
         "min_engine_version": [
             1,
             21,
             80
         ],
-        "uuid": "57bf9e0d-005e-4763-8779-4373f70800a5",
+        "uuid": "dbc64bc6-e846-4be5-8d98-e9defe92e3fb",
         "version": [
-            5,
+            1,
             0,
-            5
+            0
         ]
     },
     "modules": [
         {
             "description": "resource",
             "type": "resources",
-            "uuid": "fed829f5-55cf-48fc-e274-98b94b9871c9",
+            "uuid": "00b3ad65-16e8-40a4-f02a-68b01e2b1512",
             "version": [
-                5,
+                1,
                 0,
-                5
+                0
             ]
         }
     ],
     "dependencies": [
         {
-            "uuid": "b85a36d3-e461-4ffe-d69c-b451c609a6dc",
+            "uuid": "16542476-b161-4981-ab55-08e71a62a561",
             "version": [
-                5,
+                1,
                 0,
-                5
+                0
             ]
         }
     ],
     "subpacks": [
         {
             "folder_name": "without_vfx",
-            "name": "Without VFX effect (for RTX)",
+            "name": "Without VFX (for RTX)",
             "memory_tier": 0
         },
         {

@@ -633,7 +633,8 @@
 					"texture": "warped_fences",
 					"render_method": "alpha_test"
 				}
-			}
+			},
+			"minecraft:loot": "loot_tables/warped_fence_inventory.json"
 		}
 	}
 }

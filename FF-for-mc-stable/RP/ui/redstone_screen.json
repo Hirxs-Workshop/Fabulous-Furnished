@@ -92,7 +92,7 @@
 
   "smphirxs_ia_categories@smphirxs_hopper_panel": {
     "texture":"textures/ff_ui/oak_cabinet",
-    "visible":"(not ($localtitle - 'oak_cabinet' = $localtitle))",
+    "visible":"(not ($localtitle - 'aoak_cabinet' = $localtitle))",
     "layer": 11,
     "variables": [
       {

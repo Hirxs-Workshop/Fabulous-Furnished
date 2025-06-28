@@ -633,7 +633,8 @@
 					"texture": "pale_fences",
 					"render_method": "alpha_test"
 				}
-			}
+			},
+			"minecraft:loot": "loot_tables/pale_fence_inventory.json"
 		}
 	}
 }

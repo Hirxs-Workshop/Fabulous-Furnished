@@ -236,8 +236,8 @@ pizzeriaDoorsFunction.doors = [
   {
     id: "ff:spicewood_door",
     itemID: "ff:spicewood_door_item",
-    openSound: { id: "open.metallic_door", volume: 1, pitch: 1 },
-    closeSound: { id: "close.metallic_door", volume: 1, pitch: 1 }
+    openSound: { id: "open.wooden_door", volume: 1, pitch: 1 },
+    closeSound: { id: "close.wooden_door", volume: 1, pitch: 1 }
   }
 ];
 
