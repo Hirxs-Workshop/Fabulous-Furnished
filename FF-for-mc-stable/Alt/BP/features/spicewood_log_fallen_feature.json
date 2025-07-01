@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "ff:spicewood_log_fallen_feature"
+    },
+    "features": [
+      [ "ff:spicewood_log_fallen_type1", 100 ],
+      [ "ff:spicewood_log_fallen_type2", 100 ],
+      [ "ff:spicewood_log_fallen_type3", 100 ]
+    ]
+  }
+}

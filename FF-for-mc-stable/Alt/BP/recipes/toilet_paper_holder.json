@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:toilet_paper_holder"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SCS"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:spruce_planks"
+			},
+			"C": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "ff:toilet_paper_holder"
+		}
+	}
+}

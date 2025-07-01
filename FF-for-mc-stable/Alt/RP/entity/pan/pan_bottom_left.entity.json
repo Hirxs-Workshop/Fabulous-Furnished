@@ -1,0 +1,57 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ff:pan_bottom_left",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "enderman"
+			},
+			"textures": {
+				"default": "textures/cooking_timer/cook_timer_0",
+				"timer_1": "textures/cooking_timer/cook_timer_1",
+				"timer_2": "textures/cooking_timer/cook_timer_2",
+				"timer_3": "textures/cooking_timer/cook_timer_3",
+				"timer_4": "textures/cooking_timer/cook_timer_4",
+				"timer_5": "textures/cooking_timer/cook_timer_5",
+				"timer_6": "textures/cooking_timer/cook_timer_6",
+				"timer_7": "textures/cooking_timer/cook_timer_7",
+				"timer_8": "textures/cooking_timer/cook_timer_8"
+			},
+			"animations": {
+				"default_pose": "animation.pan_indicador_and_item.camera",
+				"no_pose": "animation.pan_indicador_and_item.camera",
+				"solemn_pose": "animation.pan_indicador_and_item.camera",
+				"athena_pose": "animation.pan_indicador_and_item.camera",
+				"brandish_pose": "animation.pan_indicador_and_item.camera",
+				"honor_pose": "animation.pan_indicador_and_item.camera",
+				"entertain_pose": "animation.pan_indicador_and_item.camera",
+				"salute_pose": "animation.pan_indicador_and_item.camera",
+				"riposte_pose": "animation.pan_indicador_and_item.camera",
+				"zombie_pose": "animation.pan_indicador_and_item.camera",
+				"cancan_a_pose": "animation.pan_indicador_and_item.camera",
+				"cancan_b_pose": "animation.pan_indicador_and_item.camera",
+				"hero_pose": "animation.pan_indicador_and_item.camera",
+				"wiggle": "animation.pan_indicador_and_item.camera",
+				"controller.pose": "controller.animation.armor_stand.pose",
+				"controller.wiggling": "controller.animation.armor_stand.wiggle"
+			},
+			"geometry": {
+				"default": "geometry.pan_indicador_and_item"
+			},
+			"render_controllers": [
+				"controller.render.cook_timer"
+			],
+			"scripts": {
+				"initialize": [
+					"variable.armor_stand.pose_index = 0;",
+					"variable.armor_stand.hurt_time = 0;"
+				],
+				"animate": [
+					"controller.pose",
+					"controller.wiggling"
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:fridge_black"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"III",
+			"IDS",
+			"III"
+		],
+		"key": {
+			"D": {
+				"item": "minecraft:chest"
+			},
+			"I": {
+				"item": "ff:black_porcelain_clay"
+			},
+			"S": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "ff:fridge_black"
+		}
+	}
+} 

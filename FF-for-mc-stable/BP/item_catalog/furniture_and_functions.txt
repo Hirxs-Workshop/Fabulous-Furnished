@@ -1,0 +1,172 @@
+Furniture & Functional Items Documentation
+=========================================
+
+---
+
+Electronics & Utility
+---------------------
+
+Plasma TV / Rustic TV
+- Example IDs: plasma_tv, wooden_rustic_oak_tv, etc.
+- Detects the weather and displays a different animation for each weather type.
+- Can be turned on/off by interacting.
+- Must be connected to an outlet to function.
+- Customizable with paint tool (16 colors).
+- Craftable in the crafting table.
+- Available in multiple wood types (for rustic variant).
+
+Ceiling Lamp / Table Lamp
+- Example IDs: ceiling_light_oak, lamp_off_oak, etc.
+- Can be turned on/off, emits light when on.
+- Customizable with paint tool (16 colors).
+- Available in all wood types.
+- Craftable in the crafting table.
+
+Ceiling Fan
+- Example IDs: wooden_ceiling_fan_oak, etc.
+- Decorative, can be placed on the ceiling.
+- Available in all wood types.
+
+Outlet
+- Example ID: outlet
+- Used to power electronic furniture (TVs, lamps, etc.).
+- Has different states and effects.
+
+---
+
+Sittable Furniture
+------------------
+
+Couch / Sofa
+- Example IDs: wooden_oak_couch, wooden_spicewood_couch, etc.
+- Sittable (player can sit).
+- Can connect with other couches to form larger variants.
+- Customizable with paint tool (16 colors).
+- Available in all wood types.
+- Craftable in the crafting table.
+
+Chair
+- Example IDs: wooden_oak_chair, wooden_birch_chair, etc.
+- Sittable.
+- Customizable with paint tool (16 colors).
+- Available in all wood types.
+- Craftable in the crafting table.
+
+Stool
+- Example IDs: wooden_oak_stool, etc.
+- Sittable.
+- Customizable with paint tool (16 colors).
+- Available in all wood types.
+- Craftable in the crafting table.
+
+---
+
+Storage Furniture
+-----------------
+
+Cabinet
+- Example IDs: wooden_cabinet_oak, wooden_cabinet_birch, etc.
+- Functions as a container (item storage).
+- Customizable with paint tool (16 colors).
+- Available in all wood types.
+- Craftable in the crafting table.
+
+Bedside Table
+- Example IDs: wooden_bedside_table_oak, etc.
+- Functions as a container.
+- Customizable with paint tool (16 colors).
+- Available in all wood types.
+- Craftable in the crafting table.
+
+Shelf
+- Example IDs: wooden_shelves_oak, etc.
+- Decorative storage/display.
+- Available in all wood types.
+
+---
+
+Tables
+------
+
+Table
+- Example IDs: wooden_table_oak, etc.
+- Can connect with other tables to form larger variants.
+- Customizable with paint tool (16 colors).
+- Available in all wood types.
+- Craftable in the crafting table.
+
+Coffee Table
+- Example IDs: wooden_coffee_table_oak, etc.
+- Decorative, available in all wood types.
+
+---
+
+Decorative & Functional
+-----------------------
+
+Mirror
+- Example IDs: mirror_oak, etc.
+- Decorative, available in all wood types.
+
+Curtain / Blind
+- Example IDs: white_curtain_oak, wooden_oak_blinds, etc.
+- Can be opened/closed.
+- Customizable with paint tool (16 colors).
+- Available in all wood types.
+
+Sink / Bathroom Sink / Wall Sink
+- Example IDs: bathroom_sink, bathroom_wall_sink, etc.
+- Decorative, some may interact with water.
+
+Stove
+- Example ID: stove
+- Can be turned on/off.
+- Used for cooking (with scripts).
+
+Toilet / Toilet Paper / Toilet Paper Holder
+- Example IDs: toilet, toilet_paper_block, toilet_paper_holder, etc.
+- Decorative, for bathroom builds.
+
+---
+
+Fences & Frames
+---------------
+
+Garden Fence
+- Example IDs: garden_fence_oak, etc.
+- Connectable, available in all wood types.
+
+Wooden Frame
+- Example IDs: wooden_frame_oak, etc.
+- Decorative, available in all wood types.
+
+---
+
+Special/Seasonal
+----------------
+
+Seasonal Decor
+- Example IDs: autumn_pumpkins, christmas_lights_block, etc.
+- Pumpkins, Christmas lights, autumn leaves, etc.
+- Decorative, themed for holidays.
+
+---
+
+Example Entry
+-------------
+
+Plasma TV
+- ID: plasma_tv
+- Function: Detects weather, displays animation, requires outlet, customizable color, craftable.
+
+Wooden Oak Chair
+- ID: wooden_oak_chair
+- Function: Sittable, customizable color, available in all wood types, craftable.
+
+Wooden Oak Cabinet
+- ID: wooden_cabinet_oak
+- Function: Storage, customizable color, available in all wood types, craftable.
+
+---
+
+(Expand this file as you add more furniture or features to your add-on!) 

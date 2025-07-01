@@ -1,0 +1,351 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:white_rug",
+			"states": {
+				"ef:colors": {
+					"values": {
+						"min": 0,
+						"max": 15
+					}
+				}
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					],
+					"y_rotation_offset": 180
+				}
+			},
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.rug_block"
+			},
+			"minecraft:custom_components": [
+				"ff:lines_couch"
+			],
+			"minecraft:map_color": "#00ff00",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "white_rug_dark",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 5
+			},
+			"minecraft:selection_box": {
+				"origin": [-8, 0, -8],
+				"size": [16, 1, 16]
+			},
+			"minecraft:collision_box": {
+				"origin": [-8, 0, -8],
+				"size": [16, 1, 16]
+			},
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 1
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 1
+            },
+			"minecraft:light_dampening": 1
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('ef:colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "white_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "orange_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "magenta_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "light_blue_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "yellow_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "lime_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "pink_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "gray_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "light_gray_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "cyan_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "purple_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "blue_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "brown_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "green_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "red_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "white_rug_dark",
+							"render_method": "alpha_test"
+						},
+						"lines": {
+							"texture": "black_rug_light",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}

@@ -1,8 +1,10 @@
 {
     "format_version": 2,
-    "metadata": {},
+    "metadata":{
+	"product_type":"addon"
+    },
     "header": {
-        "name": "TEST FLIGHT #5 - BP | Fabulous Furnished - v2.0 Official Release",
+        "name": "RP | Fabulous Furnished TI#7 - Official Release",
         "description": "Make your world fabulous with fabulous furniture! More than 150+ blocks with more than 250+ variations available!",
         "min_engine_version": [
             1,
@@ -11,9 +13,9 @@
         ],
         "uuid": "16542476-b161-4981-ab55-08e71a62a561",
         "version": [
-            1,
-            0,
-            0
+                2,
+                7,
+                9
         ]
     },
     "modules": [
@@ -22,9 +24,9 @@
             "type": "script",
             "uuid": "675730b0-e5f0-49cf-e647-863fc2ea90a4",
             "version": [
-                1,
-                0,
-                0
+                2,
+                7,
+                9
             ],
             "language": "javascript",
             "entry": "scripts/ff_main.js"
@@ -42,9 +44,9 @@
         {
             "uuid": "dbc64bc6-e846-4be5-8d98-e9defe92e3fb",
             "version": [
-                1,
-                0,
-                0
+                2,
+                7,
+                9
             ]
         }
     ],

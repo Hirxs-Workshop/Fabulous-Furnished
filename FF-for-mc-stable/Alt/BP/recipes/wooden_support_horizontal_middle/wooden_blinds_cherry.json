@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "ff:wooden_support_horizontal_middle_cherry"
+        },
+        "tags": [
+            "ff_carpentry_table"
+        ],
+        "pattern": [
+            "S",
+            "S",
+            "S"
+        ],
+        "key": {
+            "S": {
+                "item": "minecraft:cherry_planks"
+            }
+        },
+        "result": {
+            "item": "ff:wooden_support_horizontal_middle_cherry",
+            "count": 2
+        }
+    }
+}

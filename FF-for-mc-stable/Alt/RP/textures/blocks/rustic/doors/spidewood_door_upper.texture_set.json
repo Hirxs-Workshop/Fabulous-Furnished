@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "spidewood_door_upper",
+        "metalness_emissive_roughness": "spidewood_door_upper_mer",
+        "heightmap": "spidewood_door_upper_normal"
+    }
+}

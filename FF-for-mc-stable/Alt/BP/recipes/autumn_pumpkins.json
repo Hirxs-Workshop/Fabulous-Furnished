@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sd:autumn_pumpkins"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SSS"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:pumpkin"
+			}
+		},
+		"result": {
+			"item": "sd:autumn_pumpkins",
+			"count": 1
+		}
+	}
+}

@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "terrace_fente_mangrove",
+        "metalness_emissive_roughness": "terrace_fente_mangrove_mer",
+        "heightmap": "terrace_fente_mangrove_normal"
+    }
+}

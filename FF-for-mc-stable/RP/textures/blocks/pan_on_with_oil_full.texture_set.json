@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "pan_on_with_oil_full",
+        "metalness_emissive_roughness": "pan_on_with_oil_full_mer",
+        "heightmap": "pan_on_with_oil_full_normal"
+    }
+}

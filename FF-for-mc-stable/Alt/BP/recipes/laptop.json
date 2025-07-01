@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:laptop"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"IGI",
+			"IRI"
+		],
+		"key": {
+			"G": {
+				"item": "minecraft:glass"
+			},
+			"R": {
+				"item": "minecraft:redstone"
+			},
+			"I": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "ff:laptop"
+		}
+	}
+} 

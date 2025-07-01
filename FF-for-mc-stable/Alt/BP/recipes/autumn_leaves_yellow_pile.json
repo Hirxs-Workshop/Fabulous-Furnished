@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sd:yellow_autumn_leaves_pile"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"SS"
+		],
+		"key": {
+			"S": {
+				"item": "sd:yellow_autumn_leaves"
+			}
+		},
+		"result": {
+			"item": "sd:yellow_autumn_leaves_pile",
+			"count": 3
+		}
+	}
+}

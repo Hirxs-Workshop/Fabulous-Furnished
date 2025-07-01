@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "toilet_ff",
+        "metalness_emissive_roughness": "toilet_ff_mer",
+        "heightmap": "toilet_ff_normal"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "ff:wooden_support_plate_jungle"
+        },
+        "tags": [
+            "ff_carpentry_table"
+        ],
+        "pattern": [
+            "SS"
+        ],
+        "key": {
+            "S": {
+                "item": "minecraft:planks",
+                "data": 3
+            }
+        },
+        "result": {
+            "item": "ff:wooden_support_plate_jungle",
+            "count": 2
+        }
+    }
+}

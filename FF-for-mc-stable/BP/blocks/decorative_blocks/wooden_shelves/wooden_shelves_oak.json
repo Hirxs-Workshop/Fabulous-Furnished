@@ -71,6 +71,9 @@
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 2
             },
+			"minecraft:custom_components": [
+				"ff:wooden_shelves_oak_interact"
+			],
 			"minecraft:light_dampening": 1,
 			"minecraft:geometry": "geometry.wooden_shelves",
 			"minecraft:selection_box": {

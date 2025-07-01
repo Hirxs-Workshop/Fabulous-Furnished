@@ -1,0 +1,393 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:pan",
+			"menu_category": {
+				"category": "items"
+			},
+			"states": {
+				"ff:rotation": [
+					2,
+					3,
+					4,
+					5
+				],
+				"ff:stove_below": [
+					false,
+					true
+				],
+				"ff:stage": {
+					"values": {
+						"min": 1,
+						"max": 10
+					}
+				},
+				"ff:on_table": [
+					false,
+					true
+				]
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"render_method": "alpha_test",
+					"texture": "pan"
+				}
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.pan",
+				"bone_visibility": {
+					"has_stove": false
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					1,
+					14
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					1,
+					14
+				]
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:custom_components": [
+				"ff:pan",
+				"ff:rotation",
+				"ff:laptop_on_table"
+			]
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('ff:stove_below') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pan",
+						"bone_visibility": {
+							"has_stove": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stove_below') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.pan",
+						"bone_visibility": {
+							"has_stove": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:rotation') == 2 && q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-180,
+							0
+						],
+						"translation": [
+							0,
+							-0.5,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:rotation') == 3 && q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						],
+						"translation": [
+							0,
+							-0.5,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:rotation') == 4 && q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						],
+						"translation": [
+							0,
+							-0.5,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:rotation') == 5 && q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						],
+						"translation": [
+							0,
+							-0.5,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:rotation') == 2 && !q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:rotation') == 3 && !q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:rotation') == 4 && !q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:rotation') == 5 && !q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "pan_on"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							150,
+							150
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "pan_on_with_oil"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							150,
+							150
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "pan_on_with_oil"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							150,
+							150
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "pan_on_with_oil"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							150,
+							150
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "pan_on_with_oil"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "pan_on_with_oil"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							150,
+							150
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "pan_on_with_oil"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							150,
+							150
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "pan_on_with_oil"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							250,
+							250
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "pan_on_with_oil_middle"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							250,
+							250
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"render_method": "alpha_test",
+							"texture": "pan_on_with_oil_full"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							250,
+							250
+						],
+						"looping": true
+					}
+				}
+			}
+		]
+	}
+}

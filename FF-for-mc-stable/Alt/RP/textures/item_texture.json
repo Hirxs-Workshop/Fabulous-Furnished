@@ -1,0 +1,445 @@
+{
+    "texture_name": "atlas.items",
+    "texture_data": {
+        "black_porcelain_clay": {
+            "textures": [
+                "textures/items/black_porcelain_clay"
+            ]
+        },
+        "black_porcelain_tile": {
+            "textures": [
+                "textures/items/black_porcelain_tile"
+            ]
+        },
+        "bread_slice": {
+            "textures": [
+                "textures/items/bread_slice"
+            ]
+        },
+        "bread_slice_toasted": {
+            "textures": [
+                "textures/items/bread_slice_toasted"
+            ]
+        },
+        "brush_with_paint_black": {
+            "textures": [
+                "textures/items/brush_with_paint_black"
+            ]
+        },
+        "brush_with_paint_blue": {
+            "textures": [
+                "textures/items/brush_with_paint_blue"
+            ]
+        },
+        "brush_with_paint_brown": {
+            "textures": [
+                "textures/items/brush_with_paint_brown"
+            ]
+        },
+        "brush_with_paint_cyan": {
+            "textures": [
+                "textures/items/brush_with_paint_cyan"
+            ]
+        },
+        "brush_with_paint_green": {
+            "textures": [
+                "textures/items/brush_with_paint_green"
+            ]
+        },
+        "brush_with_paint_grey": {
+            "textures": [
+                "textures/items/brush_with_paint_grey"
+            ]
+        },
+        "brush_with_paint_light_blue": {
+            "textures": [
+                "textures/items/brush_with_paint_light_blue"
+            ]
+        },
+        "brush_with_paint_light_grey": {
+            "textures": [
+                "textures/items/brush_with_paint_light_grey"
+            ]
+        },
+        "brush_with_paint_lime": {
+            "textures": [
+                "textures/items/brush_with_paint_lime"
+            ]
+        },
+        "brush_with_paint_magenta": {
+            "textures": [
+                "textures/items/brush_with_paint_magenta"
+            ]
+        },
+        "brush_with_paint_orange": {
+            "textures": [
+                "textures/items/brush_with_paint_orange"
+            ]
+        },
+        "brush_with_paint_pink": {
+            "textures": [
+                "textures/items/brush_with_paint_pink"
+            ]
+        },
+        "brush_with_paint_purple": {
+            "textures": [
+                "textures/items/brush_with_paint_purple"
+            ]
+        },
+        "brush_with_paint_red": {
+            "textures": [
+                "textures/items/brush_with_paint_red"
+            ]
+        },
+        "brush_with_paint_red_untransparent": {
+            "textures": [
+                "textures/items/brush_with_paint_red_untransparent"
+            ]
+        },
+        "brush_with_paint_white": {
+            "textures": [
+                "textures/items/brush_with_paint_white"
+            ]
+        },
+        "brush_with_paint_yellow": {
+            "textures": [
+                "textures/items/brush_with_paint_yellow"
+            ]
+        },
+        "brust_test": {
+            "textures": [
+                "textures/items/brust_test"
+            ]
+        },
+        "brust_with_base_paint": {
+            "textures": [
+                "textures/items/brust_with_base_paint"
+            ]
+        },
+        "brust_with_pink_paint": {
+            "textures": [
+                "textures/items/brust_with_pink_paint"
+            ]
+        },
+        "chair_cushion": {
+            "textures": [
+                "textures/items/chair_cushion"
+            ]
+        },
+        "chisel": {
+            "textures": [
+                "textures/items/chisel"
+            ]
+        },
+        "cinder_door": {
+            "textures": [
+                "textures/items/cinder_door"
+            ]
+        },
+        "diamond_knife": {
+            "textures": [
+                "textures/items/diamond_knife"
+            ]
+        },
+        "egg_item": {
+            "textures": [
+                "textures/items/egg_item"
+            ]
+        },
+        "empty_brush": {
+            "textures": [
+                "textures/items/empty_brush"
+            ]
+        },
+        "empty_brush_untransparent": {
+            "textures": [
+                "textures/items/empty_brush_untransparent"
+            ]
+        },
+        "energy_icon": {
+            "textures": [
+                "textures/items/energy_icon"
+            ]
+        },
+        "feldspar": {
+            "textures": [
+                "textures/items/feldspar"
+            ]
+        },
+        "folk": {
+            "textures": [
+                "textures/items/folk"
+            ]
+        },
+        "frozen_beef_raw": {
+            "textures": [
+                "textures/items/frozen_beef_raw"
+            ]
+        },
+        "frozen_chicken_raw": {
+            "textures": [
+                "textures/items/frozen_chicken_raw"
+            ]
+        },
+        "frozen_fish_clownfish_raw": {
+            "textures": [
+                "textures/items/frozen_fish_clownfish_raw"
+            ]
+        },
+        "frozen_fish_raw": {
+            "textures": [
+                "textures/items/frozen_fish_raw"
+            ]
+        },
+        "frozen_fish_salmon_raw": {
+            "textures": [
+                "textures/items/frozen_fish_salmon_raw"
+            ]
+        },
+        "frozen_mutton_raw": {
+            "textures": [
+                "textures/items/frozen_mutton_raw"
+            ]
+        },
+        "frozen_porkchop_raw": {
+            "textures": [
+                "textures/items/frozen_porkchop_raw"
+            ]
+        },
+        "frozen_rabbit_raw": {
+            "textures": [
+                "textures/items/frozen_rabbit_raw"
+            ]
+        },
+        "gold_knife": {
+            "textures": [
+                "textures/items/gold_knife"
+            ]
+        },
+        "hammer": {
+            "textures": [
+                "textures/items/hammer"
+            ]
+        },
+        "hammer_untransparent": {
+            "textures": [
+                "textures/items/hammer_untransparent"
+            ]
+        },
+        "iron_knife": {
+            "textures": [
+                "textures/items/iron_knife"
+            ]
+        },
+        "netherite_knife": {
+            "textures": [
+                "textures/items/netherite_knife"
+            ]
+        },
+        "paintbrush": {
+            "textures": [
+                "textures/items/paintbrush"
+            ]
+        },
+        "paintbrush_black": {
+            "textures": [
+                "textures/items/paintbrush_black"
+            ]
+        },
+        "paintbrush_blue": {
+            "textures": [
+                "textures/items/paintbrush_blue"
+            ]
+        },
+        "paintbrush_brown": {
+            "textures": [
+                "textures/items/paintbrush_brown"
+            ]
+        },
+        "paintbrush_cyan": {
+            "textures": [
+                "textures/items/paintbrush_cyan"
+            ]
+        },
+        "paintbrush_gray": {
+            "textures": [
+                "textures/items/paintbrush_gray"
+            ]
+        },
+        "paintbrush_green": {
+            "textures": [
+                "textures/items/paintbrush_green"
+            ]
+        },
+        "paintbrush_light_blue": {
+            "textures": [
+                "textures/items/paintbrush_light_blue"
+            ]
+        },
+        "paintbrush_light_gray": {
+            "textures": [
+                "textures/items/paintbrush_light_gray"
+            ]
+        },
+        "paintbrush_lime": {
+            "textures": [
+                "textures/items/paintbrush_lime"
+            ]
+        },
+        "paintbrush_magenta": {
+            "textures": [
+                "textures/items/paintbrush_magenta"
+            ]
+        },
+        "paintbrush_orange": {
+            "textures": [
+                "textures/items/paintbrush_orange"
+            ]
+        },
+        "paintbrush_pink": {
+            "textures": [
+                "textures/items/paintbrush_pink"
+            ]
+        },
+        "paintbrush_purple": {
+            "textures": [
+                "textures/items/paintbrush_purple"
+            ]
+        },
+        "paintbrush_red": {
+            "textures": [
+                "textures/items/paintbrush_red"
+            ]
+        },
+        "paintbrush_white": {
+            "textures": [
+                "textures/items/paintbrush_white"
+            ]
+        },
+        "paintbrush_yellow": {
+            "textures": [
+                "textures/items/paintbrush_yellow"
+            ]
+        },
+        "porcelain_clay": {
+            "textures": [
+                "textures/items/porcelain_clay"
+            ]
+        },
+        "porcelain_tile": {
+            "textures": [
+                "textures/items/porcelain_tile"
+            ]
+        },
+        "spatula": {
+            "textures": [
+                "textures/items/spatula"
+            ]
+        },
+        "spicewood_door": {
+            "textures": [
+                "textures/items/spicewood_door"
+            ]
+        },
+        "toilet_paper": {
+            "textures": [
+                "textures/items/toilet_paper"
+            ]
+        },
+        "vegetable_oil": {
+            "textures": [
+                "textures/items/vegetable_oil"
+            ]
+        },
+        "wrench": {
+            "textures": [
+                "textures/items/wrench"
+            ]
+        },
+        "energy_bar_0": {
+            "textures": [
+                "textures/items/energy/energy_bar_0"
+            ]
+        },
+        "energy_bar_1": {
+            "textures": [
+                "textures/items/energy/energy_bar_1"
+            ]
+        },
+        "energy_bar_10": {
+            "textures": [
+                "textures/items/energy/energy_bar_10"
+            ]
+        },
+        "energy_bar_11": {
+            "textures": [
+                "textures/items/energy/energy_bar_11"
+            ]
+        },
+        "energy_bar_12": {
+            "textures": [
+                "textures/items/energy/energy_bar_12"
+            ]
+        },
+        "energy_bar_13": {
+            "textures": [
+                "textures/items/energy/energy_bar_13"
+            ]
+        },
+        "energy_bar_14": {
+            "textures": [
+                "textures/items/energy/energy_bar_14"
+            ]
+        },
+        "energy_bar_15": {
+            "textures": [
+                "textures/items/energy/energy_bar_15"
+            ]
+        },
+        "energy_bar_16": {
+            "textures": [
+                "textures/items/energy/energy_bar_16"
+            ]
+        },
+        "energy_bar_2": {
+            "textures": [
+                "textures/items/energy/energy_bar_2"
+            ]
+        },
+        "energy_bar_3": {
+            "textures": [
+                "textures/items/energy/energy_bar_3"
+            ]
+        },
+        "energy_bar_4": {
+            "textures": [
+                "textures/items/energy/energy_bar_4"
+            ]
+        },
+        "energy_bar_5": {
+            "textures": [
+                "textures/items/energy/energy_bar_5"
+            ]
+        },
+        "energy_bar_6": {
+            "textures": [
+                "textures/items/energy/energy_bar_6"
+            ]
+        },
+        "energy_bar_7": {
+            "textures": [
+                "textures/items/energy/energy_bar_7"
+            ]
+        },
+        "energy_bar_8": {
+            "textures": [
+                "textures/items/energy/energy_bar_8"
+            ]
+        },
+        "energy_bar_9": {
+            "textures": [
+                "textures/items/energy/energy_bar_9"
+            ]
+        }
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "spicewood_fences",
+        "metalness_emissive_roughness": "spicewood_fences_mer",
+        "heightmap": "spicewood_fences_normal"
+    }
+}
