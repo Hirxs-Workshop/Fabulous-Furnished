@@ -1,0 +1,36 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sd:red_autumn_leaves",
+            "menu_category": {
+                "category": "construction"
+            },
+            "states": {}
+        },
+        "components": {
+	    "minecraft:custom_components": [
+		"sd:red_autumn_leaves_particles",
+        "sd:red_autumn_leaves_particles_step"
+	    ],
+            "minecraft:geometry": {
+                "identifier": "geometry.custom_leaves",
+                "culling": "ff:blocks_culling"
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 5
+            },
+            "minecraft:flammable": false,
+            "minecraft:map_color": "#222d75",
+            "minecraft:light_dampening": 8,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "red_autumn_leaves",
+                    "render_method": "alpha_test_to_opaque",
+                    "face_dimming": true,
+                    "ambient_occlusion": true
+                }
+            }
+        }
+    }
+}

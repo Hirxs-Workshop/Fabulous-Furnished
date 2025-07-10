@@ -1,0 +1,321 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:wooden_ceiling_fan_crimson",
+			"menu_category": {
+				"category": "items"
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": [
+						"minecraft:block_face"
+					]
+				}
+			},
+			"states": {
+				"ff:lamp_state": [
+					false,
+					true
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'down'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							-90,
+							0,
+							0
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'up'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							90,
+							0,
+							0
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:block_face') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-4,
+							4,
+							-8
+						],
+						"size": [
+							8,
+							8,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('ff:lamp_state')",
+				"components": {
+					"minecraft:light_emission": 0,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ceiling_fan_off_crimson",
+					"render_method": "alpha_test_single_sided",
+					"ambient_occlusion": true
+				},
+				"light": {
+					"texture": "ceiling_fan_off_crimson",
+					"render_method": "alpha_test_single_sided",
+					"ambient_occlusion": true
+				}
+			}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:lamp_state')",
+				"components": {
+					"minecraft:light_emission": 12,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ceiling_fan_on_crimson",
+					"render_method": "alpha_test_single_sided",
+					"ambient_occlusion": true
+				},
+				"light": {
+					"texture": "ceiling_fan_on_crimson",
+					"render_method": "alpha_test_single_sided",
+					"ambient_occlusion": false
+				}
+			}
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.wooden_ceiling_fan"
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 100
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:collision_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					16,
+					10
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					16,
+					10
+				]
+			},
+			"minecraft:custom_components": [
+				"ff:single_interactive"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					40,
+					40
+				]
+			}
+		}
+	}
+}

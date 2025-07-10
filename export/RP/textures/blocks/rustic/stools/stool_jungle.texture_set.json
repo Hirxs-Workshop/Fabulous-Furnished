@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "stool_jungle",
+        "metalness_emissive_roughness": "stool_jungle_mer",
+        "heightmap": "stool_jungle_normal"
+    }
+}

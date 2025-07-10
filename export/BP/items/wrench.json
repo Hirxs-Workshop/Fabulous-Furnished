@@ -1,0 +1,32 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ff:wrench",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"textures": {
+					"default": "wrench"
+				}
+			},
+			"minecraft:display_name": {
+				"value": "Wrench  "
+			},
+			"minecraft:allow_off_hand": true,
+			"minecraft:hand_equipped": true,
+			"minecraft:stacked_by_data": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"max_durability": 250,
+				"damage_chance": {
+					"min": 1,
+					"max": 2
+				}
+			}
+		}
+	}
+}

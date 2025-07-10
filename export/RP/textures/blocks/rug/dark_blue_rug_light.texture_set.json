@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "dark_blue_rug_light",
+        "metalness_emissive_roughness": "dark_blue_rug_light_mer",
+        "heightmap": "dark_blue_rug_light_normal"
+    }
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:black_porcelain_clay"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SF"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:black_dye"
+			},
+			"F": {
+				"item": "ff:porcelain_clay"
+			}
+		},
+		"result": {
+			"item": "ff:black_porcelain_clay",
+			"count": 1
+		}
+	}
+}

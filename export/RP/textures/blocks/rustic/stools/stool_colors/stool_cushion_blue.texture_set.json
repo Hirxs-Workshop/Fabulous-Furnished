@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "stool_cushion_blue",
+        "metalness_emissive_roughness": "stool_cushion_blue_mer",
+        "heightmap": "stool_cushion_blue_normal"
+    }
+}

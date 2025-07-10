@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ff:wooden_cherry_bench"
+    },
+    "tags": [ "ff_carpentry_table" ],
+    "pattern": [
+      "WWW",
+      "GWG",
+      "S S"
+    ],
+    "key": {
+      "W": { "item": "minecraft:cherry_planks" },
+      "G": { "item": "minecraft:iron_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "ff:wooden_cherry_bench",
+      "count": 2
+    }
+  }
+} 

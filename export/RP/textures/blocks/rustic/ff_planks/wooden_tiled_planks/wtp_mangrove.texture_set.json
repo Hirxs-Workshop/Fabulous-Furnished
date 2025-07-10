@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "wtp_mangrove",
+        "metalness_emissive_roughness": "wtp_mangrove_mer",
+        "heightmap": "wtp_mangrove_normal"
+    }
+}

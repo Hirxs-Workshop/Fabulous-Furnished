@@ -1,0 +1,28 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:slider_off",
+			"menu_category": {
+				"category": "none",
+				"is_hidden_in_commands": false
+			}
+		},
+		"components": {
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": false,
+			"minecraft:geometry": {
+				"identifier": "geometry.twod_item_b"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "slider_off",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:display_name": "§cClick to turn on"
+		}
+	}
+}

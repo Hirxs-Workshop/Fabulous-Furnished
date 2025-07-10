@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "shelf_cherry",
+        "metalness_emissive_roughness": "shelf_cherry_mer",
+        "heightmap": "shelf_cherry_normal"
+    }
+}

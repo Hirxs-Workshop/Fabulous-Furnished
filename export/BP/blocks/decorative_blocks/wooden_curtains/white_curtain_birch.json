@@ -1,0 +1,392 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:white_curtain_birch",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"menu_category": {
+				"category": "items"
+			},
+			"states": {
+				"ff:left_connection": [0, 1],
+				"ff:right_connection": [0, 1],
+				"ff:above_connection": [0, 1],
+				"ff:below_connection": [0, 1],
+				"ff:open": [0, 1],
+				"ef:colors": {					
+					"values": {
+						"min": 0,
+						"max": 15
+					}
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15",
+				"components": {
+					"minecraft:material_instances": {
+						"wood": {
+							"texture": "blinds_birch",
+							"render_method": "alpha_test"
+						},
+						"*": {
+							"texture": "curtain_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "curtain_white",
+					"render_method": "alpha_test"
+				},
+				"wood": {
+					"texture": "blinds_birch",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#ffffff",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 1
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.block_curtains",
+				"bone_visibility": {
+					"single": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 0)",
+					"single2": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 1)",
+					"top_left": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 0)",
+					"top_left2": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 1)",
+					"top_middle": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 0)",
+					"top_middle2": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 1)",
+					"top_right": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 0)",
+					"top_right2": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 1)",
+					"middle_left": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 0)",
+					"middle_left2": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 1)",
+					"middle_middle": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 0)",
+					"middle_middle2": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 1)",
+					"middle_right": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 0)",
+					"middle_right2": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 1)",
+					"bottom_left": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 0)",
+					"bottom_left2": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 1)",
+					"bottom_middle": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 0)",
+					"bottom_middle2": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 1)",
+					"bottom_right": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 0)",
+					"bottom_right2": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 1)",
+					"single_top": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 0)",
+					"single_middle": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 0)",
+					"single_bottom": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 0)",
+					"single_top2": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 1)",
+					"single_middle2": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 1 && query.block_state('ff:open') == 1)",
+					"single_bottom2": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 1 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 1)",
+					"left": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 0)",
+					"right": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 0)",
+					"middle": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 0)",
+					"left2": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 0 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 1)",
+					"right2": "(query.block_state('ff:left_connection') == 0 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 1)",
+					"middle2": "(query.block_state('ff:left_connection') == 1 && query.block_state('ff:right_connection') == 1 && query.block_state('ff:above_connection') == 0 && query.block_state('ff:below_connection') == 0 && query.block_state('ff:open') == 1)"
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					4
+				],
+				"size": [
+					16,
+					16,
+					4
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					4
+				],
+				"size": [
+					16,
+					16,
+					4
+				]
+			},
+			"minecraft:custom_components": [
+				"ff:curtain_birch"
+			]
+		}
+	}
+}

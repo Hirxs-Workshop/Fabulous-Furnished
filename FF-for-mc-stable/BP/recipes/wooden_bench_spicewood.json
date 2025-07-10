@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "ff:wooden_spicewood_bench"
+    },
+    "tags": [ "ff_carpentry_table" ],
+    "pattern": [
+      "WWW",
+      "GWG",
+      "S S"
+    ],
+    "key": {
+      "W": { "item": "ff:spicewood_planks" },
+      "G": { "item": "minecraft:iron_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "ff:wooden_spicewood_bench",
+      "count": 2
+    }
+  }
+} 

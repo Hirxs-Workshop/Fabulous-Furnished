@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "dark_oak_fence",
+        "metalness_emissive_roughness": "dark_oak_fence_mer",
+        "heightmap": "dark_oak_fence_normal"
+    }
+}

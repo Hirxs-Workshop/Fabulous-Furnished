@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "new_birch_chair",
+        "metalness_emissive_roughness": "new_birch_chair_mer",
+        "heightmap": "new_birch_chair_normal"
+    }
+}

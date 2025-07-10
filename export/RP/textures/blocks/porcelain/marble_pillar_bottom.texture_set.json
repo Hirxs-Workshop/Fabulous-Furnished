@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "marble_pillar_bottom",
+        "metalness_emissive_roughness": "marble_pillar_bottom_mer",
+        "heightmap": "marble_pillar_bottom_normal"
+    }
+}

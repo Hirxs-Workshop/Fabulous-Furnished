@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sd:leaves_wall_decor"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SSS",
+			"123"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:string"
+			},
+			"1": {
+				"item": "sd:orange_autumn_leaves"
+			},
+			"2": {
+				"item": "sd:yellow_autumn_leaves"
+			},
+			"3": {
+				"item": "sd:red_autumn_leaves"
+			}
+		},
+		"result": {
+			"item": "sd:leaves_wall_decor",
+			"count": 2
+		}
+	}
+}

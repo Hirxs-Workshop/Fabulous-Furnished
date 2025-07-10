@@ -1,0 +1,53 @@
+{
+    "format_version": 2,
+    "metadata": {},
+    "header": {
+        "name": "RP | Fabulous Furnished TI#7 - Official Release",
+        "description": "Make your world fabulous with fabulous furniture! More than 150+ blocks with more than 250+ variations available!",
+        "min_engine_version": [
+            1,
+            21,
+            80
+        ],
+        "uuid": "dbc64bc6-e846-4be5-8d98-e9defe92e3fb",
+        "version": [
+                2,
+                7,
+                9
+        ]
+    },
+    "modules": [
+        {
+            "description": "resource",
+            "type": "resources",
+            "uuid": "00b3ad65-16e8-40a4-f02a-68b01e2b1512",
+            "version": [
+                2,
+                7,
+                9
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "16542476-b161-4981-ab55-08e71a62a561",
+            "version": [
+                2,
+                7,
+                9
+            ]
+        }
+    ],
+    "subpacks": [
+        {
+            "folder_name": "without_vfx",
+            "name": "Without VFX (for RTX)",
+            "memory_tier": 0
+        },
+        {
+            "folder_name": "with_vfx",
+            "name": "With VFX effect",
+            "memory_tier": 1
+        }
+    ]
+}

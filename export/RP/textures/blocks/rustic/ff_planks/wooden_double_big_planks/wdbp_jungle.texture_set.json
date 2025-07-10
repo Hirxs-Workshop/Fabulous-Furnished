@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "wdbp_jungle",
+        "metalness_emissive_roughness": "wdbp_jungle_mer",
+        "heightmap": "wdbp_jungle_normal"
+    }
+}

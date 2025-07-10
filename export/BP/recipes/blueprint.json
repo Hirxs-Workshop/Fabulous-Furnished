@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:blueprint"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"FW"
+		],
+		"key": {
+			"F": {
+				"item": "minecraft:paper"
+			},
+			"W": {
+				"item": "minecraft:blue_dye"
+			}
+		},
+		"result": {
+			"item": "ff:blueprint",
+			"count": 1
+		}
+	}
+}

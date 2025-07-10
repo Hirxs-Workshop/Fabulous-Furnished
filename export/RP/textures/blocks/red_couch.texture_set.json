@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "red_couch",
+        "metalness_emissive_roughness": "red_couch_mer",
+        "heightmap": "red_couch_normal"
+    }
+}

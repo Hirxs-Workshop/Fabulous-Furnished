@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "sd:cooked_turker"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			" S ",
+			"LPL"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:cooked_chicken"
+			},
+			"P": {
+				"item": "ff:porcelain_clay"
+			},
+			"L": {
+				"item": "minecraft:oak_leaves"
+			}
+		},
+		"result": {
+			"item": "sd:cooked_turker"
+		}
+	}
+}

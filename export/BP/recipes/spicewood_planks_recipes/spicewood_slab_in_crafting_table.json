@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:spicewood_slab_in_crafting_table"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"SSS"
+		],
+		"key": {
+			"S": {
+				"item": "ff:spicewood_planks"
+			}
+		},
+		"result": {
+			"item": "ff:spicewood_slab",
+			"count": 6
+		}
+	}
+}

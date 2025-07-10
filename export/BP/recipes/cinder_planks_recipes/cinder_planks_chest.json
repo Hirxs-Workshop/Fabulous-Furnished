@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:cinder_planks_chest"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"SSS",
+			"S S",
+			"SSS"
+		],
+		"key": {
+			"S": {
+				"item": "ff:cinder_planks"
+			}
+		},
+		"result": {
+			"item": "minecraft:chest",
+			"count": 1
+		}
+	}
+}

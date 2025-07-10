@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "new_lamp_texture_purple",
+        "metalness_emissive_roughness": "new_lamp_texture_purple_mer",
+        "heightmap": "new_lamp_texture_purple_normal"
+    }
+}

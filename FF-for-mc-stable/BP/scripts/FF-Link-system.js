@@ -1,9 +1,6 @@
 import { world, system, ItemStack, ItemTypes } from "@minecraft/server";
 import { ActionFormData }                     from "@minecraft/server-ui";
 
-/*═══════════════════════════════════════════════════════════════
-= 1.  GENERADOR
-═══════════════════════════════════════════════════════════════*/
 const GENERATOR_ID     = "ff:generator";
 const GENERATOR_ENTITY = "ff:energy_generator";
 const GENERATOR_NAME   = "§t§e§s§t§r";
@@ -223,6 +220,14 @@ system.runInterval(() => {
     let slider = inv.getItem(SLIDER_SLOT);
     if(!slider){
       if(st.energy>0) st.enabled = !st.enabled;
+      try {
+        const genBlock = ent.dimension.getBlock(posFloor(ent.location));
+        if (genBlock && genBlock.typeId === GENERATOR_ID) {
+          genBlock.setPermutation(
+            genBlock.permutation.withState("ff:generator_type", st.enabled && st.energy > 0)
+          );
+        }
+      } catch (e) {}
       inv.setItem(
         SLIDER_SLOT,
         new ItemStack(ItemTypes.get(st.enabled?SLIDER_ON:SLIDER_OFF),1)
@@ -298,7 +303,10 @@ system.runInterval(() => {
             world.setDynamicProperty(key, false);
             for(const c2 of getConnections().filter(c2=>c2.sourceId==="ff:modern_switch" && posEqual(c2.sourcePos, c.targetPos))){
               const lampBlock = world.getDimension("overworld").getBlock(c2.targetPos);
-              if(lampBlock) setBlockState(lampBlock, false);
+              if(lampBlock) {
+                setBlockState(lampBlock, false);
+                cleanLampEntitiesInChain(lampBlock);
+              }
             }
           }
         }
@@ -308,6 +316,7 @@ system.runInterval(() => {
             const devBlock = world.getDimension("overworld").getBlock(c2.targetPos);
             if(devBlock){
               setBlockState(devBlock, false);
+              cleanLampEntitiesInChain(devBlock);
             }
           }
         }
@@ -384,15 +393,26 @@ system.runInterval(() => {
       notifiedLowEnergy.delete(ent.id);
     }
 
+    // --- Actualizar estado del bloque generador al final del ciclo ---
+    try {
+      const genBlock = ent.dimension.getBlock(gPos);
+      if (genBlock && genBlock.typeId === GENERATOR_ID) {
+        genBlock.setPermutation(
+          genBlock.permutation.withState("ff:generator_type", st.enabled && st.energy > 0)
+        );
+      }
+    } catch (e) {}
+    // --- Fin actualización estado bloque generador ---
+
     if (st.enabled && st.energy > 0) {
       const genConnsNow = getGeneratorConns(posFloor(ent.location));
       if (genConnsNow.length === 8) {
         if (Math.random() < 0.01) {
+          const base = posFloor(ent.location);
           ent.dimension.createExplosion(
-            { x: ent.location.x + 0.5, y: ent.location.y + 0.5, z: ent.location.z + 0.5 },
+            { x: base.x + 0.5, y: base.y + 0.5, z: base.z + 0.5 },
             { breaksBlocks: true, causesFire: true }
           );
-          const base = posFloor(ent.location);
           const dim = ent.dimension;
           const fireOffsets = [
             {x:0, y:0, z:0}, {x:1, y:0, z:0}, {x:-1, y:0, z:0}, {x:0, y:0, z:1}, {x:0, y:0, z:-1},
@@ -422,18 +442,20 @@ system.runInterval(() => {
           return;
         }
         try {
+          const base = posFloor(ent.location);
           ent.dimension.spawnParticle("ff:pan_smoke_full", {
-            x: ent.location.x + -0.3,
-            y: ent.location.y + 0.5,
-            z: ent.location.z + 0
+            x: base.x + 0.5,
+            y: base.y + 0.5,
+            z: base.z + 0.5
           });
         } catch (e) {}
       } else {
         try {
+          const base = posFloor(ent.location);
           ent.dimension.spawnParticle("ff:pan_smoke", {
-            x: ent.location.x + -0.3,
-            y: ent.location.y + 0.5,
-            z: ent.location.z + 0
+            x: base.x + 0.5,
+            y: base.y + 0.5,
+            z: base.z + 0.5
           });
         } catch (e) {}
       }
@@ -471,7 +493,78 @@ world.afterEvents.playerPlaceBlock.subscribe(e=>{
   });
   ent.nameTag = GENERATOR_NAME;
   initGeneratorInventory(ent);
+  try {
+    e.block.setPermutation(e.block.permutation.withState("ff:generator_type", false));
+  } catch (err) {}
 });
+
+world.afterEvents.playerPlaceBlock.subscribe(e => {
+  const block = e.block;
+  const player = e.player;
+  
+  if (!block.typeId.startsWith('ff:lamp_off_')) return;
+  
+  const wood = getWoodType(block);
+  if (!wood) return;
+  
+  const pos = {x: Math.floor(block.location.x), y: Math.floor(block.location.y), z: Math.floor(block.location.z)};
+  const connections = getConnections();
+  
+  const adjacentPositions = [
+    {x: pos.x, y: pos.y + 1, z: pos.z}, // upper
+    {x: pos.x, y: pos.y - 1, z: pos.z} //bottom
+  ];
+  
+  let foundConnection = null;
+  let connectionSource = null;
+  
+  for (const adjPos of adjacentPositions) {
+    const existingConn = connections.find(c =>
+      c.targetId.startsWith('ff:lamp_off_') &&
+      posEqual(c.targetPos, adjPos)
+    );
+    
+    if (existingConn) {
+      foundConnection = existingConn;
+      connectionSource = existingConn.sourcePos;
+      break;
+    }
+  }
+  
+  if (foundConnection) {
+    const newConnection = {
+      sourceId: foundConnection.sourceId,
+      sourcePos: foundConnection.sourcePos,
+      targetId: block.typeId,
+      targetPos: pos
+    };
+    
+    connections.push(newConnection);
+    saveConnections(connections);
+    
+    if (foundConnection.sourceId === "ff:modern_switch") {
+      const key = `ff:switch_type_${foundConnection.sourcePos.x}_${foundConnection.sourcePos.y}_${foundConnection.sourcePos.z}`;
+      const switchState = world.getDynamicProperty(key) ?? false;
+      if (switchState) {
+        toggleLampTvOn(block, true, player);
+      }
+    } else if (foundConnection.sourceId === "ff:outlet") {
+      const outletConn = connections.find(c =>
+        c.targetId === "ff:outlet" && posEqual(c.targetPos, foundConnection.sourcePos) && c.sourceId === GENERATOR_ID
+      );
+      if (outletConn) {
+        const gen = findGeneratorEntity(outletConn.sourcePos);
+        const st = gen && genState.get(gen.id);
+        if (st && st.enabled && st.energy > 0) {
+          toggleLampTvOn(block, true, player);
+        }
+      }
+    }
+    
+    player.sendMessage("§9Connection linked to existing lamp!");
+  }
+});
+
 world.afterEvents.playerBreakBlock.subscribe(e=>{
   if(e.brokenBlockPermutation.type.id===GENERATOR_ID){
     e.block.dimension.runCommandAsync(
@@ -482,18 +575,23 @@ world.afterEvents.playerBreakBlock.subscribe(e=>{
       genState.delete(ent.id);
       saveAllGenStates();
     }
+    try {
+      e.block.setPermutation(e.block.permutation.withState("ff:generator_type", false));
+    } catch (err) {}
   }
   const pos = posFloor(e.block.location);
   for(const c of getConnections().filter(c=>posEqual(c.sourcePos,pos))){
     const blk = world.getDimension("overworld").getBlock(c.targetPos);
     if(blk){
       setBlockState(blk, false);
+      cleanLampEntitiesInChain(blk);
     }
   }
   for(const c of getConnections().filter(c=>posEqual(c.targetPos,pos))){
     const blk = world.getDimension("overworld").getBlock(c.targetPos);
     if(blk){
       setBlockState(blk, false);
+      cleanLampEntitiesInChain(blk);
     }
   }
   let conns = getConnections();
@@ -576,19 +674,64 @@ function setLampStateAndEntity(block,state){
   updateCeilingEntity(block,state);
 }
 
+const woodTypes = [
+  'oak','spruce','spicewood','cinder','pale','mangrove',
+  'dark_oak','jungle','acacia','crimson','warped','cherry','birch'
+];
+function getWoodType(block) {
+  return woodTypes.find(w => block.typeId.endsWith(`_${w}`));
+}
+function toggleLampTvOn(block, turnOn, player, visited = new Set()) {
+  if (!block.typeId.startsWith('ff:lamp_off_')) return;
+  const wood = getWoodType(block);
+  if (!wood) return;
+  const key = `${block.location.x},${block.location.y},${block.location.z}`;
+  if (visited.has(key)) return;
+  visited.add(key);
+  const { x, y, z } = block.location;
+  const cx = x + 0.5, cy = y, cz = z + 0.5;
+  const dir    = block.permutation.getState("minecraft:cardinal_direction");
+  const color  = block.permutation.getState("ef:colors");
+  const topBit = block.permutation.getState("ff:top_bit");
+  if (!dir || color == null) return;
+  if (!topBit) {
+    block.dimension.runCommand(
+      `execute positioned ${cx} ${cy} ${cz} run event entity @e[type=ff:ff_light_ray_small,r=0.5] destroy`
+    );
+    if (turnOn) {
+      block.dimension.runCommand(
+        `summon ff:ff_light_ray_small ${cx} ${cy} ${cz}`
+      );
+    }
+  }
+  try {
+    block.setPermutation(block.permutation.withState("ff:tv_on", !!turnOn));
+    if (!turnOn) {
+      block.setPermutation(block.permutation.withState("ff:tv_on", true));
+      block.setPermutation(block.permutation.withState("ff:tv_on", false));
+    }
+  } catch (e) {}
+  if (player && player.playSound) {
+    player.playSound(`ff:lamp_${turnOn ? 'on' : 'off'}`);
+  }
+  for (const neighbor of [block.above(1), block.below(1)]) {
+    if (!neighbor) continue;
+    if (neighbor.typeId.startsWith('ff:lamp_off_') && getWoodType(neighbor) === wood) {
+      toggleLampTvOn(neighbor, turnOn, player, visited);
+    }
+  }
+}
+
 function setBlockState(block, state) {
   const blockId = block.typeId;
   
-  // Si es un bloque que cambia completamente de tipo
   if (BLOCK_TYPE_CHANGES[blockId]) {
     if (state) {
-      // Cambiar a la versión encendida
       const newTypeId = BLOCK_TYPE_CHANGES[blockId];
       try {
         block.setType(newTypeId);
       } catch (e) {}
     } else {
-      // Cambiar a la versión apagada
       try {
         block.setType(blockId);
       } catch (e) {}
@@ -596,27 +739,28 @@ function setBlockState(block, state) {
     return;
   }
   
-  // Si es una lámpara de madera (ff:lamp_off_[wood type])
   if (blockId.startsWith("ff:lamp_off_")) {
     try {
-      block.setPermutation(block.permutation.withState("ff:tv_on", state));
+      block.setPermutation(block.permutation.withState("ff:tv_on", !!state));
+      if (!state) {
+        block.setPermutation(block.permutation.withState("ff:tv_on", true));
+        block.setPermutation(block.permutation.withState("ff:tv_on", false));
+      }
     } catch (e) {}
     return;
   }
   
-  // Si es un bloque con lamp_state
   if (blockId.startsWith("ff:lamp_") || switchTargets.includes(blockId)) {
-    try { 
-      block.setPermutation(block.permutation.withState("ff:lamp_state", state)); 
+    try {
+      block.setPermutation(block.permutation.withState("ff:lamp_state", state));
     } catch (e) {}
     updateCeilingEntity(block, state);
     return;
   }
   
-  // Si es un bloque con tv_on
   if (outletTargets.includes(blockId)) {
-    try { 
-      block.setPermutation(block.permutation.withState("ff:tv_on", state)); 
+    try {
+      block.setPermutation(block.permutation.withState("ff:tv_on", state));
     } catch (e) {}
     return;
   }
@@ -662,6 +806,7 @@ function pruneOutlet(srcPos){
       const blk=world.getDimension("overworld").getBlock({x:seg.x,y,z:seg.z});
       if(blk){
         setBlockState(blk, false);
+        cleanLampEntitiesInChain(blk);
       }
     }
   }
@@ -706,7 +851,7 @@ function showParticleTrail(sourcePos, targetPos) {
     };
 
     try {
-      world.getDimension("overworld").spawnParticle("minecraft:connection_ray2", pos);
+      world.getDimension("overworld").spawnParticle("ff:connection_ray2", pos);
     } catch (e) {}
   }
 }
@@ -727,6 +872,7 @@ function showConnectionOptions(player, connection, pos) {
       const blk = world.getDimension("overworld").getBlock(connection.targetPos);
       if(blk){
         setBlockState(blk, false);
+        cleanLampEntitiesInChain(blk);
       }
     } else if(response.selection === 1) {
       showParticleTrail(connection.sourcePos, connection.targetPos);
@@ -755,6 +901,7 @@ async function showConnectionOptionsUI(player, originBlock, targetPos, targetId)
       try{ blk.setPermutation(blk.permutation.withState("ff:tv_on",false)); }catch{}
       try{ blk.setPermutation(blk.permutation.withState("ff:lamp_state",false)); }catch{}
       updateCeilingEntity(blk,false);
+      cleanLampEntitiesInChain(blk);
     }
     pruneOutlet({x: Math.floor(originBlock.location.x), y: Math.floor(originBlock.location.y), z: Math.floor(originBlock.location.z)});
     player.sendMessage("§7 The block has been unlinked");
@@ -779,32 +926,95 @@ world.afterEvents.playerInteractWithBlock.subscribe(async e => {
   const slot = player.selectedSlotIndex;
   const isWrench = item?.typeId === "ff:wrench";
 
-  if ((!item || item.typeId === "minecraft:air") && player.isSneaking && id === GENERATOR_ID) {
-    const ent = findGeneratorEntity(block.location);
-    let st = ent && genState.get(ent.id);
-    let conns = getGeneratorConns(posFloor(block.location));
-    let connColor = "§7";
-    if (conns.length === 0) connColor = "§8";
-    else if (conns.length === 1) connColor = "§s";
-    else if (conns.length === 2) connColor = "§a";
-    else if (conns.length === 3) connColor = "§q";
-    else if (conns.length === 4) connColor = "§p";
-    else if (conns.length === 5) connColor = "§6";
-    else if (conns.length === 6) connColor = "§v";
-    else if (conns.length === 7) connColor = "§c";
-    else if (conns.length === 8) connColor = "§4";
-    let statusText = "Minimal";
-    if (conns.length === 0) statusText = "Quiet";
-    else if (conns.length === 1) statusText = "Minimal";
-    else if (conns.length === 2) statusText = "Very Low";
-    else if (conns.length === 3) statusText = "Low";
-    else if (conns.length === 4) statusText = "Moderate";
-    else if (conns.length === 5) statusText = "High";
-    else if (conns.length === 6) statusText = "Very High";
-    else if (conns.length === 7) statusText = "Intensive";
-    else if (conns.length === 8) statusText = "Unstable";
-    let info = `${connColor}Energy Info §r| §i${st ? st.energy : 0}/${MAX_ENERGY}§r | ${connColor}x${conns.length}§r | Status: ${statusText}`;
-    player.runCommandAsync(`title @s actionbar "${info.replace(/"/g, '\\"')}"`);
+  if ((!item || item.typeId === "minecraft:air") && player.isSneaking && (id === "ff:modern_switch" || id === "ff:outlet")) {
+    if (id === "ff:outlet") {
+
+    }
+    let allConns = getConnections().filter(c =>
+      ((c.sourceId === id && posEqual(c.sourcePos, pos)) ||
+    (c.targetId === id && posEqual(c.targetPos, pos))) &&
+      c.sourceId !== GENERATOR_ID && c.targetId !== GENERATOR_ID
+    );
+    const lampGroups = {};
+    allConns = allConns.filter(c => {
+      if (c.targetId === "ff:lamp_off_oak") {
+        const key = `${c.targetId}|${c.targetPos.x}|${c.targetPos.z}`;
+        if (!lampGroups[key]) lampGroups[key] = [];
+        lampGroups[key].push(c);
+        return false;
+      }
+      return true;
+    });
+    const lampSegments = [];
+    for (const key in lampGroups) {
+      const group = lampGroups[key];
+      const ys = group.map(c => c.targetPos.y).sort((a, b) => a - b);
+      let segments = [], current = [ys[0]];
+      for (let i = 1; i < ys.length; i++) {
+        if (ys[i] === ys[i - 1] + 1) {
+          current.push(ys[i]);
+        } else {
+          segments.push([...current]);
+          current = [ys[i]];
+        }
+      }
+      segments.push([...current]);
+      for (const seg of segments) {
+        const segConns = group.filter(c => seg.includes(c.targetPos.y));
+        lampSegments.push(segConns);
+      }
+    }
+    const genConn = getConnections().find(c =>
+      c.targetId === id && posEqual(c.targetPos, pos) && c.sourceId === GENERATOR_ID
+    );
+    let ff_energy = " §pWithout energy§r";
+    if(genConn){
+      const genEnt = findGeneratorEntity(genConn.sourcePos);
+      const st = genEnt && genState.get(genEnt.id);
+      if(st && st.enabled && st.energy > 0){
+        ff_energy = " §qLinked to a generator, but with energy§r";
+      } else {
+        ff_energy = " §pLinked to a generator, but without energy§r";
+      }
+    } else {
+      ff_energy = " §7Not linked to a generator§r";
+    }
+
+    const form = new ActionFormData().title("Connections");
+    form.body(ff_energy + "\n\n§7- Click on a connection to see its settings:");
+    if(allConns.length === 0 && Object.keys(lampGroups).length === 0){
+      form.body("§7 The block has no connections!\n- Use the §f[Wrench]§7 item to link a block");
+      await form.show(player);
+      return;
+    }
+    for(const c of allConns){
+      const isSource = c.sourceId === id && posEqual(c.sourcePos, pos);
+      const otherId = isSource ? c.targetId : c.sourceId;
+      const otherPos = isSource ? c.targetPos : c.sourcePos;
+      const name = otherId.replace("ff:", "").replace(/_/g, " ");
+      const capitalizedName = name.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+      const iconPath = "textures/ff_ui/icons/" + otherId.replace("ff:", "");
+      form.button(capitalizedName + " (" + otherPos.x + "," + otherPos.y + "," + otherPos.z + ")", iconPath);
+    }
+    for(const segConns of lampSegments) {
+      const c = segConns[0];
+      const isSource = c.sourceId === id && posEqual(c.sourcePos, pos);
+      const otherId = isSource ? c.targetId : c.sourceId;
+      const otherPos = isSource ? c.targetPos : c.sourcePos;
+      const name = otherId.replace("ff:", "").replace(/_/g, " ");
+      const capitalizedName = name.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+      const iconPath = "textures/ff_ui/icons/" + otherId.replace("ff:", "");
+      form.button(`${capitalizedName} (Blocks: ${segConns.length})`, iconPath);
+    }
+    const resp = await form.show(player);
+    if(resp.canceled || (allConns.length === 0 && lampSegments.length === 0)) return;
+    let selConn;
+    if(resp.selection < allConns.length) {
+      selConn = allConns[resp.selection];
+    } else {
+      selConn = lampSegments[resp.selection - allConns.length][0];
+    }
+    showConnectionOptions(player, selConn, pos);
     return;
   }
 
@@ -825,6 +1035,9 @@ world.afterEvents.playerInteractWithBlock.subscribe(async e => {
   }
 
   if (outletTargets.includes(id) && !isWrench) {
+    if (item && item.typeId.startsWith('ff:lamp_off_')) {
+      return;
+    }
     const outletConn = getConnections().find(c =>
       outletTargets.includes(c.targetId) && posEqual(c.targetPos, pos)
     );
@@ -842,18 +1055,24 @@ world.afterEvents.playerInteractWithBlock.subscribe(async e => {
       player.sendMessage("§6 The generator has no energy... Add some coal!");
       return;
     }
-    // Determinar el estado actual del bloque
     let currentState = false;
     if (BLOCK_TYPE_CHANGES[block.typeId]) {
       currentState = block.typeId !== id;
+    } else if (id.startsWith("ff:lamp_off_")) {
+      currentState = block.permutation.getState("ff:tv_on") ?? false;
     } else if (id.startsWith("ff:lamp_")) {
       currentState = block.permutation.getState("ff:lamp_state") ?? false;
     } else {
       currentState = block.permutation.getState("ff:tv_on") ?? false;
     }
+    
     const nextState = !currentState;
     for (const b of getVerticalChain(block)) {
-      setBlockState(b, nextState);
+      if (b.typeId.startsWith('ff:lamp_off_')) {
+        toggleLampTvOn(b, nextState, player);
+      } else {
+        setBlockState(b, nextState);
+      }
     }
     return;
   }
@@ -1048,7 +1267,6 @@ function updateVerticalChainConnections(brokenBlock) {
   const x = Math.floor(brokenBlock.location.x), z = Math.floor(brokenBlock.location.z);
   let conns = getConnections();
   
-  // Manejar bloques que cambian de tipo
   const blockTypeChanges = Object.keys(BLOCK_TYPE_CHANGES);
   for (const typeId of blockTypeChanges) {
     const verticalConns = conns.filter(c => c.targetId === typeId && c.targetPos.x === x && c.targetPos.z === z);
@@ -1078,7 +1296,6 @@ function updateVerticalChainConnections(brokenBlock) {
     }
   }
   
-  // Manejar bloques con lamp_state (código original)
   const lampTypes = new Set(
     conns
       .filter(c => c.targetId && c.targetId.startsWith("ff:lamp_") && c.targetPos.x === x && c.targetPos.z === z)
@@ -1117,7 +1334,6 @@ function updateVerticalChainConnections(brokenBlock) {
 function pruneLampSegmentsForOutlet(x, z) {
   let connsNow = getConnections();
   
-  // Manejar bloques que cambian de tipo
   const blockTypeChanges = Object.keys(BLOCK_TYPE_CHANGES);
   for (const typeId of blockTypeChanges) {
     const outletConns = connsNow.filter(c => c.targetId === typeId && c.targetPos.x === x && c.targetPos.z === z && c.sourceId === "ff:outlet");
@@ -1151,7 +1367,6 @@ function pruneLampSegmentsForOutlet(x, z) {
     }
   }
   
-  // Manejar bloques con lamp_state (código original)
   const outletConns = connsNow.filter(c => c.targetId === "ff:lamp_off_oak" && c.targetPos.x === x && c.targetPos.z === z && c.sourceId === "ff:outlet");
   if (outletConns.length > 0) {
     const ys = outletConns.map(c => c.targetPos.y).sort((a, b) => a - b);
@@ -1201,7 +1416,44 @@ function findNearbyHopper(ent) {
   return null;
 }
 
-// Mapeo de bloques que cambian completamente de tipo
+function cleanLampEntity(block) {
+  if (!block || !block.typeId.startsWith('ff:lamp_off_')) return;
+  
+  const { x, y, z } = block.location;
+  const cx = x + 0.5, cy = y, cz = z + 0.5;
+  
+  try {
+    block.dimension.runCommand(
+      `execute positioned ${cx} ${cy} ${cz} run event entity @e[type=ff:ff_light_ray_small,r=0.5] destroy`
+    );
+  } catch (e) {}
+}
+
+function cleanLampEntitiesInChain(block) {
+  if (!block || !block.typeId.startsWith('ff:lamp_off_')) return;
+  
+  const wood = getWoodType(block);
+  if (!wood) return;
+  
+  const visited = new Set();
+  const toClean = [block];
+  
+  while (toClean.length > 0) {
+    const current = toClean.pop();
+    const key = `${current.location.x},${current.location.y},${current.location.z}`;
+    
+    if (visited.has(key)) continue;
+    visited.add(key);
+    
+    cleanLampEntity(current);
+    
+    for (const neighbor of [current.above(1), current.below(1)]) {
+      if (neighbor && neighbor.typeId.startsWith('ff:lamp_off_') && getWoodType(neighbor) === wood) {
+        toClean.push(neighbor);
+      }
+    }
+  }
+}
 const BLOCK_TYPE_CHANGES = {
   "fb:light_off": "fb:light_on",
   "fb:office_light_off": "fb:office_light",

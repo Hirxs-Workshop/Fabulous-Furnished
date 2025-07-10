@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "spicewood_cabinet",
+        "metalness_emissive_roughness": "spicewood_cabinet_mer",
+        "heightmap": "spicewood_cabinet_normal"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "terrace_fente_pale",
+        "metalness_emissive_roughness": "terrace_fente_pale_mer",
+        "heightmap": "terrace_fente_pale_normal"
+    }
+}

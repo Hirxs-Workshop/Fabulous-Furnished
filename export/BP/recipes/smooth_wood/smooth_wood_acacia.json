@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:smooth_wood_acacia"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"S"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:stripped_acacia_log"
+			}
+		},
+		"result": {
+			"item": "ff:smooth_wood_acacia",
+			"count": 4
+		}
+	}
+}

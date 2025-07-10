@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:bread_slice"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"S"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:bread"
+			}
+		},
+		"result": {
+			"item": "ff:bread_slice",
+			"count": 3
+		}
+	}
+}

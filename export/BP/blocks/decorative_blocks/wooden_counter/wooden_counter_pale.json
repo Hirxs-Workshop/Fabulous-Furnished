@@ -1,0 +1,509 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:wooden_counter_pale",
+			"menu_category": {
+				"category": "items"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					],
+					"y_rotation_offset": 180
+				}
+			},
+			"states": {
+				"ff:upper": [
+					false,
+					true
+				],
+				"ff:bottom": [
+					false,
+					true
+				],
+				"ff:counter_top": {
+					"values": {
+						"min": 0,
+						"max": 15
+					}
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('ff:upper') && !q.block_state('ff:bottom')",
+				"components": {
+					"minecraft:collision_box": true,
+					"minecraft:selection_box": true
+				}
+			},
+			{
+				"condition": "q.block_state('ff:upper') && !q.block_state('ff:bottom')",
+				"components": {
+					"minecraft:collision_box": true,
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							6,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "!q.block_state('ff:upper') && q.block_state('ff:bottom')",
+				"components": {
+					"minecraft:collision_box": true,
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							6,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:upper') && q.block_state('ff:bottom')",
+				"components": {
+					"minecraft:collision_box": true,
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							13,
+							-8
+						],
+						"size": [
+							16,
+							3,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_acacia",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_birch",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_cherry",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_cinder",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_crimson",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 6",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_dark_oak",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 7",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_jungle",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 8",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_mangrove",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 9",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_maple",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 10",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_oak",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_oak",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 11",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 12",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_spicewood",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 13",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_spruce",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:counter_top') == 14",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "pale_cabinet",
+							"render_method": "alpha_test"
+						},
+						"side": {
+							"texture": "pale_cabinet_side",
+							"render_method": "alpha_test"
+						},
+						"wood": {
+							"texture": "wsp_warped",
+							"render_method": "alpha_test"
+						},
+						"bottom": {
+							"texture": "wsp_pale",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:geometry": {
+				"identifier": "geometry.wooden_counters"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "pale_cabinet",
+					"render_method": "alpha_test"
+				},
+				"side": {
+					"texture": "pale_cabinet_side",
+					"render_method": "alpha_test"
+				},
+				"wood": {
+					"texture": "wsp_pale",
+					"render_method": "alpha_test"
+				},
+				"bottom": {
+					"texture": "wsp_pale",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": true,
+			"minecraft:selection_box": true,
+			"minecraft:flammable": {
+				"catch_chance_modifier": 5,
+				"destroy_chance_modifier": 5
+			},
+			"tag:minecraft:is_axe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:light_dampening": 15,
+			"minecraft:custom_components": [
+				"ff:single_interactive"
+			],
+			"minecraft:map_color": "#db904f"
+		}
+	}
+}

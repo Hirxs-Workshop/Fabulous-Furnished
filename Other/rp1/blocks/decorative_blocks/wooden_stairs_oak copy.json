@@ -1,0 +1,259 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:wooden_support",
+			"states": {
+				"p:changer": [
+					0,
+					1,
+					2,
+					3,
+					4
+				]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"menu_category": {
+				"category": "construction"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 0",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.terrace_wooden_fences",
+						"bone_visibility": {
+							"single_pole_ball": false,
+							"single": false,
+							"stair_pole": false,
+							"support": true,
+							"support_bottom": false,
+							"stair_pole_middle": false,
+							"stair_pole_bottom": false,
+							"single_pole_ball_sides": false,
+							"single_pole": false,
+							"single_pole2": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 1",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.terrace_wooden_fences",
+						"bone_visibility": {
+							"single_pole_ball": false,
+							"single": false,
+							"stair_pole": false,
+							"support": false,
+							"support_bottom": true,
+							"stair_pole_middle": false,
+							"stair_pole_bottom": false,
+							"single_pole_ball_sides": false,
+							"single_pole": false,
+							"single_pole2": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 2",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.support_horizontal"
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 3",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.terrace_wooden_fences",
+						"bone_visibility": {
+							"single_pole_ball": false,
+							"single": false,
+							"stair_pole": false,
+							"support": false,
+							"support_bottom": false,
+							"stair_pole_middle": false,
+							"stair_pole_bottom": false,
+							"single_pole_ball_sides": false,
+							"single_pole": false,
+							"single_pole2": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 4",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.terrace_wooden_fences",
+						"bone_visibility": {
+							"single_pole_ball": false,
+							"single": false,
+							"stair_pole": false,
+							"support": false,
+							"support_bottom": false,
+							"stair_pole_middle": false,
+							"stair_pole_bottom": false,
+							"single_pole_ball_sides": false,
+							"single_pole": false,
+							"single_pole2": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 5",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.terrace_wooden_fences",
+						"bone_visibility": {
+							"single_pole_ball": false,
+							"single": false,
+							"stair_pole": false,
+							"support": false,
+							"support_bottom": false,
+							"stair_pole_middle": false,
+							"stair_pole_bottom": false,
+							"single_pole_ball_sides": false,
+							"single_pole": false,
+							"single_pole2": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 6",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.terrace_wooden_fences",
+						"bone_visibility": {
+							"single_pole_ball": false,
+							"single": false,
+							"stair_pole": false,
+							"support": false,
+							"support_bottom": false,
+							"stair_pole_middle": false,
+							"stair_pole_bottom": false,
+							"single_pole_ball_sides": false,
+							"single_pole": false,
+							"single_pole2": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('p:changer') == 7",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.terrace_wooden_fences",
+						"bone_visibility": {
+							"single_pole_ball": false,
+							"single": false,
+							"stair_pole": false,
+							"support": false,
+							"support_bottom": false,
+							"stair_pole_middle": false,
+							"stair_pole_bottom": false,
+							"single_pole_ball_sides": false,
+							"single_pole": false,
+							"single_pole2": false
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"tag:minecraft:is_axe_item_destructible": {},
+			"minecraft:flammable": true,
+			"minecraft:map_color": "#C89D53",
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 2
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2
+            },
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "terrace_fente_oak",
+					"render_method": "alpha_test"
+				}
+			},
+			"tag:wood": {},
+			"tag:minecraft:planks": {},
+			"minecraft:geometry": {
+                "identifier": "geometry.terrace_wooden_fences"
+            },
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-4
+				],
+				"size": [
+					16,
+					16,
+					8
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-4
+				],
+				"size": [
+					16,
+					16,
+					8
+				]
+			}
+		}
+	}
+}

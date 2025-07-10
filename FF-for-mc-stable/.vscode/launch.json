@@ -1,0 +1,28 @@
+{
+    "version": "0.3.0",
+    "configurations": [
+        {
+            "type": "minecraft-js",
+            "request": "attach",
+            "name": "Debug with Minecraft",
+            "mode": "listen",
+            "targetModuleUuid": "675730b0-e5f0-49cf-e647-863fc2ea90a4",
+            "localRoot": "${workspaceFolder}/BP/",
+            "port": 19144
+        },
+        {
+            "name": "Empaquetar Add-on como .mcaddon",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "powershell.exe",
+            "args": [
+                "-NoProfile",
+                "-Command",
+                "Compress-Archive -Path BP,RP -DestinationPath FF-for-mc-stable.zip -Force; Rename-Item -Path FF-for-mc-stable.zip -NewName FF-for-mc-stable.mcaddon -Force"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        }
+    ]
+} 

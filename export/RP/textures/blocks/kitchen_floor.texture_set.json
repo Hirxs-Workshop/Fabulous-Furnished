@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "kitchen_floor",
+        "metalness_emissive_roughness": "kitchen_floor_mer",
+        "heightmap": "kitchen_floor_normal"
+    }
+}

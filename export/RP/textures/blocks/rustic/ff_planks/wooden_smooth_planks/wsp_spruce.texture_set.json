@@ -1,0 +1,8 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:texture_set": {
+        "color": "wsp_spruce",
+        "metalness_emissive_roughness": "wsp_spruce_mer",
+        "heightmap": "wsp_spruce_normal"
+    }
+}

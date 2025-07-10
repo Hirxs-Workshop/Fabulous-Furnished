@@ -1,0 +1,13 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "cinder_log_blast_furnace"
+		},
+		"tags": [
+			"blast_furnace"
+		],
+		"input": "minecraft:log",
+		"output": "ff:cinder_log"
+	}
+}
