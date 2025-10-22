@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:empty_coffee_cup"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"S S",
+			" S "
+		],
+		"key": {
+			"S": {
+				"item": "ff:porcelain_clay"
+			}
+		},
+		"result": {
+			"item": "ff:empty_coffee_cup",
+			"count": 1
+		}
+	}
+}

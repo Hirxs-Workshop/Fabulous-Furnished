@@ -1,0 +1,43 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:feature_rules": {
+        "description": {
+            "identifier": "ff:grass_to_coarse_dirt_feature_rules",
+            "places_feature": "ff:grass_to_coarse_dirt_features"
+        },
+		"conditions": {
+			"placement_pass": "before_surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "maple_forest"
+				}
+			]
+	},
+        "distribution": {
+            "iterations": "math.random_integer(3,25)",
+            "x": {
+                "distribution": "uniform",
+                "extent": [
+                    -8,
+                    8
+                ]
+            },
+            "y": {
+                "distribution": "uniform",
+                "extent": [
+                    0,
+                    256
+                ]
+            },
+            "z": {
+                "distribution": "uniform",
+                "extent": [
+                    -8,
+                    8
+                ]
+            }
+        }
+    }
+}

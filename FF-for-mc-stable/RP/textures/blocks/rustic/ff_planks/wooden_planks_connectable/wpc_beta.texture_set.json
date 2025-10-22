@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "wpc_beta",
-        "metalness_emissive_roughness": "wpc_beta_mer",
-        "heightmap": "wpc_beta_normal"
-    }
-}

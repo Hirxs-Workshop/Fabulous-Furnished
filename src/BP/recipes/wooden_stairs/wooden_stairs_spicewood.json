@@ -1,0 +1,14 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": { "identifier": "ff:wooden_stairs_spicewood" },
+		"tags": ["ff_carpentry_table"],
+		"pattern": [
+			"X  ",
+			"XX ",
+			"XXX"
+		],
+		"key": { "X": { "item": "ff:spicewood_planks" } },
+		"result": { "item": "ff:wooden_stairs_spicewood", "count": 4 }
+	}
+}

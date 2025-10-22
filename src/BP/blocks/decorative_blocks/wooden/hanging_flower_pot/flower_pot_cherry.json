@@ -1,0 +1,487 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:hanging_flower_pot_cherry",
+			"menu_category": {
+				"category": "items"
+			},
+			"states": {
+				"ff:has_flower": ["none", "small", "large"],
+				"ff:flower": [
+					"yellow_flower",
+					"red_flower",
+					"blue_orchid",
+					"allium",
+					"azure_bluet",
+					"red_tulip",
+					"orange_tulip",
+					"white_tulip",
+					"pink_tulip",
+					"oxeye_daisy",
+					"cornflower",
+					"lily_of_the_valley",
+					"rose_bush",
+					"lilac",
+					"peony",
+					"bamboo"
+				]
+			},
+			"traits": {
+				"minecraft:placement_position": {
+				  "enabled_states": ["minecraft:vertical_half"]
+				},
+				"minecraft:placement_direction": {
+				  "enabled_states": ["minecraft:cardinal_direction"]
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"origin": [-8, 0, 0],
+				"size": [16, 8, 8]
+			},
+			"minecraft:selection_box": {
+				"origin": [-8, 0, 0],
+				"size": [16, 8, 8]
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.wooden_flower_pot",
+				"bone_visibility": {
+					"flower": "q.block_state('ff:has_flower') == 'large'",
+					"small_flower": "q.block_state('ff:has_flower') == 'small'"
+				}
+			},
+			"minecraft:custom_components": [
+				"ff:flower_pot_interaction"
+			],
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "wfp_cherry",
+					"render_method": "alpha_test"
+				},
+				"dirt": {
+					"texture": "dirt",
+					"render_method": "alpha_test"
+				}
+			}
+		},
+		"permutations": [
+					{
+						"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'north'",
+						"components": {
+						  "minecraft:transformation": { "rotation": [0, 180, 0], "translation": [0, 0.5, 0] }
+						}
+					  },
+					  {
+						"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'south'",
+						"components": {
+						  "minecraft:transformation": { "rotation": [0, 0, 0], "translation": [0, 0.5, 0] }
+						}
+					  },
+					  {
+						"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'east'",
+						"components": {
+						  "minecraft:transformation": { "rotation": [0, -270, 0], "translation": [0, 0.5, 0] }
+						}
+					  },
+					  {
+						"condition": "q.block_state('minecraft:vertical_half') == 'top' && q.block_state('minecraft:cardinal_direction') == 'west'",
+						"components": {
+						  "minecraft:transformation": { "rotation": [0, 270, 0], "translation": [0, 0.5, 0] }
+						}
+					  },
+					  {
+						"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'north'",
+						"components": {
+						  "minecraft:transformation": { "rotation": [0, 180, 0] }
+						}
+					  },
+					  {
+						"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'south'",
+						"components": {
+						  "minecraft:transformation": { "rotation": [0, 0, 0] }
+						}
+					  },
+					  {
+						"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'east'",
+						"components": {
+						  "minecraft:transformation": { "rotation": [0, -270, 0] }
+						}
+					  },
+					  {
+						"condition": "q.block_state('minecraft:vertical_half') == 'bottom' && q.block_state('minecraft:cardinal_direction') == 'west'",
+						"components": {
+						  "minecraft:transformation": { "rotation": [0, 270, 0] }
+						}
+					  },
+			{
+				"condition": "q.block_state('ff:has_flower') == 'large' && q.block_state('ff:flower') == 'rose_bush'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_rose",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'large' && q.block_state('ff:flower') == 'lilac'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_syringa",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'large' && q.block_state('ff:flower') == 'peony'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_paeonia",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'yellow_flower'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_dandelion",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'red_flower'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_rose_small",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'blue_orchid'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_blue_orchid",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'allium'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_allium",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'azure_bluet'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_houstonia",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'red_tulip'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_tulip_red",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'orange_tulip'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_tulip_orange",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'white_tulip'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_tulip_white",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'pink_tulip'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_tulip_pink",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'oxeye_daisy'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_oxeye_daisy",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'cornflower'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_cornflower",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'lily_of_the_valley'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_lily",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'small' && q.block_state('ff:flower') == 'rose_bush'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "ff_rose",
+							"render_method": "alpha_test",
+							"face_dimming": false,
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ff:has_flower') == 'large' && q.block_state('ff:flower') == 'bamboo'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "wfp_cherry",
+							"render_method": "alpha_test"
+						},
+						"dirt": {
+							"texture": "dirt",
+							"render_method": "alpha_test"
+						},
+						"flower": {
+							"texture": "bamboo_stem",
+							"render_method": "alpha_test",
+							"face_dimming": true,
+							"ambient_occlusion": true
+						},
+						"bamboo_leaves": {
+							"texture": "bamboo_small_leaf",
+							"render_method": "alpha_test",
+							"face_dimming": true,
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.wooden_flower_pot_bamboo"
+					}
+				}
+			}
+		]
+	}
+}

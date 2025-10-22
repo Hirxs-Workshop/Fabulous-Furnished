@@ -1,0 +1,87 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sd:red_autumn_leaves_pile",
+            "menu_category": {
+                "category": "nature",
+                "group": "itemGroup.name.leaves"
+            },
+            "states": {
+                "ff:leaves_pile": {
+					"values": {
+						"min": 0,
+						"max": 7
+					}
+				}
+            }
+        },
+        "components": {
+            "tag:minecraft:is_shears_item_destructible": {},
+            "tag:minecraft:is_hoe_item_destructible": {},
+            "minecraft:geometry": {  
+                "identifier": "geometry.autumn_leaves_pile",
+                "bone_visibility": {
+                    "0": "query.block_state('ff:leaves_pile') == 0",
+                    "1": "query.block_state('ff:leaves_pile') == 1",
+                    "2": "query.block_state('ff:leaves_pile') == 2",
+                    "3": "query.block_state('ff:leaves_pile') == 3",
+                    "4": "query.block_state('ff:leaves_pile') == 4",
+                    "5": "query.block_state('ff:leaves_pile') == 5",
+                    "6": "query.block_state('ff:leaves_pile') == 6",
+                    "7": "query.block_state('ff:leaves_pile') == 7"
+                }
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 5
+            },
+            "minecraft:flammable": {
+                "catch_chance_modifier": 30,
+                "destroy_chance_modifier": 60
+            },
+            "minecraft:map_color": "#CE3D27",
+            "minecraft:collision_box":{
+                "size": [
+                    16,
+                    4,
+                    16
+                ],
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ]
+            },
+            "minecraft:selection_box":{
+                "size": [
+                    16,
+                    4,
+                    16
+                ],
+                "origin": [
+                    -8,
+                    0,
+                    -8
+                ]
+            },
+            "minecraft:custom_components": [
+                "sd:red_step"
+            ],
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "red_autumn_leaves",
+                    "render_method": "alpha_test_single_sided",
+                    "face_dimming": true,
+                    "ambient_occlusion": true
+                }
+            },
+	    "minecraft:tick": {
+		"interval_range": [
+			120,
+			280
+		]
+	    },
+            "minecraft:loot": "loot_tables/red_maple_sapling.json"
+        }
+    }
+}

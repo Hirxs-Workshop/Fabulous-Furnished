@@ -1,0 +1,85 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.pan_indicador_and_item",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone2",
+					"pivot": [0, 7, 0],
+					"locators": {
+						"locator": [0, 7, 0]
+					}
+				},
+				{
+					"name": "waist",
+					"parent": "bone2",
+					"pivot": [0, 7, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 7, 0]
+				},
+				{
+					"name": "leftarm",
+					"parent": "body",
+					"pivot": [0, 7, 0]
+				},
+				{
+					"name": "rightarm",
+					"parent": "body",
+					"pivot": [0, 7, 0]
+				},
+				{
+					"name": "rightitem",
+					"parent": "rightarm",
+					"pivot": [-3, 3.5, 5],
+					"rotation": [14.09121, -11.25654, -10.07583]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 6.75, 0]
+				},
+				{
+					"name": "hat",
+					"parent": "head",
+					"pivot": [0, 15, 0]
+				},
+				{
+					"name": "baseplate",
+					"pivot": [0, 7, 0]
+				},
+				{
+					"name": "bone",
+					"parent": "baseplate",
+					"pivot": [0, 16, 0],
+					"cubes": [
+						{
+							"origin": [-10, 12.4, -0.5],
+							"size": [20, 4.3, 0],
+							"uv": {
+								"north": {"uv": [0.5, 9.5], "uv_size": [25.5, 4.5]}
+							}
+						},
+						{
+							"origin": [-12.8, 12.3, -0.8],
+							"size": [3, 3, 0],
+							"uv": {
+								"north": {"uv": [27, 10.5], "uv_size": [4, 4]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

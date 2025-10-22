@@ -1,0 +1,172 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:empty_coffee_glass_jar",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"menu_category": {
+				"category": "items"
+			},
+			"states": {
+				"ff:on_table": [
+					false,
+					true
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-180,
+							0
+						],
+						"translation": [
+							0,
+							-0.5,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						],
+						"translation": [
+							0,
+							-0.5,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						],
+						"translation": [
+							0,
+							-0.5,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						],
+						"translation": [
+							0,
+							-0.5,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south' && !q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north' && !q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east' && !q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west' && !q.block_state('ff:on_table')",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "coffee_machine_off",
+					"render_method": "alpha_test_single_sided"
+				}
+			},
+			"minecraft:map_color": "#8E693B",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 1
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.coffee_glass_jar",
+				"bone_visibility": {
+				    "coffee": false
+  				}
+			},
+			"minecraft:selection_box": {
+				"origin": [-4, 0, -4],
+				"size": [8, 8, 8]
+			},
+			"minecraft:collision_box": {
+				"origin": [-4, 0, -4],
+				"size": [8, 8, 8]
+			}
+		}
+	}
+}

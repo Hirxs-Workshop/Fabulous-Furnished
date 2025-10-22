@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "birch_fences",
-        "metalness_emissive_roughness": "birch_fences_mer",
-        "heightmap": "birch_fences_normal"
-    }
-}

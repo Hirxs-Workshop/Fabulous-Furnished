@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ff:spicewood_sapling",
+			"menu_category": {
+				"category": "nature",
+				"group": "minecraft:itemGroup.name.sapling"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"textures": {
+					"default": "spicewood_sapling"
+				}
+			},
+			"minecraft:display_name": {
+				"value": "item.ff:spicewood_sapling.name"
+			},
+			"minecraft:max_stack_size": 64,
+			"minecraft:block_placer": {
+				"block": "ff:spicewood_sapling",
+				"replace_block_item": true
+			}
+		}
+	}
+}

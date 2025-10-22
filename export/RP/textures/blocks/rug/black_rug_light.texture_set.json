@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "black_rug_light",
-        "metalness_emissive_roughness": "black_rug_light_mer",
-        "heightmap": "black_rug_light_normal"
-    }
-}

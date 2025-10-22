@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "bathroom_sink",
-        "metalness_emissive_roughness": "bathroom_sink_mer",
-        "heightmap": "bathroom_sink_normal"
-    }
-}

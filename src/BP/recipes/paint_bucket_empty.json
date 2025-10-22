@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:paint_bucket_empty"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"W W",
+			"W W",
+			" W "
+		],
+		"key": {
+			"W": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": {
+			"item": "ff:paint_bucket_empty"
+		}
+	}
+}

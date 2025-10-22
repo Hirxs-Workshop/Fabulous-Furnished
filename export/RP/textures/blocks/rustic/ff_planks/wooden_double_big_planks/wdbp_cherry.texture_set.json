@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "wdbp_cherry",
-        "metalness_emissive_roughness": "wdbp_cherry_mer",
-        "heightmap": "wdbp_cherry_normal"
-    }
-}

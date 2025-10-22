@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:smooth_wood_warped_wood"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"J"
+		],
+		"key": {
+			"J": {
+				"item": "minecraft:stripped_warped_stem"
+			}
+		},
+		"result": {
+			"item": "ff:smooth_wood_warped",
+			"count": 4
+		}
+	}
+}

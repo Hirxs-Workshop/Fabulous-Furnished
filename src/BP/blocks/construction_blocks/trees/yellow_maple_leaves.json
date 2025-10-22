@@ -1,0 +1,61 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "sd:yellow_autumn_leaves",
+            "menu_category": {
+                "category": "nature",
+                "group": "itemGroup.name.leaves"
+            },
+            "states": {
+                "ff:leaves_pile": {
+                    "values": {
+                        "min": 0,
+                        "max": 7
+                    }
+                },
+
+                "sd:persistent_bit": [
+                    true,
+                    false
+                ],
+                "sd:placed": [false, true]
+            }
+        },
+        "components": {
+            "tag:minecraft:is_shears_item_destructible": {},
+            "tag:minecraft:is_hoe_item_destructible": {},
+            "minecraft:custom_components": [
+                "sd:yellow_autumn_leaves_particles",
+                "sd:yellow_autumn_leaves_particles_step",
+                "sd:on_random_tick"
+            ],
+            "minecraft:geometry": {
+                "identifier": "geometry.custom_leaves",
+                "culling": "ff:culling.leaves",
+                "culling_layer": "ff:culling_layer.leaves"
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.2
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 5
+            },
+            "minecraft:flammable": {
+                "catch_chance_modifier": 30,
+                "destroy_chance_modifier": 60
+            },
+            "minecraft:map_color": "#F49701",
+            "minecraft:light_dampening": 8,
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "yellow_autumn_leaves",
+                    "render_method": "alpha_test_to_opaque",
+                    "face_dimming": true,
+                    "ambient_occlusion": true
+                }
+            },
+            "minecraft:loot": "loot_tables/yellow_maple_sapling.json"
+        }
+    }
+}

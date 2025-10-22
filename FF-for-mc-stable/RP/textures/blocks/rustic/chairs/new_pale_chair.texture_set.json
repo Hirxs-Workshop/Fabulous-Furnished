@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "new_pale_chair",
-        "metalness_emissive_roughness": "new_pale_chair_mer",
-        "heightmap": "new_pale_chair_normal"
-    }
-}

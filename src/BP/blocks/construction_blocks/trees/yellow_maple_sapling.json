@@ -1,0 +1,55 @@
+{
+    "format_version": "1.21.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "ff:yellow_maple_sapling",
+            "menu_category": {
+                "category": "nature",
+                "group": "itemGroup.name.sapling"
+            }
+        },
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "minecraft:geometry.cross"
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 1
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0
+            },
+            "minecraft:custom_components": [
+                "ff:yellow_maple_sapling"
+            ],
+            "minecraft:flammable": false,
+            "minecraft:map_color": "#CB7800",
+            
+            "minecraft:placement_filter": {
+                "conditions": [
+                    {
+                        "allowed_faces": ["up"],
+                        "block_filter": [
+                            "minecraft:dirt",
+                            "minecraft:coarse_dirt",
+                            "minecraft:podzol",
+                            "minecraft:grass_block"
+                        ]
+                    }
+                ]
+            },
+            "minecraft:collision_box": false,
+            "minecraft:selection_box": {
+                "origin": [-6.5, 0, -6.5],
+                "size": [13, 12.5, 13]
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "yellow_maple_sapling",
+                    "render_method": "alpha_test_single_sided",
+                    "face_dimming": false,
+                    "ambient_occlusion": false
+                }
+            }
+        }
+    }
+}

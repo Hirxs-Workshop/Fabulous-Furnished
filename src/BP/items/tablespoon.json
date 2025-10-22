@@ -1,0 +1,22 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ff:wooden_tablespoon",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"textures": {
+					"default": "wooden_tablespoon"
+				}
+			},
+			"minecraft:display_name": {
+				"value": "item.ff:wooden_tablespoon.name"
+			},
+			"minecraft:max_stack_size": 64
+		}
+	}
+}

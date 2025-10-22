@@ -1,0 +1,31 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ff:bread_slice_glow_berry_jam",
+			"menu_category": {
+				"category": "equipment",
+				"group": "minecraft:itemGroup.name.miscFood"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"textures": {
+					"default": "bread_slice_glow_berry_jam"
+				}
+			},
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6
+			},
+			"minecraft:food": {
+				"nutrition": 8,
+				"saturation_modifier": 1
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:display_name": {
+				"value": "item.ff:bread_slice_glow_berry_jam.name"
+			},
+			"minecraft:max_stack_size": 64
+		}
+	}
+}

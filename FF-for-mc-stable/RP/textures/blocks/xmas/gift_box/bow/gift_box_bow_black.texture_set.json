@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "gift_box_bow_black",
-        "metalness_emissive_roughness": "gift_box_bow_black_mer",
-        "heightmap": "gift_box_bow_black_normal"
-    }
-}

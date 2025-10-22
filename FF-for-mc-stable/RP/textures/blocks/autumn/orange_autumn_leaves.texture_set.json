@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "orange_autumn_leaves",
-        "metalness_emissive_roughness": "orange_autumn_leaves_mer",
-        "heightmap": "orange_autumn_leaves_normal"
-    }
-}

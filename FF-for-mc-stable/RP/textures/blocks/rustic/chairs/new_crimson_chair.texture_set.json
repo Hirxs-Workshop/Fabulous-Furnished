@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "new_crimson_chair",
-        "metalness_emissive_roughness": "new_crimson_chair_mer",
-        "heightmap": "new_crimson_chair_normal"
-    }
-}

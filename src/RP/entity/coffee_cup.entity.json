@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ff:coffee_cup_entity",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/items/coffee_cup"
+			},
+			"geometry": {
+				"default": "geometry.coffee_cup_entity"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"animations": {
+			  "flying": "animation.actor.billboard"
+			},
+			"scripts": {
+			  "animate": [
+				"flying"
+			  ]
+			}
+		}
+	}
+}

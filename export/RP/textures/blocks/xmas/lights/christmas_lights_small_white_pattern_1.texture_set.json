@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "christmas_lights_small_white_pattern_1",
-        "metalness_emissive_roughness": "christmas_lights_small_white_pattern_1_mer",
-        "heightmap": "christmas_lights_small_white_pattern_1_normal"
-    }
-}

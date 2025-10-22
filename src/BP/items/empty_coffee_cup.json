@@ -1,0 +1,27 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ff:empty_coffee_cup",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:stacked_by_data": true,
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"textures": {
+					"default": "empty_coffee_cup"
+				}
+			},
+			"minecraft:display_name": {
+				"value": "item.ff:empty_coffee_cup.name"
+			},
+			"minecraft:block_placer": {
+				"block": "ff:empty_coffee_cup",
+				"replace_block_item": true
+			}
+		}
+	}
+}

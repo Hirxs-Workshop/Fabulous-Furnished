@@ -1,0 +1,132 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:iron_pot_with_beetroot_stew",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"ff:fully": [0,1,2,3],
+				"ff:stage": {"values": {"min": 1, "max": 10}},
+				"ff:has_beetroot": [false,true],
+				"ff:stove_below": [false,true]
+			},
+			"menu_category": {"category": "none", "is_hidden_in_commands": true}
+		},
+		"permutations": [
+			{ "condition": "query.block_state('minecraft:cardinal_direction') == 'north'", "components": {"minecraft:transformation": {"rotation": [0,180,0]}, "tag:block_north": {}}},
+			{ "condition": "query.block_state('minecraft:cardinal_direction') == 'east'",  "components": {"minecraft:transformation": {"rotation": [0,270,0]}, "tag:block_east": {}}},
+			{ "condition": "query.block_state('minecraft:cardinal_direction') == 'south'", "components": {"minecraft:transformation": {"rotation": [0,0,0]},   "tag:block_south": {}}},
+			{ "condition": "query.block_state('minecraft:cardinal_direction') == 'west'",  "components": {"minecraft:transformation": {"rotation": [0,90,0]},  "tag:block_west": {}}},
+
+			{ "condition": "query.block_state('ff:stage') == 1", "components": {
+				"minecraft:material_instances": {
+					"*": {"texture": "water_still_c", "render_method": "blend", "tint_method": "water", "ambient_occlusion": false},
+					"pot": {"texture": "ipw_beetroot_stew", "render_method": "opaque", "ambient_occlusion": true}
+				},
+				"minecraft:tick": {"interval_range": [200,200], "looping": true}
+			}},
+			{ "condition": "query.block_state('ff:stage') == 2", "components": {
+				"minecraft:material_instances": {
+					"*": {"texture": "water_still_c", "render_method": "blend", "tint_method": "water", "ambient_occlusion": false},
+					"pot": {"texture": "ipw_beetroot_stew", "render_method": "opaque", "ambient_occlusion": true}
+				},
+				"minecraft:tick": {"interval_range": [200,200], "looping": true}
+			}},
+			{ "condition": "query.block_state('ff:stage') == 3", "components": {
+				"minecraft:material_instances": {
+					"*": {"texture": "water_still_c", "render_method": "blend", "tint_method": "water", "ambient_occlusion": false},
+					"pot": {"texture": "ipw_beetroot_stew", "render_method": "opaque", "ambient_occlusion": true}
+				},
+				"minecraft:tick": {"interval_range": [200,200], "looping": true}
+			}},
+			{ "condition": "query.block_state('ff:stage') == 4", "components": {
+				"minecraft:material_instances": {
+					"*": {"texture": "water_still_c", "render_method": "blend", "tint_method": "water", "ambient_occlusion": false},
+					"pot": {"texture": "ipw_beetroot_stew", "render_method": "opaque", "ambient_occlusion": true}
+				},
+				"minecraft:tick": {"interval_range": [200,200], "looping": true}
+			}},
+			{ "condition": "query.block_state('ff:stage') == 5", "components": {
+				"minecraft:material_instances": {
+					"*": {"texture": "water_still_c", "render_method": "blend", "tint_method": "water", "ambient_occlusion": false},
+					"pot": {"texture": "ipw_beetroot_stew", "render_method": "opaque", "ambient_occlusion": true}
+				}
+			}},
+			{ "condition": "query.block_state('ff:stage') == 6", "components": {
+				"minecraft:material_instances": {
+					"*": {"texture": "water_still_c", "render_method": "blend", "tint_method": "water", "ambient_occlusion": false},
+					"pot": {"texture": "ipw_beetroot_stew", "render_method": "opaque", "ambient_occlusion": true}
+				},
+				"minecraft:tick": {"interval_range": [200,200], "looping": true}
+			}},
+			{ "condition": "query.block_state('ff:stage') == 7", "components": {
+				"minecraft:material_instances": {
+					"*": {"texture": "water_still_c", "render_method": "blend", "tint_method": "water", "ambient_occlusion": false},
+					"pot": {"texture": "ipw_beetroot_stew", "render_method": "opaque", "ambient_occlusion": true}
+				},
+				"minecraft:tick": {"interval_range": [200,200], "looping": true}
+			}},
+			{ "condition": "query.block_state('ff:stage') == 8", "components": {
+				"minecraft:material_instances": {
+					"*": {"texture": "beetroot_stew_liquid", "render_method": "blend", "ambient_occlusion": false},
+					"pot": {"texture": "ipw_beetroot_stew", "render_method": "opaque", "ambient_occlusion": true}
+				},
+				"minecraft:tick": {"interval_range": [600,600], "looping": true}
+			}},
+			{ "condition": "query.block_state('ff:stage') == 9", "components": {
+				"minecraft:material_instances": {
+					"*": {"texture": "beetroot_stew_liquid", "render_method": "blend", "ambient_occlusion": false},
+					"pot": {"texture": "ipw_beetroot_stew", "render_method": "opaque", "ambient_occlusion": true}
+				},
+				"minecraft:tick": {"interval_range": [600,600], "looping": true}
+			}},
+			{ "condition": "query.block_state('ff:stage') == 10", "components": {
+				"minecraft:material_instances": {
+					"*": {"texture": "rabbit_stew_liquid_b", "render_method": "blend", "ambient_occlusion": false},
+					"pot": {"texture": "ipw_beetroot_stew_b", "render_method": "opaque", "ambient_occlusion": true}
+				}
+			}}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {"texture": "water_still_c", "render_method": "blend", "tint_method": "water", "ambient_occlusion": false},
+				"pot": {"texture": "iron_pot", "render_method": "opaque", "ambient_occlusion": true}
+			},
+			"minecraft:map_color": "#8E693B",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {"explosion_resistance": 2},
+			"minecraft:destructible_by_mining": {"seconds_to_destroy": 2},
+			"minecraft:light_dampening": 2,
+			"minecraft:geometry": {
+				"identifier": "geometry.iron_pot_beetroot_stew",
+				"bone_visibility": {
+					"low": "q.block_state('ff:fully') == 1",
+					"middle": "q.block_state('ff:fully') == 2",
+					"full": "q.block_state('ff:fully') == 3",
+					"beetroot_low": "q.block_state('ff:fully') == 1 && q.block_state('ff:has_beetroot') == true",
+					"beetroot_middle": "q.block_state('ff:fully') == 2 && q.block_state('ff:has_beetroot') == true",
+					"beetroot_full": "q.block_state('ff:fully') == 3 && q.block_state('ff:has_beetroot') == true"
+
+				}
+			},
+			"minecraft:tick": {	
+					"interval_range": [
+						0,
+						0
+				]
+			},
+			"minecraft:selection_box": {"origin": [-7,0,-7], "size": [14,10,14]},
+			"minecraft:collision_box": {"origin": [-7,0,-7], "size": [14,10,14]},
+			"minecraft:custom_components": [
+				"ff:pot_beetroot_stew_cooking"
+			],
+			"minecraft:loot": "loot_tables/blocks/iron_pot.json"
+		}
+	}
+}

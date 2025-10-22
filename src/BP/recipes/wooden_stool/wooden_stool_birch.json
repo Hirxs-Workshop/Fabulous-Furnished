@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:wooden_birch_stool"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SS ",
+			"LL "
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:birch_slab"
+			},
+			"L": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": {
+			"item": "ff:wooden_birch_stool"
+		}
+	}
+}

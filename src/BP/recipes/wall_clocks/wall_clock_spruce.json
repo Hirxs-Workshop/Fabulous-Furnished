@@ -1,0 +1,19 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": { "identifier": "ff:wall_clock_spruce" },
+		"tags": ["ff_carpentry_table"],
+		"pattern": [
+			"PGP",
+			"QRQ",
+			" P "
+		],
+		"key": {
+			"P": { "item": "minecraft:spruce_planks" },
+			"G": { "item": "minecraft:glass_pane" },
+			"Q": { "item": "minecraft:quartz" },
+			"R": { "item": "minecraft:redstone" }
+		},
+		"result": { "item": "ff:wall_clock_spruce", "count": 1 }
+	}
+}

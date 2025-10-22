@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "marble_cabinet_warped",
-        "metalness_emissive_roughness": "marble_cabinet_warped_mer",
-        "heightmap": "marble_cabinet_warped_normal"
-    }
-}

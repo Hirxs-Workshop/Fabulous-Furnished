@@ -1,0 +1,18 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier": "ff:wooden_lantern_cherry"},
+		"tags": ["ff_carpentry_table"],
+		"pattern": [
+			" N ",
+			"NTN",
+			" P "
+		],
+		"key": {
+			"N": {"item": "minecraft:iron_nugget"},
+			"T": {"item": "minecraft:torch"},
+			"P": {"item": "minecraft:cherry_planks"}
+		},
+		"result": {"item": "ff:wooden_lantern_cherry", "count": 1}
+	}
+}

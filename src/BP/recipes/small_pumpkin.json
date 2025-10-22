@@ -1,0 +1,24 @@
+{
+	"format_version": "1.20.10",
+	"minecraft:recipe_shapeless": {
+	  "description": {
+	  "identifier": "pumpkin_seeds_from_small_pumpkin"
+	  },
+	  "tags": [ "ff_carpentry_table" ],
+	  "group": "pumpkin",
+	  "ingredients": [
+		{
+		  "item": "minecraft:pumpkin"
+		}
+	  ],
+	  "unlock": [
+		{
+		  "item": "minecraft:pumpkin"
+		}
+	  ],
+	  "result": {
+		"item": "sd:small_pumpkin"
+	  }
+	}
+  }
+  

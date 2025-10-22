@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "plasma_tv_weather_snow",
-        "metalness_emissive_roughness": "plasma_tv_weather_snow_mer",
-        "heightmap": "plasma_tv_weather_snow_normal"
-    }
-}

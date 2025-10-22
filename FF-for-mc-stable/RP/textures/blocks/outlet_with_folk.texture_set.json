@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "outlet_with_folk",
-        "metalness_emissive_roughness": "outlet_with_folk_mer",
-        "heightmap": "outlet_with_folk_normal"
-    }
-}

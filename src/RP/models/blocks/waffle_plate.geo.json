@@ -1,0 +1,535 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.waffle_plate",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-6, 0, -6],
+							"size": [12, 1, 12],
+							"uv": {
+								"north": {"uv": [1, 29], "uv_size": [12, 1]},
+								"east": {"uv": [1, 29], "uv_size": [12, 1]},
+								"south": {"uv": [1, 29], "uv_size": [12, 1]},
+								"west": {"uv": [1, 29], "uv_size": [12, 1]},
+								"down": {"uv": [27, 42], "uv_size": [-12, -12]}
+							}
+						},
+						{
+							"origin": [-7, 1, -7],
+							"size": [14, 0, 14],
+							"uv": {
+								"up": {"uv": [28, 43], "uv_size": [-14, -14]}
+							}
+						}
+					]
+				},
+				{
+					"name": "one_stack_base",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{
+							"origin": [-7, 1, 2],
+							"size": [5, 2, 5],
+							"pivot": [-1, 4.75, 1],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [0, 1, 2],
+							"size": [5, 2, 5],
+							"pivot": [0, 4.75, 1],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [-7, 1, -5],
+							"size": [5, 2, 5],
+							"pivot": [-1, 4.75, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [0, 1, -5],
+							"size": [5, 2, 5],
+							"pivot": [0, 4.75, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "two_stack_base",
+					"pivot": [0, 11, 0],
+					"cubes": [
+						{
+							"origin": [-5, 3, 0],
+							"size": [5, 2, 5],
+							"pivot": [0, 4, 0],
+							"rotation": [-180, -7.5, 180],
+							"uv": {
+								"north": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [0, 3, 0],
+							"size": [5, 2, 5],
+							"pivot": [0, 4, 0],
+							"rotation": [-180, -7.5, 180],
+							"uv": {
+								"north": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [-5, 3, -5],
+							"size": [5, 2, 5],
+							"pivot": [0, 4, 0],
+							"rotation": [-180, -7.5, 180],
+							"uv": {
+								"north": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [0, 3, -5],
+							"size": [5, 2, 5],
+							"pivot": [0, 4, 0],
+							"rotation": [-180, -7.5, 180],
+							"uv": {
+								"north": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [0, 1, 2],
+							"size": [5, 2, 5],
+							"pivot": [0, 4.75, 1],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [-1.5, 3, -0.5],
+							"size": [2, 1, 2],
+							"pivot": [0, 4.75, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [24, 16], "uv_size": [2, 1], "material_instance": "pancake"},
+								"east": {"uv": [24, 17], "uv_size": [2, 1], "material_instance": "pancake"},
+								"south": {"uv": [24, 18], "uv_size": [3, 1], "material_instance": "pancake"},
+								"west": {"uv": [24, 19], "uv_size": [2, 1], "material_instance": "pancake"},
+								"up": {"uv": [26, 12], "uv_size": [2, 2], "material_instance": "pancake"},
+								"down": {"uv": [26, 14], "uv_size": [2, -2], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [-7, 1, 2],
+							"size": [5, 2, 5],
+							"pivot": [-1, 4.75, 1],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [-7, 1, -5],
+							"size": [5, 2, 5],
+							"pivot": [-1, 4.75, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [0, 1, -5],
+							"size": [5, 2, 5],
+							"pivot": [0, 4.75, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "one_stack_butter",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-1.5, 3, -1.5],
+							"size": [3, 1, 3],
+							"pivot": [0, 4.75, 0],
+							"rotation": [-180, 7.5, 180],
+							"uv": {
+								"north": {"uv": [24, 16], "uv_size": [3, 1], "material_instance": "pancake"},
+								"east": {"uv": [24, 17], "uv_size": [3, 1], "material_instance": "pancake"},
+								"south": {"uv": [24, 18], "uv_size": [3, 1], "material_instance": "pancake"},
+								"west": {"uv": [24, 19], "uv_size": [3, 1], "material_instance": "pancake"},
+								"up": {"uv": [26, 12], "uv_size": [3, 3], "material_instance": "pancake"},
+								"down": {"uv": [26, 15], "uv_size": [3, -3], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "one_stack_4",
+					"pivot": [6, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 1, 2],
+							"size": [5, 2, 5],
+							"pivot": [-1, 4.75, 1],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "one_stack_3",
+					"pivot": [6, 0, 0],
+					"cubes": [
+						{
+							"origin": [0, 1, 2],
+							"size": [5, 2, 5],
+							"pivot": [0, 4.75, 1],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "one_stack_2",
+					"pivot": [6, 0, 0],
+					"cubes": [
+						{
+							"origin": [-7, 1, -5],
+							"size": [5, 2, 5],
+							"pivot": [-1, 4.75, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "one_stack_1",
+					"pivot": [6, 0, 0],
+					"cubes": [
+						{
+							"origin": [0, 1, -5],
+							"size": [5, 2, 5],
+							"pivot": [0, 4.75, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "two_stack_butter",
+					"pivot": [0, 2, 0],
+					"cubes": [
+						{
+							"origin": [-1.5, 5, -1.5],
+							"size": [3, 1, 3],
+							"pivot": [0, 4.75, 0],
+							"rotation": [-180, 7.5, 180],
+							"uv": {
+								"north": {"uv": [24, 16], "uv_size": [3, 1], "material_instance": "pancake"},
+								"east": {"uv": [24, 17], "uv_size": [3, 1], "material_instance": "pancake"},
+								"south": {"uv": [24, 18], "uv_size": [3, 1], "material_instance": "pancake"},
+								"west": {"uv": [24, 19], "uv_size": [3, 1], "material_instance": "pancake"},
+								"up": {"uv": [26, 12], "uv_size": [3, 3], "material_instance": "pancake"},
+								"down": {"uv": [26, 15], "uv_size": [3, -3], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "two_stack_4",
+					"pivot": [0, 2, 0],
+					"cubes": [
+						{
+							"origin": [-5, 3, 0],
+							"size": [5, 2, 5],
+							"pivot": [0, 4, 0],
+							"rotation": [-180, -7.5, 180],
+							"uv": {
+								"north": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "two_stack_3",
+					"pivot": [0, 2, 0],
+					"cubes": [
+						{
+							"origin": [0, 3, 0],
+							"size": [5, 2, 5],
+							"pivot": [0, 4, 0],
+							"rotation": [-180, -7.5, 180],
+							"uv": {
+								"north": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "two_stack_2",
+					"pivot": [0, 2, 0],
+					"cubes": [
+						{
+							"origin": [-5, 3, -5],
+							"size": [5, 2, 5],
+							"pivot": [0, 4, 0],
+							"rotation": [-180, -7.5, 180],
+							"uv": {
+								"north": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "two_stack_1",
+					"pivot": [0, 2, 0],
+					"cubes": [
+						{
+							"origin": [0, 3, -5],
+							"size": [5, 2, 5],
+							"pivot": [0, 4, 0],
+							"rotation": [-180, -7.5, 180],
+							"uv": {
+								"north": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "three_stack_1",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{
+							"origin": [0, 5, -5],
+							"size": [5, 2, 5],
+							"pivot": [0, 6, 0],
+							"rotation": [-180, 10, 180],
+							"uv": {
+								"north": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "three_stack_2",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{
+							"origin": [-5, 5, -5],
+							"size": [5, 2, 5],
+							"pivot": [0, 6, 0],
+							"rotation": [-180, 10, 180],
+							"uv": {
+								"north": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 5], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 22], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "three_stack_3",
+					"pivot": [6, 4, 0],
+					"cubes": [
+						{
+							"origin": [0, 5, 0],
+							"size": [5, 2, 5],
+							"pivot": [0, 6, 0],
+							"rotation": [-180, 10, 180],
+							"uv": {
+								"north": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [17, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [17, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "three_stack_4",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{
+							"origin": [-5, 5, 0],
+							"size": [5, 2, 5],
+							"pivot": [0, 6, 0],
+							"rotation": [-180, 10, 180],
+							"uv": {
+								"north": {"uv": [30, 12], "uv_size": [5, 2], "material_instance": "pancake"},
+								"east": {"uv": [24, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 8], "uv_size": [5, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 10], "uv_size": [5, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 0], "uv_size": [5, 5], "material_instance": "pancake"},
+								"down": {"uv": [12, 17], "uv_size": [5, -5], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "three_stack_butter",
+					"pivot": [0, 4, 0],
+					"cubes": [
+						{
+							"origin": [-1.5, 7, -1.5],
+							"size": [3, 1, 3],
+							"pivot": [0, 4.75, 0],
+							"rotation": [-180, 0, 180],
+							"uv": {
+								"north": {"uv": [24, 16], "uv_size": [3, 1], "material_instance": "pancake"},
+								"east": {"uv": [24, 17], "uv_size": [3, 1], "material_instance": "pancake"},
+								"south": {"uv": [24, 18], "uv_size": [3, 1], "material_instance": "pancake"},
+								"west": {"uv": [24, 19], "uv_size": [3, 1], "material_instance": "pancake"},
+								"up": {"uv": [26, 12], "uv_size": [3, 3], "material_instance": "pancake"},
+								"down": {"uv": [26, 15], "uv_size": [3, -3], "material_instance": "pancake"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

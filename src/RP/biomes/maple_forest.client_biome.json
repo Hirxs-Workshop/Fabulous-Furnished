@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "ff:maple_forest"
+    },
+    "components": {
+      "minecraft:water_appearance": {
+        "surface_color": "#bea96c"
+      },
+      "minecraft:foliage_appearance": {
+        "color": "#f2970f"
+      },
+      "minecraft:grass_appearance": {
+        "color": "#f3b536"
+      },
+      "minecraft:biome_music": {
+        "music_definition": "cherry_grove"
+      }
+    }
+  }
+}

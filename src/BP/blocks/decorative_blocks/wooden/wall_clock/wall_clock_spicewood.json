@@ -1,0 +1,101 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:wall_clock_spicewood",
+			"menu_category": {
+				"category": "items"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"origin": [-5.5, 2.5, 6],
+				"size": [11, 11, 2]
+			},
+			"minecraft:selection_box": {
+				"origin": [-5.5, 2.5, 6],
+				"size": [11, 11, 2]
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.ff_wall_clock"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "wall_clock_spicewood",
+					"render_method": "alpha_test"
+				},
+				"clock": {
+					"texture": "wall_clock_lines",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:custom_components": [
+				"ff:wall_clock_tick"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					20,
+					20
+				],
+				"looping": true
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			}
+		]
+	}
+}

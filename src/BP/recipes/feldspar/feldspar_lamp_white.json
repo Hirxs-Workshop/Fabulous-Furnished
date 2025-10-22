@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:feldspar_lamp_white"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"WF"
+		],
+		"key": {
+			"F": {
+				"item": "minecraft:white_dye"
+			},
+			"W": {
+				"item": "ff:feldspar_lamp"
+			}
+		},
+		"result": {
+			"item": "ff:feldspar_lamp_white",
+			"count": 1
+		}
+	}
+}

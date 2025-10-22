@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "wooden_frame_pale",
-        "metalness_emissive_roughness": "wooden_frame_pale_mer",
-        "heightmap": "wooden_frame_pale_normal"
-    }
-}

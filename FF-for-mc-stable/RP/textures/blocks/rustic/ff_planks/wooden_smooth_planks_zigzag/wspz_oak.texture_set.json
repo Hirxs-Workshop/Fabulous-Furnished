@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "wspz_oak",
-        "metalness_emissive_roughness": "wspz_oak_mer",
-        "heightmap": "wspz_oak_normal"
-    }
-}

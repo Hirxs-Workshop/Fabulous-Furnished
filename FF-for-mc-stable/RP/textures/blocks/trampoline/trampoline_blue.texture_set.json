@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "trampoline_blue",
-        "metalness_emissive_roughness": "trampoline_blue_mer",
-        "heightmap": "trampoline_blue_normal"
-    }
-}

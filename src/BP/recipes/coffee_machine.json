@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:coffee_machine"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SCS",
+			"SPS"
+		],
+		"key": {
+			"P": {
+				"item": "minecraft:redstone"
+			},
+			"S": {
+				"item": "minecraft:iron_ingot"
+			},
+			"C": {
+				"item": "minecraft:black_dye"
+			}
+		},
+		"result": {
+			"item": "ff:coffee_machine"
+		}
+	}
+}

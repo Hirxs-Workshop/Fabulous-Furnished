@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "wbp_cinder",
-        "metalness_emissive_roughness": "wbp_cinder_mer",
-        "heightmap": "wbp_cinder_normal"
-    }
-}

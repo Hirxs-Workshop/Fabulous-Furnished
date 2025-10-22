@@ -1,0 +1,766 @@
+{
+	"format_version": "1.21.10",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:lamp_off_oak",
+			"menu_category": {
+				"category": "items"
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"ef:colors": {					
+					"values": {
+						"min": 0,
+						"max": 15
+				}
+			},
+			"ff:tv_on": [false, true],
+			"ff:top_bit": [
+				false,
+				true
+			],
+			"ff:bottom_bit": [
+				false,
+				true
+			]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_white",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_orange",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_magenta",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_light_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_yellow",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_lime",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_pink",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_light_gray",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_cyan",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_purple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_blue",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_brown",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_green",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_red",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && !q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_off_black",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 0 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_white",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 1 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_orange",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 2 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_magenta",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 3 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_light_blue",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 4 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_yellow",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 5 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_lime",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 6 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_pink",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 7 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_gray",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 8 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_light_gray",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 9 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_cyan",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 10 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_purple",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 11 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_blue",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 12 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_brown",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 13 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_green",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 14 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_red",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			},
+			{
+				"condition": "q.block_state('ef:colors') == 15 && q.block_state('ff:tv_on')",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"ambient_occlusion": true,
+							"face_dimming": true,
+							"texture": "lamp_base_oak",
+							"render_method": "alpha_test"
+						},
+						"lamp": {
+							"ambient_occlusion": false,
+							"face_dimming": false,
+							"texture": "ff_lamp_on_black",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:light_emission": 13
+				}
+			}
+		],
+		"components": {
+			"tag:ff:lamp_cx": {},
+			"minecraft:geometry": {
+				"identifier": "geometry.ff_small_lamp",
+				"bone_visibility": {
+					"top": "query.block_state('ff:bottom_bit') == true && query.block_state('ff:top_bit') == false",
+					"bottom": "query.block_state('ff:bottom_bit') == false && query.block_state('ff:top_bit') == true",
+					"middle": "query.block_state('ff:bottom_bit') == true && query.block_state('ff:top_bit') == true",
+					"single": "query.block_state('ff:bottom_bit') == false && query.block_state('ff:top_bit') == false"
+				}
+			},
+			"minecraft:flammable": {
+				"catch_chance_modifier": 30,
+				"destroy_chance_modifier": 30
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:collision_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					16,
+					10
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					16,
+					10
+				]
+			},
+			"minecraft:custom_components": [
+				"ff:lamp_cx"
+			],
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "lamp_base_oak",
+					"render_method": "alpha_test",
+					"ambient_occlusion": true
+				}
+			},
+			"minecraft:tick": {
+				"interval_range": [
+					0,
+					0
+				]
+			}
+		}
+	}
+}

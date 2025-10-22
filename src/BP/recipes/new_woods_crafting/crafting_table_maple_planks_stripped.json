@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:crafting_table_maple_planks_stripped"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"S"
+		],
+		"key": {
+			"S": {
+				"item": "ff:stripped_maple_log"
+			}
+		},
+		"result": {
+			"item": "ff:maple_planks",
+			"count": 4
+		}
+	}
+}

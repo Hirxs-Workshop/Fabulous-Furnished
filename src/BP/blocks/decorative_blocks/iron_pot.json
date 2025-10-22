@@ -1,0 +1,227 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:iron_pot",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"ff:fully": [
+					0,
+					1,
+					2,
+					3
+				],
+				"ff:stove_below": [
+					false,
+					true
+				]
+			},
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"tag:block_north": {}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:fully') == 0",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.iron_pot",
+						"minecraft:material_instances": {
+							"*": {
+								"texture": "iron_pot",
+								"render_method": "opaque",
+								"ambient_occlusion": true
+							}
+						},
+						"bone_visibility": {
+							"low": false,
+							"middle": false,
+							"full": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:fully') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "water_still_c",
+							"render_method": "blend",
+							"tint_method": "water",
+							"ambient_occlusion": false
+						},
+						"pot": {
+							"texture": "iron_pot",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.iron_pot",
+						"bone_visibility": {
+							"low": true,
+							"middle": false,
+							"full": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:fully') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "water_still_c",
+							"render_method": "blend",
+							"tint_method": "water",
+							"ambient_occlusion": false
+						},
+						"pot": {
+							"texture": "iron_pot",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.iron_pot",
+						"bone_visibility": {
+							"low": false,
+							"middle": true,
+							"full": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:fully') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "water_still_c",
+							"render_method": "blend",
+							"tint_method": "water",
+							"ambient_occlusion": false
+						},
+						"pot": {
+							"texture": "iron_pot",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.iron_pot",
+						"bone_visibility": {
+							"low": false,
+							"middle": false,
+							"full": true
+						}
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "iron_pot",
+					"render_method": "opaque",
+					"ambient_occlusion": true
+				}
+			},
+			"minecraft:map_color": "#8E693B",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:light_dampening": 2,
+			"minecraft:geometry": {
+				"identifier": "geometry.iron_pot",
+				"bone_visibility": {
+					"low": true,
+					"middle": true,
+					"full": false
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					10,
+					14
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					10,
+					14
+				]
+			},
+			"minecraft:custom_components": [
+				"ff:pot_basic"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					150,
+					150
+				],
+				"looping": true
+			}
+		}
+	}
+}

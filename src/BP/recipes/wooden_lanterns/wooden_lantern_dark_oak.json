@@ -1,0 +1,18 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier": "ff:wooden_lantern_dark_oak"},
+		"tags": ["ff_carpentry_table"],
+		"pattern": [
+			" N ",
+			"NTN",
+			" P "
+		],
+		"key": {
+			"N": {"item": "minecraft:iron_nugget"},
+			"T": {"item": "minecraft:torch"},
+			"P": {"item": "minecraft:dark_oak_planks"}
+		},
+		"result": {"item": "ff:wooden_lantern_dark_oak", "count": 1}
+	}
+}

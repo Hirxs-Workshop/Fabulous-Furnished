@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "carpentry_table_north",
-        "metalness_emissive_roughness": "carpentry_table_north_mer",
-        "heightmap": "carpentry_table_north_normal"
-    }
-}

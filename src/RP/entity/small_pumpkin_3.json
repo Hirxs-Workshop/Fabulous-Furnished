@@ -1,0 +1,23 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "sd:white_small_pumpkin",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "christmas_tree"
+			},
+			"textures": {
+				"default": "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/white_ps",
+				"pumpkin_off": "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/white_ps_face_var_1",
+				"pumpkin_on": "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/white_ps_face_var_1_glow"
+			},
+			"geometry": {
+				"default": "geometry.pumpkin_small"
+			},
+			"render_controllers": [
+				"controller.render.white_small_pumpkin"
+			]
+		}
+	}
+}

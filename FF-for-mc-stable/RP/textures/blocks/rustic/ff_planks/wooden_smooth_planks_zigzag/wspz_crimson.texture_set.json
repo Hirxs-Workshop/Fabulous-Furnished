@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "wspz_crimson",
-        "metalness_emissive_roughness": "wspz_crimson_mer",
-        "heightmap": "wspz_crimson_normal"
-    }
-}

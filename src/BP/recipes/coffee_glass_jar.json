@@ -1,0 +1,27 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:empty_coffee_glass_jar"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"S S",
+			"SSD"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:glass"
+			},
+			"D": {
+				"item": "minecraft:black_dye"
+			}
+		},
+		"result": {
+			"item": "ff:empty_coffee_glass_jar",
+			"count": 2
+		}
+	}
+}

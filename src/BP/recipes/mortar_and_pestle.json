@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:mortar_and_pestle"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"WIW",
+			"WWW"
+		],
+		"key": {
+			"I": {
+				"item": "ff:pestle"
+			},
+			"W": {
+				"item": "minecraft:stone"
+			}
+		},
+		"result": {
+			"item": "ff:mortar_and_pestle"
+		}
+	}
+} 

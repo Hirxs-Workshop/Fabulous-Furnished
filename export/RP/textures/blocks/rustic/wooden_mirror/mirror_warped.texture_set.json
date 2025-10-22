@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "mirror_warped",
-        "metalness_emissive_roughness": "mirror_warped_mer",
-        "heightmap": "mirror_warped_normal"
-    }
-}

@@ -1,0 +1,18 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier": "ff:hanging_flower_pot_oak"},
+		"tags": ["ff_carpentry_table"],
+		"pattern": [
+			" S ",
+			"PRP",
+			" P "
+		],
+		"key": {
+			"S": {"item": "minecraft:stick"},
+			"P": {"item": "minecraft:oak_planks"},
+			"R": {"item": "ff:rope"}
+		},
+		"result": {"item": "ff:hanging_flower_pot_oak", "count": 1}
+	}
+}

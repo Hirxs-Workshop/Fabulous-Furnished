@@ -1,0 +1,37 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "ff:orange_tulip_maple_forest_feature_rules",
+			"places_feature": "ff:orange_tulip_maple_forest_feature"
+		},
+		"conditions": {
+			"placement_pass": "before_surface_pass",
+			"minecraft:biome_filter": [
+				{
+					"test": "has_biome_tag",
+					"operator": "==",
+					"value": "maple_forest"
+				}
+			]
+		},
+		"distribution": {
+			"iterations": "math.random_integer(4000, 4500)",
+			"x": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					32
+				]
+			},
+			"y": "query.heightmap(variable.worldx, variable.worldz)",
+			"z": {
+				"distribution": "uniform",
+				"extent": [
+					0,
+					32
+				]
+			}
+		}
+	}
+}

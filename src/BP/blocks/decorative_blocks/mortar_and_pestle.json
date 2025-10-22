@@ -1,0 +1,99 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:mortar_and_pestle",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"ff:with_pestle": {
+					"values": [true, false]
+				}
+			},
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"tag:block_north": {}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mortar_and_pestle",
+					"render_method": "opaque",
+					"ambient_occlusion": true
+				}
+			},
+			"minecraft:map_color": "#8E693B",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:light_dampening": 2,
+			"minecraft:geometry": {
+				"identifier": "geometry.mortar_and_pestle",
+				"bone_visibility": {
+					"pestle": "query.block_state('ff:with_pestle')"
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [-5, 0, -5],
+				"size": [10, 10, 10]
+			},
+			"minecraft:collision_box": {
+				"origin": [-5, 0, -5],
+				"size": [10, 10, 10]
+			},
+			"minecraft:custom_components": [
+				"ff:mortar_interaction",
+				"ff:mortar_pestle_placement",
+				"ff:mortar_cleanup"
+			]
+		}
+	}
+}

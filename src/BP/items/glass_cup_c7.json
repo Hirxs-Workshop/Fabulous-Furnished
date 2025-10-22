@@ -1,0 +1,39 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ff:glass_cup_c7",
+			"menu_category": {
+				"category": "none",
+				"is_hidden_in_commands": true
+			}
+		},
+		"components": {
+			"minecraft:use_modifiers": {
+				"use_duration": 1,
+				"movement_modifier": 1
+			},
+			"minecraft:food": {
+				"nutrition": 0,
+				"saturation_modifier": 0,
+				"using_converts_to": "ff:glass_cup"
+			},
+			"minecraft:stacked_by_data": true,
+			"minecraft:max_stack_size": 1,
+            "minecraft:custom_components": [
+                "ff:glass_cup_effects"
+            ],
+			"minecraft:icon": {
+				"textures": {
+					"default": "glass_cup_c7"
+				}
+			},
+			"minecraft:use_animation": {
+				"value": "drink"
+			},
+			"minecraft:display_name": {
+				"value": "item.ff:glass_cup_c7.name"
+			}
+		}
+	}
+}

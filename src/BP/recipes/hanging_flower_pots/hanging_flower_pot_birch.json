@@ -1,0 +1,18 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier": "ff:hanging_flower_pot_birch"},
+		"tags": ["ff_carpentry_table"],
+		"pattern": [
+			" S ",
+			"PRP",
+			" P "
+		],
+		"key": {
+			"S": {"item": "minecraft:stick"},
+			"P": {"item": "minecraft:birch_planks"},
+			"R": {"item": "ff:rope"}
+		},
+		"result": {"item": "ff:hanging_flower_pot_birch", "count": 1}
+	}
+}

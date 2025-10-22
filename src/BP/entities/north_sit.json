@@ -1,0 +1,250 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ff:north_sit",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"kills": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"inanimate"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.1
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false,
+						"on_damage_sound_event": ""
+					}
+				]
+			},
+			"minecraft:breathable": {
+				"breathes_solids": true
+			},
+			"minecraft:rideable": {
+				"seat_count": 1,
+				"seats": [
+				  {
+					"position": [0, 0.3, 0],
+					"lock_rider_rotation": 120,
+					"rotate_rider_by": 0
+				  }
+				]
+			  },
+			  "minecraft:inside_block_notifier": {
+				"block_list": [
+					{
+						"block": {
+							"name": "ff:wooden_acacia_chair"
+						},
+						"exited_block_event": {
+							"event": "kill"
+						}
+					},
+					{
+						"block": { "name": "ff:wooden_oak_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_birch_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_cherry_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_cinder_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_crimson_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_dark_oak_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_jungle_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_mangrove_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_maple_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_pale_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_spicewood_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_spruce_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_warped_chair" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_acacia_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_oak_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_birch_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_cherry_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_cinder_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_crimson_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_dark_oak_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_jungle_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_mangrove_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_maple_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_pale_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_spicewood_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_spruce_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ef:wooden_warped_couch" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_acacia_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_oak_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_birch_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_cherry_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_cinder_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_crimson_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_dark_oak_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_jungle_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_mangrove_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_maple_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_pale_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_spicewood_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_spruce_bench" },
+						"exited_block_event": { "event": "kill" }
+					},
+					{
+						"block": { "name": "ff:wooden_warped_bench" },
+						"exited_block_event": { "event": "kill" }
+					}
+				]
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"event": "kill",
+						"filters": {
+							"test": "rider_count",
+							"value": 0
+						}
+					}
+				]
+			}
+		},
+		"events": {
+			"kill": {
+				"add": {
+					"component_groups": [
+						"kills"
+					]
+				}
+			}
+		}
+	}
+}

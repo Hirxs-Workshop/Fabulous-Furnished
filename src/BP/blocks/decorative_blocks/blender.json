@@ -1,0 +1,475 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:blender",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+
+				"ff:stage": {"values": [0,1,2,3,4]},
+				"ff:with_sugar": {"values": [false, true]},
+				"ff:with_amplifier": {"values": ["none", "redstone", "glowstone", "sweet_berries", "glow_berries"]},
+                "ff:color": {
+					"values": [
+						"none",
+						"c0",
+						"c1",
+						"c2",
+						"c3",
+						"c4",
+						"c5",
+						"c6",
+						"c7",
+						"c8",
+						"c9",
+						"c10",
+						"c11",
+						"c12",
+						"c13",
+						"c14"
+					]
+				}
+			},
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"tag:block_north": {}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 1 || query.block_state('ff:stage') == 2 || query.block_state('ff:stage') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base_on",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c0'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c0",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c1'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c1",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c2'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c2",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c3'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c3",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c4'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c4",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c5'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c5",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c6'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c6",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c7'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c7",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c8'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c8",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c9'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c9",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c10'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c10",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c11'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c11",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c12'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c12",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c13'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c13",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:color') == 'c14'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "c14",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:with_amplifier') == 'sweet_berries'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "sweet_berries_mix",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:with_amplifier') == 'glow_berries'",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blender_base",
+							"render_method": "alpha_test_single_sided",
+							"ambient_occlusion": true
+						},
+						"liquid": {
+							"texture": "glow_berries_mix",
+							"render_method": "opaque",
+							"ambient_occlusion": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 1",
+				"components": {
+					"minecraft:tick": {
+						"interval_range": [
+							100,
+							100
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 2",
+				"components": {
+					"minecraft:tick": {
+						"interval_range": [
+							100,
+							100
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 3",
+				"components": {
+					"minecraft:tick": {
+						"interval_range": [
+							100,
+							100
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 4",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.ff_blender"
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "blender_base",
+					"render_method": "alpha_test_single_sided",
+					"ambient_occlusion": true
+				}
+			},
+			"minecraft:map_color": "#8E693B",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:tick": {	
+					"interval_range": [
+						0,
+						0
+				]
+			},
+			"minecraft:light_dampening": 2,
+			"minecraft:geometry": {
+				"identifier": "geometry.ff_blender",
+				"bone_visibility": {
+					"liquid": "q.block_state('ff:stage') == 4",
+					"redstone": "q.block_state('ff:with_amplifier') == 'redstone'",
+					"glowstone": "q.block_state('ff:with_amplifier') == 'glowstone'",
+					"sugar": "q.block_state('ff:with_sugar') == true"
+				}
+			}, 
+			"minecraft:selection_box": {
+				"origin": [-4, 0, -4],
+				"size": [8, 16, 8]
+			},
+			"minecraft:collision_box": {
+				"origin": [-4, 0, -4],
+				"size": [8, 16, 8]
+			},
+			"minecraft:custom_components": [
+				"ff:blender_interaction",
+				"ff:blender_particles",
+				"ff:blender_sound",
+				"ff:blender_reset"
+			]
+		}
+	}
+}

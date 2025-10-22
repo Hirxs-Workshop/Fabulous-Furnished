@@ -1,0 +1,225 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:iron_pot_with_sunflower",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"ff:fully": [
+					0,
+					1,
+					2,
+					3
+				],
+				"ff:cooked": [
+					0,
+					1,
+					2
+				],
+				"ff:stove_below": [
+					false,
+					true
+				]
+			},
+			"menu_category": {
+				"category": "none",
+				"is_hidden_in_commands": true
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"tag:block_north": {}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					},
+					"tag:block_east": {}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"tag:block_south": {}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"tag:block_west": {}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:cooked') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "water_still_c",
+							"render_method": "blend",
+							"tint_method": "water",
+							"ambient_occlusion": false
+						},
+						"pot": {
+							"texture": "iron_pot",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							30,
+							30
+						],
+						"looping": true
+					}
+				}
+			},
+						{
+				"condition": "query.block_state('ff:cooked') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "water_still_c",
+							"render_method": "blend",
+							"tint_method": "water",
+							"ambient_occlusion": false
+						},
+						"pot": {
+							"texture": "iron_pot",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							150,
+							150
+						],
+						"looping": true
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:cooked') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "vegetable_oil",
+							"render_method": "blend",
+							"ambient_occlusion": false
+						},
+						"pot": {
+							"texture": "iron_pot",
+							"render_method": "opaque",
+							"ambient_occlusion": true
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							150,
+							150
+						],
+						"looping": true
+					}
+					
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "iron_pot",
+					"render_method": "opaque",
+					"ambient_occlusion": true
+				}
+			},
+			"minecraft:map_color": "#8E693B",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 2
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2
+			},
+			"minecraft:light_dampening": 2,
+			"minecraft:geometry": {
+				"identifier": "geometry.iron_pot",
+				"bone_visibility": {
+					"low": "q.block_state('ff:fully') == 1",
+					"middle": "q.block_state('ff:fully') == 2",
+					"full": "q.block_state('ff:fully') == 3"
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					10,
+					14
+				]
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-7,
+					0,
+					-7
+				],
+				"size": [
+					14,
+					10,
+					14
+				]
+			},
+			"minecraft:custom_components": [
+				"ff:pot_sunflower_cooking"
+			],
+			"minecraft:tick": {	
+					"interval_range": [
+						0,
+						0
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/iron_pot.json"
+		}
+	}
+}

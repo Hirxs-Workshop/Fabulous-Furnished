@@ -1,0 +1,5628 @@
+{
+    "resource_pack_name": "Fabulous Furnished - v2.2 Official Release",
+    "texture_name": "atlas.terrain",
+    "num_mip_levels": 4,
+    "padding": 8,
+    "texture_data": {
+        "carpentry_table_down": {
+            "textures": [
+                "textures/blocks/fabulous_funished/carpentry_table_down"
+            ]
+        },
+        "carpentry_table_east": {
+            "textures": [
+                "textures/blocks/fabulous_funished/carpentry_table_east"
+            ]
+        },
+        "carpentry_table_north": {
+            "textures": [
+                "textures/blocks/fabulous_funished/carpentry_table_north"
+            ]
+        },
+        "folk": {
+            "textures": [
+                "textures/blocks/fabulous_funished/folk"
+            ]
+        },
+        "carpentry_table_south": {
+            "textures": [
+                "textures/blocks/fabulous_funished/carpentry_table_south"
+            ]
+        },
+        "carpentry_table_up": {
+            "textures": [
+                "textures/blocks/fabulous_funished/carpentry_table_up"
+            ]
+        },
+        "carpentry_table_west": {
+            "textures": [
+                "textures/blocks/fabulous_funished/carpentry_table_west"
+            ]
+        },
+        "feldspar_block": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_block"
+            ]
+        },
+        "feldspar_block_chiseled": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_block_chiseled"
+            ]
+        },
+        "feldspar_ore": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_ore"
+            ]
+        },
+        "feldspar_ore_deepslate": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_ore_deepslate"
+            ]
+        },
+        "water_still_c": {
+            "textures": [
+                "textures/blocks/fabulous_funished/water_still_c"
+            ]
+        },
+        "bathroom_sink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/bathroom_sink"
+            ]
+        },
+        "toilet_ff": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/toilet_ff"
+            ]
+        },
+        "toilet_paper_support": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/toilet_paper_support"
+            ]
+        },
+        "towel_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_black"
+            ]
+        },
+        "towel_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_blue"
+            ]
+        },
+        "towel_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_brown"
+            ]
+        },
+        "towel_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_cyan"
+            ]
+        },
+        "towel_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_gray"
+            ]
+        },
+        "towel_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_green"
+            ]
+        },
+        "towel_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_light_blue"
+            ]
+        },
+        "towel_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_light_gray"
+            ]
+        },
+        "towel_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_lime"
+            ]
+        },
+        "towel_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_magenta"
+            ]
+        },
+        "towel_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_orange"
+            ]
+        },
+        "towel_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_pink"
+            ]
+        },
+        "towel_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_purple"
+            ]
+        },
+        "towel_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_red"
+            ]
+        },
+        "towel_support": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_support"
+            ]
+        },
+        "towel_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_white"
+            ]
+        },
+        "towel_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/bathroom/towels/towel_yellow"
+            ]
+        },
+        "energy_bar_inf_rainbow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/energy_bar_inf_rainbow"
+            ]
+        },
+        "energy_generator_back": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/energy_generator_back"
+            ]
+        },
+        "energy_generator_bottom": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/energy_generator_bottom"
+            ]
+        },
+        "energy_generator_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/energy_generator_front"
+            ]
+        },
+        "energy_generator_front_off": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/energy_generator_front_off"
+            ]
+        },
+        "energy_generator_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/energy_generator_side"
+            ]
+        },
+        "energy_generator_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/energy_generator_top"
+            ]
+        },
+        "energy_icon": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/energy_icon"
+            ]
+        },
+        "modern_switch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/modern_switch"
+            ]
+        },
+        "outlet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/outlet"
+            ]
+        },
+        "outlet_with_folk": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/outlet_with_folk"
+            ]
+        },
+        "slider_off": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/slider_off"
+            ]
+        },
+        "slider_on": {
+            "textures": [
+                "textures/blocks/fabulous_funished/energy_generator/slider_on"
+            ]
+        },
+        "feldspar_block_lamp_pattern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern"
+            ]
+        },
+        "feldspar_block_lamp_pattern_2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_2"
+            ]
+        },
+        "feldspar_block_lamp_pattern_2_off": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_2_off"
+            ]
+        },
+        "feldspar_block_lamp_pattern_2_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_2_white"
+            ]
+        },
+        "feldspar_block_lamp_pattern_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_black"
+            ]
+        },
+        "feldspar_block_lamp_pattern_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_blue"
+            ]
+        },
+        "feldspar_block_lamp_pattern_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_brown"
+            ]
+        },
+        "feldspar_block_lamp_pattern_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_cyan"
+            ]
+        },
+        "feldspar_block_lamp_pattern_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_gray"
+            ]
+        },
+        "feldspar_block_lamp_pattern_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_green"
+            ]
+        },
+        "feldspar_block_lamp_pattern_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_light_blue"
+            ]
+        },
+        "feldspar_block_lamp_pattern_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_light_gray"
+            ]
+        },
+        "feldspar_block_lamp_pattern_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_lime"
+            ]
+        },
+        "feldspar_block_lamp_pattern_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_magenta"
+            ]
+        },
+        "feldspar_block_lamp_pattern_off": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_off"
+            ]
+        },
+        "feldspar_block_lamp_pattern_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_orange"
+            ]
+        },
+        "feldspar_block_lamp_pattern_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_pink"
+            ]
+        },
+        "feldspar_block_lamp_pattern_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_purple"
+            ]
+        },
+        "feldspar_block_lamp_pattern_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_red"
+            ]
+        },
+        "feldspar_block_lamp_pattern_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_white"
+            ]
+        },
+        "feldspar_block_lamp_pattern_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/feldspar_lamps/feldspar_block_lamp_pattern_yellow"
+            ]
+        },
+        "bread_slice": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/bread_slice"
+            ]
+        },
+        "bread_slice_toasted": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/bread_slice_toasted"
+            ]
+        },
+        "coffee_cup": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/coffee_cup"
+            ]
+        },
+        "empty_dish": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/empty_dish"
+            ]
+        },
+        "fridge_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/fridge_black"
+            ]
+        },
+        "fridge_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/fridge_white"
+            ]
+        },
+        "glass_cookies": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/glass_cookies"
+            ]
+        },
+        "glass_jar": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/glass_jar"
+            ]
+        },
+        "glass_sweet_berries_jam": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/glass_sweet_berries_jam"
+            ]
+        },
+        "glass_sweet_glow_jam": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/glass_sweet_glow_jam"
+            ]
+        },
+        "kitchen_floor": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/kitchen_floor"
+            ]
+        },
+        "mortar_and_pestle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/mortar_and_pestle"
+            ]
+        },
+        "oven_off": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/oven_off"
+            ]
+        },
+        "oven_on": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/oven_on"
+            ]
+        },
+        "pancake": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/pancake"
+            ]
+        },
+        "pancake_with_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/pancake_with_maple"
+            ]
+        },
+        "toaster": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/toaster"
+            ]
+        },
+        "toaster_on": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/toaster_on"
+            ]
+        },
+        "waffle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/waffle"
+            ]
+        },
+        "waffle_with_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/waffle_with_maple"
+            ]
+        },
+        "blender_base": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/blender_base"
+            ]
+        },
+        "blender_base_on": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/blender_base_on"
+            ]
+        },
+        "blender_blank": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/blender_blank"
+            ]
+        },
+        "c0": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c0"
+            ]
+        },
+        "c1": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c1"
+            ]
+        },
+        "c10": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c10"
+            ]
+        },
+        "c11": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c11"
+            ]
+        },
+        "c12": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c12"
+            ]
+        },
+        "c13": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c13"
+            ]
+        },
+        "c14": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c14"
+            ]
+        },
+        "c2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c2"
+            ]
+        },
+        "c3": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c3"
+            ]
+        },
+        "c4": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c4"
+            ]
+        },
+        "c5": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c5"
+            ]
+        },
+        "c6": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c6"
+            ]
+        },
+        "c7": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c7"
+            ]
+        },
+        "c8": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c8"
+            ]
+        },
+        "c9": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/c9"
+            ]
+        },
+        "glow_berries_mix": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/glow_berries_mix"
+            ]
+        },
+        "sweet_berries_mix": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/blender/sweet_berries_mix"
+            ]
+        },
+        "coffee_machine_1": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/coffee_machine/coffee_machine_1"
+            ]
+        },
+        "coffee_machine_2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/coffee_machine/coffee_machine_2"
+            ]
+        },
+        "coffee_machine_3": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/coffee_machine/coffee_machine_3"
+            ]
+        },
+        "coffee_machine_4": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/coffee_machine/coffee_machine_4"
+            ]
+        },
+        "coffee_machine_5": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/coffee_machine/coffee_machine_5"
+            ]
+        },
+        "coffee_machine_off": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/coffee_machine/coffee_machine_off"
+            ]
+        },
+        "beetroot_stew_liquid": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/beetroot_stew_liquid"
+            ]
+        },
+        "beetroot_stew_liquid_b": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/beetroot_stew_liquid_b"
+            ]
+        },
+        "ipw_beetroot_stew": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/ipw_beetroot_stew"
+            ]
+        },
+        "ipw_beetroot_stew_b": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/ipw_beetroot_stew_b"
+            ]
+        },
+        "ipw_mushroom_stew": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/ipw_mushroom_stew"
+            ]
+        },
+        "ipw_rabbit_stew": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/ipw_rabbit_stew"
+            ]
+        },
+        "ipw_rabbit_stew_b": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/ipw_rabbit_stew_b"
+            ]
+        },
+        "iron_pot": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/iron_pot"
+            ]
+        },
+        "mushroom_stew_liquid": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/mushroom_stew_liquid"
+            ]
+        },
+        "rabbit_stew_liquid": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/rabbit_stew_liquid"
+            ]
+        },
+        "rabbit_stew_liquid_b": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/rabbit_stew_liquid_b"
+            ]
+        },
+        "suspicious_stew_liquid": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/suspicious_stew_liquid"
+            ]
+        },
+        "vegetable_oil": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/iron_pot/vegetable_oil"
+            ]
+        },
+        "pan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/pan/pan"
+            ]
+        },
+        "pan_on": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/pan/pan_on"
+            ]
+        },
+        "pan_on_with_oil": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/pan/pan_on_with_oil"
+            ]
+        },
+        "pan_on_with_oil_full": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/pan/pan_on_with_oil_full"
+            ]
+        },
+        "pan_on_with_oil_middle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/kitchen/pan/pan_on_with_oil_middle"
+            ]
+        },
+        "lamp_base_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_acacia"
+            ]
+        },
+        "lamp_base_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_birch"
+            ]
+        },
+        "lamp_base_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_cherry"
+            ]
+        },
+        "lamp_base_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_cinder"
+            ]
+        },
+        "lamp_base_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_crimson"
+            ]
+        },
+        "lamp_base_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_dark_oak"
+            ]
+        },
+        "lamp_base_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_jungle"
+            ]
+        },
+        "lamp_base_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_mangrove"
+            ]
+        },
+        "lamp_base_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_maple"
+            ]
+        },
+        "lamp_base_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_oak"
+            ]
+        },
+        "lamp_base_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_pale"
+            ]
+        },
+        "lamp_base_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_spicewood"
+            ]
+        },
+        "lamp_base_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_spruce"
+            ]
+        },
+        "lamp_base_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamp_base_warped"
+            ]
+        },
+        "ff_lamp_off_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_black"
+            ]
+        },
+        "ff_lamp_off_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_blue"
+            ]
+        },
+        "ff_lamp_off_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_brown"
+            ]
+        },
+        "ff_lamp_off_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_cyan"
+            ]
+        },
+        "ff_lamp_off_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_gray"
+            ]
+        },
+        "ff_lamp_off_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_green"
+            ]
+        },
+        "ff_lamp_off_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_light_blue"
+            ]
+        },
+        "ff_lamp_off_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_light_gray"
+            ]
+        },
+        "ff_lamp_off_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_lime"
+            ]
+        },
+        "ff_lamp_off_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_magenta"
+            ]
+        },
+        "ff_lamp_off_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_orange"
+            ]
+        },
+        "ff_lamp_off_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_pink"
+            ]
+        },
+        "ff_lamp_off_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_purple"
+            ]
+        },
+        "ff_lamp_off_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_red"
+            ]
+        },
+        "ff_lamp_off_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_white"
+            ]
+        },
+        "ff_lamp_off_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_off/ff_lamp_off_yellow"
+            ]
+        },
+        "ff_lamp_on_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_black"
+            ]
+        },
+        "ff_lamp_on_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_blue"
+            ]
+        },
+        "ff_lamp_on_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_brown"
+            ]
+        },
+        "ff_lamp_on_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_cyan"
+            ]
+        },
+        "ff_lamp_on_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_gray"
+            ]
+        },
+        "ff_lamp_on_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_green"
+            ]
+        },
+        "ff_lamp_on_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_light_blue"
+            ]
+        },
+        "ff_lamp_on_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_light_gray"
+            ]
+        },
+        "ff_lamp_on_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_lime"
+            ]
+        },
+        "ff_lamp_on_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_magenta"
+            ]
+        },
+        "ff_lamp_on_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_orange"
+            ]
+        },
+        "ff_lamp_on_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_pink"
+            ]
+        },
+        "ff_lamp_on_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_purple"
+            ]
+        },
+        "ff_lamp_on_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_red"
+            ]
+        },
+        "ff_lamp_on_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_white"
+            ]
+        },
+        "ff_lamp_on_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/lamps/lamps_on/ff_lamp_on_yellow"
+            ]
+        },
+        "blueprint": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/blueprint"
+            ]
+        },
+        "books": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/books"
+            ]
+        },
+        "gnome": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/gnome"
+            ]
+        },
+        "maple_tapping_spile": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/maple_tapping_spile"
+            ]
+        },
+        "paperbin": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/paperbin"
+            ]
+        },
+        "papers": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/papers"
+            ]
+        },
+        "rope": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rope"
+            ]
+        },
+        "spigot": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/spigot"
+            ]
+        },
+        "watering_can": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/watering_can"
+            ]
+        },
+        "curtain_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_black"
+            ]
+        },
+        "curtain_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_blue"
+            ]
+        },
+        "curtain_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_brown"
+            ]
+        },
+        "curtain_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_cyan"
+            ]
+        },
+        "curtain_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_gray"
+            ]
+        },
+        "curtain_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_green"
+            ]
+        },
+        "curtain_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_light_blue"
+            ]
+        },
+        "curtain_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_light_gray"
+            ]
+        },
+        "curtain_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_lime"
+            ]
+        },
+        "curtain_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_magenta"
+            ]
+        },
+        "curtain_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_orange"
+            ]
+        },
+        "curtain_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_pink"
+            ]
+        },
+        "curtain_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_purple"
+            ]
+        },
+        "curtain_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_red"
+            ]
+        },
+        "curtain_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_white"
+            ]
+        },
+        "curtain_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/curtains/curtain_yellow"
+            ]
+        },
+        "laptop": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/laptop/laptop"
+            ]
+        },
+        "laptop_chill": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/laptop/laptop_chill"
+            ]
+        },
+        "laptop_desktop": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/laptop/laptop_desktop"
+            ]
+        },
+        "laptop_excel": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/laptop/laptop_excel"
+            ]
+        },
+        "pea_shooter": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/pea_shooter"
+            ]
+        },
+        "plant_pot": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/plant_pot"
+            ]
+        },
+        "ff_allium": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_allium"
+            ]
+        },
+        "ff_blue_orchid": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_blue_orchid"
+            ]
+        },
+        "ff_cornflower": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_cornflower"
+            ]
+        },
+        "ff_dandelion": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_dandelion"
+            ]
+        },
+        "ff_houstonia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_houstonia"
+            ]
+        },
+        "ff_lily": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_lily"
+            ]
+        },
+        "ff_oxeye_daisy": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_oxeye_daisy"
+            ]
+        },
+        "ff_paeonia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_paeonia"
+            ]
+        },
+        "ff_p_bottom": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_p_bottom"
+            ]
+        },
+        "ff_p_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_p_top"
+            ]
+        },
+        "ff_rose": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_rose"
+            ]
+        },
+        "ff_rose_small": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_rose_small"
+            ]
+        },
+        "ff_r_bottom": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_r_bottom"
+            ]
+        },
+        "ff_r_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_r_top"
+            ]
+        },
+        "ff_syringa": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_syringa"
+            ]
+        },
+        "ff_s_bottom": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_s_bottom"
+            ]
+        },
+        "ff_s_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_s_top"
+            ]
+        },
+        "ff_tulip_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_tulip_orange"
+            ]
+        },
+        "ff_tulip_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_tulip_pink"
+            ]
+        },
+        "ff_tulip_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_tulip_red"
+            ]
+        },
+        "ff_tulip_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_tulip_white"
+            ]
+        },
+        "ff_wither_rose": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plant_pot/flowers/ff_wither_rose"
+            ]
+        },
+        "plasma_tv": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plasma_tv/plasma_tv"
+            ]
+        },
+        "plasma_tv_weather": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plasma_tv/plasma_tv_weather"
+            ]
+        },
+        "plasma_tv_weather_base": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plasma_tv/plasma_tv_weather_base"
+            ]
+        },
+        "plasma_tv_weather_rain": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plasma_tv/plasma_tv_weather_rain"
+            ]
+        },
+        "plasma_tv_weather_snow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plasma_tv/plasma_tv_weather_snow"
+            ]
+        },
+        "plasma_tv_weather_thunder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/plasma_tv/plasma_tv_weather_thunder"
+            ]
+        },
+        "black_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/black_rug_dark"
+            ]
+        },
+        "black_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/black_rug_light"
+            ]
+        },
+        "blue_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/blue_rug_dark"
+            ]
+        },
+        "blue_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/blue_rug_light"
+            ]
+        },
+        "brown_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/brown_rug_dark"
+            ]
+        },
+        "brown_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/brown_rug_light"
+            ]
+        },
+        "cyan_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/cyan_rug_dark"
+            ]
+        },
+        "cyan_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/cyan_rug_light"
+            ]
+        },
+        "dark_blue_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/dark_blue_rug_light"
+            ]
+        },
+        "dark_gray_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/dark_gray_rug_light"
+            ]
+        },
+        "gray_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/gray_rug_dark"
+            ]
+        },
+        "gray_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/gray_rug_light"
+            ]
+        },
+        "green_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/green_rug_dark"
+            ]
+        },
+        "green_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/green_rug_light"
+            ]
+        },
+        "light_blue_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/light_blue_rug_light"
+            ]
+        },
+        "light_gray_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/light_gray_rug_light"
+            ]
+        },
+        "lime_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/lime_rug_dark"
+            ]
+        },
+        "lime_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/lime_rug_light"
+            ]
+        },
+        "magenta_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/magenta_rug_dark"
+            ]
+        },
+        "magenta_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/magenta_rug_light"
+            ]
+        },
+        "orange_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/orange_rug_dark"
+            ]
+        },
+        "orange_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/orange_rug_light"
+            ]
+        },
+        "pink_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/pink_rug_dark"
+            ]
+        },
+        "pink_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/pink_rug_light"
+            ]
+        },
+        "purple_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/purple_rug_dark"
+            ]
+        },
+        "purple_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/purple_rug_light"
+            ]
+        },
+        "red_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/red_rug_dark"
+            ]
+        },
+        "red_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/red_rug_light"
+            ]
+        },
+        "white_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/white_rug_dark"
+            ]
+        },
+        "white_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/white_rug_light"
+            ]
+        },
+        "yellow_rug_dark": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/yellow_rug_dark"
+            ]
+        },
+        "yellow_rug_light": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/rug/yellow_rug_light"
+            ]
+        },
+        "tcs_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_black"
+            ]
+        },
+        "tcs_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_blue"
+            ]
+        },
+        "tcs_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_brown"
+            ]
+        },
+        "tcs_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_cyan"
+            ]
+        },
+        "tcs_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_gray"
+            ]
+        },
+        "tcs_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_green"
+            ]
+        },
+        "tcs_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_light_blue"
+            ]
+        },
+        "tcs_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_light_gray"
+            ]
+        },
+        "tcs_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_lime"
+            ]
+        },
+        "tcs_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_magenta"
+            ]
+        },
+        "tcs_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_orange"
+            ]
+        },
+        "tcs_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_pink"
+            ]
+        },
+        "tcs_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_purple"
+            ]
+        },
+        "tcs_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_red"
+            ]
+        },
+        "tcs_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_white"
+            ]
+        },
+        "tcs_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/tablecloth_squares/tcs_yellow"
+            ]
+        },
+        "trampoline_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_black"
+            ]
+        },
+        "trampoline_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_blue"
+            ]
+        },
+        "trampoline_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_brown"
+            ]
+        },
+        "trampoline_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_cyan"
+            ]
+        },
+        "trampoline_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_gray"
+            ]
+        },
+        "trampoline_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_green"
+            ]
+        },
+        "trampoline_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_light_blue"
+            ]
+        },
+        "trampoline_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_light_gray"
+            ]
+        },
+        "trampoline_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_lime"
+            ]
+        },
+        "trampoline_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_magenta"
+            ]
+        },
+        "trampoline_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_orange"
+            ]
+        },
+        "trampoline_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_pink"
+            ]
+        },
+        "trampoline_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_purple"
+            ]
+        },
+        "trampoline_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_red"
+            ]
+        },
+        "trampoline_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_white"
+            ]
+        },
+        "trampoline_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/other_decor/trampoline/trampoline_yellow"
+            ]
+        },
+        "paint_bucket_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_black"
+            ]
+        },
+        "paint_bucket_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_blue"
+            ]
+        },
+        "paint_bucket_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_brown"
+            ]
+        },
+        "paint_bucket_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_cyan"
+            ]
+        },
+        "paint_bucket_empty": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_empty"
+            ]
+        },
+        "paint_bucket_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_gray"
+            ]
+        },
+        "paint_bucket_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_green"
+            ]
+        },
+        "paint_bucket_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_light_blue"
+            ]
+        },
+        "paint_bucket_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_light_gray"
+            ]
+        },
+        "paint_bucket_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_lime"
+            ]
+        },
+        "paint_bucket_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_magenta"
+            ]
+        },
+        "paint_bucket_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_orange"
+            ]
+        },
+        "paint_bucket_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_pink"
+            ]
+        },
+        "paint_bucket_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_purple"
+            ]
+        },
+        "paint_bucket_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_red"
+            ]
+        },
+        "paint_bucket_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_white"
+            ]
+        },
+        "paint_bucket_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/paint_buckets/paint_bucket_yellow"
+            ]
+        },
+        "black_marble_pillar": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/black_marble_pillar"
+            ]
+        },
+        "black_marble_pillar_bottom": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/black_marble_pillar_bottom"
+            ]
+        },
+        "black_marble_pillar_middle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/black_marble_pillar_middle"
+            ]
+        },
+        "black_marble_pillar_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/black_marble_pillar_top"
+            ]
+        },
+        "black_marble_pillar_upper": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/black_marble_pillar_upper"
+            ]
+        },
+        "black_marble_small_tiles": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/black_marble_small_tiles"
+            ]
+        },
+        "black_marble_tiles": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/black_marble_tiles"
+            ]
+        },
+        "chiseled_black_marble": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/chiseled_black_marble"
+            ]
+        },
+        "chiseled_marble": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/chiseled_marble"
+            ]
+        },
+        "marble_cabinet_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_acacia"
+            ]
+        },
+        "marble_cabinet_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_birch"
+            ]
+        },
+        "marble_cabinet_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_cherry"
+            ]
+        },
+        "marble_cabinet_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_cinder"
+            ]
+        },
+        "marble_cabinet_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_crimson"
+            ]
+        },
+        "marble_cabinet_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_dark_oak"
+            ]
+        },
+        "marble_cabinet_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_front"
+            ]
+        },
+        "marble_cabinet_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_jungle"
+            ]
+        },
+        "marble_cabinet_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_mangrove"
+            ]
+        },
+        "marble_cabinet_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_maple"
+            ]
+        },
+        "marble_cabinet_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_oak"
+            ]
+        },
+        "marble_cabinet_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_pale"
+            ]
+        },
+        "marble_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_side"
+            ]
+        },
+        "marble_cabinet_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_spicewood"
+            ]
+        },
+        "marble_cabinet_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_spruce"
+            ]
+        },
+        "marble_cabinet_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_cabinet_warped"
+            ]
+        },
+        "marble_pillar": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_pillar"
+            ]
+        },
+        "marble_pillar_bottom": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_pillar_bottom"
+            ]
+        },
+        "marble_pillar_middle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_pillar_middle"
+            ]
+        },
+        "marble_pillar_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_pillar_top"
+            ]
+        },
+        "marble_pillar_upper": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_pillar_upper"
+            ]
+        },
+        "marble_small_tiles": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_small_tiles"
+            ]
+        },
+        "marble_tiles": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/marble_tiles"
+            ]
+        },
+        "mtfp_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_blue"
+            ]
+        },
+        "mtfp_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_brown"
+            ]
+        },
+        "mtfp_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_cyan"
+            ]
+        },
+        "mtfp_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_green"
+            ]
+        },
+        "mtfp_grey": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_grey"
+            ]
+        },
+        "mtfp_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_light_blue"
+            ]
+        },
+        "mtfp_light_grey": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_light_grey"
+            ]
+        },
+        "mtfp_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_lime"
+            ]
+        },
+        "mtfp_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_magenta"
+            ]
+        },
+        "mtfp_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_orange"
+            ]
+        },
+        "mtfp_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_pink"
+            ]
+        },
+        "mtfp_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_purple"
+            ]
+        },
+        "mtfp_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_red"
+            ]
+        },
+        "mtfp_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_f_p/mtfp_yellow"
+            ]
+        },
+        "mtmp_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_blue"
+            ]
+        },
+        "mtmp_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_brown"
+            ]
+        },
+        "mtmp_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_cyan"
+            ]
+        },
+        "mtmp_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_green"
+            ]
+        },
+        "mtmp_grey": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_grey"
+            ]
+        },
+        "mtmp_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_light_blue"
+            ]
+        },
+        "mtmp_light_grey": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_light_grey"
+            ]
+        },
+        "mtmp_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_lime"
+            ]
+        },
+        "mtmp_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_magenta"
+            ]
+        },
+        "mtmp_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_orange"
+            ]
+        },
+        "mtmp_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_pink"
+            ]
+        },
+        "mtmp_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_purple"
+            ]
+        },
+        "mtmp_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_red"
+            ]
+        },
+        "mtmp_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p/mtmp_yellow"
+            ]
+        },
+        "mtmpw_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_blue"
+            ]
+        },
+        "mtmpw_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_brown"
+            ]
+        },
+        "mtmpw_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_cyan"
+            ]
+        },
+        "mtmpw_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_green"
+            ]
+        },
+        "mtmpw_grey": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_grey"
+            ]
+        },
+        "mtmpw_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_light_blue"
+            ]
+        },
+        "mtmpw_light_grey": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_light_grey"
+            ]
+        },
+        "mtmpw_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_lime"
+            ]
+        },
+        "mtmpw_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_magenta"
+            ]
+        },
+        "mtmpw_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_orange"
+            ]
+        },
+        "mtmpw_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_pink"
+            ]
+        },
+        "mtmpw_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_purple"
+            ]
+        },
+        "mtmpw_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_red"
+            ]
+        },
+        "mtmpw_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/porcelain/m_t_m_p_w/mtmpw_yellow"
+            ]
+        },
+        "autumn_pumpkins": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins"
+            ]
+        },
+        "autumn_tablecloth": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_tablecloth"
+            ]
+        },
+        "cooked_turker": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/cooked_turker"
+            ]
+        },
+        "leaves_wall_decor_inv": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/leaves_wall_decor_inv"
+            ]
+        },
+        "leaves_wall_decor_large": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/leaves_wall_decor_large"
+            ]
+        },
+        "leaves_wall_decor_medium": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/leaves_wall_decor_medium"
+            ]
+        },
+        "leaves_wall_decor_small": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/leaves_wall_decor_small"
+            ]
+        },
+        "raw_turker": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/raw_turker"
+            ]
+        },
+        "ps": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/ps"
+            ]
+        },
+        "ps_face_var_1": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/ps_face_var_1"
+            ]
+        },
+        "ps_face_var_1_glow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/ps_face_var_1_glow"
+            ]
+        },
+        "ps_face_var_2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/ps_face_var_2"
+            ]
+        },
+        "ps_face_var_2_glow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/ps_face_var_2_glow"
+            ]
+        },
+        "ps_face_var_3": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/ps_face_var_3"
+            ]
+        },
+        "ps_face_var_3_glow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/ps_face_var_3_glow"
+            ]
+        },
+        "ps_face_var_4": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/ps_face_var_4"
+            ]
+        },
+        "ps_face_var_4_glow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/ps_face_var_4_glow"
+            ]
+        },
+        "pt": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/pt"
+            ]
+        },
+        "pt_face_var_1": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/pt_face_var_1"
+            ]
+        },
+        "pt_face_var_1_glow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/pt_face_var_1_glow"
+            ]
+        },
+        "pt_face_var_2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/pt_face_var_2"
+            ]
+        },
+        "pt_face_var_2_glow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/pt_face_var_2_glow"
+            ]
+        },
+        "pt_face_var_3": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/pt_face_var_3"
+            ]
+        },
+        "pt_face_var_3_glow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/pt_face_var_3_glow"
+            ]
+        },
+        "pt_face_var_4": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/pt_face_var_4"
+            ]
+        },
+        "pt_face_var_4_glow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/pt_face_var_4_glow"
+            ]
+        },
+        "white_ps": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/white_ps"
+            ]
+        },
+        "white_ps_face_var_1": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/white_ps_face_var_1"
+            ]
+        },
+        "white_ps_face_var_1_glow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/autumn_pumpkins/white_ps_face_var_1_glow"
+            ]
+        },
+        "gravestone_1": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/gravestones/gravestone_1"
+            ]
+        },
+        "gravestone_2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/gravestones/gravestone_2"
+            ]
+        },
+        "gravestone_3": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/autumn/gravestones/gravestone_3"
+            ]
+        },
+        "candy_cane": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/candy_cane"
+            ]
+        },
+        "christmas_crown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/christmas_crown"
+            ]
+        },
+        "christmas_stocking_1": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/christmas_stocking_1"
+            ]
+        },
+        "christmas_stocking_2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/christmas_stocking_2"
+            ]
+        },
+        "christmas_stocking_3": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/christmas_stocking_3"
+            ]
+        },
+        "christmas_stocking_4": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/christmas_stocking_4"
+            ]
+        },
+        "gift_box_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_black"
+            ]
+        },
+        "gift_box_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_blue"
+            ]
+        },
+        "gift_box_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_brown"
+            ]
+        },
+        "gift_box_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_cyan"
+            ]
+        },
+        "gift_box_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_gray"
+            ]
+        },
+        "gift_box_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_green"
+            ]
+        },
+        "gift_box_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_light_blue"
+            ]
+        },
+        "gift_box_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_light_gray"
+            ]
+        },
+        "gift_box_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_lime"
+            ]
+        },
+        "gift_box_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_magenta"
+            ]
+        },
+        "gift_box_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_orange"
+            ]
+        },
+        "gift_box_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_pink"
+            ]
+        },
+        "gift_box_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_purple"
+            ]
+        },
+        "gift_box_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_red"
+            ]
+        },
+        "gift_box_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_white"
+            ]
+        },
+        "gift_box_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gift_box_yellow"
+            ]
+        },
+        "gb_bow_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_black"
+            ]
+        },
+        "gb_bow_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_blue"
+            ]
+        },
+        "gb_bow_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_brown"
+            ]
+        },
+        "gb_bow_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_cyan"
+            ]
+        },
+        "gb_bow_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_gray"
+            ]
+        },
+        "gb_bow_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_green"
+            ]
+        },
+        "gb_bow_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_light_blue"
+            ]
+        },
+        "gb_bow_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_light_gray"
+            ]
+        },
+        "gb_bow_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_lime"
+            ]
+        },
+        "gb_bow_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_magenta"
+            ]
+        },
+        "gb_bow_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_orange"
+            ]
+        },
+        "gb_bow_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_pink"
+            ]
+        },
+        "gb_bow_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_purple"
+            ]
+        },
+        "gb_bow_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_red"
+            ]
+        },
+        "gb_bow_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_white"
+            ]
+        },
+        "gb_bow_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/gift_box/gb_bow/gb_bow_yellow"
+            ]
+        },
+        "cl_large_white_base": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/lights/cl_large_white_base"
+            ]
+        },
+        "cl_medium_white_base": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/lights/cl_medium_white_base"
+            ]
+        },
+        "cl_small_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/lights/cl_small_white"
+            ]
+        },
+        "cl_small_white_base": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/lights/cl_small_white_base"
+            ]
+        },
+        "cl_small_white_pattern_1": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/lights/cl_small_white_pattern_1"
+            ]
+        },
+        "cl_white_selection": {
+            "textures": [
+                "textures/blocks/fabulous_funished/seasonal/xmas/lights/cl_white_selection"
+            ]
+        },
+        "cinder_log_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/cinder_log_side"
+            ]
+        },
+        "cinder_log_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/cinder_log_top"
+            ]
+        },
+        "maple_log_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/maple_log_side"
+            ]
+        },
+        "maple_log_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/maple_log_top"
+            ]
+        },
+        "orange_autumn_leaves": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/orange_autumn_leaves"
+            ]
+        },
+        "orange_maple_sapling": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/orange_maple_sapling"
+            ]
+        },
+        "red_autumn_leaves": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/red_autumn_leaves"
+            ]
+        },
+        "red_maple_sapling": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/red_maple_sapling"
+            ]
+        },
+        "spicewood_leaves": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/spicewood_leaves"
+            ]
+        },
+        "spicewood_log_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/spicewood_log_side"
+            ]
+        },
+        "spicewood_log_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/spicewood_log_top"
+            ]
+        },
+        "spicewood_sapling": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/spicewood_sapling"
+            ]
+        },
+        "stripped_cinder_log_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/stripped_cinder_log_side"
+            ]
+        },
+        "stripped_cinder_log_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/stripped_cinder_log_top"
+            ]
+        },
+        "stripped_maple_log": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/stripped_maple_log"
+            ]
+        },
+        "stripped_maple_log_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/stripped_maple_log_top"
+            ]
+        },
+        "stripped_spicewood_log": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/stripped_spicewood_log"
+            ]
+        },
+        "stripped_spicewood_log_top": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/stripped_spicewood_log_top"
+            ]
+        },
+        "yellow_autumn_leaves": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/yellow_autumn_leaves"
+            ]
+        },
+        "yellow_maple_sapling": {
+            "textures": [
+                "textures/blocks/fabulous_funished/special_trees/yellow_maple_sapling"
+            ]
+        },
+        "wooden_bench_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_acacia"
+            ]
+        },
+        "wooden_bench_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_birch"
+            ]
+        },
+        "wooden_bench_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_cherry"
+            ]
+        },
+        "wooden_bench_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_cinder"
+            ]
+        },
+        "wooden_bench_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_crimson"
+            ]
+        },
+        "wooden_bench_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_dark_oak"
+            ]
+        },
+        "wooden_bench_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_jungle"
+            ]
+        },
+        "wooden_bench_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_mangrove"
+            ]
+        },
+        "wooden_bench_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_maple"
+            ]
+        },
+        "wooden_bench_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_oak"
+            ]
+        },
+        "wooden_bench_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_pale"
+            ]
+        },
+        "wooden_bench_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_spicewood"
+            ]
+        },
+        "wooden_bench_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_spruce"
+            ]
+        },
+        "wooden_bench_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/benchs/wooden_bench_warped"
+            ]
+        },
+        "blinds_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_acacia"
+            ]
+        },
+        "blinds_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_birch"
+            ]
+        },
+        "blinds_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_cherry"
+            ]
+        },
+        "blinds_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_cinder"
+            ]
+        },
+        "blinds_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_crimson"
+            ]
+        },
+        "blinds_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_dark_oak"
+            ]
+        },
+        "blinds_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_jungle"
+            ]
+        },
+        "blinds_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_mangrove"
+            ]
+        },
+        "blinds_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_maple"
+            ]
+        },
+        "blinds_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_oak"
+            ]
+        },
+        "blinds_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_pale"
+            ]
+        },
+        "blinds_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_spicewood"
+            ]
+        },
+        "blinds_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_spruce"
+            ]
+        },
+        "blinds_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_warped"
+            ]
+        },
+        "blinds_base_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_black"
+            ]
+        },
+        "blinds_base_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_blue"
+            ]
+        },
+        "blinds_base_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_brown"
+            ]
+        },
+        "blinds_base_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_cyan"
+            ]
+        },
+        "blinds_base_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_gray"
+            ]
+        },
+        "blinds_base_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_green"
+            ]
+        },
+        "blinds_base_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_light_blue"
+            ]
+        },
+        "blinds_base_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_light_gray"
+            ]
+        },
+        "blinds_base_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_lime"
+            ]
+        },
+        "blinds_base_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_magenta"
+            ]
+        },
+        "blinds_base_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_orange"
+            ]
+        },
+        "blinds_base_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_pink"
+            ]
+        },
+        "blinds_base_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_purple"
+            ]
+        },
+        "blinds_base_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_red"
+            ]
+        },
+        "blinds_base_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_white"
+            ]
+        },
+        "blinds_base_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/blinds/blinds_colors/blinds_base_yellow"
+            ]
+        },
+        "acacia_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/acacia_cabinet"
+            ]
+        },
+        "acacia_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/acacia_cabinet_drawer_front"
+            ]
+        },
+        "acacia_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/acacia_cabinet_side"
+            ]
+        },
+        "birch_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/birch_cabinet"
+            ]
+        },
+        "birch_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/birch_cabinet_drawer_front"
+            ]
+        },
+        "birch_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/birch_cabinet_side"
+            ]
+        },
+        "cherry_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/cherry_cabinet"
+            ]
+        },
+        "cherry_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/cherry_cabinet_drawer_front"
+            ]
+        },
+        "cherry_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/cherry_cabinet_side"
+            ]
+        },
+        "cinder_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/cinder_cabinet"
+            ]
+        },
+        "cinder_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/cinder_cabinet_drawer_front"
+            ]
+        },
+        "cinder_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/cinder_cabinet_side"
+            ]
+        },
+        "crimson_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/crimson_cabinet"
+            ]
+        },
+        "crimson_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/crimson_cabinet_drawer_front"
+            ]
+        },
+        "crimson_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/crimson_cabinet_side"
+            ]
+        },
+        "dark_oak_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/dark_oak_cabinet"
+            ]
+        },
+        "dark_oak_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/dark_oak_cabinet_drawer_front"
+            ]
+        },
+        "dark_oak_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/dark_oak_cabinet_side"
+            ]
+        },
+        "jungle_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/jungle_cabinet"
+            ]
+        },
+        "jungle_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/jungle_cabinet_drawer_front"
+            ]
+        },
+        "jungle_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/jungle_cabinet_side"
+            ]
+        },
+        "mangrove_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/mangrove_cabinet"
+            ]
+        },
+        "mangrove_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/mangrove_cabinet_drawer_front"
+            ]
+        },
+        "mangrove_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/mangrove_cabinet_side"
+            ]
+        },
+        "maple_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/maple_cabinet"
+            ]
+        },
+        "maple_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/maple_cabinet_drawer_front"
+            ]
+        },
+        "maple_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/maple_cabinet_side"
+            ]
+        },
+        "oak_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/oak_cabinet"
+            ]
+        },
+        "oak_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/oak_cabinet_drawer_front"
+            ]
+        },
+        "oak_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/oak_cabinet_side"
+            ]
+        },
+        "pale_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/pale_cabinet"
+            ]
+        },
+        "pale_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/pale_cabinet_drawer_front"
+            ]
+        },
+        "pale_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/pale_cabinet_side"
+            ]
+        },
+        "spicewood_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/spicewood_cabinet"
+            ]
+        },
+        "spicewood_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/spicewood_cabinet_drawer_front"
+            ]
+        },
+        "spicewood_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/spicewood_cabinet_side"
+            ]
+        },
+        "spruce_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/spruce_cabinet"
+            ]
+        },
+        "spruce_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/spruce_cabinet_drawer_front"
+            ]
+        },
+        "spruce_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/spruce_cabinet_side"
+            ]
+        },
+        "warped_cabinet": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/warped_cabinet"
+            ]
+        },
+        "warped_cabinet_drawer_front": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/warped_cabinet_drawer_front"
+            ]
+        },
+        "warped_cabinet_side": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cabinets/warped_cabinet_side"
+            ]
+        },
+        "ceiling_fan_off_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_acacia"
+            ]
+        },
+        "ceiling_fan_off_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_birch"
+            ]
+        },
+        "ceiling_fan_off_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_cherry"
+            ]
+        },
+        "ceiling_fan_off_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_cinder"
+            ]
+        },
+        "ceiling_fan_off_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_crimson"
+            ]
+        },
+        "ceiling_fan_off_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_dark_oak"
+            ]
+        },
+        "ceiling_fan_off_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_jungle"
+            ]
+        },
+        "ceiling_fan_off_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_mangrove"
+            ]
+        },
+        "ceiling_fan_off_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_maple"
+            ]
+        },
+        "ceiling_fan_off_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_oak"
+            ]
+        },
+        "ceiling_fan_off_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_pale"
+            ]
+        },
+        "ceiling_fan_off_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_spicewood"
+            ]
+        },
+        "ceiling_fan_off_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_spruce"
+            ]
+        },
+        "ceiling_fan_off_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_off_warped"
+            ]
+        },
+        "ceiling_fan_on_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_acacia"
+            ]
+        },
+        "ceiling_fan_on_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_birch"
+            ]
+        },
+        "ceiling_fan_on_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_cherry"
+            ]
+        },
+        "ceiling_fan_on_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_cinder"
+            ]
+        },
+        "ceiling_fan_on_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_crimson"
+            ]
+        },
+        "ceiling_fan_on_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_dark_oak"
+            ]
+        },
+        "ceiling_fan_on_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_jungle"
+            ]
+        },
+        "ceiling_fan_on_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_mangrove"
+            ]
+        },
+        "ceiling_fan_on_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_maple"
+            ]
+        },
+        "ceiling_fan_on_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_oak"
+            ]
+        },
+        "ceiling_fan_on_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_pale"
+            ]
+        },
+        "ceiling_fan_on_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_spicewood"
+            ]
+        },
+        "ceiling_fan_on_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_spruce"
+            ]
+        },
+        "ceiling_fan_on_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/ceiling_fan/ceiling_fan_on_warped"
+            ]
+        },
+        "ff_acacia_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_acacia_chair"
+            ]
+        },
+        "ff_bamboo_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_bamboo_chair"
+            ]
+        },
+        "ff_birch_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_birch_chair"
+            ]
+        },
+        "ff_cherry_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_cherry_chair"
+            ]
+        },
+        "ff_cinder_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_cinder_chair"
+            ]
+        },
+        "ff_crimson_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_crimson_chair"
+            ]
+        },
+        "ff_dark_oak_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_dark_oak_chair"
+            ]
+        },
+        "ff_jungle_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_jungle_chair"
+            ]
+        },
+        "ff_mangrove_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_mangrove_chair"
+            ]
+        },
+        "ff_maple_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_maple_chair"
+            ]
+        },
+        "ff_oak_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_oak_chair"
+            ]
+        },
+        "ff_pale_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_pale_chair"
+            ]
+        },
+        "ff_spicewood_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_spicewood_chair"
+            ]
+        },
+        "ff_spruce_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_spruce_chair"
+            ]
+        },
+        "ff_warped_chair": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/ff_warped_chair"
+            ]
+        },
+        "cushion": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion"
+            ]
+        },
+        "cushion2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion2"
+            ]
+        },
+        "cushion_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_black"
+            ]
+        },
+        "cushion_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_blue"
+            ]
+        },
+        "cushion_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_brown"
+            ]
+        },
+        "cushion_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_cyan"
+            ]
+        },
+        "cushion_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_gray"
+            ]
+        },
+        "cushion_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_green"
+            ]
+        },
+        "cushion_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_light_blue"
+            ]
+        },
+        "cushion_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_light_gray"
+            ]
+        },
+        "cushion_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_lime"
+            ]
+        },
+        "cushion_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_magenta"
+            ]
+        },
+        "cushion_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_orange"
+            ]
+        },
+        "cushion_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_pink"
+            ]
+        },
+        "cushion_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_purple"
+            ]
+        },
+        "cushion_purple_man": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_purple_man"
+            ]
+        },
+        "cushion_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_red"
+            ]
+        },
+        "cushion_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_white"
+            ]
+        },
+        "cushion_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/chairs/chair_colors/cushion_yellow"
+            ]
+        },
+        "couch_base_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_acacia"
+            ]
+        },
+        "couch_base_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_birch"
+            ]
+        },
+        "couch_base_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_cherry"
+            ]
+        },
+        "couch_base_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_cinder"
+            ]
+        },
+        "couch_base_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_crimson"
+            ]
+        },
+        "couch_base_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_dark_oak"
+            ]
+        },
+        "couch_base_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_jungle"
+            ]
+        },
+        "couch_base_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_mangrove"
+            ]
+        },
+        "couch_base_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_maple"
+            ]
+        },
+        "couch_base_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_oak"
+            ]
+        },
+        "couch_base_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_pale"
+            ]
+        },
+        "couch_base_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_spicewood"
+            ]
+        },
+        "couch_base_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_spruce"
+            ]
+        },
+        "couch_base_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_base_warped"
+            ]
+        },
+        "couch_base": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_base"
+            ]
+        },
+        "couch_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_black"
+            ]
+        },
+        "couch_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_blue"
+            ]
+        },
+        "couch_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_brown"
+            ]
+        },
+        "couch_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_cyan"
+            ]
+        },
+        "couch_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_green"
+            ]
+        },
+        "couch_grey": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_grey"
+            ]
+        },
+        "couch_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_light_blue"
+            ]
+        },
+        "couch_light_grey": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_light_grey"
+            ]
+        },
+        "couch_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_lime"
+            ]
+        },
+        "couch_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_magenta"
+            ]
+        },
+        "couch_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_orange"
+            ]
+        },
+        "couch_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_pink"
+            ]
+        },
+        "couch_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_purple"
+            ]
+        },
+        "couch_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_red"
+            ]
+        },
+        "couch_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_white"
+            ]
+        },
+        "couch_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/couchs/couch_colors/couch_yellow"
+            ]
+        },
+        "cutting_board_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_acacia"
+            ]
+        },
+        "cutting_board_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_birch"
+            ]
+        },
+        "cutting_board_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_cherry"
+            ]
+        },
+        "cutting_board_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_cinder"
+            ]
+        },
+        "cutting_board_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_crimson"
+            ]
+        },
+        "cutting_board_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_dark_oak"
+            ]
+        },
+        "cutting_board_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_jungle"
+            ]
+        },
+        "cutting_board_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_mangrove"
+            ]
+        },
+        "cutting_board_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_maple"
+            ]
+        },
+        "cutting_board_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_oak"
+            ]
+        },
+        "cutting_board_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_pale"
+            ]
+        },
+        "cutting_board_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_spicewood"
+            ]
+        },
+        "cutting_board_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_spruce"
+            ]
+        },
+        "cutting_board_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/cutting_board/cutting_board_warped"
+            ]
+        },
+        "cinder_door_bottom": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/doors/cinder_door_bottom"
+            ]
+        },
+        "cinder_door_upper": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/doors/cinder_door_upper"
+            ]
+        },
+        "maple_door_bottom": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/doors/maple_door_bottom"
+            ]
+        },
+        "maple_door_upper": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/doors/maple_door_upper"
+            ]
+        },
+        "spicewood_door_bottom": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/doors/spicewood_door_bottom"
+            ]
+        },
+        "spidewood_door_upper": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/doors/spidewood_door_upper"
+            ]
+        },
+        "spidewood_door_upper_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/doors/spidewood_door_upper_maple"
+            ]
+        },
+        "acacia_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/acacia_fences"
+            ]
+        },
+        "birch_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/birch_fences"
+            ]
+        },
+        "cherry_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/cherry_fences"
+            ]
+        },
+        "cinder_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/cinder_fences"
+            ]
+        },
+        "crimson_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/crimson_fences"
+            ]
+        },
+        "dark_oak_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/dark_oak_fences"
+            ]
+        },
+        "jungle_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/jungle_fences"
+            ]
+        },
+        "mangrove_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/mangrove_fences"
+            ]
+        },
+        "maple_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/maple_fences"
+            ]
+        },
+        "oak_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/oak_fences"
+            ]
+        },
+        "pale_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/pale_fences"
+            ]
+        },
+        "spicewood_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/spicewood_fences"
+            ]
+        },
+        "spruce_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/spruce_fences"
+            ]
+        },
+        "warped_fences": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/fences/warped_fences"
+            ]
+        },
+        "wfp_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_acacia"
+            ]
+        },
+        "wfp_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_birch"
+            ]
+        },
+        "wfp_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_cherry"
+            ]
+        },
+        "wfp_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_cinder"
+            ]
+        },
+        "wfp_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_crimson"
+            ]
+        },
+        "wfp_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_dark_oak"
+            ]
+        },
+        "wfp_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_jungle"
+            ]
+        },
+        "wfp_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_mangrove"
+            ]
+        },
+        "wfp_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_maple"
+            ]
+        },
+        "wfp_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_oak"
+            ]
+        },
+        "wfp_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_pale"
+            ]
+        },
+        "wfp_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_spicewood"
+            ]
+        },
+        "wfp_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_spruce"
+            ]
+        },
+        "wfp_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/flower_pots/wfp_warped"
+            ]
+        },
+        "wooden_frame_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_acacia"
+            ]
+        },
+        "wooden_frame_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_birch"
+            ]
+        },
+        "wooden_frame_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_cherry"
+            ]
+        },
+        "wooden_frame_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_cinder"
+            ]
+        },
+        "wooden_frame_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_crimson"
+            ]
+        },
+        "wooden_frame_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_dark_oak"
+            ]
+        },
+        "wooden_frame_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_jungle"
+            ]
+        },
+        "wooden_frame_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_mangrove"
+            ]
+        },
+        "wooden_frame_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_maple"
+            ]
+        },
+        "wooden_frame_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_oak"
+            ]
+        },
+        "wooden_frame_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_pale"
+            ]
+        },
+        "wooden_frame_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_spicewood"
+            ]
+        },
+        "wooden_frame_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_spruce"
+            ]
+        },
+        "wooden_frame_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/frames/wooden_frame_warped"
+            ]
+        },
+        "kitchen_sink_marble_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_acacia"
+            ]
+        },
+        "kitchen_sink_marble_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_birch"
+            ]
+        },
+        "kitchen_sink_marble_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_cherry"
+            ]
+        },
+        "kitchen_sink_marble_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_cinder"
+            ]
+        },
+        "kitchen_sink_marble_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_crimson"
+            ]
+        },
+        "kitchen_sink_marble_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_dark_oak"
+            ]
+        },
+        "kitchen_sink_marble_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_jungle"
+            ]
+        },
+        "kitchen_sink_marble_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_mangrove"
+            ]
+        },
+        "kitchen_sink_marble_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_maple"
+            ]
+        },
+        "kitchen_sink_marble_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_oak"
+            ]
+        },
+        "kitchen_sink_marble_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_pale"
+            ]
+        },
+        "kitchen_sink_marble_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_spicewood"
+            ]
+        },
+        "kitchen_sink_marble_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_spruce"
+            ]
+        },
+        "kitchen_sink_marble_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/kitchen_sink/kitchen_sink_marble_warped"
+            ]
+        },
+        "acacia_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/acacia_lantern"
+            ]
+        },
+        "birch_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/birch_lantern"
+            ]
+        },
+        "cherry_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/cherry_lantern"
+            ]
+        },
+        "cinder_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/cinder_lantern"
+            ]
+        },
+        "crimson_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/crimson_lantern"
+            ]
+        },
+        "dark_oak_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/dark_oak_lantern"
+            ]
+        },
+        "jungle_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/jungle_lantern"
+            ]
+        },
+        "lantern_effect": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/lantern_effect"
+            ]
+        },
+        "mangrove_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/mangrove_lantern"
+            ]
+        },
+        "maple_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/maple_lantern"
+            ]
+        },
+        "oak_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/oak_lantern"
+            ]
+        },
+        "pale_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/pale_lantern"
+            ]
+        },
+        "spicewood_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/spicewood_lantern"
+            ]
+        },
+        "spruce_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/spruce_lantern"
+            ]
+        },
+        "warped_lantern": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/lantern/warped_lantern"
+            ]
+        },
+        "rustic_radio_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_acacia"
+            ]
+        },
+        "rustic_radio_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_birch"
+            ]
+        },
+        "rustic_radio_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_cherry"
+            ]
+        },
+        "rustic_radio_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_cinder"
+            ]
+        },
+        "rustic_radio_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_crimson"
+            ]
+        },
+        "rustic_radio_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_dark_oak"
+            ]
+        },
+        "rustic_radio_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_jungle"
+            ]
+        },
+        "rustic_radio_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_mangrove"
+            ]
+        },
+        "rustic_radio_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_maple"
+            ]
+        },
+        "rustic_radio_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_oak"
+            ]
+        },
+        "rustic_radio_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_pale"
+            ]
+        },
+        "rustic_radio_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_spicewood"
+            ]
+        },
+        "rustic_radio_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_spruce"
+            ]
+        },
+        "rustic_radio_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_radio/rustic_radio_warped"
+            ]
+        },
+        "rustic_tv_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_acacia"
+            ]
+        },
+        "rustic_tv_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_birch"
+            ]
+        },
+        "rustic_tv_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_cherry"
+            ]
+        },
+        "rustic_tv_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_cinder"
+            ]
+        },
+        "rustic_tv_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_crimson"
+            ]
+        },
+        "rustic_tv_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_dark_oak"
+            ]
+        },
+        "rustic_tv_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_jungle"
+            ]
+        },
+        "rustic_tv_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_mangrove"
+            ]
+        },
+        "rustic_tv_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_maple"
+            ]
+        },
+        "rustic_tv_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_oak"
+            ]
+        },
+        "rustic_tv_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_pale"
+            ]
+        },
+        "rustic_tv_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_spicewood"
+            ]
+        },
+        "rustic_tv_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_spruce"
+            ]
+        },
+        "rustic_tv_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_warped"
+            ]
+        },
+        "chill_channel": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_channels/chill_channel"
+            ]
+        },
+        "off_channel": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_channels/off_channel"
+            ]
+        },
+        "weather_clear_channel": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_channels/weather_clear_channel"
+            ]
+        },
+        "weather_rain_channel": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_channels/weather_rain_channel"
+            ]
+        },
+        "weather_thunder_channel": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/old_tv/rustic_tv_channels/weather_thunder_channel"
+            ]
+        },
+        "wbp_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_acacia"
+            ]
+        },
+        "wbp_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_birch"
+            ]
+        },
+        "wbp_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_cherry"
+            ]
+        },
+        "wbp_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_cinder"
+            ]
+        },
+        "wbp_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_crimson"
+            ]
+        },
+        "wbp_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_dark_oak"
+            ]
+        },
+        "wbp_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_jungle"
+            ]
+        },
+        "wbp_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_mangrove"
+            ]
+        },
+        "wbp_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_maple"
+            ]
+        },
+        "wbp_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_oak"
+            ]
+        },
+        "wbp_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_pale"
+            ]
+        },
+        "wbp_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_spicewood"
+            ]
+        },
+        "wbp_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_spruce"
+            ]
+        },
+        "wbp_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/big_planks/wbp_warped"
+            ]
+        },
+        "planks_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/classic_planks/planks_cinder"
+            ]
+        },
+        "planks_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/classic_planks/planks_maple"
+            ]
+        },
+        "planks_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/classic_planks/planks_spicewood"
+            ]
+        },
+        "wdbp_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_acacia"
+            ]
+        },
+        "wdbp_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_birch"
+            ]
+        },
+        "wdbp_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_cherry"
+            ]
+        },
+        "wdbp_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_cinder"
+            ]
+        },
+        "wdbp_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_crimson"
+            ]
+        },
+        "wdbp_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_dark_oak"
+            ]
+        },
+        "wdbp_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_jungle"
+            ]
+        },
+        "wdbp_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_mangrove"
+            ]
+        },
+        "wdbp_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_maple"
+            ]
+        },
+        "wdbp_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_oak"
+            ]
+        },
+        "wdbp_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_pale"
+            ]
+        },
+        "wdbp_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_spicewood"
+            ]
+        },
+        "wdbp_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_spruce"
+            ]
+        },
+        "wdbp_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/double_big_planks/wdbp_warped"
+            ]
+        },
+        "wcp_1_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_acacia"
+            ]
+        },
+        "wcp_1_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_birch"
+            ]
+        },
+        "wcp_1_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_cherry"
+            ]
+        },
+        "wcp_1_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_cinder"
+            ]
+        },
+        "wcp_1_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_crimson"
+            ]
+        },
+        "wcp_1_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_dark_oak"
+            ]
+        },
+        "wcp_1_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_jungle"
+            ]
+        },
+        "wcp_1_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_mangrove"
+            ]
+        },
+        "wcp_1_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_maple"
+            ]
+        },
+        "wcp_1_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_oak"
+            ]
+        },
+        "wcp_1_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_pale"
+            ]
+        },
+        "wcp_1_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_spicewood"
+            ]
+        },
+        "wcp_1_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_spruce"
+            ]
+        },
+        "wcp_1_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_1_warped"
+            ]
+        },
+        "wcp_2_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_acacia"
+            ]
+        },
+        "wcp_2_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_birch"
+            ]
+        },
+        "wcp_2_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_cherry"
+            ]
+        },
+        "wcp_2_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_cinder"
+            ]
+        },
+        "wcp_2_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_crimson"
+            ]
+        },
+        "wcp_2_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_dark_oak"
+            ]
+        },
+        "wcp_2_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_jungle"
+            ]
+        },
+        "wcp_2_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_mangrove"
+            ]
+        },
+        "wcp_2_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_maple"
+            ]
+        },
+        "wcp_2_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_oak"
+            ]
+        },
+        "wcp_2_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_pale"
+            ]
+        },
+        "wcp_2_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_spicewood"
+            ]
+        },
+        "wcp_2_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_spruce"
+            ]
+        },
+        "wcp_2_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_2_warped"
+            ]
+        },
+        "wcp_3_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_acacia"
+            ]
+        },
+        "wcp_3_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_birch"
+            ]
+        },
+        "wcp_3_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_cherry"
+            ]
+        },
+        "wcp_3_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_cinder"
+            ]
+        },
+        "wcp_3_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_crimson"
+            ]
+        },
+        "wcp_3_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_dark_oak"
+            ]
+        },
+        "wcp_3_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_jungle"
+            ]
+        },
+        "wcp_3_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_mangrove"
+            ]
+        },
+        "wcp_3_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_maple"
+            ]
+        },
+        "wcp_3_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_oak"
+            ]
+        },
+        "wcp_3_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_pale"
+            ]
+        },
+        "wcp_3_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_spicewood"
+            ]
+        },
+        "wcp_3_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_spruce"
+            ]
+        },
+        "wcp_3_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/planks_chiseled/wcp_3_warped"
+            ]
+        },
+        "wsp_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_acacia"
+            ]
+        },
+        "wsp_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_birch"
+            ]
+        },
+        "wsp_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_cherry"
+            ]
+        },
+        "wsp_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_cinder"
+            ]
+        },
+        "wsp_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_crimson"
+            ]
+        },
+        "wsp_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_dark_oak"
+            ]
+        },
+        "wsp_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_jungle"
+            ]
+        },
+        "wsp_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_mangrove"
+            ]
+        },
+        "wsp_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_maple"
+            ]
+        },
+        "wsp_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_oak"
+            ]
+        },
+        "wsp_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_pale"
+            ]
+        },
+        "wsp_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_spicewood"
+            ]
+        },
+        "wsp_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_spruce"
+            ]
+        },
+        "wsp_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks/wsp_warped"
+            ]
+        },
+        "wspz_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_acacia"
+            ]
+        },
+        "wspz_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_birch"
+            ]
+        },
+        "wspz_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_cherry"
+            ]
+        },
+        "wspz_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_cinder"
+            ]
+        },
+        "wspz_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_crimson"
+            ]
+        },
+        "wspz_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_dark_oak"
+            ]
+        },
+        "wspz_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_jungle"
+            ]
+        },
+        "wspz_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_mangrove"
+            ]
+        },
+        "wspz_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_maple"
+            ]
+        },
+        "wspz_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_oak"
+            ]
+        },
+        "wspz_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_pale"
+            ]
+        },
+        "wspz_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_spicewood"
+            ]
+        },
+        "wspz_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_spruce"
+            ]
+        },
+        "wspz_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_planks_zigzag/wspz_warped"
+            ]
+        },
+        "sw_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_acacia"
+            ]
+        },
+        "sw_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_birch"
+            ]
+        },
+        "sw_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_cherry"
+            ]
+        },
+        "sw_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_cinder"
+            ]
+        },
+        "sw_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_crimson"
+            ]
+        },
+        "sw_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_dark_oak"
+            ]
+        },
+        "sw_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_jungle"
+            ]
+        },
+        "sw_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_mangrove"
+            ]
+        },
+        "sw_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_maple"
+            ]
+        },
+        "sw_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_oak"
+            ]
+        },
+        "sw_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_pale"
+            ]
+        },
+        "sw_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_spicewood"
+            ]
+        },
+        "sw_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_spruce"
+            ]
+        },
+        "sw_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/smooth_wood/sw_warped"
+            ]
+        },
+        "wtp_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_acacia"
+            ]
+        },
+        "wtp_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_birch"
+            ]
+        },
+        "wtp_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_cherry"
+            ]
+        },
+        "wtp_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_cinder"
+            ]
+        },
+        "wtp_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_crimson"
+            ]
+        },
+        "wtp_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_dark_oak"
+            ]
+        },
+        "wtp_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_jungle"
+            ]
+        },
+        "wtp_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_mangrove"
+            ]
+        },
+        "wtp_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_maple"
+            ]
+        },
+        "wtp_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_oak"
+            ]
+        },
+        "wtp_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_pale"
+            ]
+        },
+        "wtp_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_spicewood"
+            ]
+        },
+        "wtp_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_spruce"
+            ]
+        },
+        "wtp_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/planks/tiled_planks/wtp_warped"
+            ]
+        },
+        "shelf_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_acacia"
+            ]
+        },
+        "shelf_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_birch"
+            ]
+        },
+        "shelf_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_cherry"
+            ]
+        },
+        "shelf_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_cinder"
+            ]
+        },
+        "shelf_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_crimson"
+            ]
+        },
+        "shelf_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_dark_oak"
+            ]
+        },
+        "shelf_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_jungle"
+            ]
+        },
+        "shelf_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_mangrove"
+            ]
+        },
+        "shelf_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_maple"
+            ]
+        },
+        "shelf_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_oak"
+            ]
+        },
+        "shelf_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_pale"
+            ]
+        },
+        "shelf_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_spicewood"
+            ]
+        },
+        "shelf_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_spruce"
+            ]
+        },
+        "shelf_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelf/shelf_warped"
+            ]
+        },
+        "wooden_shelves_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_acacia"
+            ]
+        },
+        "wooden_shelves_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_birch"
+            ]
+        },
+        "wooden_shelves_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_cherry"
+            ]
+        },
+        "wooden_shelves_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_cinder"
+            ]
+        },
+        "wooden_shelves_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_crimson"
+            ]
+        },
+        "wooden_shelves_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_dark_oak"
+            ]
+        },
+        "wooden_shelves_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_jungle"
+            ]
+        },
+        "wooden_shelves_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_mangrove"
+            ]
+        },
+        "wooden_shelves_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_maple"
+            ]
+        },
+        "wooden_shelves_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_oak"
+            ]
+        },
+        "wooden_shelves_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_pale"
+            ]
+        },
+        "wooden_shelves_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_spicewood"
+            ]
+        },
+        "wooden_shelves_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_spruce"
+            ]
+        },
+        "wooden_shelves_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/shelves/wooden_shelves_warped"
+            ]
+        },
+        "stool_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_acacia"
+            ]
+        },
+        "stool_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_birch"
+            ]
+        },
+        "stool_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_cherry"
+            ]
+        },
+        "stool_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_cinder"
+            ]
+        },
+        "stool_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_crimson"
+            ]
+        },
+        "stool_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_dark_oak"
+            ]
+        },
+        "stool_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_jungle"
+            ]
+        },
+        "stool_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_mangrove"
+            ]
+        },
+        "stool_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_maple"
+            ]
+        },
+        "stool_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_oak"
+            ]
+        },
+        "stool_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_pale"
+            ]
+        },
+        "stool_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_spicewood"
+            ]
+        },
+        "stool_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_spruce"
+            ]
+        },
+        "stool_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_warped"
+            ]
+        },
+        "stool_cushion_black": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_black"
+            ]
+        },
+        "stool_cushion_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_blue"
+            ]
+        },
+        "stool_cushion_brown": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_brown"
+            ]
+        },
+        "stool_cushion_cyan": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_cyan"
+            ]
+        },
+        "stool_cushion_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_gray"
+            ]
+        },
+        "stool_cushion_green": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_green"
+            ]
+        },
+        "stool_cushion_light_blue": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_light_blue"
+            ]
+        },
+        "stool_cushion_light_gray": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_light_gray"
+            ]
+        },
+        "stool_cushion_lime": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_lime"
+            ]
+        },
+        "stool_cushion_magenta": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_magenta"
+            ]
+        },
+        "stool_cushion_orange": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_orange"
+            ]
+        },
+        "stool_cushion_pink": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_pink"
+            ]
+        },
+        "stool_cushion_purple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_purple"
+            ]
+        },
+        "stool_cushion_red": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_red"
+            ]
+        },
+        "stool_cushion_white": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_white"
+            ]
+        },
+        "stool_cushion_yellow": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/stools/stool_colors/stool_cushion_yellow"
+            ]
+        },
+        "r_ws_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_acacia"
+            ]
+        },
+        "r_ws_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_birch"
+            ]
+        },
+        "r_ws_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_cherry"
+            ]
+        },
+        "r_ws_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_cinder"
+            ]
+        },
+        "r_ws_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_crimson"
+            ]
+        },
+        "r_ws_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_dark_oak"
+            ]
+        },
+        "r_ws_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_jungle"
+            ]
+        },
+        "r_ws_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_mangrove"
+            ]
+        },
+        "r_ws_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_maple"
+            ]
+        },
+        "r_ws_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_oak"
+            ]
+        },
+        "r_ws_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_pale"
+            ]
+        },
+        "r_ws_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_spicewood"
+            ]
+        },
+        "r_ws_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_spruce"
+            ]
+        },
+        "r_ws_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/r_ws_warped"
+            ]
+        },
+        "r_wsh_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_acacia"
+            ]
+        },
+        "r_wsh_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_birch"
+            ]
+        },
+        "r_wsh_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_cherry"
+            ]
+        },
+        "r_wsh_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_cinder"
+            ]
+        },
+        "r_wsh_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_crimson"
+            ]
+        },
+        "r_wsh_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_dark_oak"
+            ]
+        },
+        "r_wsh_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_jungle"
+            ]
+        },
+        "r_wsh_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_mangrove"
+            ]
+        },
+        "r_wsh_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_maple"
+            ]
+        },
+        "r_wsh_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_oak"
+            ]
+        },
+        "r_wsh_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_pale"
+            ]
+        },
+        "r_wsh_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_spicewood"
+            ]
+        },
+        "r_wsh_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_spruce"
+            ]
+        },
+        "r_wsh_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/supports/horizontal/r_wsh_warped"
+            ]
+        },
+        "ff_acacia_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_acacia_table"
+            ]
+        },
+        "ff_acacia_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_acacia_table2"
+            ]
+        },
+        "ff_birch_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_birch_table"
+            ]
+        },
+        "ff_birch_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_birch_table2"
+            ]
+        },
+        "ff_cherry_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_cherry_table"
+            ]
+        },
+        "ff_cherry_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_cherry_table2"
+            ]
+        },
+        "ff_cinder_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_cinder_table"
+            ]
+        },
+        "ff_cinder_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_cinder_table2"
+            ]
+        },
+        "ff_crimson_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_crimson_table"
+            ]
+        },
+        "ff_crimson_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_crimson_table2"
+            ]
+        },
+        "ff_darkmaple_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_darkmaple_table"
+            ]
+        },
+        "ff_darkmaple_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_darkmaple_table2"
+            ]
+        },
+        "ff_darkoak_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_darkoak_table"
+            ]
+        },
+        "ff_darkoak_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_darkoak_table2"
+            ]
+        },
+        "ff_jungle_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_jungle_table"
+            ]
+        },
+        "ff_jungle_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_jungle_table2"
+            ]
+        },
+        "ff_mangrove_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_mangrove_table"
+            ]
+        },
+        "ff_mangrove_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_mangrove_table2"
+            ]
+        },
+        "ff_maple_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_maple_table"
+            ]
+        },
+        "ff_maple_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_maple_table2"
+            ]
+        },
+        "ff_oak_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_oak_table"
+            ]
+        },
+        "ff_oak_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_oak_table2"
+            ]
+        },
+        "ff_pale_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_pale_table"
+            ]
+        },
+        "ff_pale_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_pale_table2"
+            ]
+        },
+        "ff_spicewood_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_spicewood_table"
+            ]
+        },
+        "ff_spicewood_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_spicewood_table2"
+            ]
+        },
+        "ff_spruce_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_spruce_table"
+            ]
+        },
+        "ff_spruce_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_spruce_table2"
+            ]
+        },
+        "ff_warped_table": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_warped_table"
+            ]
+        },
+        "ff_warped_table2": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/ff_warped_table2"
+            ]
+        },
+        "plat_base": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/tables/plat_base"
+            ]
+        },
+        "terrace_fente_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_acacia"
+            ]
+        },
+        "terrace_fente_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_birch"
+            ]
+        },
+        "terrace_fente_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_cherry"
+            ]
+        },
+        "terrace_fente_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_cinder"
+            ]
+        },
+        "terrace_fente_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_crimson"
+            ]
+        },
+        "terrace_fente_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_dark_oak"
+            ]
+        },
+        "terrace_fente_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_jungle"
+            ]
+        },
+        "terrace_fente_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_mangrove"
+            ]
+        },
+        "terrace_fente_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_maple"
+            ]
+        },
+        "terrace_fente_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_oak"
+            ]
+        },
+        "terrace_fente_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_pale"
+            ]
+        },
+        "terrace_fente_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_spicewood"
+            ]
+        },
+        "terrace_fente_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_spruce"
+            ]
+        },
+        "terrace_fente_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/terrace_fences/terrace_fente_warped"
+            ]
+        },
+        "cinder_trapdoor": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/trapdoors/cinder_trapdoor"
+            ]
+        },
+        "maple_trapdoor": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/trapdoors/maple_trapdoor"
+            ]
+        },
+        "spicewood_trapdoor": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/trapdoors/spicewood_trapdoor"
+            ]
+        },
+        "wall_clock_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_acacia"
+            ]
+        },
+        "wall_clock_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_birch"
+            ]
+        },
+        "wall_clock_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_cherry"
+            ]
+        },
+        "wall_clock_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_cinder"
+            ]
+        },
+        "wall_clock_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_crimson"
+            ]
+        },
+        "wall_clock_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_dark_oak"
+            ]
+        },
+        "wall_clock_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_jungle"
+            ]
+        },
+        "wall_clock_lines": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_lines"
+            ]
+        },
+        "wall_clock_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_mangrove"
+            ]
+        },
+        "wall_clock_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_maple"
+            ]
+        },
+        "wall_clock_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_oak"
+            ]
+        },
+        "wall_clock_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_pale"
+            ]
+        },
+        "wall_clock_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_spicewood"
+            ]
+        },
+        "wall_clock_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_spruce"
+            ]
+        },
+        "wall_clock_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wall_clock/wall_clock_warped"
+            ]
+        },
+        "mirror_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_acacia"
+            ]
+        },
+        "mirror_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_birch"
+            ]
+        },
+        "mirror_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_cherry"
+            ]
+        },
+        "mirror_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_cinder"
+            ]
+        },
+        "mirror_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_crimson"
+            ]
+        },
+        "mirror_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_dark_oak"
+            ]
+        },
+        "mirror_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_jungle"
+            ]
+        },
+        "mirror_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_mangrove"
+            ]
+        },
+        "mirror_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_maple"
+            ]
+        },
+        "mirror_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_oak"
+            ]
+        },
+        "mirror_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_pale"
+            ]
+        },
+        "mirror_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_spicewood"
+            ]
+        },
+        "mirror_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_spruce"
+            ]
+        },
+        "mirror_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_mirror/mirror_warped"
+            ]
+        },
+        "wpl_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_acacia"
+            ]
+        },
+        "wpl_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_birch"
+            ]
+        },
+        "wpl_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_cherry"
+            ]
+        },
+        "wpl_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_cinder"
+            ]
+        },
+        "wpl_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_crimson"
+            ]
+        },
+        "wpl_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_dark_oak"
+            ]
+        },
+        "wpl_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_jungle"
+            ]
+        },
+        "wpl_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_mangrove"
+            ]
+        },
+        "wpl_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_maple"
+            ]
+        },
+        "wpl_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_oak"
+            ]
+        },
+        "wpl_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_pale"
+            ]
+        },
+        "wpl_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_spicewood"
+            ]
+        },
+        "wpl_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_spruce"
+            ]
+        },
+        "wpl_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_planks_lines/wpl_warped"
+            ]
+        },
+        "wooden_stair_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_acacia"
+            ]
+        },
+        "wooden_stair_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_birch"
+            ]
+        },
+        "wooden_stair_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_cherry"
+            ]
+        },
+        "wooden_stair_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_cinder"
+            ]
+        },
+        "wooden_stair_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_crimson"
+            ]
+        },
+        "wooden_stair_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_dark_oak"
+            ]
+        },
+        "wooden_stair_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_jungle"
+            ]
+        },
+        "wooden_stair_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_mangrove"
+            ]
+        },
+        "wooden_stair_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_maple"
+            ]
+        },
+        "wooden_stair_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_oak"
+            ]
+        },
+        "wooden_stair_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_pale"
+            ]
+        },
+        "wooden_stair_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_spicewood"
+            ]
+        },
+        "wooden_stair_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_spruce"
+            ]
+        },
+        "wooden_stair_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_stairs/wooden_stair_warped"
+            ]
+        },
+        "wall_cabinet_acacia": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_acacia"
+            ]
+        },
+        "wall_cabinet_birch": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_birch"
+            ]
+        },
+        "wall_cabinet_cherry": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_cherry"
+            ]
+        },
+        "wall_cabinet_cinder": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_cinder"
+            ]
+        },
+        "wall_cabinet_crimson": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_crimson"
+            ]
+        },
+        "wall_cabinet_dark_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_dark_oak"
+            ]
+        },
+        "wall_cabinet_jungle": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_jungle"
+            ]
+        },
+        "wall_cabinet_mangrove": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_mangrove"
+            ]
+        },
+        "wall_cabinet_maple": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_maple"
+            ]
+        },
+        "wall_cabinet_oak": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_oak"
+            ]
+        },
+        "wall_cabinet_pale": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_pale"
+            ]
+        },
+        "wall_cabinet_spicewood": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_spicewood"
+            ]
+        },
+        "wall_cabinet_spruce": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_spruce"
+            ]
+        },
+        "wall_cabinet_warped": {
+            "textures": [
+                "textures/blocks/fabulous_funished/wooden_class/wooden_wall_cabinets/wall_cabinet_warped"
+            ]
+        }
+    }
+}

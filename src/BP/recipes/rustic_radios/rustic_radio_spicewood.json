@@ -1,0 +1,19 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {"identifier": "ff:rustic_radio_spicewood"},
+		"tags": ["ff_carpentry_table"],
+		"pattern": [
+			"PPP",
+			"RIG",
+			"P P"
+		],
+		"key": {
+			"P": {"item": "ff:spicewood_planks"},
+			"R": {"item": "minecraft:redstone"},
+			"I": {"item": "minecraft:iron_nugget"},
+			"G": {"item": "minecraft:glass_pane"}
+		},
+		"result": {"item": "ff:rustic_radio_spicewood", "count": 1}
+	}
+}

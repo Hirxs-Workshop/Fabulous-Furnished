@@ -1,0 +1,32 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:feldspar_lamp",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:flammable": false,
+			"minecraft:map_color": "#C89D53",
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 4
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 6
+            },
+			"minecraft:light_emission": 15,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "feldspar_block_lamp_pattern",
+					"ambient_occlusion": false,
+					"face_dimming": false,
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:geometry": "minecraft:geometry.full_block"
+		}
+	}
+}

@@ -1,0 +1,77 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ff:coffee_cup_entity",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball"
+		},
+		"components": {
+			"minecraft:scale": 0.5,
+			"minecraft:collision_box": {
+				"width": 0.3,
+				"height": 0.3
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 5,
+						"catch_fire": true
+					},
+					"definition_event": {
+						"event_trigger": {
+							"event": "particles"
+						}
+					},
+					"stick_in_ground": {},
+					"catch_fire": true,
+					"douse_fire": true
+				},
+				"power": 1.0,
+				"gravity": 0.1,
+				"angle_offset": 0
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 80,
+					"max_dropped_ticks": 20,
+					"use_motion_prediction_hints": true
+				}
+			}
+		},
+		"events": {
+			"particles": {
+				"add": {
+					"component_groups": [
+						"ff:kill"
+					]
+				},
+				"queue_command": {
+					"command": [
+						"particle ff:coffee_explode_1 ~~~",
+						"particle ff:coffee_explode_2 ~~~",
+						"particle ff:coffee_explode_3 ~~~",
+						"playsound shatter.decorated_pot @a[r=10]"
+					]
+				}
+			}
+		},
+		"component_groups": {
+			"ff:kill": {
+				"minecraft:transformation": {
+					"into": "ef:nothing",
+					"delay": {
+						"value": 0
+					}
+				}
+			}
+		}
+	}
+}

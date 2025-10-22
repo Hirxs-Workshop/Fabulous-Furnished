@@ -1,0 +1,33 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:pancake"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"FCF",
+			"MDM"
+		],
+		"key": {
+			"F": {
+				"item": "minecraft:sugar"
+			},
+			"C": {
+				"item": "minecraft:egg"
+			},
+			"M": {
+				"item": "ff:flour"
+			},
+			"D": {
+				"item": "minecraft:milk_bucket"
+			}
+		},
+		"result": {
+			"item": "ff:pancake",
+			"count": 1
+		}
+	}
+}

@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "pan",
-        "metalness_emissive_roughness": "pan_mer",
-        "heightmap": "pan_normal"
-    }
-}

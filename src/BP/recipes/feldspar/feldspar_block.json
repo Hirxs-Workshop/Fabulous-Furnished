@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:feldspar_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"WWW",
+			"WWW",
+			"WWW"
+		],
+		"key": {
+			"W": {
+				"item": "ff:feldspar"
+			}
+		},
+		"result": {
+			"item": "ff:feldspar_block",
+			"count": 1
+		}
+	}
+}

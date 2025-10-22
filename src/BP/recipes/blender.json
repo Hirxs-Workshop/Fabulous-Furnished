@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:blender"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			" X ",
+			"SPS"
+		],
+		"key": {
+			"P": {
+				"item": "minecraft:redstone"
+			},
+			"S": {
+				"item": "minecraft:iron_ingot"
+			},
+			"X": {
+				"item": "minecraft:glass"
+			}
+		},
+		"result": {
+			"item": "ff:blender"
+		}
+	}
+}

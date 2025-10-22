@@ -1,0 +1,62 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:wooden_lantern_cinder",
+			"menu_category": {
+				"category": "items"
+			},
+			"traits": {
+				"minecraft:placement_position": {
+					"enabled_states": ["minecraft:vertical_half"]
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"origin": [-4.5, 0, -4.5],
+				"size": [9, 11, 9]
+			},
+			"minecraft:selection_box": {
+				"origin": [-4.5, 0, -4.5],
+				"size": [9, 11, 9]
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.wooden_lantern"
+			},
+			"minecraft:light_emission": 13,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "cinder_lantern",
+					"render_method": "alpha_test",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				},
+				"lantern": {
+					"texture": "lantern_effect",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('minecraft:vertical_half') == 'top'",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.hanging_wooden_lantern"
+					}
+				}
+			},
+						{
+				"condition": "q.block_state('minecraft:vertical_half') == 'bottom'",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.wooden_lantern"
+					}
+				}
+			}
+		]
+	}
+}

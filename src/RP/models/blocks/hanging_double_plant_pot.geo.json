@@ -1,0 +1,130 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.hanging_double_plant_pot",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, -4, 0],
+					"cubes": [
+						{
+							"origin": [-4, -2.5, -4],
+							"size": [8, 2, 8],
+							"uv": {
+								"north": {"uv": [2, 2], "uv_size": [4, 2]},
+								"east": {"uv": [2, 2], "uv_size": [4, 2]},
+								"south": {"uv": [2, 2], "uv_size": [4, 2]},
+								"west": {"uv": [2, 2], "uv_size": [4, 2]},
+								"up": {"uv": [5, 9], "uv_size": [-5, -5]},
+								"down": {"uv": [6, 13.5], "uv_size": [-4, -4]}
+							}
+						},
+						{
+							"origin": [4, -0.5, -5],
+							"size": [1, 2, 10],
+							"uv": {
+								"north": {"uv": [6, 0], "uv_size": [0.5, 2]},
+								"east": {"uv": [1.5, 0], "uv_size": [5, 2]},
+								"south": {"uv": [1.5, 0], "uv_size": [0.5, 2]},
+								"west": {"uv": [1.5, 0], "uv_size": [5, 2]},
+								"up": {"uv": [2, 9], "uv_size": [-0.5, -5]},
+								"down": {"uv": [2, 9], "uv_size": [-0.5, -5]}
+							}
+						},
+						{
+							"origin": [-4, -0.5, -5],
+							"size": [8, 2, 1],
+							"uv": {
+								"north": {"uv": [2, 0], "uv_size": [4, 2]},
+								"east": {"uv": [6, 0], "uv_size": [0.5, 2]},
+								"south": {"uv": [2, 0], "uv_size": [4, 2]},
+								"west": {"uv": [1.5, 0], "uv_size": [0.5, 2]},
+								"up": {"uv": [6, 4.5], "uv_size": [-4, -0.5]},
+								"down": {"uv": [6, 9], "uv_size": [-4, -0.5]}
+							}
+						},
+						{
+							"origin": [-4, -0.5, 4],
+							"size": [8, 2, 1],
+							"uv": {
+								"north": {"uv": [2, 0], "uv_size": [4, 2]},
+								"east": {"uv": [1.5, 0], "uv_size": [0.5, 2]},
+								"south": {"uv": [2, 0], "uv_size": [4, 2]},
+								"west": {"uv": [6, 0], "uv_size": [0.5, 2]},
+								"up": {"uv": [6, 9], "uv_size": [-4, -0.5]},
+								"down": {"uv": [6, 4.5], "uv_size": [-4, -0.5]}
+							}
+						},
+						{
+							"origin": [-5, 1, 0],
+							"size": [10, 7, 0],
+							"uv": {
+								"north": {"uv": [11, 9.5], "uv_size": [5, 6.5]}
+							}
+						},
+						{
+							"origin": [-5, 1, 0],
+							"size": [10, 7, 0],
+							"pivot": [0, 7, 0],
+							"rotation": [0, 90, 0],
+							"uv": {
+								"north": {"uv": [11, 9.5], "uv_size": [5, 6.5]}
+							}
+						},
+						{
+							"origin": [-5, -0.5, -5],
+							"size": [1, 2, 10],
+							"uv": {
+								"north": {"uv": [1.5, 0], "uv_size": [0.5, 2]},
+								"east": {"uv": [1.5, 0], "uv_size": [5, 2]},
+								"south": {"uv": [6, 0], "uv_size": [0.5, 2]},
+								"west": {"uv": [1.5, 0], "uv_size": [5, 2]},
+								"up": {"uv": [6.5, 9], "uv_size": [-0.5, -5]},
+								"down": {"uv": [6.5, 9], "uv_size": [-0.5, -5]}
+							}
+						},
+						{
+							"origin": [-4, 0.5, -4],
+							"size": [8, 0, 8],
+							"uv": {
+								"up": {"uv": [8, 8], "uv_size": [-8, -8], "material_instance": "dirt"}
+							}
+						}
+					]
+				},
+				{
+					"name": "flower",
+					"pivot": [0, -4, 0],
+					"cubes": [
+						{
+							"origin": [0, 0, -8],
+							"size": [0, 7, 16],
+							"pivot": [0, 8, 0],
+							"rotation": [0, -135, 0],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "flower_top"}
+							}
+						},
+						{
+							"origin": [0, 0, -8],
+							"size": [0, 7, 16],
+							"pivot": [0, 8, 0],
+							"rotation": [0, -45, 0],
+							"uv": {
+								"east": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "flower_top"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

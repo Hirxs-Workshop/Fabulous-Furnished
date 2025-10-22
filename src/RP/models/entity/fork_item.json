@@ -1,0 +1,71 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.fork_item",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [0, 3, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{
+							"origin": [-2, 0, -0.4],
+							"size": [3, 5, 0],
+							"pivot": [-0.5, 5.92696, -0.51541],
+							"rotation": [0, 90, 0],
+							"uv": {
+								"north": {"uv": [10, 0], "uv_size": [6, 10]},
+								"east": {"uv": [0, 0], "uv_size": [0, 10]},
+								"south": {"uv": [10, 10], "uv_size": [6, 10]},
+								"west": {"uv": [0, 0], "uv_size": [0, 10]},
+								"up": {"uv": [0, 0], "uv_size": [6, 0]},
+								"down": {"uv": [0, 0], "uv_size": [6, 0]}
+							}
+						},
+						{
+							"origin": [-1, 5.03413, -0.24079],
+							"size": [1, 2, 0],
+							"pivot": [-0.5, 5.92696, -0.51541],
+							"rotation": [0, 90, 10],
+							"uv": {
+								"north": {"uv": [16, 0], "uv_size": [2, 4]},
+								"east": {"uv": [0, 0], "uv_size": [0, 4]},
+								"south": {"uv": [16, 4], "uv_size": [2, 4]},
+								"west": {"uv": [0, 0], "uv_size": [0, 4]},
+								"up": {"uv": [0, 0], "uv_size": [2, 0]},
+								"down": {"uv": [0, 0], "uv_size": [2, 0]}
+							}
+						},
+						{
+							"origin": [-3, 6.78222, 0.23941],
+							"size": [5, 5, 0],
+							"pivot": [-0.5, 5.92696, -0.51541],
+							"rotation": [0, 90, -17.5],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [10, 10]},
+								"east": {"uv": [0, 0], "uv_size": [0, 10]},
+								"south": {"uv": [0, 10], "uv_size": [10, 10]},
+								"west": {"uv": [0, 0], "uv_size": [0, 10]},
+								"up": {"uv": [0, 0], "uv_size": [10, 0]},
+								"down": {"uv": [0, 0], "uv_size": [10, 0]}
+							}
+						}
+					]
+				},
+				{
+					"name": "fork",
+					"pivot": [-0.5, 5.94624, -0.07694],
+					"rotation": [0, 90, 0]
+				}
+			]
+		}
+	]
+}

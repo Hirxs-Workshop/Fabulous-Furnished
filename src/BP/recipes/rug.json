@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:white_rug"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"S"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:wool"
+			}
+		},
+		"result": {
+			"item": "ff:white_rug",
+			"count": 1
+		}
+	}
+}

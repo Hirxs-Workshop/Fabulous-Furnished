@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "jungle_fences",
-        "metalness_emissive_roughness": "jungle_fences_mer",
-        "heightmap": "jungle_fences_normal"
-    }
-}

@@ -1,0 +1,40 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.coffee_cup": {
+            "initial_state": "first_person_hold",
+            "states": {
+                "first_person_hold": {
+                    "animations": [
+                        "first_person_hold"
+                    ],
+                    "transitions": [
+                        {
+                            "third_person_hold": "!c.is_first_person"
+                        }
+                    ]
+                },
+                "third_person_hold": {
+                    "animations": [
+                        "third_person_hold"
+                    ],
+                    "transitions": [
+                        {
+                            "first_person_hold": "c.is_first_person"
+                        }
+                    ]
+                },
+                "first_person_use": {
+                    "animations": [
+                        "first_person_use"
+                    ],
+                    "transitions": [
+                        {
+                            "first_person_hold": "q.is_using_item"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

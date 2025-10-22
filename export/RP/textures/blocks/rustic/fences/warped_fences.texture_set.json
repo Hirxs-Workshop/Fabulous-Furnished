@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "warped_fences",
-        "metalness_emissive_roughness": "warped_fences_mer",
-        "heightmap": "warped_fences_normal"
-    }
-}

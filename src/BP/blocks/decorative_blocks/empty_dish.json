@@ -1,0 +1,52 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:empty_dish",
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"origin": [-5, 0, -5],
+				"size": [10, 2, 10]
+			},
+			"minecraft:selection_box": {
+				"origin": [-5, 0, -5],
+				"size": [10, 2, 10]
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.empty_dish",
+				"bone_visibility": {
+					"up_0": true,
+					"up_22_5": false,
+					"up_45": false,
+					"up_67_5": false,
+					"side": false
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "empty_dish",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up",
+							"side"
+						]
+					}
+				]
+			},
+			"minecraft:custom_components": [
+				"ff:adv_rot",
+				"ff:add_item",
+				"ff:empty_dish_on_interact"
+			]
+		}
+	}
+}

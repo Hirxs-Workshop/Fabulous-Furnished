@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:feldspar_lamp"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" W ",
+			"WFW",
+			" W "
+		],
+		"key": {
+			"F": {
+				"item": "minecraft:redstone_lamp"
+			},
+			"W": {
+				"item": "ff:feldspar"
+			}
+		},
+		"result": {
+			"item": "ff:feldspar_lamp",
+			"count": 1
+		}
+	}
+}

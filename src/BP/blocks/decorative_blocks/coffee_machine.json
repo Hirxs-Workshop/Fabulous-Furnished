@@ -1,0 +1,220 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:coffee_machine",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"ff:has_jar": [
+					false,
+					true
+				],
+				"ff:stage": {
+					"values": {
+						"min": 0,
+						"max": 5
+					}
+				},
+				"ff:has_coffee": [
+					false,
+					true
+				]
+			},
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							-180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "coffee_machine_1",
+							"render_method": "alpha_test_single_sided"
+						},
+						"water": {
+							"texture": "water_still_c",
+							"render_method": "opaque",
+							"tint_method": "water"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "coffee_machine_2",
+							"render_method": "alpha_test_single_sided"
+						},
+						"water": {
+							"texture": "water_still_c",
+							"render_method": "opaque",
+							"tint_method": "water"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "coffee_machine_3",
+							"render_method": "alpha_test_single_sided"
+						},
+						"water": {
+							"texture": "water_still_c",
+							"render_method": "opaque",
+							"tint_method": "water"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 4",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "coffee_machine_4",
+							"render_method": "alpha_test_single_sided"
+						},
+						"water": {
+							"texture": "water_still_c",
+							"render_method": "opaque",
+							"tint_method": "water"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stage') == 5",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "coffee_machine_5",
+							"render_method": "alpha_test_single_sided"
+						},
+						"water": {
+							"texture": "water_still_c",
+							"render_method": "opaque",
+							"tint_method": "water"
+						}
+					},
+					"minecraft:tick": {
+						"interval_range": [
+							20,
+							20
+						],
+						"looping": false
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "coffee_machine_off",
+					"render_method": "alpha_test_single_sided"
+				},
+				"water": {
+					"texture": "water_still_c",
+					"render_method": "opaque",
+					"tint_method": "water"
+				}
+			},
+			"minecraft:tick": {
+				"interval_range": [
+					100,
+					100
+				],
+				"looping": true
+			},
+			"minecraft:map_color": "#8E693B",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 1
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			"minecraft:geometry": {
+			    "identifier": "geometry.coffee_machine",
+					"bone_visibility": {
+				    	"coffee_jar": "q.block_state('ff:has_jar')",
+						"coffee_fully_1": "q.block_state('ff:stage') == 2",
+						"coffee_fully_2": "q.block_state('ff:stage') == 3",
+						"coffee_fully_3": "q.block_state('ff:stage') == 4",
+						"coffee_fully_4": "q.block_state('ff:stage') == 5"
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [-4, 0, -6],
+				"size": [8, 16, 12]
+			},
+			"minecraft:collision_box": {
+				"origin": [-4, 0, -6],
+				"size": [8, 16, 12]
+			},
+			"minecraft:custom_components": [
+				"ff:coffee_cc"
+			]
+		}
+	}
+}

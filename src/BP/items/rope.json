@@ -1,0 +1,25 @@
+{
+	"format_version": "1.21.70",
+	"minecraft:item": {
+		"description": {
+			"identifier": "ff:rope",
+			"menu_category": {
+				"category": "equipment"
+			}
+		},
+		"components": {
+			"minecraft:display_name": {
+				"value": "tile.ff:rope.name"
+			},
+			"minecraft:icon": {
+				"textures": {
+					"default": "rope"
+				}
+			},
+			"minecraft:block_placer": {
+				"block": "ff:rope",
+				"replace_block_item": true
+			}
+		}
+	}
+}

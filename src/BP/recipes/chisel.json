@@ -1,0 +1,30 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:chisel"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			" L ",
+			" W ",
+			" W "
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:iron_ingot"
+			},
+			"W": {
+				"item": "minecraft:stick"
+			},
+			"L": {
+				"item": "minecraft:iron_nugget"
+			}
+		},
+		"result": {
+			"item": "ff:chisel"
+		}
+	}
+}

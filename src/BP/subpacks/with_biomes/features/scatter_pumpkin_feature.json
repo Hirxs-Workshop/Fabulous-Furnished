@@ -1,0 +1,24 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "ff:scatter_pumpkin_feature"
+    },
+    "iterations": 60,
+    "x": {
+      "distribution": "gaussian",
+      "extent": [ -8, 8 ]
+    },
+    "y": {
+      "distribution": "gaussian",
+      "extent": [ -4, 4 ]
+    },
+    "z": {
+      "distribution": "gaussian",
+      "extent": [ -8, 8 ]
+    },
+    "coordinate_eval_order": "zyx",
+    "project_input_to_floor": true,
+    "places_feature": "ff:pumpkin_feature"
+  }
+}

@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "toaster_on",
-        "metalness_emissive_roughness": "toaster_on_mer",
-        "heightmap": "toaster_on_normal"
-    }
-}

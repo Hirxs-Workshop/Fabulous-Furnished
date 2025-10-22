@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:glass_jar"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"S S",
+			"SSS"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:glass"
+			}
+		},
+		"result": {
+			"item": "ff:glass_jar",
+			"count": 2
+		}
+	}
+}

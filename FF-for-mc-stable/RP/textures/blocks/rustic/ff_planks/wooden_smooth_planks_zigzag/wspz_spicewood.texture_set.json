@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "wspz_spicewood",
-        "metalness_emissive_roughness": "wspz_spicewood_mer",
-        "heightmap": "wspz_spicewood_normal"
-    }
-}

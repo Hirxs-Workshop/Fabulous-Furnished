@@ -1,0 +1,26 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "ff:select_autumn_tree_feature"
+		},
+		"features": [
+			[
+				"ff:autumn_tree_big_feature",
+				3
+			],
+			[
+				"minecraft:oak_tree_with_vines_feature",
+				2
+			],
+			[
+				"ff:select_maple_tree_feature",
+				2
+			],
+			[
+				"ff:maple_tree_yellow_big_feature",
+				1
+			]
+		]
+	}
+}

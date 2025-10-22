@@ -1,8 +1,0 @@
-{
-    "format_version": "1.16.100",
-    "minecraft:texture_set": {
-        "color": "new_warped_chair",
-        "metalness_emissive_roughness": "new_warped_chair_mer",
-        "heightmap": "new_warped_chair_normal"
-    }
-}

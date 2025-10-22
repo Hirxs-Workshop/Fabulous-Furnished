@@ -1,0 +1,121 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "ff:ff_ceiling_light",
+			"is_summonable": true,
+			"is_spawnable": false
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:inside_block_notifier": {
+				"block_list": [
+					{
+					  "block": "ff:ceiling_light_oak",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_spruce",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_spicewood",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_cinder",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_pale",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_mangrove",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_dark_oak",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_jungle",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_acacia",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_crimson",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_warped",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_cherry",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_birch",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					},
+					{
+					  "block": "ff:ceiling_light_maple",
+					  "exited_block_event": { "event": "destroy", "target": "self" }
+					}
+				  ]
+				  
+			},
+			"minecraft:type_family": {
+				"family": [ "furniture", "decorational", "blinds", "inanimate" ]
+			  },
+			  "minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			  },
+			  "minecraft:collision_box": {
+				"width": 0.0,
+				"height": 0.0
+			  },
+			  
+			  "minecraft:health": {
+				"min": 1,
+				"max": 1,
+				"value": 1
+			  },
+			  "minecraft:damage_sensor": {
+				"triggers": {
+				  "cause": "all",
+				  "deals_damage": false
+				}
+			  },
+			  "minecraft:persistent": {},
+			  "minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false,
+				"push_towards_closest_space": false
+			  },
+			  "minecraft:knockback_resistance": {
+				"value": 1
+			  },
+			  "minecraft:is_hidden_when_invisible": {},
+			  "minecraft:conditional_bandwidth_optimization": {}
+		},
+		"events": {
+			"destroy": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			}
+		}
+	}
+}

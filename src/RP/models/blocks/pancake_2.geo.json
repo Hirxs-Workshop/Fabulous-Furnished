@@ -1,0 +1,75 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.pancake_2",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bb_main",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [0, 0, -6],
+							"size": [6, 2, 6],
+							"uv": {
+								"north": {"uv": [30, 8], "uv_size": [6, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 8], "uv_size": [6, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 12], "uv_size": [6, 2], "material_instance": "pancake"},
+								"west": {"uv": [24, 8], "uv_size": [6, 2], "material_instance": "pancake"},
+								"up": {"uv": [18, 6], "uv_size": [6, 6], "material_instance": "pancake"},
+								"down": {"uv": [18, 24], "uv_size": [6, -6], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [-6, 0, -6],
+							"size": [6, 2, 6],
+							"uv": {
+								"north": {"uv": [24, 8], "uv_size": [6, 2], "material_instance": "pancake"},
+								"east": {"uv": [30, 8], "uv_size": [6, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 8], "uv_size": [6, 2], "material_instance": "pancake"},
+								"west": {"uv": [24, 8], "uv_size": [6, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 6], "uv_size": [6, 6], "material_instance": "pancake"},
+								"down": {"uv": [12, 24], "uv_size": [6, -6], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [-6, 0, 0],
+							"size": [6, 2, 6],
+							"uv": {
+								"north": {"uv": [24, 8], "uv_size": [6, 2], "material_instance": "pancake"},
+								"east": {"uv": [24, 8], "uv_size": [6, 2], "material_instance": "pancake"},
+								"south": {"uv": [30, 8], "uv_size": [6, 2], "material_instance": "pancake"},
+								"west": {"uv": [30, 10], "uv_size": [6, 2], "material_instance": "pancake"},
+								"up": {"uv": [12, 0], "uv_size": [6, 6], "material_instance": "pancake"},
+								"down": {"uv": [12, 18], "uv_size": [6, -6], "material_instance": "pancake"}
+							}
+						},
+						{
+							"origin": [-1.5, 2, -1.5],
+							"size": [3, 1, 3],
+							"uv": {
+								"north": {"uv": [24, 16], "uv_size": [3, 1], "material_instance": "pancake"},
+								"east": {"uv": [24, 17], "uv_size": [3, 1], "material_instance": "pancake"},
+								"south": {"uv": [24, 18], "uv_size": [3, 1], "material_instance": "pancake"},
+								"west": {"uv": [24, 19], "uv_size": [3, 1], "material_instance": "pancake"},
+								"up": {"uv": [26, 12], "uv_size": [3, 3], "material_instance": "pancake"},
+								"down": {"uv": [26, 15], "uv_size": [3, -3], "material_instance": "pancake"}
+							}
+						}
+					]
+				},
+				{
+					"name": "bone",
+					"pivot": [0, 0, 0]
+				}
+			]
+		}
+	]
+}

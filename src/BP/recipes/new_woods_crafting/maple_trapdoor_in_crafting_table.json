@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:maple_trapdoor_item_in_crafting_table"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"SSS",
+			"SSS"
+		],
+		"key": {
+			"S": {
+				"item": "ff:maple_planks"
+			}
+		},
+		"result": {
+			"item": "ff:maple_trapdoor",
+			"count": 2
+		}
+	}
+}

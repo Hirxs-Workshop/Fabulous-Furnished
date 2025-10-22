@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "ff:maple_tapping_spile"
+		},
+		"tags": [
+			"ff_carpentry_table"
+		],
+		"pattern": [
+			"SE"
+		],
+		"key": {
+			"S": {
+				"item": "minecraft:iron_ingot"
+			},
+			"E": {
+				"item": "minecraft:iron_nugget"
+			}
+		},
+		"result": {
+			"item": "ff:maple_tapping_spile",
+			"count": 2
+		}
+	}
+}

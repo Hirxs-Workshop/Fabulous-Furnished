@@ -1,0 +1,22 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+	  "description": {
+		"identifier": "ff:feldspar_block_chiseled"
+	  },
+  
+	  "tags": ["stonecutter"],
+	  "priority": 1,
+	  "ingredients": [
+		{
+		  "item": "ff:feldspar_block",
+		  "data": 0
+		}
+	  ],
+	  "result": {
+		"item": "ff:feldspar_block_chiseled",
+		"data": 0,
+		"count": 1
+	  }
+	}
+  }

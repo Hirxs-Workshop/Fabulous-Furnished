@@ -1,0 +1,137 @@
+{
+  "c0": {
+    "hex_color": "#CB5518",
+    "rgb_color": [
+      203,
+      85,
+      24
+    ],
+    "output_file": "base_particle_c0.png"
+  },
+  "c1": {
+    "hex_color": "#D24B05",
+    "rgb_color": [
+      210,
+      75,
+      5
+    ],
+    "output_file": "base_particle_c1.png"
+  },
+  "c2": {
+    "hex_color": "#C0550A",
+    "rgb_color": [
+      192,
+      85,
+      10
+    ],
+    "output_file": "base_particle_c2.png"
+  },
+  "c3": {
+    "hex_color": "#D21216",
+    "rgb_color": [
+      210,
+      18,
+      22
+    ],
+    "output_file": "base_particle_c3.png"
+  },
+  "c4": {
+    "hex_color": "#C96923",
+    "rgb_color": [
+      201,
+      105,
+      35
+    ],
+    "output_file": "base_particle_c4.png"
+  },
+  "c5": {
+    "hex_color": "#AE2826",
+    "rgb_color": [
+      174,
+      40,
+      38
+    ],
+    "output_file": "base_particle_c5.png"
+  },
+  "c6": {
+    "hex_color": "#B32217",
+    "rgb_color": [
+      179,
+      34,
+      23
+    ],
+    "output_file": "base_particle_c6.png"
+  },
+  "c7": {
+    "hex_color": "#C76131",
+    "rgb_color": [
+      199,
+      97,
+      49
+    ],
+    "output_file": "base_particle_c7.png"
+  },
+  "c8": {
+    "hex_color": "#B72804",
+    "rgb_color": [
+      183,
+      40,
+      4
+    ],
+    "output_file": "base_particle_c8.png"
+  },
+  "c9": {
+    "hex_color": "#D17F70",
+    "rgb_color": [
+      209,
+      127,
+      112
+    ],
+    "output_file": "base_particle_c9.png"
+  },
+  "c10": {
+    "hex_color": "#993746",
+    "rgb_color": [
+      153,
+      55,
+      70
+    ],
+    "output_file": "base_particle_c10.png"
+  },
+  "c11": {
+    "hex_color": "#8A2613",
+    "rgb_color": [
+      138,
+      38,
+      19
+    ],
+    "output_file": "base_particle_c11.png"
+  },
+  "c12": {
+    "hex_color": "#AC2610",
+    "rgb_color": [
+      172,
+      38,
+      16
+    ],
+    "output_file": "base_particle_c12.png"
+  },
+  "c13": {
+    "hex_color": "#F8991C",
+    "rgb_color": [
+      248,
+      153,
+      28
+    ],
+    "output_file": "base_particle_c13.png"
+  },
+  "c14": {
+    "hex_color": "#E6A321",
+    "rgb_color": [
+      230,
+      163,
+      33
+    ],
+    "output_file": "base_particle_c14.png"
+  }
+}

@@ -1,0 +1,205 @@
+{
+	"format_version": "1.21.30",
+	"minecraft:block": {
+		"description": {
+			"identifier": "ff:waffle_dish",
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			},
+			"states": {
+				"ff:slices": [
+					3,
+					2,
+					1,
+					0
+				],
+				"ff:stack": {
+					"values": {
+						"min": 1,
+						"max": 3
+					}
+				},
+				"ff:has_butter": [
+					false,
+					true
+				],
+				"ff:has_maple": [
+					false,
+					true
+				]
+			},
+			"menu_category": {
+				"category": "items"
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					},
+					"tag:block_north": {}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					},
+					"tag:block_east": {}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'south'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							0,
+							0
+						]
+					},
+					"tag:block_south": {}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					},
+					"tag:block_west": {}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:has_maple') == false",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "waffle",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+						{
+				"condition": "query.block_state('ff:has_maple') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "waffle_with_maple",
+							"render_method": "alpha_test"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stack') == 1",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [-6, 0, -6],
+						"size": [12, 2, 12]
+					},
+					"minecraft:collision_box": {
+						"origin": [-6, 0, -6],
+						"size": [12, 2, 12]
+					}
+				}
+			},
+						{
+				"condition": "query.block_state('ff:stack') == 2",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [-6, 0, -6],
+						"size": [12, 4, 12]
+					},
+					"minecraft:collision_box": {
+						"origin": [-6, 0, -6],
+						"size": [12, 4, 12]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('ff:stack') == 3",
+				"components": {
+					"minecraft:selection_box": {
+						"origin": [-6, 0, -6],
+						"size": [12, 6, 12]
+					},
+					"minecraft:collision_box": {
+						"origin": [-6, 0, -6],
+						"size": [12, 6, 12]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "waffle",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:map_color": "#8E693B",
+			"tag:minecraft:is_pickaxe_item_destructible": {},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 1
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+"minecraft:geometry": { 
+  "identifier": "geometry.waffle_plate",
+  "bone_visibility": {
+    "one_stack_1": "(q.block_state('ff:stack') == 1) && (q.block_state('ff:slices') == 3)",
+    "one_stack_2": "(q.block_state('ff:stack') == 1) && (q.block_state('ff:slices') >= 2)",
+    "one_stack_3": "(q.block_state('ff:stack') == 1) && (q.block_state('ff:slices') >= 1)",
+    "one_stack_4": "(q.block_state('ff:stack') == 1) && (q.block_state('ff:slices') >= 0)",
+	"one_stack_base": "q.block_state('ff:stack') == 2",
+    "one_stack_butter": "(q.block_state('ff:stack') == 1) && q.block_state('ff:has_butter')",
+    "two_stack_1": "(q.block_state('ff:stack') == 2) && (q.block_state('ff:slices') == 3)",
+    "two_stack_2": "(q.block_state('ff:stack') == 2) && (q.block_state('ff:slices') >= 2)",
+    "two_stack_3": "(q.block_state('ff:stack') == 2) && (q.block_state('ff:slices') >= 1)",
+    "two_stack_4": "(q.block_state('ff:stack') == 2) && (q.block_state('ff:slices') >= 0)",
+    "two_stack_butter": "(q.block_state('ff:stack') == 2) && q.block_state('ff:has_butter')",
+	"two_stack_base": "q.block_state('ff:stack') == 3",
+    "three_stack_1": "(q.block_state('ff:stack') == 3) && (q.block_state('ff:slices') == 3)",
+    "three_stack_2": "(q.block_state('ff:stack') == 3) && (q.block_state('ff:slices') >= 2)",
+    "three_stack_3": "(q.block_state('ff:stack') == 3) && (q.block_state('ff:slices') >= 1)",
+    "three_stack_4": "(q.block_state('ff:stack') == 3) && (q.block_state('ff:slices') >= 0)",
+    "three_stack_butter": "(q.block_state('ff:stack') == 3) && q.block_state('ff:has_butter')"
+  }
+},
+			"minecraft:selection_box": {
+				"origin": [-6, 0, -6],
+				"size": [12, 2, 12]
+			},
+			"minecraft:collision_box": {
+				"origin": [-6, 0, -6],
+				"size": [12, 2, 12]
+			},
+			"minecraft:custom_components": [
+				"ff:pancake_pile",
+				"ff:dish_return_on_sneak"
+			]
+		}
+	}
+}
