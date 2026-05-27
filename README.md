@@ -10,7 +10,7 @@
 
 undefined undefined
 
-# **📕 DESCRIPTION**
+# 📕 DESCRIPTION
 
 Have you ever searched for a furniture add-on which would give you the possibility to decorate your MC survival or creative base in a better way, and even better, for free!, Welcome to Fabulous Furnished, an add-on which allows you to explode your imagination and creativity in a better way
 
@@ -22,7 +22,7 @@ And no, this is not just a furniture add-on, it is an add-on which has the funct
 
 # **![](https://i.postimg.cc/W3hVF4sR/lineff.png)**
 
-# **✨ FEATURES** 
+# ✨ FEATURES
 
 *   **Original** designs "adapted" to the vanilla style, no inspirations, just based on real objects! 
 *   More than 250+ decoration and furniture
